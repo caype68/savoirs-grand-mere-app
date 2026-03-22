@@ -1,0 +1,863 @@
+{
+  "remedies": [
+    {
+      "id": "infusion-thym",
+      "nom": "Infusion de thym",
+      "alias": ["tisane de thym", "thé de farigoule"],
+      "type": "infusion",
+      "route": "orale",
+      "duree": "10 min",
+      "difficulte": "facile",
+      "image": "assets/illustrations/cover_eucalyptus.png",
+      "ingredients": [
+        { "nom": "Thym", "quantite": "1 cuillère à soupe", "type": "plante" },
+        { "nom": "Eau", "quantite": "250 ml", "type": "autre" },
+        { "nom": "Miel", "quantite": "1 cuillère à café", "type": "autre", "optionnel": true }
+      ],
+      "preparation": [
+        "Porter l'eau à frémissement (ne pas faire bouillir).",
+        "Placer le thym dans une tasse ou une théière.",
+        "Verser l'eau frémissante sur le thym.",
+        "Couvrir et laisser infuser 10 minutes.",
+        "Filtrer et ajouter le miel si désiré."
+      ],
+      "posologie": { "frequence": "2 à 3 fois par jour", "duree": "5 à 7 jours" },
+      "indications": ["gorge", "toux", "respiration", "digestion"],
+      "indicationsTexte": ["Gorge irritée", "Toux", "Respiration", "Digestion"],
+      "contreIndications": ["Grossesse", "Allaitement", "Hypertension sévère"],
+      "precautions": ["Ne pas dépasser 3 tasses par jour"],
+      "populaire": true,
+      "verifie": true
+    },
+    {
+      "id": "miel-citron",
+      "nom": "Miel & citron",
+      "alias": ["citron miel", "grog sans alcool"],
+      "type": "infusion",
+      "route": "orale",
+      "duree": "5 min",
+      "difficulte": "facile",
+      "image": "assets/illustrations/cover_miel_citron.png",
+      "ingredients": [
+        { "nom": "Miel", "quantite": "2 cuillères à soupe", "type": "autre" },
+        { "nom": "Citron", "quantite": "1/2 fruit", "type": "plante" },
+        { "nom": "Eau chaude", "quantite": "200 ml", "type": "autre" }
+      ],
+      "preparation": [
+        "Faire chauffer l'eau sans la faire bouillir.",
+        "Presser le demi-citron.",
+        "Mélanger le miel dans l'eau chaude jusqu'à dissolution.",
+        "Ajouter le jus de citron et remuer."
+      ],
+      "posologie": { "frequence": "3 fois par jour", "duree": "3 à 5 jours" },
+      "indications": ["gorge", "toux", "fatigue", "immunite"],
+      "indicationsTexte": ["Gorge", "Toux", "Fatigue", "Immunité"],
+      "contreIndications": ["Diabète (consulter)", "Enfants de moins de 1 an"],
+      "precautions": [],
+      "populaire": true,
+      "verifie": true
+    },
+    {
+      "id": "camomille-sommeil",
+      "nom": "Infusion de camomille",
+      "alias": ["tisane camomille", "thé de camomille"],
+      "type": "infusion",
+      "route": "orale",
+      "duree": "10 min",
+      "difficulte": "facile",
+      "image": "assets/illustrations/cover_camomille.png",
+      "ingredients": [
+        { "nom": "Fleurs de camomille", "quantite": "2 cuillères à café", "type": "plante" },
+        { "nom": "Eau", "quantite": "250 ml", "type": "autre" }
+      ],
+      "preparation": [
+        "Porter l'eau à ébullition.",
+        "Retirer du feu et ajouter les fleurs de camomille.",
+        "Couvrir et laisser infuser 5 à 10 minutes.",
+        "Filtrer avant de boire."
+      ],
+      "posologie": { "frequence": "1 tasse le soir", "duree": "Au besoin" },
+      "indications": ["sommeil", "stress", "digestion"],
+      "indicationsTexte": ["Sommeil", "Anxiété", "Digestion"],
+      "contreIndications": ["Allergie aux astéracées", "Grossesse (premier trimestre)"],
+      "precautions": ["Boire 30 minutes avant le coucher"],
+      "populaire": true,
+      "verifie": true
+    },
+    {
+      "id": "grimoire-camomille-1",
+      "nom": "Infusion Relaxante pour le Sommeil",
+      "alias": ["tisane camomille sommeil", "infusion calmante"],
+      "type": "infusion",
+      "route": "orale",
+      "duree": "15 min",
+      "difficulte": "facile",
+      "image": "assets/illustrations/cover_camomille.png",
+      "ingredients": [
+        { "nom": "Fleurs de camomille séchées", "quantite": "1 cuillère à soupe", "type": "plante" },
+        { "nom": "Eau chaude", "quantite": "250 ml", "type": "autre" },
+        { "nom": "Miel", "quantite": "1 cuillère à café", "type": "autre", "optionnel": true }
+      ],
+      "preparation": [
+        "Faites chauffer l'eau sans la porter à ébullition.",
+        "Versez l'eau sur les fleurs de camomille et laissez infuser 10 minutes.",
+        "Filtrez et ajoutez du miel selon votre goût.",
+        "Buvez une tasse 30 minutes avant le coucher."
+      ],
+      "posologie": { "frequence": "1 tasse le soir", "duree": "Selon besoin" },
+      "indications": ["sommeil", "stress", "fatigue"],
+      "indicationsTexte": ["Insomnie", "Stress", "Anxiété", "Troubles du sommeil"],
+      "contreIndications": ["Allergie aux astéracées"],
+      "precautions": ["Ne pas consommer en excès pour éviter l'accoutumance."],
+      "populaire": false,
+      "verifie": true
+    },
+    {
+      "id": "grimoire-camomille-2",
+      "nom": "Compresse Apaisante pour les Yeux Fatigués",
+      "alias": ["compresse camomille yeux", "soin yeux fatigués"],
+      "type": "compresse",
+      "route": "cutanee",
+      "duree": "20 min",
+      "difficulte": "facile",
+      "image": "assets/illustrations/cover_camomille.png",
+      "ingredients": [
+        { "nom": "Tisane de camomille", "quantite": "2 sachets", "type": "plante" },
+        { "nom": "Eau chaude", "quantite": "250 ml", "type": "autre" },
+        { "nom": "Compresses stériles", "quantite": "2 pièces", "type": "autre" }
+      ],
+      "preparation": [
+        "Faites infuser la camomille dans l'eau chaude pendant 10 minutes.",
+        "Laissez refroidir puis trempez les compresses dans l'infusion.",
+        "Appliquez les compresses tièdes sur les paupières fermées pendant 10 minutes."
+      ],
+      "posologie": { "frequence": "1 à 2 fois par jour", "duree": "Selon besoin" },
+      "indications": ["fatigue", "peau"],
+      "indicationsTexte": ["Yeux fatigués", "Cernes", "Poches sous les yeux"],
+      "contreIndications": ["Conjonctivite bactérienne"],
+      "precautions": ["Ne pas appliquer sur une conjonctivite bactérienne sans avis médical."],
+      "populaire": false,
+      "verifie": true
+    },
+    {
+      "id": "lavande-inhalation",
+      "nom": "Inhalation à la lavande",
+      "alias": ["vapeur lavande", "fumigation lavande"],
+      "type": "inhalation",
+      "route": "inhalation",
+      "duree": "15 min",
+      "difficulte": "facile",
+      "image": "assets/illustrations/cover_eucalyptus.png",
+      "ingredients": [
+        { "nom": "Fleurs de lavande", "quantite": "2 cuillères à soupe", "type": "plante" },
+        { "nom": "Eau bouillante", "quantite": "1 litre", "type": "autre" }
+      ],
+      "preparation": [
+        "Faire bouillir l'eau.",
+        "Verser dans un grand bol.",
+        "Ajouter les fleurs de lavande ou l'huile essentielle.",
+        "Se pencher au-dessus du bol, tête couverte d'une serviette.",
+        "Inhaler les vapeurs pendant 5 à 10 minutes."
+      ],
+      "posologie": { "frequence": "1 à 2 fois par jour", "duree": "3 à 5 jours" },
+      "indications": ["respiration", "sommeil", "stress"],
+      "indicationsTexte": ["Respiration", "Sommeil", "Stress"],
+      "contreIndications": ["Asthme", "Enfants de moins de 6 ans"],
+      "precautions": ["Ne pas approcher le visage trop près de l'eau bouillante"],
+      "populaire": true,
+      "verifie": true
+    },
+    {
+      "id": "menthe-digestion",
+      "nom": "Infusion de menthe poivrée",
+      "alias": ["tisane menthe", "thé à la menthe"],
+      "type": "infusion",
+      "route": "orale",
+      "duree": "10 min",
+      "difficulte": "facile",
+      "image": "assets/illustrations/cover_menthe.png",
+      "ingredients": [
+        { "nom": "Feuilles de menthe poivrée", "quantite": "1 cuillère à soupe", "type": "plante" },
+        { "nom": "Eau", "quantite": "250 ml", "type": "autre" }
+      ],
+      "preparation": [
+        "Porter l'eau à frémissement.",
+        "Ajouter les feuilles de menthe.",
+        "Laisser infuser 7 à 10 minutes à couvert.",
+        "Filtrer et servir."
+      ],
+      "posologie": { "frequence": "Après les repas", "duree": "Au besoin" },
+      "indications": ["digestion"],
+      "indicationsTexte": ["Digestion", "Ballonnements", "Nausées"],
+      "contreIndications": ["Reflux gastro-œsophagien", "Enfants de moins de 6 ans", "Calculs biliaires"],
+      "precautions": [],
+      "populaire": true,
+      "verifie": false
+    },
+    {
+      "id": "argile-cataplasme",
+      "nom": "Cataplasme d'argile verte",
+      "alias": ["compresse argile", "emplâtre argile"],
+      "type": "cataplasme",
+      "route": "cutanee",
+      "duree": "2h",
+      "difficulte": "moyen",
+      "image": "assets/illustrations/cover_curcuma.png",
+      "ingredients": [
+        { "nom": "Argile verte", "quantite": "3 cuillères à soupe", "type": "mineral" },
+        { "nom": "Eau", "quantite": "Suffisamment", "type": "autre" }
+      ],
+      "preparation": [
+        "Verser l'argile dans un récipient non métallique.",
+        "Ajouter l'eau progressivement en mélangeant.",
+        "Obtenir une pâte lisse et épaisse.",
+        "Appliquer en couche de 1 à 2 cm sur la zone.",
+        "Laisser poser 1 à 2 heures ou jusqu'à séchage.",
+        "Rincer à l'eau tiède."
+      ],
+      "posologie": { "frequence": "1 fois par jour", "duree": "3 à 5 jours" },
+      "indications": ["peau", "douleurs"],
+      "indicationsTexte": ["Peau", "Douleurs articulaires", "Inflammations"],
+      "contreIndications": ["Plaies ouvertes", "Peau irritée"],
+      "precautions": ["Utiliser des ustensiles en bois ou plastique, pas de métal"],
+      "populaire": true,
+      "verifie": false
+    },
+    {
+      "id": "thym-miel-gorge",
+      "nom": "Sirop thym-miel",
+      "alias": ["sirop de thym", "sirop maison thym"],
+      "type": "sirop",
+      "route": "orale",
+      "duree": "30 min",
+      "difficulte": "moyen",
+      "image": "assets/illustrations/cover_eucalyptus.png",
+      "ingredients": [
+        { "nom": "Thym frais", "quantite": "50 g", "type": "plante" },
+        { "nom": "Miel", "quantite": "250 g", "type": "autre" },
+        { "nom": "Eau", "quantite": "250 ml", "type": "autre" }
+      ],
+      "preparation": [
+        "Faire bouillir l'eau avec le thym pendant 15 minutes.",
+        "Filtrer et laisser tiédir.",
+        "Ajouter le miel et mélanger jusqu'à dissolution.",
+        "Verser dans un flacon propre.",
+        "Conserver au réfrigérateur (2 semaines max)."
+      ],
+      "posologie": { "frequence": "3 à 4 fois par jour", "duree": "5 à 7 jours" },
+      "indications": ["gorge", "toux", "respiration"],
+      "indicationsTexte": ["Gorge", "Toux", "Respiration"],
+      "contreIndications": ["Enfants de moins de 1 an", "Diabète", "Grossesse"],
+      "precautions": [],
+      "populaire": false,
+      "verifie": true
+    },
+    {
+      "id": "grimoire-gingembre-1",
+      "nom": "Infusion Anti-Nausées au Gingembre",
+      "alias": ["tisane gingembre", "infusion anti-nausées"],
+      "type": "infusion",
+      "route": "orale",
+      "duree": "15 min",
+      "difficulte": "facile",
+      "image": "assets/illustrations/cover_gingembre.png",
+      "ingredients": [
+        { "nom": "Gingembre frais râpé", "quantite": "1 cuillère à soupe", "type": "plante" },
+        { "nom": "Eau chaude", "quantite": "250 ml", "type": "autre" },
+        { "nom": "Miel", "quantite": "1 cuillère à café", "type": "autre", "optionnel": true },
+        { "nom": "Jus de citron", "quantite": "quelques gouttes", "type": "plante", "optionnel": true }
+      ],
+      "preparation": [
+        "Faites bouillir l'eau et ajoutez le gingembre râpé.",
+        "Laissez infuser 10 minutes, puis filtrez.",
+        "Ajoutez du miel et du citron selon votre goût.",
+        "Buvez avant un voyage ou en cas de nausées."
+      ],
+      "posologie": { "frequence": "Selon besoin", "duree": "Ponctuel" },
+      "indications": ["digestion"],
+      "indicationsTexte": ["Nausées", "Mal des transports", "Digestion"],
+      "contreIndications": ["Calculs biliaires"],
+      "precautions": ["Consommer avec modération pendant la grossesse."],
+      "populaire": true,
+      "verifie": true
+    },
+    {
+      "id": "grimoire-gingembre-2",
+      "nom": "Sirop Maison contre les Maux de Gorge",
+      "alias": ["sirop gingembre gorge", "sirop mal de gorge"],
+      "type": "sirop",
+      "route": "orale",
+      "duree": "30 min",
+      "difficulte": "moyen",
+      "image": "assets/illustrations/cover_gingembre.png",
+      "ingredients": [
+        { "nom": "Gingembre frais râpé", "quantite": "50 g", "type": "plante" },
+        { "nom": "Eau", "quantite": "250 ml", "type": "autre" },
+        { "nom": "Miel", "quantite": "150 g", "type": "autre" },
+        { "nom": "Jus d'un citron", "quantite": "1 citron", "type": "plante" }
+      ],
+      "preparation": [
+        "Faites bouillir l'eau et ajoutez le gingembre.",
+        "Laissez mijoter à feu doux pendant 15 minutes.",
+        "Filtrez et ajoutez le miel et le jus de citron.",
+        "Conservez dans un bocal au réfrigérateur.",
+        "Prenez une cuillère à soupe en cas de mal de gorge."
+      ],
+      "posologie": { "frequence": "3 à 4 fois par jour", "duree": "Pendant les symptômes" },
+      "indications": ["gorge", "toux", "immunite"],
+      "indicationsTexte": ["Mal de gorge", "Irritation de la gorge", "Toux", "Immunité"],
+      "contreIndications": ["Enfants de moins de 1 an (miel)"],
+      "precautions": ["Ne pas donner aux enfants de moins d'un an à cause du miel."],
+      "populaire": true,
+      "verifie": true
+    },
+    {
+      "id": "grimoire-gingembre-3",
+      "nom": "Cataplasme Anti-Douleur pour les Articulations",
+      "alias": ["cataplasme gingembre", "soin articulations"],
+      "type": "cataplasme",
+      "route": "cutanee",
+      "duree": "30 min",
+      "difficulte": "facile",
+      "image": "assets/illustrations/cover_gingembre.png",
+      "ingredients": [
+        { "nom": "Gingembre frais râpé", "quantite": "2 cuillères à soupe", "type": "plante" },
+        { "nom": "Huile d'olive", "quantite": "1 cuillère à soupe", "type": "autre" },
+        { "nom": "Tissu propre ou compresse", "quantite": "1 pièce", "type": "autre" }
+      ],
+      "preparation": [
+        "Mélangez le gingembre râpé avec l'huile d'olive.",
+        "Appliquez la préparation sur la zone douloureuse.",
+        "Recouvrez d'un tissu propre et laissez agir 20 minutes.",
+        "Retirez et rincez avec de l'eau tiède."
+      ],
+      "posologie": { "frequence": "1 à 2 fois par jour", "duree": "Selon besoin" },
+      "indications": ["douleurs"],
+      "indicationsTexte": ["Douleurs articulaires", "Douleurs musculaires", "Inflammation", "Rhumatismes"],
+      "contreIndications": ["Peau irritée", "Plaie ouverte"],
+      "precautions": ["Évitez sur une peau irritée ou sensible."],
+      "populaire": false,
+      "verifie": true
+    },
+    {
+      "id": "grimoire-lavande-1",
+      "nom": "Huile de Massage Relaxante à la Lavande",
+      "alias": ["huile lavande massage", "massage relaxant"],
+      "type": "friction",
+      "route": "cutanee",
+      "duree": "5 min",
+      "difficulte": "facile",
+      "image": "assets/illustrations/cover_eucalyptus.png",
+      "ingredients": [
+        { "nom": "Huile essentielle de lavande", "quantite": "10 gouttes", "type": "plante" },
+        { "nom": "Huile végétale (amande douce ou jojoba)", "quantite": "50 ml", "type": "autre" }
+      ],
+      "preparation": [
+        "Mélangez l'huile essentielle de lavande avec l'huile végétale.",
+        "Appliquez sur la peau et massez doucement.",
+        "Utilisez le soir pour favoriser la détente et le sommeil."
+      ],
+      "posologie": { "frequence": "Le soir", "duree": "Selon besoin" },
+      "indications": ["stress", "sommeil", "douleurs"],
+      "indicationsTexte": ["Stress", "Anxiété", "Détente", "Sommeil", "Tension musculaire"],
+      "contreIndications": ["Femmes enceintes", "Bébés"],
+      "precautions": ["Huile essentielle déconseillée aux femmes enceintes et aux bébés."],
+      "populaire": false,
+      "verifie": true
+    },
+    {
+      "id": "grimoire-lavande-2",
+      "nom": "Infusion Calmante à la Lavande",
+      "alias": ["tisane lavande", "infusion relaxante"],
+      "type": "infusion",
+      "route": "orale",
+      "duree": "15 min",
+      "difficulte": "facile",
+      "image": "assets/illustrations/cover_tilleul.png",
+      "ingredients": [
+        { "nom": "Fleurs de lavande séchées", "quantite": "1 cuillère à soupe", "type": "plante" },
+        { "nom": "Eau chaude", "quantite": "250 ml", "type": "autre" },
+        { "nom": "Miel", "quantite": "1 cuillère à café", "type": "autre", "optionnel": true }
+      ],
+      "preparation": [
+        "Faites chauffer l'eau sans la faire bouillir.",
+        "Ajoutez les fleurs de lavande et laissez infuser 10 minutes.",
+        "Filtrez et ajoutez du miel si désiré.",
+        "Buvez le soir pour favoriser la détente."
+      ],
+      "posologie": { "frequence": "1 tasse le soir", "duree": "Selon besoin" },
+      "indications": ["stress", "migraine"],
+      "indicationsTexte": ["Stress", "Anxiété", "Maux de tête", "Nervosité"],
+      "contreIndications": ["Allergie à la lavande"],
+      "precautions": ["Allergies possibles : toujours tester sur une petite zone de peau avant usage."],
+      "populaire": false,
+      "verifie": true
+    },
+    {
+      "id": "grimoire-menthe-1",
+      "nom": "Infusion Digestive Anti-Ballonnements",
+      "alias": ["tisane menthe digestion", "infusion digestive"],
+      "type": "infusion",
+      "route": "orale",
+      "duree": "15 min",
+      "difficulte": "facile",
+      "image": "assets/illustrations/cover_menthe.png",
+      "ingredients": [
+        { "nom": "Feuilles de menthe poivrée séchées", "quantite": "1 cuillère à soupe", "type": "plante" },
+        { "nom": "Eau chaude", "quantite": "250 ml", "type": "autre" },
+        { "nom": "Miel", "quantite": "1 cuillère à café", "type": "autre", "optionnel": true }
+      ],
+      "preparation": [
+        "Faites chauffer l'eau sans la faire bouillir.",
+        "Ajoutez les feuilles de menthe et laissez infuser 10 minutes.",
+        "Filtrez et ajoutez du miel si besoin.",
+        "Buvez après le repas pour faciliter la digestion."
+      ],
+      "posologie": { "frequence": "Après les repas", "duree": "Selon besoin" },
+      "indications": ["digestion"],
+      "indicationsTexte": ["Ballonnements", "Digestion difficile", "Estomac", "Haleine fraîche"],
+      "contreIndications": ["Reflux gastrique"],
+      "precautions": ["Éviter en cas de reflux gastrique."],
+      "populaire": false,
+      "verifie": true
+    },
+    {
+      "id": "grimoire-menthe-2",
+      "nom": "Huile de Massage Anti-Migraine",
+      "alias": ["huile menthe migraine", "massage anti-migraine"],
+      "type": "friction",
+      "route": "cutanee",
+      "duree": "5 min",
+      "difficulte": "facile",
+      "image": "assets/illustrations/cover_menthe.png",
+      "ingredients": [
+        { "nom": "Huile essentielle de menthe poivrée", "quantite": "5 gouttes", "type": "plante" },
+        { "nom": "Huile végétale (amande douce ou coco)", "quantite": "1 cuillère à soupe", "type": "autre" }
+      ],
+      "preparation": [
+        "Mélangez l'huile essentielle avec l'huile végétale.",
+        "Appliquez une petite quantité sur les tempes et massez doucement.",
+        "Respirez profondément pour maximiser l'effet apaisant."
+      ],
+      "posologie": { "frequence": "En cas de migraine", "duree": "Selon besoin" },
+      "indications": ["migraine"],
+      "indicationsTexte": ["Maux de tête", "Migraine", "Concentration", "Tension"],
+      "contreIndications": ["Enfants de moins de 6 ans", "Femmes enceintes"],
+      "precautions": ["Ne pas appliquer trop près des yeux."],
+      "populaire": false,
+      "verifie": true
+    },
+    {
+      "id": "grimoire-menthe-3",
+      "nom": "Inhalation Décongestionnante pour le Nez Bouché",
+      "alias": ["inhalation menthe", "décongestion nasale"],
+      "type": "inhalation",
+      "route": "inhalation",
+      "duree": "15 min",
+      "difficulte": "facile",
+      "image": "assets/illustrations/cover_menthe.png",
+      "ingredients": [
+        { "nom": "Feuilles de menthe poivrée ou huile essentielle", "quantite": "5 feuilles ou 2 gouttes", "type": "plante" },
+        { "nom": "Eau chaude", "quantite": "500 ml", "type": "autre" }
+      ],
+      "preparation": [
+        "Faites chauffer l'eau et versez-la dans un bol.",
+        "Ajoutez la menthe fraîche ou l'huile essentielle.",
+        "Placez votre visage au-dessus du bol et couvrez votre tête avec une serviette.",
+        "Inspirez profondément pendant 5 à 10 minutes."
+      ],
+      "posologie": { "frequence": "2 à 3 fois par jour", "duree": "Pendant le rhume" },
+      "indications": ["rhume", "respiration"],
+      "indicationsTexte": ["Nez bouché", "Rhume", "Sinusite", "Congestion nasale"],
+      "contreIndications": ["Asthme"],
+      "precautions": ["Ne pas inhaler trop près pour éviter toute irritation."],
+      "populaire": false,
+      "verifie": true
+    },
+    {
+      "id": "grimoire-valeriane-1",
+      "nom": "Infusion Apaisante de Valériane pour le Sommeil",
+      "alias": ["tisane valériane", "infusion sommeil"],
+      "type": "infusion",
+      "route": "orale",
+      "duree": "20 min",
+      "difficulte": "facile",
+      "image": "assets/illustrations/cover_tilleul.png",
+      "ingredients": [
+        { "nom": "Racine de valériane séchée", "quantite": "1 cuillère à café", "type": "plante" },
+        { "nom": "Eau chaude", "quantite": "250 ml", "type": "autre" },
+        { "nom": "Miel", "quantite": "1 cuillère à café", "type": "autre", "optionnel": true }
+      ],
+      "preparation": [
+        "Faites chauffer l'eau et ajoutez la racine de valériane.",
+        "Laissez infuser 10 à 15 minutes, puis filtrez.",
+        "Ajoutez du miel si désiré et buvez 30 minutes avant le coucher."
+      ],
+      "posologie": { "frequence": "1 tasse le soir", "duree": "2-3 semaines puis pause" },
+      "indications": ["sommeil"],
+      "indicationsTexte": ["Insomnie", "Troubles du sommeil", "Endormissement", "Qualité du sommeil"],
+      "contreIndications": ["Grossesse", "Allaitement", "Prise de somnifères"],
+      "precautions": ["Ne pas dépasser 2 tasses par jour.", "Peut provoquer de la somnolence."],
+      "populaire": false,
+      "verifie": true
+    },
+    {
+      "id": "grimoire-tilleul-1",
+      "nom": "Infusion Relaxante de Tilleul pour le Sommeil",
+      "alias": ["tisane tilleul", "infusion sommeil"],
+      "type": "infusion",
+      "route": "orale",
+      "duree": "15 min",
+      "difficulte": "facile",
+      "image": "assets/illustrations/cover_tilleul.png",
+      "ingredients": [
+        { "nom": "Fleurs de tilleul séchées", "quantite": "1 cuillère à soupe", "type": "plante" },
+        { "nom": "Eau chaude", "quantite": "250 ml", "type": "autre" },
+        { "nom": "Miel", "quantite": "1 cuillère à café", "type": "autre", "optionnel": true }
+      ],
+      "preparation": [
+        "Faites chauffer l'eau et versez-la sur les fleurs de tilleul.",
+        "Laissez infuser 10 minutes, puis filtrez.",
+        "Ajoutez du miel si désiré et buvez 30 minutes avant le coucher."
+      ],
+      "posologie": { "frequence": "1 tasse le soir", "duree": "Selon besoin" },
+      "indications": ["sommeil", "stress"],
+      "indicationsTexte": ["Insomnie", "Stress", "Anxiété", "Sommeil", "Nervosité"],
+      "contreIndications": ["Hypotension"],
+      "precautions": ["Ne pas boire plus de 3 tasses par jour pour éviter des palpitations."],
+      "populaire": true,
+      "verifie": true
+    },
+    {
+      "id": "grimoire-ortie-1",
+      "nom": "Infusion Détoxifiante à l'Ortie",
+      "alias": ["tisane ortie", "infusion détox"],
+      "type": "infusion",
+      "route": "orale",
+      "duree": "15 min",
+      "difficulte": "facile",
+      "image": "assets/illustrations/cover_guide.png",
+      "ingredients": [
+        { "nom": "Feuilles d'ortie séchées", "quantite": "1 cuillère à soupe", "type": "plante" },
+        { "nom": "Eau chaude", "quantite": "250 ml", "type": "autre" },
+        { "nom": "Miel", "quantite": "1 cuillère à café", "type": "autre", "optionnel": true }
+      ],
+      "preparation": [
+        "Faites chauffer l'eau et ajoutez les feuilles d'ortie.",
+        "Laissez infuser 10 minutes, puis filtrez.",
+        "Ajoutez du miel si désiré.",
+        "Buvez 2 à 3 tasses par jour pendant une cure de 3 semaines."
+      ],
+      "posologie": { "frequence": "2 à 3 tasses par jour", "duree": "Cure de 3 semaines" },
+      "indications": ["detox", "fatigue"],
+      "indicationsTexte": ["Détoxification", "Élimination des toxines", "Reminéralisation", "Fatigue"],
+      "contreIndications": ["Insuffisance rénale"],
+      "precautions": ["Déconseillée aux personnes souffrant d'insuffisance rénale."],
+      "populaire": false,
+      "verifie": true
+    },
+    {
+      "id": "grimoire-echinacee-1",
+      "nom": "Sirop Immunitaire à l'Échinacée",
+      "alias": ["sirop échinacée", "sirop immunité"],
+      "type": "sirop",
+      "route": "orale",
+      "duree": "45 min",
+      "difficulte": "moyen",
+      "image": "assets/illustrations/cover_immunite.png",
+      "ingredients": [
+        { "nom": "Racines séchées d'échinacée", "quantite": "50 g", "type": "plante" },
+        { "nom": "Eau", "quantite": "500 ml", "type": "autre" },
+        { "nom": "Sirop d'érable", "quantite": "200 g", "type": "autre" },
+        { "nom": "Bâton de cannelle", "quantite": "1 pièce", "type": "autre", "optionnel": true },
+        { "nom": "Citron bio (zeste et jus)", "quantite": "1 pièce", "type": "plante" }
+      ],
+      "preparation": [
+        "Faites chauffer l'eau dans une casserole jusqu'à frémissement.",
+        "Ajoutez les racines d'échinacée et la cannelle, puis laissez mijoter 20 à 30 minutes à feu doux.",
+        "Retirez du feu et laissez infuser encore 15 minutes à couvert.",
+        "Filtrez la décoction, puis ajoutez le miel et le jus de citron en mélangeant bien.",
+        "Versez dans un bocal en verre propre et conservez au réfrigérateur."
+      ],
+      "posologie": { "frequence": "1 cuillère à soupe le matin", "duree": "Cure de 3 semaines max" },
+      "indications": ["immunite", "rhume"],
+      "indicationsTexte": ["Immunité", "Rhume", "Grippe", "Infections hivernales", "Fatigue immunitaire"],
+      "contreIndications": ["Maladies auto-immunes", "Lupus", "Sclérose en plaques", "Enfants de moins de 6 ans"],
+      "precautions": ["Se conserve 3 semaines au réfrigérateur. Ne pas donner aux enfants de moins de 6 ans."],
+      "populaire": false,
+      "verifie": true
+    },
+    {
+      "id": "grimoire-fenouil-1",
+      "nom": "Infusion Digestive Anti-Ballonnements au Fenouil",
+      "alias": ["tisane fenouil", "infusion digestive"],
+      "type": "infusion",
+      "route": "orale",
+      "duree": "15 min",
+      "difficulte": "facile",
+      "image": "assets/illustrations/cover_guide.png",
+      "ingredients": [
+        { "nom": "Graines de fenouil", "quantite": "1 cuillère à café", "type": "plante" },
+        { "nom": "Eau chaude", "quantite": "250 ml", "type": "autre" },
+        { "nom": "Miel", "quantite": "1 cuillère à café", "type": "autre", "optionnel": true }
+      ],
+      "preparation": [
+        "Faites chauffer l'eau et ajoutez les graines de fenouil.",
+        "Laissez infuser 10 minutes, puis filtrez.",
+        "Ajoutez du miel si désiré et buvez après les repas."
+      ],
+      "posologie": { "frequence": "Après les repas", "duree": "Selon besoin" },
+      "indications": ["digestion"],
+      "indicationsTexte": ["Ballonnements", "Digestion", "Coliques", "Gaz"],
+      "contreIndications": ["Troubles hormonaux"],
+      "precautions": ["Ne pas consommer en excès pour éviter un effet laxatif."],
+      "populaire": false,
+      "verifie": true
+    },
+    {
+      "id": "grimoire-ail-1",
+      "nom": "Infusion d'Ail pour Renforcer l'Immunité",
+      "alias": ["tisane ail", "infusion immunité"],
+      "type": "infusion",
+      "route": "orale",
+      "duree": "15 min",
+      "difficulte": "facile",
+      "image": "assets/illustrations/cover_immunite.png",
+      "ingredients": [
+        { "nom": "Gousse d'ail écrasée", "quantite": "1 gousse", "type": "plante" },
+        { "nom": "Eau chaude", "quantite": "250 ml", "type": "autre" },
+        { "nom": "Miel", "quantite": "1 cuillère à café", "type": "autre", "optionnel": true },
+        { "nom": "Jus de citron", "quantite": "1 cuillère à soupe", "type": "plante", "optionnel": true }
+      ],
+      "preparation": [
+        "Faites chauffer l'eau et ajoutez l'ail écrasé.",
+        "Laissez infuser 10 minutes, puis filtrez.",
+        "Ajoutez le miel et le citron pour adoucir le goût.",
+        "Buvez 1 tasse par jour en prévention des infections."
+      ],
+      "posologie": { "frequence": "1 tasse par jour", "duree": "Pendant l'hiver" },
+      "indications": ["immunite", "rhume"],
+      "indicationsTexte": ["Immunité", "Infections", "Rhume", "Grippe"],
+      "contreIndications": ["Ulcère gastrique", "Gastrite"],
+      "precautions": ["Ne pas boire à jeun en cas de sensibilité gastrique."],
+      "populaire": false,
+      "verifie": true
+    },
+    {
+      "id": "grimoire-melisse-2",
+      "nom": "Infusion Relaxante pour l'Anxiété et le Sommeil",
+      "alias": ["tisane mélisse", "infusion calmante"],
+      "type": "infusion",
+      "route": "orale",
+      "duree": "15 min",
+      "difficulte": "facile",
+      "image": "assets/illustrations/cover_tilleul.png",
+      "ingredients": [
+        { "nom": "Feuilles de mélisse séchées", "quantite": "1 cuillère à soupe", "type": "plante" },
+        { "nom": "Eau chaude", "quantite": "250 ml", "type": "autre" },
+        { "nom": "Miel", "quantite": "1 cuillère à café", "type": "autre", "optionnel": true }
+      ],
+      "preparation": [
+        "Faites chauffer l'eau et ajoutez la mélisse.",
+        "Laissez infuser 10 minutes, puis filtrez.",
+        "Ajoutez du miel si désiré et buvez 30 minutes avant le coucher."
+      ],
+      "posologie": { "frequence": "1 à 3 tasses par jour", "duree": "Selon besoin" },
+      "indications": ["stress", "sommeil"],
+      "indicationsTexte": ["Anxiété", "Stress", "Sommeil", "Nervosité"],
+      "contreIndications": ["Hypothyroïdie"],
+      "precautions": ["Ne pas consommer plus de 3 tasses par jour pour éviter une somnolence excessive."],
+      "populaire": false,
+      "verifie": true
+    },
+    {
+      "id": "grimoire-aloe-1",
+      "nom": "Gel Apaisant pour les Brûlures et Coupures",
+      "alias": ["gel aloe vera", "soin brûlures"],
+      "type": "cataplasme",
+      "route": "cutanee",
+      "duree": "5 min",
+      "difficulte": "facile",
+      "image": "assets/illustrations/cover_guide.png",
+      "ingredients": [
+        { "nom": "Feuille d'Aloe Vera fraîche", "quantite": "1 feuille", "type": "plante" },
+        { "nom": "Huile de coco", "quantite": "1 cuillère à café", "type": "autre", "optionnel": true }
+      ],
+      "preparation": [
+        "Coupez une feuille d'Aloe Vera et extrayez son gel translucide.",
+        "Appliquez directement sur la brûlure ou la coupure.",
+        "Pour une hydratation supplémentaire, ajoutez une goutte d'huile de coco.",
+        "Laissez agir et renouvelez l'application 2 à 3 fois par jour."
+      ],
+      "posologie": { "frequence": "2 à 3 fois par jour", "duree": "Jusqu'à guérison" },
+      "indications": ["peau"],
+      "indicationsTexte": ["Brûlures", "Coupures", "Cicatrisation", "Inflammation cutanée"],
+      "contreIndications": ["Plaie infectée"],
+      "precautions": ["Ne pas appliquer sur une plaie infectée sans avis médical."],
+      "populaire": false,
+      "verifie": true
+    },
+    {
+      "id": "boisson-gingembre-citron",
+      "nom": "Boisson chaude gingembre citron miel",
+      "alias": ["gingembre citron", "boisson détox", "infusion gingembre"],
+      "type": "infusion",
+      "route": "orale",
+      "duree": "10 min",
+      "difficulte": "facile",
+      "image": "assets/illustrations/cover_gingembre.png",
+      "ingredients": [
+        { "nom": "Gingembre", "quantite": "1 morceau", "type": "plante" },
+        { "nom": "Citron", "quantite": "1 pièce", "type": "plante" },
+        { "nom": "Miel", "quantite": "1 cuillère", "type": "autre" }
+      ],
+      "preparation": [
+        "Mélanger le gingembre, le citron et le miel dans de l'eau chaude."
+      ],
+      "posologie": { "frequence": "Chaque matin", "duree": "Quotidien" },
+      "indications": ["detox", "immunite", "fatigue", "digestion"],
+      "indicationsTexte": ["Purification", "Immunité", "Énergie", "Digestion"],
+      "contreIndications": ["Allergie au miel"],
+      "precautions": ["Consulter un médecin en cas d'allergie"],
+      "populaire": true,
+      "verifie": false
+    },
+    {
+      "id": "vinaigre-friction",
+      "nom": "Vinaigre en friction",
+      "alias": ["friction au vinaigre", "compresse vinaigre"],
+      "type": "friction",
+      "route": "cutanee",
+      "duree": "10 min",
+      "difficulte": "facile",
+      "image": "assets/illustrations/cover_guide.png",
+      "ingredients": [
+        { "nom": "Vinaigre de cidre", "quantite": "100 ml", "type": "autre" },
+        { "nom": "Eau tiède", "quantite": "100 ml", "type": "autre" }
+      ],
+      "preparation": [
+        "Mélanger le vinaigre et l'eau tiède à parts égales.",
+        "Imbiber un linge propre du mélange.",
+        "Appliquer en friction douce sur la zone concernée."
+      ],
+      "posologie": { "frequence": "2 fois par jour", "duree": "3 jours maximum" },
+      "indications": ["douleurs", "peau", "fatigue"],
+      "indicationsTexte": ["Douleurs musculaires", "Peau", "Fatigue"],
+      "contreIndications": ["Peau lésée", "Eczéma", "Psoriasis"],
+      "precautions": ["Faire un test sur une petite zone avant"],
+      "populaire": false,
+      "verifie": false
+    },
+    {
+      "id": "grimoire-passiflore-1",
+      "nom": "Lait Apaisant à la Passiflore pour un Sommeil Réparateur",
+      "alias": ["lait passiflore", "boisson sommeil"],
+      "type": "infusion",
+      "route": "orale",
+      "duree": "20 min",
+      "difficulte": "facile",
+      "image": "assets/illustrations/cover_tilleul.png",
+      "ingredients": [
+        { "nom": "Fleurs séchées de passiflore", "quantite": "1 cuillère à soupe", "type": "plante" },
+        { "nom": "Lait végétal (amande, avoine ou coco)", "quantite": "250 ml", "type": "autre" },
+        { "nom": "Miel ou sirop d'érable", "quantite": "1 cuillère à café", "type": "autre", "optionnel": true },
+        { "nom": "Pincée de cannelle", "quantite": "1 pincée", "type": "autre", "optionnel": true }
+      ],
+      "preparation": [
+        "Faites chauffer le lait végétal à feu doux jusqu'à frémissement (ne pas faire bouillir).",
+        "Ajoutez les fleurs de passiflore et laissez infuser 10 à 15 minutes à couvert.",
+        "Filtrez la préparation pour retirer les plantes.",
+        "Ajoutez le miel et la cannelle, mélangez bien.",
+        "Buvez 30 minutes avant le coucher pour favoriser un sommeil paisible."
+      ],
+      "posologie": { "frequence": "1 tasse le soir", "duree": "Selon besoin" },
+      "indications": ["sommeil", "stress"],
+      "indicationsTexte": ["Insomnie", "Anxiété", "Nervosité", "Sommeil réparateur"],
+      "contreIndications": ["Femmes enceintes", "Femmes allaitantes", "Prise de somnifères ou anxiolytiques"],
+      "precautions": ["Déconseillé aux femmes enceintes et allaitantes. Ne pas associer avec des somnifères ou des anxiolytiques."],
+      "populaire": false,
+      "verifie": true
+    },
+    {
+      "id": "grimoire-millepertuis-3",
+      "nom": "Infusion Antistress et Équilibre Émotionnel",
+      "alias": ["tisane millepertuis", "infusion antidépresseur"],
+      "type": "infusion",
+      "route": "orale",
+      "duree": "15 min",
+      "difficulte": "facile",
+      "image": "assets/illustrations/cover_tilleul.png",
+      "ingredients": [
+        { "nom": "Fleurs séchées de millepertuis", "quantite": "1 cuillère à café", "type": "plante" },
+        { "nom": "Eau chaude", "quantite": "250 ml", "type": "autre" },
+        { "nom": "Miel", "quantite": "1 cuillère à café", "type": "autre", "optionnel": true }
+      ],
+      "preparation": [
+        "Faites chauffer l'eau et ajoutez le millepertuis.",
+        "Laissez infuser 10 minutes, puis filtrez.",
+        "Ajoutez du miel si désiré et buvez en fin de journée."
+      ],
+      "posologie": { "frequence": "1 tasse en fin de journée", "duree": "Cure de 3 semaines puis pause" },
+      "indications": ["stress"],
+      "indicationsTexte": ["Anxiété", "Stress", "Dépression légère", "Équilibre émotionnel"],
+      "contreIndications": ["Prise de contraceptifs", "Anticoagulants", "Antidépresseurs", "Immunosuppresseurs", "Femmes enceintes"],
+      "precautions": ["Ne pas consommer si vous prenez un traitement médicamenteux. Interactions nombreuses possibles."],
+      "populaire": false,
+      "verifie": true
+    },
+    {
+      "id": "grimoire-pissenlit-2",
+      "nom": "Infusion Détox pour le Foie et les Reins",
+      "alias": ["tisane pissenlit détox", "infusion foie"],
+      "type": "infusion",
+      "route": "orale",
+      "duree": "15 min",
+      "difficulte": "facile",
+      "image": "assets/illustrations/cover_guide.png",
+      "ingredients": [
+        { "nom": "Racines de pissenlit séchées", "quantite": "1 cuillère à soupe", "type": "plante" },
+        { "nom": "Eau chaude", "quantite": "250 ml", "type": "autre" },
+        { "nom": "Miel", "quantite": "1 cuillère à café", "type": "autre", "optionnel": true }
+      ],
+      "preparation": [
+        "Faites chauffer l'eau et ajoutez la racine de pissenlit.",
+        "Laissez infuser 10 minutes, puis filtrez.",
+        "Ajoutez du miel si désiré et buvez après les repas."
+      ],
+      "posologie": { "frequence": "1 à 2 tasses par jour", "duree": "Cure de 3 semaines" },
+      "indications": ["detox"],
+      "indicationsTexte": ["Détoxification", "Foie", "Reins", "Élimination toxines"],
+      "contreIndications": ["Calculs biliaires", "Ulcère gastrique"],
+      "precautions": ["Ne pas boire plus de 2 tasses par jour pour éviter une irritation digestive."],
+      "populaire": false,
+      "verifie": true
+    },
+    {
+      "id": "grimoire-bardane-1",
+      "nom": "Infusion Détoxifiante pour la Peau et le Foie",
+      "alias": ["tisane bardane", "infusion détox"],
+      "type": "infusion",
+      "route": "orale",
+      "duree": "15 min",
+      "difficulte": "facile",
+      "image": "assets/illustrations/cover_guide.png",
+      "ingredients": [
+        { "nom": "Racine de bardane séchée", "quantite": "1 cuillère à soupe", "type": "plante" },
+        { "nom": "Eau chaude", "quantite": "250 ml", "type": "autre" },
+        { "nom": "Miel", "quantite": "1 cuillère à café", "type": "autre", "optionnel": true }
+      ],
+      "preparation": [
+        "Faites chauffer l'eau et ajoutez la racine de bardane.",
+        "Laissez infuser 10 minutes, puis filtrez.",
+        "Ajoutez du miel si désiré et buvez 1 tasse par jour pendant 3 semaines."
+      ],
+      "posologie": { "frequence": "1 tasse par jour", "duree": "Cure de 3 semaines" },
+      "indications": ["detox", "peau"],
+      "indicationsTexte": ["Détoxification", "Peau", "Foie", "Acné", "Eczéma"],
+      "contreIndications": ["Femmes enceintes", "Femmes allaitantes"],
+      "precautions": ["Ne pas prolonger la cure au-delà de 3 semaines sans avis médical."],
+      "populaire": false,
+      "verifie": true
+    }
+  ]
+}

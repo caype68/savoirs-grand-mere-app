@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Savoirs de Grand-Mère - Application mobile de remèdes traditionnels et naturels. Découvrez des infusions, tisanes, cataplasmes et méthodes ancestrales pour votre bien-être.">
+    <meta name="keywords" content="remèdes naturels, tisanes, infusions, cataplasmes, bien-être, traditions, grand-mère, santé naturelle">
+    <meta name="author" content="Savoirs de Grand-Mère">
+    <meta name="theme-color" content="#1a1f2e">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Savoirs de Grand-Mère - Remèdes Traditionnels & Naturels">
+    <meta property="og:description" content="Retrouvez les savoirs anciens dans une application moderne, pensée pour explorer des remèdes naturels et des méthodes traditionnelles.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/logo/logo_complet.png">
+    
+    <title>Savoirs de Grand-Mère | Remèdes Traditionnels & Naturels</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
+    <link rel="shortcut icon" href="assets/favicon.svg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="search.css">
+</head>
+<body>
+    <!-- ========================================
+         NAVIGATION
+    ======================================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="assets/logo/grandmere.png" alt="Logo Savoirs de Grand-Mère" class="nav-logo-img">
+                <span class="nav-logo-text">Savoirs de Grand-Mère</span>
+            </a>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#recherche" class="nav-link">Rechercher</a></li>
+                <li><a href="#methodes" class="nav-link">Méthodes</a></li>
+                <li><a href="#remedes" class="nav-link">Remèdes</a></li>
+                <li><a href="#fonctionnalites" class="nav-link">Fonctionnalités</a></li>
+                <li><a href="#bien-etre" class="nav-link">Bien-être</a></li>
+                <li><a href="#a-propos" class="nav-link">À propos</a></li>
+                <li><a href="#cta-final" class="nav-link nav-cta">Découvrir</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         HERO SECTION
+    ======================================== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-texture"></div>
+        <div class="hero-vignette"></div>
+        
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="hero-badge animate-fade-in">
+                    <span class="badge-icon">�</span>
+                    <span>L'app #1 des remèdes naturels</span>
+                </div>
+                
+                <h1 class="hero-title animate-fade-in-up">
+                    Tous les remèdes de<br>
+                    <span class="title-highlight">Grand-Mère</span><br>
+                    dans votre poche
+                </h1>
+                
+                <p class="hero-description animate-fade-in-up delay-1">
+                    Découvrez <strong>+500 remèdes naturels</strong> validés par des générations. 
+                    Recherchez par symptôme, sauvegardez vos favoris et accédez à tout, 
+                    <strong>même hors-ligne</strong>.
+                </p>
+                
+                <!-- Aperçu des fonctionnalités -->
+                <div class="hero-features animate-fade-in-up delay-2">
+                    <div class="hero-feature">
+                        <span class="feature-check">✓</span>
+                        <span>Recherche intelligente</span>
+                    </div>
+                    <div class="hero-feature">
+                        <span class="feature-check">✓</span>
+                        <span>Favoris & historique</span>
+                    </div>
+                    <div class="hero-feature">
+                        <span class="feature-check">✓</span>
+                        <span>Mode hors-ligne</span>
+                    </div>
+                    <div class="hero-feature">
+                        <span class="feature-check">✓</span>
+                        <span>Suivi bien-être</span>
+                    </div>
+                </div>
+                
+                <div class="hero-cta animate-fade-in-up delay-3">
+                    <p class="cta-intro">Essayez la recherche ci-dessous, puis téléchargez l'app pour l'expérience complète :</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#cta-final" class="btn btn-primary btn-large btn-glow">
+                            <svg class="btn-icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Télécharger gratuitement
+                        </a>
+                        <a href="#recherche" class="btn btn-secondary btn-large">
+                            <svg class="btn-icon-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                            Essayer la recherche
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Social proof -->
+                <div class="hero-social-proof animate-fade-in-up delay-4">
+                    <div class="rating">
+                        <div class="stars">★★★★★</div>
+                        <span class="rating-text">4.9/5</span>
+                    </div>
+                    <div class="downloads">
+                        <span class="downloads-number">10 000+</span>
+                        <span class="downloads-text">téléchargements</span>
+                    </div>
+                    <div class="badge-free">
+                        <span>100% Gratuit</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual animate-fade-in-right">
+                <!-- iPhone 17 Pro Max Style Mockup -->
+                <div class="iphone-mockup">
+                    <div class="iphone-frame">
+                        <!-- Dynamic Island -->
+                        <div class="dynamic-island"></div>
+                        <!-- Screen -->
+                        <div class="iphone-screen">
+                            <img src="assets/images/grand-mere-remedes.png" alt="Aperçu de l'application Savoirs de Grand-Mère" class="app-screenshot">
+                        </div>
+                        <!-- Side buttons -->
+                        <div class="iphone-button-left"></div>
+                        <div class="iphone-button-right-1"></div>
+                        <div class="iphone-button-right-2"></div>
+                    </div>
+                    <!-- Reflection effect -->
+                    <div class="iphone-reflection"></div>
+                    <!-- Glow effect -->
+                    <div class="iphone-glow"></div>
+                </div>
+                
+                <!-- App Store badges floating -->
+                <div class="store-badges">
+                    <a href="#" class="store-badge app-store">
+                        <img src="assets/icons/app-store-badge.svg" alt="Télécharger sur l'App Store">
+                    </a>
+                    <a href="#" class="store-badge play-store">
+                        <img src="assets/icons/google-play-badge.svg" alt="Disponible sur Google Play">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-scroll-indicator">
+            <span>Explorer</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         RECHERCHE INTERACTIVE
+    ======================================== -->
+    <section class="section search-section" id="recherche">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Explorer</span>
+                <h2 class="section-title">Rechercher un remède</h2>
+                <p class="section-description">
+                    Explorez notre base de remèdes traditionnels. Recherchez par mot-clé, 
+                    filtrez par symptôme, zone du corps ou type de préparation.
+                </p>
+            </div>
+            
+            <!-- Barre de recherche -->
+            <div class="search-wrapper animate-on-scroll">
+                <div class="search-bar">
+                    <div class="search-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </div>
+                    <input type="text" id="remedySearchInput" placeholder="Rechercher un remède, un symptôme, un ingrédient...">
+                    <button class="search-btn" id="searchBtn">Rechercher</button>
+                </div>
+            </div>
+            
+            <!-- Résultats -->
+            <div class="results-container">
+                <div class="results-header">
+                    <h3 class="results-title">Remèdes</h3>
+                    <span id="resultsCount"></span>
+                </div>
+                <div id="searchResults">
+                    <!-- Généré par JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         MÉTHODES POPULAIRES
+    ======================================== -->
+    <section class="section methods-section" id="methodes">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Méthodes</span>
+                <h2 class="section-title">Les méthodes traditionnelles</h2>
+                <p class="section-description">
+                    Découvrez les différentes approches utilisées depuis des générations 
+                    pour prendre soin de soi naturellement.
+                </p>
+            </div>
+            
+            <div class="methods-carousel-wrapper">
+                <button class="carousel-btn carousel-btn-prev" id="methodsPrev" aria-label="Précédent">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="m15 18-6-6 6-6"></path>
+                    </svg>
+                </button>
+                
+                <div class="methods-carousel" id="methodsCarousel">
+                    <div class="method-card animate-on-scroll">
+                        <div class="method-image">
+                            <img src="assets/images/Infusions.png" alt="Infusions">
+                        </div>
+                        <div class="method-content">
+                            <h3 class="method-title">Infusions</h3>
+                            <p class="method-desc">Extraits de plantes par immersion dans l'eau chaude</p>
+                            <span class="method-arrow">→</span>
+                        </div>
+                    </div>
+                    
+                    <div class="method-card animate-on-scroll">
+                        <div class="method-image">
+                            <img src="assets/images/Cataplasmes.png" alt="Cataplasmes">
+                        </div>
+                        <div class="method-content">
+                            <h3 class="method-title">Cataplasmes</h3>
+                            <p class="method-desc">Applications externes de préparations naturelles</p>
+                            <span class="method-arrow">→</span>
+                        </div>
+                    </div>
+                    
+                    <div class="method-card animate-on-scroll">
+                        <div class="method-image">
+                            <img src="assets/images/fumigations.png" alt="Vapeurs">
+                        </div>
+                        <div class="method-content">
+                            <h3 class="method-title">Vapeurs</h3>
+                            <p class="method-desc">Inhalations et fumigations bienfaisantes</p>
+                            <span class="method-arrow">→</span>
+                        </div>
+                    </div>
+                    
+                    <div class="method-card animate-on-scroll">
+                        <div class="method-image">
+                            <img src="assets/images/compresses.png" alt="Compresses">
+                        </div>
+                        <div class="method-content">
+                            <h3 class="method-title">Compresses</h3>
+                            <p class="method-desc">Linges imbibés pour soulager localement</p>
+                            <span class="method-arrow">→</span>
+                        </div>
+                    </div>
+                    
+                    <div class="method-card animate-on-scroll">
+                        <div class="method-image">
+                            <img src="assets/images/frictions.png" alt="Frictions">
+                        </div>
+                        <div class="method-content">
+                            <h3 class="method-title">Frictions</h3>
+                            <p class="method-desc">Massages avec huiles et préparations</p>
+                            <span class="method-arrow">→</span>
+                        </div>
+                    </div>
+                    
+                    <div class="method-card animate-on-scroll">
+                        <div class="method-image">
+                            <img src="assets/images/sirop.png" alt="Sirops">
+                        </div>
+                        <div class="method-content">
+                            <h3 class="method-title">Sirops</h3>
+                            <p class="method-desc">Préparations sucrées aux vertus apaisantes</p>
+                            <span class="method-arrow">→</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-btn carousel-btn-next" id="methodsNext" aria-label="Suivant">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="m9 18 6-6-6-6"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="carousel-dots" id="methodsDots"></div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         REMÈDES POPULAIRES
+    ======================================== -->
+    <section class="section remedies-section" id="remedes">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Remèdes</span>
+                <h2 class="section-title">Remèdes populaires</h2>
+                <p class="section-description">
+                    Les recettes les plus consultées par notre communauté, 
+                    transmises de génération en génération.
+                </p>
+            </div>
+            
+            <div class="remedies-grid">
+                <article class="remedy-card animate-on-scroll">
+                    <div class="remedy-badge">Populaire</div>
+                    <div class="remedy-image">
+                        <img src="assets/images/Infusions.png" alt="Infusion de thym">
+                    </div>
+                    <div class="remedy-content">
+                        <span class="remedy-category">Infusion</span>
+                        <h3 class="remedy-title">Infusion de Thym</h3>
+                        <p class="remedy-indication">Gorge irritée • Voies respiratoires</p>
+                        <div class="remedy-meta">
+                            <span class="remedy-time">⏱ 10 min</span>
+                            <span class="remedy-difficulty">Facile</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="remedy-card animate-on-scroll">
+                    <div class="remedy-badge">Populaire</div>
+                    <div class="remedy-image">
+                        <img src="assets/images/Cataplasmes.png" alt="Cataplasme d'argile">
+                    </div>
+                    <div class="remedy-content">
+                        <span class="remedy-category">Cataplasme</span>
+                        <h3 class="remedy-title">Cataplasme d'Argile</h3>
+                        <p class="remedy-indication">Douleurs articulaires • Inflammations</p>
+                        <div class="remedy-meta">
+                            <span class="remedy-time">⏱ 30 min</span>
+                            <span class="remedy-difficulty">Moyen</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="remedy-card animate-on-scroll">
+                    <div class="remedy-image">
+                        <img src="assets/images/fumigations.png" alt="Inhalation lavande">
+                    </div>
+                    <div class="remedy-content">
+                        <span class="remedy-category">Inhalation</span>
+                        <h3 class="remedy-title">Lavande & Eucalyptus</h3>
+                        <p class="remedy-indication">Respiration • Décongestion</p>
+                        <div class="remedy-meta">
+                            <span class="remedy-time">⏱ 15 min</span>
+                            <span class="remedy-difficulty">Facile</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="remedy-card animate-on-scroll">
+                    <div class="remedy-image">
+                        <img src="assets/images/tisanes.png" alt="Tisane verveine">
+                    </div>
+                    <div class="remedy-content">
+                        <span class="remedy-category">Tisane</span>
+                        <h3 class="remedy-title">Tisane de Verveine</h3>
+                        <p class="remedy-indication">Sommeil • Relaxation</p>
+                        <div class="remedy-meta">
+                            <span class="remedy-time">⏱ 8 min</span>
+                            <span class="remedy-difficulty">Facile</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="remedy-card animate-on-scroll">
+                    <div class="remedy-badge">Populaire</div>
+                    <div class="remedy-image">
+                        <img src="assets/images/sirop.png" alt="Miel citron">
+                    </div>
+                    <div class="remedy-content">
+                        <span class="remedy-category">Sirop</span>
+                        <h3 class="remedy-title">Miel & Citron</h3>
+                        <p class="remedy-indication">Toux • Immunité</p>
+                        <div class="remedy-meta">
+                            <span class="remedy-time">⏱ 5 min</span>
+                            <span class="remedy-difficulty">Facile</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="remedy-card animate-on-scroll">
+                    <div class="remedy-image">
+                        <img src="assets/images/Infusions.png" alt="Gingembre">
+                    </div>
+                    <div class="remedy-content">
+                        <span class="remedy-category">Infusion</span>
+                        <h3 class="remedy-title">Infusion de Gingembre</h3>
+                        <p class="remedy-indication">Digestion • Énergie</p>
+                        <div class="remedy-meta">
+                            <span class="remedy-time">⏱ 12 min</span>
+                            <span class="remedy-difficulty">Facile</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="section-cta animate-on-scroll">
+                <a href="#cta-final" class="btn btn-outline">
+                    Découvrir tous les remèdes
+                    <span class="btn-arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FONCTIONNALITÉS
+    ======================================== -->
+    <section class="section features-section" id="fonctionnalites">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Fonctionnalités</span>
+                <h2 class="section-title">Une application pensée pour vous</h2>
+                <p class="section-description">
+                    Chaque fonctionnalité a été conçue pour vous offrir une expérience 
+                    intuitive, personnalisée et enrichissante.
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Recherche intelligente</h3>
+                    <p class="feature-desc">Trouvez instantanément le remède adapté grâce à notre moteur de recherche avancé.</p>
+                </div>
+                
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Filtres par besoin</h3>
+                    <p class="feature-desc">Affinez vos recherches par symptôme, zone du corps ou type de préparation.</p>
+                </div>
+                
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Onboarding personnalisé</h3>
+                    <p class="feature-desc">Un questionnaire initial pour comprendre vos besoins et adapter l'expérience.</p>
+                </div>
+                
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Recommandations</h3>
+                    <p class="feature-desc">Des suggestions personnalisées basées sur votre profil et vos préférences.</p>
+                </div>
+                
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Section bien-être</h3>
+                    <p class="feature-desc">Suivez votre état quotidien et recevez des conseils adaptés à votre humeur.</p>
+                </div>
+                
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Favoris</h3>
+                    <p class="feature-desc">Sauvegardez vos remèdes préférés pour y accéder rapidement.</p>
+                </div>
+                
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
+                            <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Notifications utiles</h3>
+                    <p class="feature-desc">Des rappels bienveillants pour maintenir vos routines bien-être.</p>
+                </div>
+                
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Fiches détaillées</h3>
+                    <p class="feature-desc">Chaque remède avec ses ingrédients, étapes et conseils d'utilisation.</p>
+                </div>
+                
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Ingrédients recommandés</h3>
+                    <p class="feature-desc">Découvrez les produits naturels utiles pour préparer vos remèdes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         PROFIL / PERSONNALISATION
+    ======================================== -->
+    <section class="section profile-section" id="profil">
+        <div class="container">
+            <div class="profile-content">
+                <div class="profile-text animate-on-scroll">
+                    <span class="section-tag">Personnalisation</span>
+                    <h2 class="section-title">Une expérience sur mesure</h2>
+                    <p class="section-description">
+                        Dès votre première utilisation, un questionnaire simple permet à l'application 
+                        de comprendre vos besoins, vos préférences et vos éventuelles sensibilités.
+                    </p>
+                    
+                    <ul class="profile-features">
+                        <li class="profile-feature">
+                            <span class="profile-check">✓</span>
+                            <span>Questionnaire de bienvenue personnalisé</span>
+                        </li>
+                        <li class="profile-feature">
+                            <span class="profile-check">✓</span>
+                            <span>Filtrage automatique des remèdes compatibles</span>
+                        </li>
+                        <li class="profile-feature">
+                            <span class="profile-check">✓</span>
+                            <span>Recommandations adaptées à votre profil</span>
+                        </li>
+                        <li class="profile-feature">
+                            <span class="profile-check">✓</span>
+                            <span>Historique et préférences mémorisés</span>
+                        </li>
+                        <li class="profile-feature">
+                            <span class="profile-check">✓</span>
+                            <span>Suggestions évolutives selon vos usages</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="profile-visual animate-on-scroll">
+                    <div class="onboarding-mockup">
+                        <div class="onboarding-card">
+                            <div class="onboarding-header">
+                                <span class="onboarding-step">Étape 1/3</span>
+                                <h4>Parlez-nous de vous</h4>
+                            </div>
+                            <div class="onboarding-options">
+                                <div class="onboarding-option selected">
+                                    <span class="option-icon">🌿</span>
+                                    <span>Je découvre les remèdes naturels</span>
+                                </div>
+                                <div class="onboarding-option">
+                                    <span class="option-icon">🍃</span>
+                                    <span>J'utilise déjà des remèdes traditionnels</span>
+                                </div>
+                                <div class="onboarding-option">
+                                    <span class="option-icon">✨</span>
+                                    <span>Je suis passionné(e) par le bien-être</span>
+                                </div>
+                            </div>
+                            <div class="onboarding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 33%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         BIEN-ÊTRE
+    ======================================== -->
+    <section class="section wellness-section" id="bien-etre">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Bien-être</span>
+                <h2 class="section-title">Suivez votre équilibre au quotidien</h2>
+                <p class="section-description">
+                    L'onglet bien-être vous accompagne jour après jour pour mieux comprendre 
+                    votre corps et adopter des routines naturelles.
+                </p>
+            </div>
+            
+            <div class="wellness-grid">
+                <div class="wellness-card animate-on-scroll">
+                    <div class="wellness-icon">📔</div>
+                    <h3 class="wellness-title">Journal quotidien</h3>
+                    <p class="wellness-desc">Notez vos ressentis et suivez votre évolution au fil des jours.</p>
+                </div>
+                
+                <div class="wellness-card animate-on-scroll">
+                    <div class="wellness-icon">😌</div>
+                    <h3 class="wellness-title">Suivi du stress</h3>
+                    <p class="wellness-desc">Évaluez votre niveau de stress et recevez des conseils apaisants.</p>
+                </div>
+                
+                <div class="wellness-card animate-on-scroll">
+                    <div class="wellness-icon">🌙</div>
+                    <h3 class="wellness-title">Qualité du sommeil</h3>
+                    <p class="wellness-desc">Analysez vos nuits et découvrez des remèdes pour mieux dormir.</p>
+                </div>
+                
+                <div class="wellness-card animate-on-scroll">
+                    <div class="wellness-icon">💚</div>
+                    <h3 class="wellness-title">Humeur & énergie</h3>
+                    <p class="wellness-desc">Suivez votre moral et identifiez les facteurs d'influence.</p>
+                </div>
+                
+                <div class="wellness-card animate-on-scroll">
+                    <div class="wellness-icon">📊</div>
+                    <h3 class="wellness-title">Symptômes récurrents</h3>
+                    <p class="wellness-desc">Identifiez les patterns et anticipez vos besoins.</p>
+                </div>
+                
+                <div class="wellness-card animate-on-scroll">
+                    <div class="wellness-icon">💡</div>
+                    <h3 class="wellness-title">Suggestions intelligentes</h3>
+                    <p class="wellness-desc">Des recommandations personnalisées basées sur vos données.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         PRODUITS / INGRÉDIENTS
+    ======================================== -->
+    <section class="section products-section" id="produits">
+        <div class="container">
+            <div class="products-content">
+                <div class="products-visual animate-on-scroll">
+                    <div class="products-showcase">
+                        <div class="product-item">
+                            <img src="assets/images/tisanes.png" alt="Camomille">
+                            <span class="product-name">Camomille bio</span>
+                        </div>
+                        <div class="product-item">
+                            <img src="assets/images/Infusions.png" alt="Menthe">
+                            <span class="product-name">Menthe poivrée</span>
+                        </div>
+                        <div class="product-item">
+                            <img src="assets/images/frictions.png" alt="Gingembre">
+                            <span class="product-name">Gingembre frais</span>
+                        </div>
+                        <div class="product-item">
+                            <img src="assets/images/sirop.png" alt="Miel">
+                            <span class="product-name">Miel de thym</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="products-text animate-on-scroll">
+                    <span class="section-tag">Ingrédients</span>
+                    <h2 class="section-title">Les essentiels pour vos remèdes</h2>
+                    <p class="section-description">
+                        Chaque fiche remède vous indique les ingrédients nécessaires. 
+                        Nous vous recommandons des produits de qualité pour préparer 
+                        vos préparations en toute confiance.
+                    </p>
+                    
+                    <ul class="products-features">
+                        <li>Ingrédients recommandés par recette</li>
+                        <li>Produits naturels sélectionnés</li>
+                        <li>Matériel utile pour les préparations</li>
+                        <li>Conseils de conservation</li>
+                    </ul>
+                    
+                    <div class="affiliate-notice">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="16" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                        </svg>
+                        <span>Certains liens peuvent être affiliés. Cela nous aide à maintenir l'application gratuite.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         À PROPOS / PHILOSOPHIE
+    ======================================== -->
+    <section class="section about-section" id="a-propos">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text animate-on-scroll">
+                    <span class="section-tag">Notre philosophie</span>
+                    <h2 class="section-title">Transmettre les savoirs anciens</h2>
+                    
+                    <div class="about-paragraphs">
+                        <p>
+                            <strong>Savoirs de Grand-Mère</strong> est né d'une conviction simple : 
+                            les remèdes traditionnels méritent d'être préservés et rendus accessibles 
+                            à tous, dans une interface moderne et intuitive.
+                        </p>
+                        <p>
+                            Nous croyons en la valeur des savoirs transmis de génération en génération. 
+                            Ces connaissances, fruit de siècles d'observation et d'expérience, 
+                            constituent un patrimoine précieux qu'il nous tient à cœur de partager.
+                        </p>
+                        <p>
+                            Notre approche est <strong>informative et préventive</strong>. Nous ne prétendons 
+                            pas remplacer la médecine conventionnelle, mais offrir un complément naturel 
+                            pour ceux qui souhaitent explorer les bienfaits des plantes et des méthodes 
+                            traditionnelles.
+                        </p>
+                    </div>
+                    
+                    <div class="about-values">
+                        <div class="value-item">
+                            <span class="value-icon">🌿</span>
+                            <span class="value-text">Respect des traditions</span>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">📱</span>
+                            <span class="value-text">Interface moderne</span>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">🔒</span>
+                            <span class="value-text">Usage responsable</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual animate-on-scroll">
+                    <div class="about-image-wrapper">
+                        <img src="assets/logo/logo_complet.png" alt="Savoirs de Grand-Mère" class="about-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         DISCLAIMER
+    ======================================== -->
+    <section class="disclaimer-section" id="disclaimer">
+        <div class="container">
+            <div class="disclaimer-card animate-on-scroll">
+                <div class="disclaimer-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                    </svg>
+                </div>
+                <div class="disclaimer-content">
+                    <h3 class="disclaimer-title">Information importante</h3>
+                    <p class="disclaimer-text">
+                        Les informations présentées dans cette application sont issues de savoirs traditionnels 
+                        et populaires. Elles sont fournies à titre informatif et ne remplacent en aucun cas 
+                        un avis médical professionnel. En cas de doute ou de symptômes persistants, 
+                        consultez toujours un professionnel de santé.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CTA FINAL
+    ======================================== -->
+    <section class="section cta-section" id="cta-final">
+        <div class="cta-bg-texture"></div>
+        <div class="container">
+            <div class="cta-content animate-on-scroll">
+                <div class="cta-logo">
+                    <img src="assets/logo/grandmere.png" alt="Savoirs de Grand-Mère">
+                </div>
+                <h2 class="cta-title">Prêt à découvrir les savoirs anciens ?</h2>
+                <p class="cta-description">
+                    Rejoignez notre communauté et explorez des centaines de remèdes naturels 
+                    transmis de génération en génération.
+                </p>
+                
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-large">
+                        <span class="btn-icon">✦</span>
+                        Découvrir l'application
+                    </a>
+                </div>
+                
+                <!-- Formulaire email (front-end only) -->
+                <div class="newsletter-form">
+                    <p class="newsletter-label">Soyez informé du lancement :</p>
+                    <form class="email-form" id="newsletterForm">
+                        <input type="email" placeholder="Votre adresse email" class="email-input" required>
+                        <button type="submit" class="btn btn-secondary">
+                            M'inscrire
+                        </button>
+                    </form>
+                    <p class="newsletter-note">Nous respectons votre vie privée. Pas de spam.</p>
+                </div>
+                
+                <div class="cta-contact">
+                    <a href="mailto:contact@savoirsdegrandmere.fr" class="contact-link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        Nous contacter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="assets/logo/grandmere.png" alt="Savoirs de Grand-Mère">
+                        <span>Savoirs de Grand-Mère</span>
+                    </div>
+                    <p class="footer-tagline">Remèdes traditionnels & naturels</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Mentions légales</a>
+                    <a href="#" class="footer-link">Politique de confidentialité</a>
+                    <a href="mailto:contact@savoirsdegrandmere.fr" class="footer-link">Contact</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2026 Savoirs de Grand-Mère. Tous droits réservés.
+                </p>
+                <p class="footer-disclaimer">
+                    Les informations présentées ne remplacent pas un avis médical professionnel.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Détail Remède -->
+    <div id="remedyModal" class="remedy-modal">
+        <div class="modal-container">
+            <button class="modal-close" id="modalClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18"></path>
+                    <path d="M6 6l12 12"></path>
+                </svg>
+            </button>
+            <div id="remedyModalContent">
+                <!-- Contenu généré par JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

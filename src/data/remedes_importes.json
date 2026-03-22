@@ -1,0 +1,5836 @@
+{
+  "livre": {
+    "titre": "Bible perdue des remèdes du médecin oublié",
+    "auteur": "Inconnu",
+    "annee": 2020,
+    "editeur": "Grimoire"
+  },
+  "dateImport": "2026-03-17T01:12:18.762Z",
+  "nombreRemedes": 186,
+  "remedes": [
+    {
+      "id": "rem-calendula-1",
+      "nom": "Calendula",
+      "description": "Utile pour les hémorragies et prévenir l'alvéole sèche après extraction d'une dent.",
+      "indications": [
+        "hémorragie",
+        "douleur"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "30C",
+        "frequence": "toutes les 8 heures"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 96,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "hémorragie",
+        "douleur",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-hamamelis-2",
+      "nom": "Hamamelis",
+      "description": "Utile pour arrêter les saignements post-opératoires.",
+      "indications": [
+        "saignement"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "30C",
+        "frequence": "répétée toutes les quelques heures"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 96,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "saignement",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-apis-3",
+      "nom": "Apis",
+      "description": "Soulagement de l'enflure après blessure aux tissus mous.",
+      "indications": [
+        "enflure",
+        "douleur"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "30C",
+        "frequence": "toutes les quelques heures"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 96,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "enflure",
+        "douleur",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-nux-vomica-4",
+      "nom": "Nux Vomica",
+      "description": "Remède homéopathique pour se remettre de l'anesthésie.",
+      "indications": [
+        "gueule de bois",
+        "anesthésie"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "puissance 30C",
+        "frequence": "1 ou 2 fois/jour"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 97,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "gueule de bois",
+        "anesthésie",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-phosphorus-5",
+      "nom": "Phosphorus",
+      "description": "Indiqué en cas de vomissements prolongés après une anesthésie.",
+      "indications": [
+        "vomissements"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 97,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "vomissements",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-arsenicum-album-6",
+      "nom": "Arsenicum Album",
+      "description": "Remède pour les vomissements immédiats après avoir bu.",
+      "indications": [
+        "vomissements"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 97,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "vomissements",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-aconitum-napellus-7",
+      "nom": "Aconitum Napellus",
+      "description": "Remède à prendre immédiatement après un événement traumatique.",
+      "indications": [
+        "choc",
+        "stress"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "1 dose",
+        "frequence": "2 fois/jour"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 98,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "choc",
+        "stress",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-apis-mellifica-8",
+      "nom": "Apis Mellifica",
+      "description": "Réduit les gonflements causés par un traumatisme ou des piqûres.",
+      "indications": [
+        "gonflement"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "1 dose",
+        "frequence": "toutes les heures"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 98,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "gonflement",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-ledum-palustre-9",
+      "nom": "Ledum Palustre",
+      "description": "Remède pour piqûres, morsures ou plaies perforantes.",
+      "indications": [
+        "piqûre",
+        "morsure"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "1 dose",
+        "frequence": "plusieurs doses en quelques heures"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 98,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "piqûre",
+        "morsure",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-argentum-nitricum-10",
+      "nom": "Argentum Nitricum",
+      "description": "Remède pour voyageurs nerveux.",
+      "indications": [
+        "anxiété"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 98,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "anxiété",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-gelsemium-sempervire-11",
+      "nom": "Gelsemium Sempervirens",
+      "description": "Remède pour voyageurs nerveux.",
+      "indications": [
+        "anxiété"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 98,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "anxiété",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-arnica-montana-12",
+      "nom": "Arnica Montana",
+      "description": "Remède contre les traumatismes.",
+      "indications": [
+        "traumatisme",
+        "douleur musculaire"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 98,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "traumatisme",
+        "douleur musculaire",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-arsenicum-album-13",
+      "nom": "Arsenicum Album",
+      "description": "Remède contre les intoxications alimentaires.",
+      "indications": [
+        "intoxication alimentaire"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 99,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "intoxication alimentaire",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-belladonna-14",
+      "nom": "Belladonna",
+      "description": "Indispensable pour les fièvres soudaines dues à une infection ou insolation.",
+      "indications": [
+        "fièvre",
+        "insolation"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "répéter toutes les 15 à 20 minutes",
+        "frequence": "selon besoin"
+      },
+      "precautions": [
+        "Déterminer la cause sous-jacente de la fièvre"
+      ],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 99,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "fièvre",
+        "insolation",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-bryonia-15",
+      "nom": "Bryonia",
+      "description": "Soulage la douleur après une blessure ou un effort excessif.",
+      "indications": [
+        "douleur",
+        "appendicite"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "puissance 30C toutes les 20 à 30 minutes",
+        "frequence": "selon besoin"
+      },
+      "precautions": [
+        "Sous la direction d’un homéopathe"
+      ],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 99,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "douleur",
+        "appendicite",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-calendula-16",
+      "nom": "Calendula",
+      "description": "Arrête les saignements, guérit les brûlures et prévient les infections.",
+      "indications": [
+        "saignement",
+        "brûlure",
+        "infection"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "puissance 30C",
+        "frequence": "selon intensité des symptômes"
+      },
+      "precautions": [
+        "Symptômes graves nécessitent des doses fréquentes"
+      ],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 99,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "saignement",
+        "brûlure",
+        "infection",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-carbo-vegetabilis-17",
+      "nom": "Carbo Vegetabilis",
+      "description": "Remède pour les troubles respiratoires.",
+      "indications": [
+        "essoufflement",
+        "dyspnée"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 100,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "essoufflement",
+        "dyspnée",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-cinchona-officinalis-18",
+      "nom": "Cinchona Officinalis",
+      "description": "Traitement de la diarrhée.",
+      "indications": [
+        "diarrhée",
+        "ballonnements",
+        "gaz",
+        "épuisement"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 100,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "diarrhée",
+        "ballonnements",
+        "gaz",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-podophyllum-19",
+      "nom": "Podophyllum",
+      "description": "Remède pour la diarrhée du voyageur.",
+      "indications": [
+        "diarrhée"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 100,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "diarrhée",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-coccinella-20",
+      "nom": "Coccinella",
+      "description": "Préparation homéopathique pour le mal de l'altitude.",
+      "indications": [
+        "mal de l'altitude"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 100,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "mal de l'altitude",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-cocculus-21",
+      "nom": "Cocculus",
+      "description": "Remède pour le mal de tête avec nausées et vomissements.",
+      "indications": [
+        "mal de tête",
+        "nausées",
+        "vomissements",
+        "fatigue"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 101,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "mal de tête",
+        "nausées",
+        "vomissements",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-tabacum-22",
+      "nom": "Tabacum",
+      "description": "Remède pour ceux qui ont besoin d'air frais et se sentent mieux en sortant.",
+      "indications": [
+        "mal des transports"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 101,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "mal des transports",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-coffea-cruda-23",
+      "nom": "Coffea Cruda",
+      "description": "Aide à combattre l'insomnie et apporte un sommeil réparateur.",
+      "indications": [
+        "insomnie"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 101,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "insomnie",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-eupatorium-perfoliat-24",
+      "nom": "Eupatorium Perfoliatum",
+      "description": "Soulage les douleurs osseuses et la fièvre élevée.",
+      "indications": [
+        "douleur",
+        "fièvre"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 101,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "douleur",
+        "fièvre",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-ferrum-phosphoricum-25",
+      "nom": "Ferrum Phosphoricum",
+      "description": "Remède pour les états inflammatoires comme le rhume ou la grippe.",
+      "indications": [
+        "rhume",
+        "grippe",
+        "infection de l'oreille"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "puissance 30C",
+        "frequence": "toutes les 4 à 6 heures"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 102,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "rhume",
+        "grippe",
+        "infection de l'oreille",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-aconitum-napellus-26",
+      "nom": "Aconitum Napellus",
+      "description": "Remède pour les symptômes soudains de rhume ou de grippe.",
+      "indications": [
+        "rhume",
+        "grippe"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "puissance 30C",
+        "frequence": "toutes les 4 à 6 heures"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 102,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "rhume",
+        "grippe",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-gelsemium-sempervire-27",
+      "nom": "Gelsemium Sempervirens",
+      "description": "Remède pour l'anxiété avant un voyage et contre la grippe.",
+      "indications": [
+        "anxiété",
+        "grippe"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 102,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "anxiété",
+        "grippe",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-hamamelis-28",
+      "nom": "Hamamelis",
+      "description": "Remède pour arrêter les saignements.",
+      "indications": [
+        "saignement"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "topique",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 102,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "saignement",
+        "topique"
+      ]
+    },
+    {
+      "id": "rem-calendula-29",
+      "nom": "Calendula",
+      "description": "Remède pour les coupures et abrasions avec risque d'infection.",
+      "indications": [
+        "saignement",
+        "infection"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "puissance 30C",
+        "frequence": "selon besoin"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "topique",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 102,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "saignement",
+        "infection",
+        "topique"
+      ]
+    },
+    {
+      "id": "rem-hypericum-30",
+      "nom": "Hypericum",
+      "description": "Remède pour douleur due à une blessure dans une zone sensible.",
+      "indications": [
+        "douleur",
+        "engourdissement",
+        "fourmillements"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 103,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "douleur",
+        "engourdissement",
+        "fourmillements",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-nux-vomica-31",
+      "nom": "Nux Vomica",
+      "description": "Remède pour la gueule de bois.",
+      "indications": [
+        "mal de tête",
+        "nausées",
+        "brûlures d'estomac"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "1 dose",
+        "frequence": "toutes les heures"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 103,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "mal de tête",
+        "nausées",
+        "brûlures d'estomac",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-ipecacuanha-32",
+      "nom": "Ipecacuanha",
+      "description": "Remède pour soulager les nausées persistantes.",
+      "indications": [
+        "nausées",
+        "vomissements"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 103,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "nausées",
+        "vomissements",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-ledum-palustre-33",
+      "nom": "Ledum Palustre",
+      "description": "Remède pour les piqûres d'insectes.",
+      "indications": [
+        "piqûres",
+        "infection"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 103,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "piqûres",
+        "infection",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-rhus-toxicodendron-34",
+      "nom": "Rhus Toxicodendron",
+      "description": "Remède pour éruptions vésiculeuses.",
+      "indications": [
+        "herpès",
+        "zona",
+        "arthrite"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 103,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "herpès",
+        "zona",
+        "arthrite",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-urtica-urens-35",
+      "nom": "Urtica Urens",
+      "description": "Remède pour démangeaisons intenses.",
+      "indications": [
+        "démangeaisons",
+        "éruptions cutanées"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 103,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "démangeaisons",
+        "éruptions cutanées",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-aconitum-napellus-36",
+      "nom": "Aconitum napellus",
+      "description": "Utilisé pour traiter les symptômes de fièvre soudaine.",
+      "indications": [
+        "fièvre"
+      ],
+      "ingredients": [
+        {
+          "nom": "Aconitum napellus",
+          "quantite": "10",
+          "unite": "g",
+          "principal": true
+        }
+      ],
+      "preparation": [
+        {
+          "etape": 1,
+          "instruction": "Infuser dans de l'eau chaude.",
+          "duree": "10 min"
+        }
+      ],
+      "posologie": {
+        "dose": "1 cuillère",
+        "frequence": "3 fois/jour"
+      },
+      "precautions": [
+        "Éviter en cas de grossesse"
+      ],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 104,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "fièvre",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-apis-mellifica-37",
+      "nom": "Apis mellifica",
+      "description": "Utilisé pour soulager les piqûres d'insectes.",
+      "indications": [
+        "piqûres"
+      ],
+      "ingredients": [
+        {
+          "nom": "Apis mellifica",
+          "quantite": "5",
+          "unite": "g",
+          "principal": true
+        }
+      ],
+      "preparation": [
+        {
+          "etape": 1,
+          "instruction": "Diluer dans de l'eau.",
+          "duree": "5 min"
+        }
+      ],
+      "posologie": {
+        "dose": "1 cuillère",
+        "frequence": "2 fois/jour"
+      },
+      "precautions": [
+        "Éviter en cas d'allergie aux abeilles"
+      ],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 104,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "piqûres",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-argentum-nitricum-38",
+      "nom": "Argentum nitricum",
+      "description": "Utilisé pour l'anxiété et le stress.",
+      "indications": [
+        "stress",
+        "anxiété"
+      ],
+      "ingredients": [
+        {
+          "nom": "Argentum nitricum",
+          "quantite": "5",
+          "unite": "g",
+          "principal": true
+        }
+      ],
+      "preparation": [
+        {
+          "etape": 1,
+          "instruction": "Mélanger avec de l'eau.",
+          "duree": "5 min"
+        }
+      ],
+      "posologie": {
+        "dose": "1 cuillère",
+        "frequence": "2 fois/jour"
+      },
+      "precautions": [
+        "Consulter un médecin si les symptômes persistent"
+      ],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 104,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "stress",
+        "anxiété",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-arnica-montana-39",
+      "nom": "Arnica montana",
+      "description": "Utilisé pour les douleurs musculaires.",
+      "indications": [
+        "douleur"
+      ],
+      "ingredients": [
+        {
+          "nom": "Arnica montana",
+          "quantite": "10",
+          "unite": "g",
+          "principal": true
+        }
+      ],
+      "preparation": [
+        {
+          "etape": 1,
+          "instruction": "Appliquer localement.",
+          "duree": "5 min"
+        }
+      ],
+      "posologie": {
+        "dose": "Appliquer une petite quantité",
+        "frequence": "2 fois/jour"
+      },
+      "precautions": [
+        "Ne pas appliquer sur une peau abîmée"
+      ],
+      "contreIndications": [],
+      "route": "topique",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 104,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "douleur",
+        "topique"
+      ]
+    },
+    {
+      "id": "rem-arsenicum-album-40",
+      "nom": "Arsenicum album",
+      "description": "Utilisé pour les troubles digestifs.",
+      "indications": [
+        "digestion"
+      ],
+      "ingredients": [
+        {
+          "nom": "Arsenicum album",
+          "quantite": "5",
+          "unite": "g",
+          "principal": true
+        }
+      ],
+      "preparation": [
+        {
+          "etape": 1,
+          "instruction": "Diluer dans de l'eau.",
+          "duree": "5 min"
+        }
+      ],
+      "posologie": {
+        "dose": "1 cuillère",
+        "frequence": "3 fois/jour"
+      },
+      "precautions": [
+        "Consulter un médecin si les symptômes persistent"
+      ],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 104,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "digestion",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-hypericum-41",
+      "nom": "Hypericum",
+      "description": "Soulage les douleurs nerveuses et soigne les blessures des parties sensibles du corps.",
+      "indications": [
+        "douleur",
+        "blessures"
+      ],
+      "ingredients": [
+        {
+          "nom": "Hypericum",
+          "quantite": "1",
+          "unite": "pastille",
+          "principal": true
+        }
+      ],
+      "preparation": [
+        {
+          "etape": 1,
+          "instruction": "Mettre une pastille dans de l'eau.",
+          "duree": "1 min"
+        }
+      ],
+      "posologie": {
+        "dose": "1 cuillère",
+        "frequence": "toutes les heures ou deux"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 105,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "douleur",
+        "blessures",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-ruta-graveolens-42",
+      "nom": "Ruta Graveolens",
+      "description": "Remède contre la fatigue oculaire et la douleur sciatique.",
+      "indications": [
+        "fatigue",
+        "sciatique"
+      ],
+      "ingredients": [
+        {
+          "nom": "Ruta Graveolens",
+          "quantite": "1",
+          "unite": "dose",
+          "principal": true
+        }
+      ],
+      "preparation": [],
+      "posologie": {
+        "dose": "selon besoin",
+        "frequence": "selon besoin"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 105,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "fatigue",
+        "sciatique",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-arnica-43",
+      "nom": "Arnica",
+      "description": "Soulage la douleur et prévient les lésions.",
+      "indications": [
+        "douleur",
+        "lésions"
+      ],
+      "ingredients": [
+        {
+          "nom": "Arnica",
+          "quantite": "1",
+          "unite": "dose",
+          "principal": true
+        }
+      ],
+      "preparation": [],
+      "posologie": {
+        "dose": "selon besoin",
+        "frequence": "toutes les deux ou trois heures"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 105,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "douleur",
+        "lésions",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-ruta-44",
+      "nom": "Ruta",
+      "description": "Utile pour les blessures du périoste et les douleurs sciatiques.",
+      "indications": [
+        "blessures",
+        "douleur"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 106,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "blessures",
+        "douleur",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-causticum-45",
+      "nom": "Causticum",
+      "description": "Remède pour la paralysie de Bell et les questions de justice.",
+      "indications": [
+        "paralysie",
+        "justice"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 106,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "paralysie",
+        "justice",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-arnica-46",
+      "nom": "Arnica",
+      "description": "Guérit les dommages tissulaires causés par les chutes et les entorses.",
+      "indications": [
+        "traumatismes",
+        "chutes",
+        "entorses"
+      ],
+      "ingredients": [
+        {
+          "nom": "Arnica",
+          "quantite": "30C",
+          "unite": "puissance",
+          "principal": true
+        }
+      ],
+      "preparation": [
+        {
+          "etape": 1,
+          "instruction": "Prendre après une chute pour prévenir les contusions.",
+          "duree": "immédiatement"
+        }
+      ],
+      "posologie": {
+        "dose": "selon besoin",
+        "frequence": "toutes les quelques heures"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 107,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "traumatismes",
+        "chutes",
+        "entorses",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-symphytum-officinale-47",
+      "nom": "Symphytum Officinale",
+      "description": "Aide à guérir les os après une fracture.",
+      "indications": [
+        "fractures"
+      ],
+      "ingredients": [
+        {
+          "nom": "Symphytum Officinale",
+          "quantite": "200C",
+          "unite": "puissance",
+          "principal": true
+        }
+      ],
+      "preparation": [
+        {
+          "etape": 1,
+          "instruction": "Prendre après confirmation que l'os est bien aligné.",
+          "duree": "immédiatement"
+        }
+      ],
+      "posologie": {
+        "dose": "selon besoin",
+        "frequence": "2 à 3 fois par jour"
+      },
+      "precautions": [
+        "Ne pas commencer avant confirmation radiographique"
+      ],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 107,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "fractures",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-natrum-sulphuricum-48",
+      "nom": "Natrum Sulphuricum",
+      "description": "Utilisé après une blessure à la tête.",
+      "indications": [
+        "traumatismes crâniens"
+      ],
+      "ingredients": [
+        {
+          "nom": "Natrum Sulphuricum",
+          "quantite": "200C",
+          "unite": "puissance",
+          "principal": true
+        }
+      ],
+      "preparation": [
+        {
+          "etape": 1,
+          "instruction": "Prendre après une blessure à la tête.",
+          "duree": "immédiatement"
+        }
+      ],
+      "posologie": {
+        "dose": "selon besoin",
+        "frequence": "toutes les heures"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 107,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "traumatismes crâniens",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-calcarea-phosphoricu-49",
+      "nom": "Calcarea Phosphoricum",
+      "description": "Stimule la guérison complète de l'os.",
+      "indications": [
+        "douleurs de croissance",
+        "fractures"
+      ],
+      "ingredients": [
+        {
+          "nom": "Calcarea Phosphoricum",
+          "quantite": "200C",
+          "unite": "puissance",
+          "principal": true
+        }
+      ],
+      "preparation": [
+        {
+          "etape": 1,
+          "instruction": "Ajouter si la fracture ne guérit pas après Symphytum.",
+          "duree": "immédiatement"
+        }
+      ],
+      "posologie": {
+        "dose": "selon besoin",
+        "frequence": "selon recommandation"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 107,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "douleurs de croissance",
+        "fractures",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-arnica-50",
+      "nom": "Arnica",
+      "description": "Remède pour les traumatismes graves.",
+      "indications": [
+        "traumatismes"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 108,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "traumatismes",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-ledum-palustre-51",
+      "nom": "Ledum Palustre",
+      "description": "Remède pour les blessures par perforation.",
+      "indications": [
+        "blessures"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 108,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "blessures",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-calendula-ou-hamamel-52",
+      "nom": "Calendula ou Hamamelis",
+      "description": "Remède pour les hémorragies.",
+      "indications": [
+        "hémorragies"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 108,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "hémorragies",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-china-officinalis-53",
+      "nom": "China Officinalis",
+      "description": "Nécessaire pour traiter la fatigue extrême après une perte de sang.",
+      "indications": [
+        "fatigue"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 108,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "fatigue",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-rhus-toxicodendron-54",
+      "nom": "Rhus Toxicodendron",
+      "description": "Remède pour les blessures des muscles et des tendons.",
+      "indications": [
+        "blessures",
+        "raideur"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 108,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "blessures",
+        "raideur",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-ruta-graveolens-55",
+      "nom": "Ruta Graveolens",
+      "description": "Remède pour les entorses.",
+      "indications": [
+        "entorses"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "30C",
+        "frequence": "toutes les quelques heures"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 108,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "entorses",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-bryonia-56",
+      "nom": "Bryonia",
+      "description": "Remède pour les douleurs articulaires.",
+      "indications": [
+        "douleur"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 108,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "douleur",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-calcarea-fluorica-57",
+      "nom": "Calcarea Fluorica",
+      "description": "Utile pour les personnes qui se font constamment des entorses aux chevilles.",
+      "indications": [
+        "entorse",
+        "dislocation"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 109,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "entorse",
+        "dislocation",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-silica-58",
+      "nom": "Silica",
+      "description": "Utile pour déloger les corps étrangers.",
+      "indications": [
+        "traumatisme",
+        "corps étranger"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "Silica 30C",
+        "frequence": "2 fois/jour"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 109,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "traumatisme",
+        "corps étranger",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-silica-59",
+      "nom": "Silica",
+      "description": "Remède pour l'extrusion d'un corps étranger",
+      "indications": [],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [
+        "Ne pas utiliser chez les personnes avec implants en silicone ou articulations artificielles"
+      ],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 110,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-arnica-montana-60",
+      "nom": "Arnica Montana",
+      "description": "Remède contre les traumatismes",
+      "indications": [
+        "traumatisme"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 110,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "traumatisme",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-staphysagria-61",
+      "nom": "Staphysagria",
+      "description": "Remède pour les douleurs post-opératoires et infections de la vessie.",
+      "indications": [
+        "douleur",
+        "infection"
+      ],
+      "ingredients": [
+        {
+          "nom": "Staphysagria",
+          "quantite": "30",
+          "unite": "C",
+          "principal": true
+        }
+      ],
+      "preparation": [
+        {
+          "etape": 1,
+          "instruction": "Prendre sous la langue avant l'hôpital.",
+          "duree": "immédiat"
+        },
+        {
+          "etape": 2,
+          "instruction": "Prendre toutes les huit heures après l'opération.",
+          "duree": "jusqu'à guérison"
+        }
+      ],
+      "posologie": {
+        "dose": "1 dose",
+        "frequence": "3 fois/jour"
+      },
+      "precautions": [
+        "Ne pas avaler directement"
+      ],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 111,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "douleur",
+        "infection",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-calendula-62",
+      "nom": "Calendula",
+      "description": "Remède pour les brûlures et infections des plaies.",
+      "indications": [
+        "brûlure",
+        "infection"
+      ],
+      "ingredients": [
+        {
+          "nom": "Calendula",
+          "quantite": "variable",
+          "unite": "g",
+          "principal": true
+        }
+      ],
+      "preparation": [
+        {
+          "etape": 1,
+          "instruction": "Appliquer sur la plaie.",
+          "duree": "immédiat"
+        }
+      ],
+      "posologie": {
+        "dose": "selon besoin",
+        "frequence": "selon besoin"
+      },
+      "precautions": [
+        "Utiliser en cas de risque d'infection"
+      ],
+      "contreIndications": [],
+      "route": "topique",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 111,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "brûlure",
+        "infection",
+        "topique"
+      ]
+    },
+    {
+      "id": "rem-hypericum-63",
+      "nom": "Hypericum",
+      "description": "Remède pour les douleurs nerveuses.",
+      "indications": [
+        "douleur",
+        "sciatique"
+      ],
+      "ingredients": [
+        {
+          "nom": "Hypericum",
+          "quantite": "200",
+          "unite": "C",
+          "principal": true
+        }
+      ],
+      "preparation": [],
+      "posologie": {
+        "dose": "1 dose",
+        "frequence": "3 fois/jour"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 112,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "douleur",
+        "sciatique",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-arnica-montana-64",
+      "nom": "Arnica Montana",
+      "description": "Remède pour les blessures.",
+      "indications": [
+        "blessure"
+      ],
+      "ingredients": [
+        {
+          "nom": "Arnica Montana",
+          "quantite": "30",
+          "unite": "C",
+          "principal": true
+        }
+      ],
+      "preparation": [],
+      "posologie": {
+        "dose": "1 dose",
+        "frequence": "toutes les quelques heures"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 112,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "blessure",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-aconite-65",
+      "nom": "Aconite",
+      "description": "Utilisé pour le syndrome prémenstruel.",
+      "indications": [
+        "syndrome prémenstruel"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 113,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "syndrome prémenstruel",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-antimonium-crudum-66",
+      "nom": "Antimonium Crudum",
+      "description": "Utile pour l'indigestion et le SPM.",
+      "indications": [
+        "indigestion",
+        "syndrome prémenstruel",
+        "nausée",
+        "vomissements",
+        "diarrhée"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 113,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "indigestion",
+        "syndrome prémenstruel",
+        "nausée",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-apis-mellifica-67",
+      "nom": "Apis Mellifica",
+      "description": "Soulage les gonflements et les douleurs menstruelles.",
+      "indications": [
+        "gonflements",
+        "douleurs menstruelles"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 113,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "gonflements",
+        "douleurs menstruelles",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-arnica-68",
+      "nom": "Arnica",
+      "description": "Utilisé pour les blessures et les saignements.",
+      "indications": [
+        "blessures",
+        "saignements"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 113,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "blessures",
+        "saignements",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-arsenicum-album-69",
+      "nom": "Arsenicum Album",
+      "description": "Remède homéopathique à base d'arsenic pour les crampes sévères.",
+      "indications": [
+        "crampes",
+        "intoxication alimentaire",
+        "douleurs menstruelles"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 114,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "crampes",
+        "intoxication alimentaire",
+        "douleurs menstruelles",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-belladonna-70",
+      "nom": "Belladonna",
+      "description": "Remède pour les crampes menstruelles avec saignements abondants.",
+      "indications": [
+        "crampes menstruelles",
+        "douleurs post-partum"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 114,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "crampes menstruelles",
+        "douleurs post-partum",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-calcarea-phosphorica-71",
+      "nom": "Calcarea Phosphorica",
+      "description": "Remède pour les douleurs de croissance et maux de tête.",
+      "indications": [
+        "douleurs de croissance",
+        "maux de tête",
+        "crampes menstruelles"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 114,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "douleurs de croissance",
+        "maux de tête",
+        "crampes menstruelles",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-caulophyllum-72",
+      "nom": "Caulophyllum",
+      "description": "Remède à base d'actée à grappes bleues pour les crampes sévères.",
+      "indications": [
+        "crampes sévères",
+        "accouchement"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 114,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "crampes sévères",
+        "accouchement",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-causticum-73",
+      "nom": "Causticum",
+      "description": "Utilisé pour les flux menstruels qui s'arrêtent la nuit et reprennent le matin.",
+      "indications": [
+        "syndrome prémenstruel",
+        "humeur dépressive",
+        "sensation de faiblesse"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 115,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "syndrome prémenstruel",
+        "humeur dépressive",
+        "sensation de faiblesse",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-chamomilla-74",
+      "nom": "Chamomilla",
+      "description": "Soulage les douleurs menstruelles avec irritabilité ou colère extrême.",
+      "indications": [
+        "douleurs menstruelles",
+        "irritabilité",
+        "colère"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [
+        "éviter la consommation de café"
+      ],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 115,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "douleurs menstruelles",
+        "irritabilité",
+        "colère",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-china-officinalis-75",
+      "nom": "China Officinalis",
+      "description": "Remède pour les femmes souffrant de saignements menstruels abondants.",
+      "indications": [
+        "saignements menstruels",
+        "épuisement"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "variable",
+        "frequence": "quotidiennement"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 116,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "saignements menstruels",
+        "épuisement",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-cimicifuga-racemosa-76",
+      "nom": "Cimicifuga Racemosa",
+      "description": "Remède pour les douleurs menstruelles aggravées par le froid.",
+      "indications": [
+        "douleurs menstruelles",
+        "douleurs articulaires"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "variable",
+        "frequence": "selon besoin"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 116,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "douleurs menstruelles",
+        "douleurs articulaires",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-cimicifuga-77",
+      "nom": "Cimicifuga",
+      "description": "Utilisé pour améliorer l'humeur et soulager les douleurs arthritiques.",
+      "indications": [
+        "douleur",
+        "dépression"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "faible puissance",
+        "frequence": "augmenter progressivement"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 117,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "douleur",
+        "dépression",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-cocculus-indicus-78",
+      "nom": "Cocculus Indicus",
+      "description": "Remède pour les femmes se sentant faibles et fatiguées pendant les règles.",
+      "indications": [
+        "fatigue",
+        "faiblesse"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 117,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "fatigue",
+        "faiblesse",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-colocynthis-79",
+      "nom": "Colocynthis",
+      "description": "Utile pour soulager les crampes abdominales et menstruelles.",
+      "indications": [
+        "crampes menstruelles"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 117,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "crampes menstruelles",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-cuprum-metallicum-80",
+      "nom": "Cuprum Metallicum",
+      "description": "Aide à soulager les crampes dans l'utérus et après l'accouchement.",
+      "indications": [
+        "crampes"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 117,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "crampes",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-gelsemium-sempervire-81",
+      "nom": "Gelsemium Sempervirens",
+      "description": "Utile pour la grippe et les dysménorrhées avec migraines et vomissements.",
+      "indications": [
+        "grippe",
+        "dysménorrhée",
+        "migraine",
+        "vomissement"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "Non spécifiée",
+        "frequence": "Non spécifiée"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 118,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "grippe",
+        "dysménorrhée",
+        "migraine",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-dulcamara-82",
+      "nom": "Dulcamara",
+      "description": "Aggravé par le froid, utilisé pour les problèmes menstruels.",
+      "indications": [
+        "problèmes menstruels"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "Non spécifiée",
+        "frequence": "Non spécifiée"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 118,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "problèmes menstruels",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-hamamelis-virginiana-83",
+      "nom": "Hamamelis Virginiana",
+      "description": "Aide pour les saignements post-opératoires et les règles abondantes.",
+      "indications": [
+        "saignement",
+        "règles abondantes"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "Non spécifiée",
+        "frequence": "Non spécifiée"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 118,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "saignement",
+        "règles abondantes",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-phosphorus-84",
+      "nom": "Phosphorus",
+      "description": "Remède pour les symptômes inhabituels liés aux saignements.",
+      "indications": [
+        "saignement"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 119,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "saignement",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-bryonia-85",
+      "nom": "Bryonia",
+      "description": "Remède pour les plaintes aggravées par le mouvement, incluant les menstruations.",
+      "indications": [
+        "menstruation",
+        "saignement"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 119,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "menstruation",
+        "saignement",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-pulsatilla-nigricans-86",
+      "nom": "Pulsatilla Nigricans",
+      "description": "Utile pour les jeunes filles avec des règles tardives et sévères.",
+      "indications": [
+        "menstruation",
+        "nervosité",
+        "fièvre"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 119,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "menstruation",
+        "nervosité",
+        "fièvre",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-sabina-87",
+      "nom": "Sabina",
+      "description": "Convient aux femmes avec des règles abondantes et douleurs menstruelles.",
+      "indications": [
+        "menstruation",
+        "douleur"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 119,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "menstruation",
+        "douleur",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-sepia-succus-88",
+      "nom": "Sepia Succus",
+      "description": "Remède important pour les femmes, utilisé pour divers symptômes.",
+      "indications": [
+        "menstruations irrégulières",
+        "prolapsus utérin"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 120,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "menstruations irrégulières",
+        "prolapsus utérin",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-cimicifuga-89",
+      "nom": "Cimicifuga",
+      "description": "Utilisé pour aider les femmes souffrant de prolapsus de l'utérus.",
+      "indications": [
+        "prolapsus utérin"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 120,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "prolapsus utérin",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-staphysagria-90",
+      "nom": "Staphysagria",
+      "description": "Remède contre les infections des voies urinaires et les douleurs après rapports sexuels.",
+      "indications": [
+        "infection urinaire",
+        "douleur"
+      ],
+      "ingredients": [
+        {
+          "nom": "graines de delphinium",
+          "quantite": "non spécifiée",
+          "unite": "",
+          "principal": true
+        }
+      ],
+      "preparation": [],
+      "posologie": {
+        "dose": "non spécifiée",
+        "frequence": "non spécifiée"
+      },
+      "precautions": [
+        "consulter un professionnel pour les verrues"
+      ],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 121,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "infection urinaire",
+        "douleur",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-sulphur-91",
+      "nom": "Sulphur",
+      "description": "Remède pour les démangeaisons de la vulve et la transpiration excessive.",
+      "indications": [
+        "démangeaisons",
+        "transpiration"
+      ],
+      "ingredients": [
+        {
+          "nom": "sulphur",
+          "quantite": "non spécifiée",
+          "unite": "",
+          "principal": true
+        }
+      ],
+      "preparation": [],
+      "posologie": {
+        "dose": "non spécifiée",
+        "frequence": "non spécifiée"
+      },
+      "precautions": [
+        "consulter un professionnel pour les verrues"
+      ],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 121,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "démangeaisons",
+        "transpiration",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-thuja-92",
+      "nom": "Thuja",
+      "description": "Remède pour les verrues vénériennes causées par le VPH.",
+      "indications": [
+        "verrues"
+      ],
+      "ingredients": [
+        {
+          "nom": "thuja",
+          "quantite": "non spécifiée",
+          "unite": "",
+          "principal": true
+        }
+      ],
+      "preparation": [],
+      "posologie": {
+        "dose": "non spécifiée",
+        "frequence": "non spécifiée"
+      },
+      "precautions": [
+        "consulter un professionnel pour les verrues"
+      ],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 121,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "verrues",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-thuja-93",
+      "nom": "Thuja",
+      "description": "Utilisé pour les réactions indésirables après une vaccination.",
+      "indications": [
+        "verrues",
+        "dépression",
+        "isolement"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "30C",
+        "frequence": "1 fois/jour"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 122,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "verrues",
+        "dépression",
+        "isolement",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-phytolacca-decandra-94",
+      "nom": "Phytolacca Decandra",
+      "description": "Utile pour les mères qui allaitent et qui développent une mastite.",
+      "indications": [
+        "mastite",
+        "maux de gorge"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "30C",
+        "frequence": "toutes les heures ou toutes les deux heures"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 122,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "mastite",
+        "maux de gorge",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-magnesium-carbonicum-95",
+      "nom": "Magnesium Carbonicum",
+      "description": "Remède constitutionnel pour les infections récurrentes des sinus.",
+      "indications": [
+        "infections des sinus"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 122,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "infections des sinus",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-phytolacca-30c-96",
+      "nom": "Phytolacca 30C",
+      "description": "Remède homéopathique utilisé pour la mastite.",
+      "indications": [
+        "mastite",
+        "fièvre",
+        "douleur"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "4 doses",
+        "frequence": "au besoin"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 123,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "mastite",
+        "fièvre",
+        "douleur",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-magnesium-carbonicum-97",
+      "nom": "Magnesium Carbonicum",
+      "description": "Remède constitutionnel utilisé pour améliorer l'état général.",
+      "indications": [
+        "douleur",
+        "sensibilité"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "augmentée",
+        "frequence": "au besoin"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 123,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "douleur",
+        "sensibilité",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-phytolacca-200c-98",
+      "nom": "Phytolacca 200C",
+      "description": "Remède homéopathique pour réduire la fièvre et la douleur.",
+      "indications": [
+        "fièvre",
+        "douleur",
+        "rougeur"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "toutes les heures",
+        "frequence": "au besoin"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 123,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "fièvre",
+        "douleur",
+        "rougeur",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-phytolacca-1m-99",
+      "nom": "Phytolacca 1M",
+      "description": "Remède homéopathique pour les cas graves de mastite.",
+      "indications": [
+        "mastite",
+        "cancer"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "1M",
+        "frequence": "par jour"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 123,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "mastite",
+        "cancer",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-magnesium-carbonicum-100",
+      "nom": "Magnesium Carbonicum",
+      "description": "Remède constitutionnel pour divers problèmes aigus.",
+      "indications": [
+        "problèmes aigus"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 124,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "problèmes aigus",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-kali-carb-101",
+      "nom": "Kali Carb",
+      "description": "Remède homéopathique pour les nausées matinales.",
+      "indications": [
+        "nausées",
+        "vomissements"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 124,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "nausées",
+        "vomissements",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-ipeca-102",
+      "nom": "Ipéca",
+      "description": "Soulagement temporaire des vomissements de grossesse.",
+      "indications": [
+        "vomissements"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 124,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "vomissements",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-soufre-103",
+      "nom": "Soufre",
+      "description": "Remède pour les vomissements de grossesse.",
+      "indications": [
+        "vomissements"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 124,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "vomissements",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-sepi-104",
+      "nom": "Sépi",
+      "description": "Remède pour les vomissements de grossesse.",
+      "indications": [
+        "vomissements"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 124,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "vomissements",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-arsenicum-album-105",
+      "nom": "Arsenicum Album",
+      "description": "Remède contre les intoxications alimentaires et pour les femmes enceintes avec estomac sensible.",
+      "indications": [
+        "intoxications alimentaires",
+        "estomac sensible"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 124,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "intoxications alimentaires",
+        "estomac sensible",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-arsenicum-album-106",
+      "nom": "Arsenicum Album",
+      "description": "Soulage les nausées et vomissements.",
+      "indications": [
+        "nausée",
+        "vomissement",
+        "anxiété"
+      ],
+      "ingredients": [
+        {
+          "nom": "Arsenicum Album",
+          "quantite": "30C",
+          "unite": "dose",
+          "principal": true
+        }
+      ],
+      "preparation": [
+        {
+          "etape": 1,
+          "instruction": "Administrer sous la langue.",
+          "duree": "immédiat"
+        }
+      ],
+      "posologie": {
+        "dose": "1 dose",
+        "frequence": "selon besoin"
+      },
+      "precautions": [
+        "Éviter l'eau très froide"
+      ],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 125,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "nausée",
+        "vomissement",
+        "anxiété",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-cocculus-indicus-107",
+      "nom": "Cocculus Indicus",
+      "description": "Aide à soulager les nausées matinales et le mal des transports.",
+      "indications": [
+        "nausée",
+        "mal des transports"
+      ],
+      "ingredients": [
+        {
+          "nom": "Cocculus Indicus",
+          "quantite": "dose",
+          "unite": "standard",
+          "principal": true
+        }
+      ],
+      "preparation": [
+        {
+          "etape": 1,
+          "instruction": "Prendre avant le voyage.",
+          "duree": "immédiat"
+        }
+      ],
+      "posologie": {
+        "dose": "1 dose",
+        "frequence": "avant voyage"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 125,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "nausée",
+        "mal des transports",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-cuprum-metallicum-108",
+      "nom": "Cuprum Metallicum",
+      "description": "Soulage les nausées matinales et les crampes.",
+      "indications": [
+        "nausée",
+        "crampes",
+        "hoquet"
+      ],
+      "ingredients": [
+        {
+          "nom": "Cuprum Metallicum",
+          "quantite": "dose",
+          "unite": "standard",
+          "principal": true
+        }
+      ],
+      "preparation": [
+        {
+          "etape": 1,
+          "instruction": "Prendre au réveil.",
+          "duree": "immédiat"
+        }
+      ],
+      "posologie": {
+        "dose": "1 dose",
+        "frequence": "au besoin"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 125,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "nausée",
+        "crampes",
+        "hoquet",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-ferrum-phosphoricum-109",
+      "nom": "Ferrum Phosphoricum",
+      "description": "Remède contre le rhume et les douleurs d'estomac.",
+      "indications": [
+        "rhume",
+        "nausées",
+        "douleurs d'estomac"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 126,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "rhume",
+        "nausées",
+        "douleurs d'estomac",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-ignatia-amara-110",
+      "nom": "Ignatia Amara",
+      "description": "Utile pour les nausées matinales et le pica.",
+      "indications": [
+        "nausées",
+        "pica"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 126,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "nausées",
+        "pica",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-phosphorus-111",
+      "nom": "Phosphorus",
+      "description": "Indiqué pour l'envie de glace chez les femmes enceintes.",
+      "indications": [
+        "pica"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 126,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "pica",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-ipecacuanha-112",
+      "nom": "Ipecacuanha",
+      "description": "Pour les nausées sévères et les vomissements.",
+      "indications": [
+        "nausées",
+        "vomissements"
+      ],
+      "ingredients": [
+        {
+          "nom": "racine d'ipéca",
+          "quantite": "",
+          "unite": "",
+          "principal": true
+        }
+      ],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 126,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "nausées",
+        "vomissements",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-kali-carbonicum-113",
+      "nom": "Kali Carbonicum",
+      "description": "Soulage les nausées matinales et douleurs dans le dos.",
+      "indications": [
+        "nausées",
+        "douleur",
+        "faiblesse"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 127,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "nausées",
+        "douleur",
+        "faiblesse",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-natrum-muriaticum-114",
+      "nom": "Natrum Muriaticum",
+      "description": "Pour les nausées et soif chez les femmes enceintes.",
+      "indications": [
+        "nausées",
+        "soif",
+        "brûlures d'estomac"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 127,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "nausées",
+        "soif",
+        "brûlures d'estomac",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-podophyllum-115",
+      "nom": "Podophyllum",
+      "description": "Utile pour les nausées matinales et digestion faible.",
+      "indications": [
+        "nausées",
+        "digestion",
+        "diarrhée"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 127,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "nausées",
+        "digestion",
+        "diarrhée",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-sepia-succus-116",
+      "nom": "Sepia Succus",
+      "description": "Soulage les nausées matinales chez les femmes.",
+      "indications": [
+        "nausées",
+        "vomissements"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 128,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "nausées",
+        "vomissements",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-kali-carb-117",
+      "nom": "Kali Carb",
+      "description": "Indiqué pour les nausées matinales.",
+      "indications": [
+        "nausées"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 128,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "nausées",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-sulphur-118",
+      "nom": "Sulphur",
+      "description": "Remède pour les nausées matinales au début de la grossesse.",
+      "indications": [
+        "nausées",
+        "bouffées de chaleur"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 128,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "nausées",
+        "bouffées de chaleur",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-sulphur-119",
+      "nom": "Sulphur",
+      "description": "Remède pour les éruptions cutanées et la soif intense.",
+      "indications": [
+        "éruptions cutanées",
+        "soif",
+        "chaleur"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 129,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "éruptions cutanées",
+        "soif",
+        "chaleur",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-tabacum-120",
+      "nom": "Tabacum",
+      "description": "Remède contre les nausées matinales et le mal des transports.",
+      "indications": [
+        "nausées",
+        "mal des transports"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 129,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "nausées",
+        "mal des transports",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-cocculus-121",
+      "nom": "Cocculus",
+      "description": "Remède pour les nausées et vomissements aggravés par le froid.",
+      "indications": [
+        "nausées",
+        "vomissements"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 129,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "nausées",
+        "vomissements",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-tabacum-122",
+      "nom": "Tabacum",
+      "description": "Remède homéopathique pour les nausées matinales et le mal des transports.",
+      "indications": [
+        "nausée",
+        "mal des transports"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "30C",
+        "frequence": "avant chaque voyage"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 130,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "nausée",
+        "mal des transports",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-cocculus-indicus-123",
+      "nom": "Cocculus Indicus",
+      "description": "Remède pour le mal des transports avec maux de tête, nausées et vomissements.",
+      "indications": [
+        "mal des transports",
+        "maux de tête",
+        "nausée",
+        "vomissement"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 130,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "mal des transports",
+        "maux de tête",
+        "nausée",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-nux-vomica-124",
+      "nom": "Nux Vomica",
+      "description": "Remède pour le mal des transports et la sensation de toxicité corporelle.",
+      "indications": [
+        "mal des transports",
+        "toxicité corporelle"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 130,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "mal des transports",
+        "toxicité corporelle",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-nux-vomica-125",
+      "nom": "Nux Vomica",
+      "description": "Remède pour l'indigestion et les brûlures d'estomac.",
+      "indications": [
+        "indigestion",
+        "brûlures d'estomac",
+        "éructations",
+        "mal des transports"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 131,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "indigestion",
+        "brûlures d'estomac",
+        "éructations",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-petroleum-126",
+      "nom": "Petroleum",
+      "description": "Utilisé pour les problèmes de peau et le mal des transports.",
+      "indications": [
+        "problèmes de peau",
+        "fissures dans les doigts",
+        "mal des transports",
+        "vertige"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "topique",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 131,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "problèmes de peau",
+        "fissures dans les doigts",
+        "mal des transports",
+        "topique"
+      ]
+    },
+    {
+      "id": "rem-aconitum-napellus-127",
+      "nom": "Aconitum Napellus",
+      "description": "Utilisé pour les émotions intenses lors des règles.",
+      "indications": [
+        "anxiété",
+        "stress",
+        "douleur"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 132,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "anxiété",
+        "stress",
+        "douleur",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-hamamelis-128",
+      "nom": "Hamamelis",
+      "description": "Utilisé pour arrêter les saignements et favoriser la cicatrisation.",
+      "indications": [
+        "saignement",
+        "cicatrisation"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "30C",
+        "frequence": "toutes les 15 minutes"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 133,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "saignement",
+        "cicatrisation",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-staphysagria-129",
+      "nom": "Staphysagria",
+      "description": "Favorise la cicatrisation des plaies.",
+      "indications": [
+        "cicatrisation"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 133,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "cicatrisation",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-aesculus-130",
+      "nom": "Aesculus",
+      "description": "Soulage la douleur et les saignements des hémorroïdes.",
+      "indications": [
+        "douleur",
+        "saignement",
+        "hémorroïdes"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 133,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "douleur",
+        "saignement",
+        "hémorroïdes",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-podophyllum-131",
+      "nom": "Podophyllum",
+      "description": "Aide les femmes enceintes souffrant d'hémorroïdes.",
+      "indications": [
+        "hémorroïdes"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 133,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "hémorroïdes",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-ledum-palustre-132",
+      "nom": "Ledum Palustre",
+      "description": "Préparé homéopathiquement à partir de romarin sauvage, utilisé pour les piqûres.",
+      "indications": [
+        "piqûre",
+        "douleur"
+      ],
+      "ingredients": [
+        {
+          "nom": "romarin sauvage",
+          "quantite": "non spécifiée",
+          "unite": "",
+          "principal": true
+        }
+      ],
+      "preparation": [
+        {
+          "etape": 1,
+          "instruction": "Préparer homéopathiquement à partir de romarin sauvage.",
+          "duree": "non spécifiée"
+        }
+      ],
+      "posologie": {
+        "dose": "non spécifiée",
+        "frequence": "au besoin"
+      },
+      "precautions": [
+        "Consulter un professionnel de santé si nécessaire"
+      ],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 134,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "piqûre",
+        "douleur",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-apis-mellifica-133",
+      "nom": "Apis Mellifica",
+      "description": "Préparé à partir d'une abeille entière, utilisé pour l'enflure et la rougeur.",
+      "indications": [
+        "enflure",
+        "rougeur"
+      ],
+      "ingredients": [
+        {
+          "nom": "abeille entière",
+          "quantite": "non spécifiée",
+          "unite": "",
+          "principal": true
+        }
+      ],
+      "preparation": [
+        {
+          "etape": 1,
+          "instruction": "Préparer homéopathiquement à partir d'une abeille entière.",
+          "duree": "non spécifiée"
+        }
+      ],
+      "posologie": {
+        "dose": "non spécifiée",
+        "frequence": "au besoin"
+      },
+      "precautions": [
+        "Consulter un homéopathe professionnel"
+      ],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 134,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "enflure",
+        "rougeur",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-aconitum-napellus-134",
+      "nom": "Aconitum Napellus",
+      "description": "Utilisé pour l'insomnie après un choc ou une peur.",
+      "indications": [
+        "insomnie",
+        "sommeil agité"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 136,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "insomnie",
+        "sommeil agité",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-arsenicum-album-135",
+      "nom": "Arsenicum Album",
+      "description": "Remède pour le sommeil agité, souvent utilisé par les personnes anxieuses.",
+      "indications": [
+        "insomnie",
+        "sommeil agité",
+        "anxiété"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 136,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "insomnie",
+        "sommeil agité",
+        "anxiété",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-belladonna-136",
+      "nom": "Belladonna",
+      "description": "Utilisé pour le sommeil agité chez les enfants avec fièvre.",
+      "indications": [
+        "sommeil agité",
+        "fièvre"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 136,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "sommeil agité",
+        "fièvre",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-coffea-cruda-137",
+      "nom": "Coffea Cruda",
+      "description": "Convient à ceux qui ne peuvent pas dormir après une journée de travail.",
+      "indications": [
+        "insomnie"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 136,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "insomnie",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-coffea-138",
+      "nom": "Coffea",
+      "description": "Aide à s'endormir et à se rendormir après un réveil nocturne.",
+      "indications": [
+        "sommeil"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 137,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "sommeil",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-gelsemium-sempervire-139",
+      "nom": "Gelsemium Sempervirens",
+      "description": "Calme l'anxiété et utile en cas d'insomnie due à l'épuisement.",
+      "indications": [
+        "anxiété",
+        "insomnie"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 137,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "anxiété",
+        "insomnie",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-zincum-metallicum-140",
+      "nom": "Zincum Metallicum",
+      "description": "Pour le sommeil perturbé par des crampes ou le syndrome des jambes sans repos.",
+      "indications": [
+        "sommeil",
+        "crampes"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 137,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "sommeil",
+        "crampes",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-cocculus-indicus-141",
+      "nom": "Cocculus Indicus",
+      "description": "Remède pour les maux liés à la veille nocturne et l'épuisement.",
+      "indications": [
+        "épuisement",
+        "sommeil"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 137,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "épuisement",
+        "sommeil",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-cocculus-142",
+      "nom": "Cocculus",
+      "description": "Remède pour les personnes épuisées mentalement et physiquement.",
+      "indications": [
+        "épuisement",
+        "réflexion lente"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "puissance 30C",
+        "frequence": "matin et soir"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 138,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "épuisement",
+        "réflexion lente",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-china-officinalis-143",
+      "nom": "China Officinalis",
+      "description": "Remède pour l'insomnie due à la perte de fluides vitaux.",
+      "indications": [
+        "insomnie",
+        "fatigue"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 138,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "insomnie",
+        "fatigue",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-lachesis-144",
+      "nom": "Lachesis",
+      "description": "Remède pour l'insomnie et les symptômes aggravés après le sommeil.",
+      "indications": [
+        "insomnie",
+        "maux de tête",
+        "crampes menstruelles",
+        "hypertension"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 138,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "insomnie",
+        "maux de tête",
+        "crampes menstruelles",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-natrum-muriaticum-145",
+      "nom": "Natrum Muriaticum",
+      "description": "Remède pour les personnes fatiguées et souffrant de chagrin.",
+      "indications": [
+        "fatigue",
+        "chagrin",
+        "insomnie"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 138,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "fatigue",
+        "chagrin",
+        "insomnie",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-ignatia-amara-146",
+      "nom": "Ignatia Amara",
+      "description": "Utile pour l'insomnie après un deuil.",
+      "indications": [
+        "insomnie",
+        "stress"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 139,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "insomnie",
+        "stress",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-natrum-muriaticum-147",
+      "nom": "Natrum Muriaticum",
+      "description": "Option pour le chagrin chronique.",
+      "indications": [
+        "chagrin",
+        "maux de tête"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 139,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "chagrin",
+        "maux de tête",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-silicea-148",
+      "nom": "Silicea",
+      "description": "Utile pour le sommeil non réparateur.",
+      "indications": [
+        "sommeil",
+        "réveil fréquent"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 139,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "sommeil",
+        "réveil fréquent",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-chamomilla-149",
+      "nom": "Chamomilla",
+      "description": "Aide pour le sommeil perturbé chez les bébés.",
+      "indications": [
+        "insomnie",
+        "douleur"
+      ],
+      "ingredients": [
+        {
+          "nom": "pastille de remède",
+          "quantite": "1",
+          "unite": "pièce",
+          "principal": true
+        }
+      ],
+      "preparation": [
+        {
+          "etape": 1,
+          "instruction": "Placez une pastille dans de l'eau.",
+          "duree": ""
+        }
+      ],
+      "posologie": {
+        "dose": "1 cuillère à café",
+        "frequence": "avant le coucher"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 139,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "insomnie",
+        "douleur",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-calcarea-carbonica-150",
+      "nom": "Calcarea Carbonica",
+      "description": "Bon pour les terreurs nocturnes.",
+      "indications": [
+        "terreur nocturne"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 139,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "terreur nocturne",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-calcarea-151",
+      "nom": "Calcarea",
+      "description": "Remède pour les personnes qui transpirent facilement, en particulier au niveau de la tête.",
+      "indications": [
+        "transpiration",
+        "ménopause"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 140,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "transpiration",
+        "ménopause",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-nux-vomica-152",
+      "nom": "Nux Vomica",
+      "description": "Remède pour les personnes qui mangent ou boivent trop ou abusent de drogues.",
+      "indications": [
+        "gueule de bois",
+        "stress",
+        "insomnie"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 140,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "gueule de bois",
+        "stress",
+        "insomnie",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-kali-carbonicum-153",
+      "nom": "Kali Carbonicum",
+      "description": "Remède pour l'insomnie due à la toux et aux maux de tête.",
+      "indications": [
+        "insomnie",
+        "toux",
+        "maux de tête"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 140,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "insomnie",
+        "toux",
+        "maux de tête",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-drosera-rotundifolia-154",
+      "nom": "Drosera Rotundifolia",
+      "description": "Remède pour la toux qui s'aggrave en position couchée.",
+      "indications": [
+        "toux",
+        "rhumes"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 140,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "toux",
+        "rhumes",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-pulsatilla-155",
+      "nom": "Pulsatilla",
+      "description": "Remède pour les personnes qui pleurent dans leur sommeil à cause de rêves tristes.",
+      "indications": [
+        "sommeil",
+        "rêves"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 140,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "sommeil",
+        "rêves",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-rhus-toxicodendron-156",
+      "nom": "Rhus Toxicodendron",
+      "description": "Remède pour les personnes qui se réveillent avec des raideurs articulaires.",
+      "indications": [
+        "insomnie",
+        "raideurs articulaires"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 140,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "insomnie",
+        "raideurs articulaires",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-cuprum-metallicum-157",
+      "nom": "Cuprum Metallicum",
+      "description": "Remède homéopathique pour les crampes musculaires.",
+      "indications": [
+        "crampes",
+        "douleur"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 141,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "crampes",
+        "douleur",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-zincum-metallicum-158",
+      "nom": "Zincum Metallicum",
+      "description": "Remède homéopathique pour les crampes musculaires.",
+      "indications": [
+        "crampes",
+        "douleur"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 141,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "crampes",
+        "douleur",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-belladonna-159",
+      "nom": "Belladonna",
+      "description": "Remède pour les bouffées de chaleur soudaines",
+      "indications": [
+        "bouffées de chaleur",
+        "transpiration",
+        "irritabilité"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "1 dose",
+        "frequence": "2 fois/jour"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 142,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "bouffées de chaleur",
+        "transpiration",
+        "irritabilité",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-belladonna-160",
+      "nom": "Belladonna",
+      "description": "Utilisé pour les maladies de courte durée comme la fièvre due aux infections de l'oreille.",
+      "indications": [
+        "fièvre",
+        "irritabilité"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "30C",
+        "frequence": "une fois/jour"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 143,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "fièvre",
+        "irritabilité",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-calcarea-carbonica-161",
+      "nom": "Calcarea Carbonica",
+      "description": "Remède pour transpirer abondamment et anxiété.",
+      "indications": [
+        "transpiration",
+        "anxiété",
+        "épuisement"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 143,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "transpiration",
+        "anxiété",
+        "épuisement",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-glonoinum-162",
+      "nom": "Glonoinum",
+      "description": "Remède pour les maux de tête intenses et les bouffées de chaleur.",
+      "indications": [
+        "mal de tête",
+        "bouffées de chaleur"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 143,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "mal de tête",
+        "bouffées de chaleur",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-lachesis-muta-163",
+      "nom": "Lachesis Muta",
+      "description": "Recommandé pour les femmes en période de ménopause.",
+      "indications": [
+        "ménopause",
+        "bouffées de chaleur",
+        "palpitations"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 143,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "ménopause",
+        "bouffées de chaleur",
+        "palpitations",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-lachesis-164",
+      "nom": "Lachesis",
+      "description": "Remède pour les symptômes de la ménopause et la peur des serpents.",
+      "indications": [
+        "ménopause",
+        "peur",
+        "bourdonnements d'oreilles"
+      ],
+      "ingredients": [
+        {
+          "nom": "venin de serpent Bushmaster",
+          "quantite": "variable",
+          "unite": "ml",
+          "principal": true
+        }
+      ],
+      "preparation": [
+        {
+          "etape": 1,
+          "instruction": "Préparer à partir du venin de serpent.",
+          "duree": "variable"
+        }
+      ],
+      "posologie": {
+        "dose": "variable",
+        "frequence": "selon prescription"
+      },
+      "precautions": [
+        "Éviter si allergie aux venins"
+      ],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 144,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "ménopause",
+        "peur",
+        "bourdonnements d'oreilles",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-ignatia-165",
+      "nom": "Ignatia",
+      "description": "Remède pour les symptômes émotionnels liés à la ménopause.",
+      "indications": [
+        "émotion",
+        "ménopause",
+        "deuil"
+      ],
+      "ingredients": [
+        {
+          "nom": "Ignatia Amara",
+          "quantite": "30C",
+          "unite": "dose",
+          "principal": true
+        }
+      ],
+      "preparation": [
+        {
+          "etape": 1,
+          "instruction": "Administrer sous forme de granules.",
+          "duree": "immédiate"
+        }
+      ],
+      "posologie": {
+        "dose": "1 dose",
+        "frequence": "tous les jours"
+      },
+      "precautions": [
+        "Consulter un médecin en cas de symptômes persistants"
+      ],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 144,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "émotion",
+        "ménopause",
+        "deuil",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-ignatia-166",
+      "nom": "Ignatia",
+      "description": "Remède pour retrouver l'équilibre émotionnel.",
+      "indications": [
+        "émotion",
+        "deuil"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 145,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "émotion",
+        "deuil",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-sepia-succus-167",
+      "nom": "Sepia Succus",
+      "description": "Remède pour les troubles hormonaux.",
+      "indications": [
+        "ménopause",
+        "déséquilibre hormonal"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 145,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "ménopause",
+        "déséquilibre hormonal",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-sepia-168",
+      "nom": "Sepia",
+      "description": "Remède homéopathique utilisé pour gérer divers symptômes.",
+      "indications": [
+        "ménopause",
+        "bouffées de chaleur",
+        "sueurs nocturnes",
+        "irritabilité",
+        "sensation de lourdeur dans le bassin"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "variable",
+        "frequence": "selon besoin"
+      },
+      "precautions": [
+        "ajuster la puissance régulièrement",
+        "surveiller les symptômes"
+      ],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 149,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "ménopause",
+        "bouffées de chaleur",
+        "sueurs nocturnes",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-chelidonium-majus-169",
+      "nom": "Chelidonium Majus",
+      "description": "Aide la force vitale lorsque le foie et la vésicule biliaire sont affectés.",
+      "indications": [
+        "douleur abdominale",
+        "colique biliaire",
+        "irritabilité",
+        "nausées",
+        "vomissements"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [
+        "toxicity possible sous forme brute"
+      ],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 152,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "douleur abdominale",
+        "colique biliaire",
+        "irritabilité",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-nux-vomica-170",
+      "nom": "Nux Vomica",
+      "description": "Utilisé pour les brûlures d'estomac et l'indigestion causées par une consommation excessive de café, d'alcool ou de nourriture épicée.",
+      "indications": [
+        "brûlures d'estomac",
+        "indigestion"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 153,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "brûlures d'estomac",
+        "indigestion",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-pulsatilla-nigricans-171",
+      "nom": "Pulsatilla Nigricans",
+      "description": "Efficace pour les brûlures d'estomac causées par des aliments riches ou gras.",
+      "indications": [
+        "brûlures d'estomac"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 153,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "brûlures d'estomac",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-staphysagria-172",
+      "nom": "Staphysagria",
+      "description": "Pour les brûlures d'estomac après une indignation.",
+      "indications": [
+        "brûlures d'estomac"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 153,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "brûlures d'estomac",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-zincum-metallicum-173",
+      "nom": "Zincum Metallicum",
+      "description": "Utilisé pour les brûlures d'estomac ou l'indigestion après avoir mangé des aliments sucrés.",
+      "indications": [
+        "brûlures d'estomac",
+        "indigestion"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 153,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "brûlures d'estomac",
+        "indigestion",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-aesculus-hippocastan-174",
+      "nom": "Aesculus Hippocastanum",
+      "description": "Remède pour les hémorroïdes externes gonflées et violettes.",
+      "indications": [
+        "hémorroïdes"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 154,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "hémorroïdes",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-hamamelis-virginiana-175",
+      "nom": "Hamamelis Virginiana",
+      "description": "Utile pour les hémorroïdes qui saignent.",
+      "indications": [
+        "hémorroïdes",
+        "saignement"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 154,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "hémorroïdes",
+        "saignement",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-ferrum-phosphoricum-176",
+      "nom": "Ferrum Phosphoricum",
+      "description": "Remède à prendre dès le début de toute forme d'inflammation.",
+      "indications": [
+        "rhume",
+        "grippe"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "selon prescription",
+        "frequence": "selon besoin"
+      },
+      "precautions": [
+        "Continuer pendant toute la durée de la maladie"
+      ],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 155,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "rhume",
+        "grippe",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-china-officinalis-177",
+      "nom": "China Officinalis",
+      "description": "Remède pour faiblesse ou fatigue due à la perte de fluides vitaux.",
+      "indications": [
+        "fatigue"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "selon prescription",
+        "frequence": "jusqu'à disparition de la fatigue"
+      },
+      "precautions": [
+        "Aide à prévenir la débilité à long terme"
+      ],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 155,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "fatigue",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-eupatorium-perfoliat-178",
+      "nom": "Eupatorium Perfoliatum",
+      "description": "Remède pour douleurs osseuses sévères pendant la grippe.",
+      "indications": [
+        "douleur",
+        "grippe"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "selon prescription",
+        "frequence": "selon besoin"
+      },
+      "precautions": [
+        "Utilisé pour désintoxication de la maladie de Lyme"
+      ],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 155,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "douleur",
+        "grippe",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-arsenicum-album-179",
+      "nom": "Arsenicum Album",
+      "description": "Remède pour intoxication alimentaire avec nausées, vomissements, diarrhée et crampes d'estomac.",
+      "indications": [
+        "nausées",
+        "vomissements",
+        "diarrhée",
+        "crampes"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {
+        "dose": "puissance 30C",
+        "frequence": "toutes les 15 à 30 minutes"
+      },
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 156,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "nausées",
+        "vomissements",
+        "diarrhée",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-china-officinalis-180",
+      "nom": "China Officinalis",
+      "description": "Remède pour intoxication alimentaire.",
+      "indications": [
+        "intoxication alimentaire"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 156,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "intoxication alimentaire",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-ipecacuanha-181",
+      "nom": "Ipecacuanha",
+      "description": "Remède pour vomissements persistants.",
+      "indications": [
+        "vomissements"
+      ],
+      "ingredients": [
+        {
+          "nom": "racine d'ipéca",
+          "quantite": "",
+          "unite": "",
+          "principal": true
+        }
+      ],
+      "preparation": [
+        {
+          "etape": 1,
+          "instruction": "Utiliser la teinture mère pour fabriquer du sirop d'ipéca.",
+          "duree": ""
+        }
+      ],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 156,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "vomissements",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-calcarea-phosphorica-182",
+      "nom": "Calcarea Phosphorica",
+      "description": "Remède pour les douleurs de croissance chez les enfants.",
+      "indications": [
+        "douleur",
+        "croissance"
+      ],
+      "ingredients": [
+        {
+          "nom": "phosphate de calcium",
+          "quantite": "30",
+          "unite": "C",
+          "principal": true
+        }
+      ],
+      "preparation": [
+        {
+          "etape": 1,
+          "instruction": "Donner la pastille 30C au coucher.",
+          "duree": "immédiate"
+        }
+      ],
+      "posologie": {
+        "dose": "1 pastille",
+        "frequence": "au coucher"
+      },
+      "precautions": [
+        "Consulter un médecin si les symptômes persistent."
+      ],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 157,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "douleur",
+        "croissance",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-nux-vomica-183",
+      "nom": "Nux Vomica",
+      "description": "Remède pour la gueule de bois et les brûlures d'estomac.",
+      "indications": [
+        "gueule de bois",
+        "brûlures d'estomac",
+        "reflux gastrique"
+      ],
+      "ingredients": [
+        {
+          "nom": "Nux Vomica",
+          "quantite": "30",
+          "unite": "C",
+          "principal": true
+        }
+      ],
+      "preparation": [
+        {
+          "etape": 1,
+          "instruction": "Prendre la puissance 30C avant d'aller au lit.",
+          "duree": "immédiate"
+        },
+        {
+          "etape": 2,
+          "instruction": "Prendre encore une fois au réveil le matin.",
+          "duree": "immédiate"
+        }
+      ],
+      "posologie": {
+        "dose": "1 dose",
+        "frequence": "2 fois/jour"
+      },
+      "precautions": [
+        "Boire beaucoup d'eau pour éviter la déshydratation."
+      ],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 157,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "gueule de bois",
+        "brûlures d'estomac",
+        "reflux gastrique",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-aconitum-napellus-ac-184",
+      "nom": "Aconitum Napellus (Aconite)",
+      "description": "Remède pour les maux de tête avec anxiété.",
+      "indications": [
+        "maux de tête",
+        "anxiété"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 159,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "maux de tête",
+        "anxiété",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-belladonna-185",
+      "nom": "Belladonna",
+      "description": "Remède pour les maux de tête avec sensibilité à la lumière.",
+      "indications": [
+        "maux de tête",
+        "sensibilité à la lumière"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 159,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "maux de tête",
+        "sensibilité à la lumière",
+        "orale"
+      ]
+    },
+    {
+      "id": "rem-glonoinum-186",
+      "nom": "Glonoinum",
+      "description": "Remède pour les maux de tête avec sensation de nez disparu.",
+      "indications": [
+        "maux de tête"
+      ],
+      "ingredients": [],
+      "preparation": [],
+      "posologie": {},
+      "precautions": [],
+      "contreIndications": [],
+      "route": "orale",
+      "source": {
+        "livre": "Bible perdue des remèdes du médecin oublié",
+        "auteur": "Inconnu",
+        "annee": 2020,
+        "page": 159,
+        "confianceGlobale": 70,
+        "verifie": false
+      },
+      "tags": [
+        "maux de tête",
+        "orale"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,759 @@
+/* ========================================
+   SAVOIRS DE GRAND-MÈRE - STYLES RECHERCHE
+   Interface de recherche et affichage remèdes
+======================================== */
+
+/* ========================================
+   SECTION RECHERCHE
+======================================== */
+.search-section {
+    background: var(--color-bg-primary);
+    padding: var(--spacing-3xl) 0;
+}
+
+.search-section .section-header {
+    margin-bottom: var(--spacing-xl);
+}
+
+/* Barre de recherche principale */
+.search-wrapper {
+    max-width: 700px;
+    margin: 0 auto var(--spacing-lg);
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: var(--color-bg-card);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-full);
+    padding: 0.5rem;
+    transition: var(--transition-base);
+}
+
+.search-bar:focus-within {
+    border-color: var(--color-sage);
+    box-shadow: 0 0 0 4px rgba(124, 154, 124, 0.15);
+}
+
+.search-bar .search-icon {
+    padding: 0.75rem 1rem;
+    color: var(--color-text-muted);
+}
+
+.search-bar input {
+    flex: 1;
+    background: none;
+    border: none;
+    color: var(--color-text-primary);
+    font-size: 1rem;
+    padding: 0.75rem 0;
+    outline: none;
+}
+
+.search-bar input::placeholder {
+    color: var(--color-text-muted);
+}
+
+.search-bar .search-btn {
+    background: var(--color-sage);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-full);
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-base);
+}
+
+.search-bar .search-btn:hover {
+    background: var(--color-sage-dark);
+}
+
+/* ========================================
+   FILTRES
+======================================== */
+.filters-container {
+    margin-bottom: var(--spacing-xl);
+}
+
+.filter-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.filter-group-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.filter-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.filter-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 1rem;
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: var(--transition-base);
+}
+
+.filter-chip:hover {
+    background: var(--color-bg-card-hover);
+    border-color: var(--color-sage);
+    color: var(--color-text-primary);
+}
+
+.filter-chip.active {
+    background: rgba(124, 154, 124, 0.2);
+    border-color: var(--color-sage);
+    color: var(--color-sage-light);
+}
+
+.filter-chip .filter-icon {
+    font-size: 1rem;
+}
+
+/* Bouton réinitialiser */
+.filter-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacing-md);
+}
+
+#resetFilters {
+    background: transparent;
+    border: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-full);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: var(--transition-base);
+}
+
+#resetFilters:hover {
+    border-color: var(--color-sage);
+    color: var(--color-sage-light);
+}
+
+/* ========================================
+   RÉSULTATS
+======================================== */
+.results-container {
+    margin-top: var(--spacing-xl);
+}
+
+.results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.results-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+#resultsCount {
+    font-size: 0.9rem;
+    color: var(--color-sage-light);
+    display: none;
+}
+
+/* Grille de résultats */
+#searchResults {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+}
+
+/* Carte remède recherche */
+.remedy-card-search {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    cursor: pointer;
+    transition: var(--transition-base);
+    position: relative;
+}
+
+.remedy-card-search:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-sage);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.remedy-card-search .remedy-badge {
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-light) 100%);
+    color: var(--color-bg-dark);
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-full);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    z-index: 1;
+}
+
+.remedy-card-image {
+    height: 140px;
+    overflow: hidden;
+}
+
+.remedy-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.remedy-card-search:hover .remedy-card-image img {
+    transform: scale(1.05);
+}
+
+.remedy-card-content {
+    padding: var(--spacing-md);
+}
+
+.remedy-card-type {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.75rem;
+    color: var(--color-sage-light);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.remedy-card-type .type-icon {
+    font-size: 0.9rem;
+}
+
+.remedy-card-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: 0.25rem;
+    line-height: 1.3;
+}
+
+.remedy-card-indications {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.4;
+}
+
+.remedy-card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+}
+
+.remedy-duration {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.remedy-difficulty {
+    padding: 0.2rem 0.6rem;
+    border-radius: var(--radius-sm);
+    text-transform: capitalize;
+}
+
+.remedy-difficulty.easy {
+    background: rgba(124, 154, 124, 0.2);
+    color: var(--color-sage-light);
+}
+
+.remedy-difficulty.medium {
+    background: rgba(201, 169, 98, 0.2);
+    color: var(--color-gold-light);
+}
+
+.remedy-difficulty.hard {
+    background: rgba(200, 100, 100, 0.2);
+    color: #e88;
+}
+
+/* Pas de résultats */
+.no-results,
+.empty-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: var(--spacing-2xl);
+}
+
+.no-results-icon,
+.empty-state-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-sm);
+    opacity: 0.5;
+}
+
+.no-results h3,
+.empty-state h3 {
+    font-size: 1.25rem;
+    color: var(--color-text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.no-results p,
+.empty-state p {
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-md);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ========================================
+   MODAL DÉTAIL REMÈDE
+======================================== */
+#remedyModal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-md);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-base);
+}
+
+#remedyModal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-container {
+    background: var(--color-bg-primary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    max-width: 800px;
+    width: 100%;
+    max-height: 90vh;
+    overflow: hidden;
+    position: relative;
+    transform: translateY(20px);
+    transition: var(--transition-base);
+}
+
+#remedyModal.active .modal-container {
+    transform: translateY(0);
+}
+
+.modal-close {
+    position: absolute;
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: var(--transition-base);
+    z-index: 10;
+}
+
+.modal-close:hover {
+    background: var(--color-bg-card-hover);
+    border-color: var(--color-sage);
+    color: var(--color-text-primary);
+}
+
+#remedyModalContent {
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: var(--spacing-lg);
+}
+
+/* Détail remède */
+.remedy-detail {
+    color: var(--color-text-primary);
+}
+
+.remedy-detail-header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.remedy-detail-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.remedy-detail-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.remedy-detail-badges {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.badge-popular {
+    background: rgba(201, 169, 98, 0.2);
+    color: var(--color-gold-light);
+}
+
+.badge-verified {
+    background: rgba(124, 154, 124, 0.2);
+    color: var(--color-sage-light);
+}
+
+.remedy-detail-title {
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.remedy-detail-alias {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+    margin-bottom: var(--spacing-sm);
+}
+
+.remedy-detail-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.meta-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.8rem;
+    background: var(--color-bg-card);
+    border-radius: var(--radius-full);
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+}
+
+.meta-item .meta-icon {
+    font-size: 1rem;
+}
+
+.meta-item.difficulty-facile {
+    background: rgba(124, 154, 124, 0.15);
+    color: var(--color-sage-light);
+}
+
+.meta-item.difficulty-moyen {
+    background: rgba(201, 169, 98, 0.15);
+    color: var(--color-gold-light);
+}
+
+/* Sections du détail */
+.remedy-detail-section {
+    margin-bottom: var(--spacing-lg);
+}
+
+.remedy-detail-section h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Tags d'indications */
+.indication-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.indication-tag {
+    padding: 0.4rem 0.8rem;
+    background: rgba(124, 154, 124, 0.15);
+    border: 1px solid rgba(124, 154, 124, 0.3);
+    border-radius: var(--radius-full);
+    font-size: 0.85rem;
+    color: var(--color-sage-light);
+}
+
+/* Liste d'ingrédients */
+.ingredients-list {
+    list-style: none;
+}
+
+.ingredient-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    background: var(--color-bg-card);
+    border-radius: var(--radius-md);
+    margin-bottom: 0.5rem;
+}
+
+.ingredient-name {
+    font-weight: 500;
+    color: var(--color-text-primary);
+}
+
+.ingredient-qty {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+}
+
+/* Étapes de préparation */
+.preparation-steps {
+    counter-reset: step;
+    list-style: none;
+}
+
+.preparation-steps li {
+    position: relative;
+    padding: 0.75rem 0 0.75rem 3rem;
+    border-left: 2px solid var(--color-border);
+    margin-left: 1rem;
+}
+
+.preparation-steps li::before {
+    counter-increment: step;
+    content: counter(step);
+    position: absolute;
+    left: -1rem;
+    top: 0.75rem;
+    width: 2rem;
+    height: 2rem;
+    background: var(--color-sage);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.preparation-steps li:last-child {
+    border-left-color: transparent;
+}
+
+/* Posologie */
+.posology-info {
+    background: var(--color-bg-card);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+}
+
+.posology-info p {
+    margin-bottom: 0.5rem;
+    color: var(--color-text-secondary);
+}
+
+.posology-info p:last-child {
+    margin-bottom: 0;
+}
+
+.posology-info strong {
+    color: var(--color-text-primary);
+}
+
+/* Avertissements */
+.warning-section {
+    background: rgba(200, 100, 100, 0.1);
+    border: 1px solid rgba(200, 100, 100, 0.3);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+}
+
+.warning-section h3 {
+    color: #e88;
+}
+
+.warning-list {
+    list-style: none;
+}
+
+.warning-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-secondary);
+}
+
+.warning-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #e88;
+}
+
+/* Précautions */
+.caution-section {
+    background: rgba(201, 169, 98, 0.1);
+    border: 1px solid rgba(201, 169, 98, 0.3);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+}
+
+.caution-section h3 {
+    color: var(--color-gold-light);
+}
+
+.caution-list {
+    list-style: none;
+}
+
+.caution-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-secondary);
+}
+
+.caution-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--color-gold);
+}
+
+/* Disclaimer */
+.remedy-detail-disclaimer {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background: rgba(124, 154, 124, 0.1);
+    border: 1px solid rgba(124, 154, 124, 0.2);
+    border-radius: var(--radius-md);
+    text-align: center;
+}
+
+.remedy-detail-disclaimer p {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    margin: 0;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+@media (max-width: 1024px) {
+    #searchResults {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    #searchResults {
+        grid-template-columns: 1fr;
+    }
+    
+    .search-bar {
+        flex-direction: column;
+        padding: var(--spacing-sm);
+        border-radius: var(--radius-lg);
+    }
+    
+    .search-bar input {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .search-bar .search-btn {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+    
+    .search-bar .search-icon {
+        display: none;
+    }
+    
+    .filter-chips {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: var(--spacing-sm);
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .filter-chip {
+        flex-shrink: 0;
+    }
+    
+    .remedy-detail-header {
+        grid-template-columns: 1fr;
+    }
+    
+    .remedy-detail-image {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    
+    .remedy-detail-info {
+        text-align: center;
+    }
+    
+    .remedy-detail-meta {
+        justify-content: center;
+    }
+    
+    .modal-container {
+        max-height: 95vh;
+        border-radius: var(--radius-lg);
+    }
+    
+    #remedyModalContent {
+        padding: var(--spacing-md);
+    }
+}

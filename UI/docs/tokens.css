@@ -1,0 +1,28 @@
+:root {
+  --bg-main: #0F1115;
+  --bg-elevated: #151922;
+  --bg-card: #1A1F29;
+  --bg-input: #121720;
+  --border-soft: #262D38;
+  --border-strong: #313A48;
+  --text-primary: #F2F4F7;
+  --text-secondary: #B7BEC9;
+  --text-muted: #7E8795;
+  --accent-herb: #78A686;
+  --accent-herb-soft: #5F8770;
+  --accent-amber: #C49B61;
+  --accent-amber-soft: #9B7748;
+  --success: #76B58B;
+  --warning: #D2A565;
+  --danger: #C36B6B;
+  --info: #7B9FB8;
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  --shadow-card: 0 12px 32px rgba(0,0,0,.22);
+  --shadow-soft: 0 8px 18px rgba(0,0,0,.16);
+}

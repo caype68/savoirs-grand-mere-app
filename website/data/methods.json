@@ -1,0 +1,76 @@
+{
+  "methods": [
+    {
+      "id": "infusion",
+      "nom": "Infusions",
+      "description": "Extraits de plantes par immersion dans l'eau chaude",
+      "image": "assets/images/Infusions.png",
+      "route": "orale",
+      "icone": "☕"
+    },
+    {
+      "id": "tisane",
+      "nom": "Tisanes",
+      "description": "Boissons chaudes à base de plantes séchées",
+      "image": "assets/images/tisanes.png",
+      "route": "orale",
+      "icone": "🍵"
+    },
+    {
+      "id": "cataplasme",
+      "nom": "Cataplasmes",
+      "description": "Applications externes de préparations naturelles",
+      "image": "assets/images/Cataplasmes.png",
+      "route": "cutanee",
+      "icone": "🩹"
+    },
+    {
+      "id": "compresse",
+      "nom": "Compresses",
+      "description": "Linges imbibés pour soulager localement",
+      "image": "assets/images/compresses.png",
+      "route": "cutanee",
+      "icone": "🧴"
+    },
+    {
+      "id": "inhalation",
+      "nom": "Inhalations",
+      "description": "Vapeurs et fumigations bienfaisantes",
+      "image": "assets/images/fumigations.png",
+      "route": "inhalation",
+      "icone": "💨"
+    },
+    {
+      "id": "friction",
+      "nom": "Frictions",
+      "description": "Massages avec huiles et préparations",
+      "image": "assets/images/frictions.png",
+      "route": "cutanee",
+      "icone": "✋"
+    },
+    {
+      "id": "sirop",
+      "nom": "Sirops",
+      "description": "Préparations sucrées aux vertus apaisantes",
+      "image": "assets/images/sirop.png",
+      "route": "orale",
+      "icone": "🍯"
+    },
+    {
+      "id": "bain",
+      "nom": "Bains",
+      "description": "Bains relaxants et thérapeutiques",
+      "image": "assets/images/mélanges à boire.png",
+      "route": "cutanee",
+      "icone": "🛁"
+    },
+    {
+      "id": "gargarisme",
+      "nom": "Gargarismes",
+      "description": "Rinçages pour la gorge et la bouche",
+      "image": "assets/images/Infusions.png",
+      "route": "gargarisme",
+      "icone": "💧"
+    }
+  ]
+}

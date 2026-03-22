@@ -1,0 +1,36 @@
+{
+  "symptoms": [
+    { "id": "gorge", "nom": "Gorge", "icone": "🗣️", "aliases": ["mal de gorge", "gorge irritée", "angine", "pharyngite"] },
+    { "id": "toux", "nom": "Toux", "icone": "😷", "aliases": ["toux sèche", "toux grasse", "quinte"] },
+    { "id": "rhume", "nom": "Rhume", "icone": "🤧", "aliases": ["nez bouché", "congestion", "refroidissement"] },
+    { "id": "fievre", "nom": "Fièvre", "icone": "🌡️", "aliases": ["température", "hyperthermie"] },
+    { "id": "digestion", "nom": "Digestion", "icone": "🍽️", "aliases": ["ballonnements", "estomac", "intestins", "nausées"] },
+    { "id": "sommeil", "nom": "Sommeil", "icone": "🌙", "aliases": ["insomnie", "endormissement", "troubles du sommeil"] },
+    { "id": "stress", "nom": "Stress", "icone": "😰", "aliases": ["anxiété", "nervosité", "angoisse"] },
+    { "id": "fatigue", "nom": "Fatigue", "icone": "😴", "aliases": ["épuisement", "asthénie", "manque d'énergie"] },
+    { "id": "douleurs", "nom": "Douleurs", "icone": "💢", "aliases": ["douleurs musculaires", "courbatures", "articulations"] },
+    { "id": "migraine", "nom": "Maux de tête", "icone": "🤕", "aliases": ["migraine", "céphalée", "mal de tête"] },
+    { "id": "peau", "nom": "Peau", "icone": "✨", "aliases": ["irritations", "eczéma", "acné", "brûlures"] },
+    { "id": "immunite", "nom": "Immunité", "icone": "🛡️", "aliases": ["défenses", "infections", "grippe"] },
+    { "id": "respiration", "nom": "Respiration", "icone": "💨", "aliases": ["voies respiratoires", "bronches", "sinusite"] },
+    { "id": "circulation", "nom": "Circulation", "icone": "❤️", "aliases": ["jambes lourdes", "varices", "sang"] },
+    { "id": "detox", "nom": "Détox", "icone": "🌿", "aliases": ["détoxification", "foie", "reins", "élimination"] },
+    { "id": "cheveux", "nom": "Cheveux", "icone": "💇", "aliases": ["chute de cheveux", "cuir chevelu", "pellicules"] }
+  ],
+  "bodyZones": [
+    { "id": "tete", "nom": "Tête", "icone": "🧠", "symptoms": ["migraine", "stress", "fatigue"] },
+    { "id": "gorge-zone", "nom": "Gorge & Cou", "icone": "🗣️", "symptoms": ["gorge", "toux"] },
+    { "id": "poitrine", "nom": "Poitrine", "icone": "🫁", "symptoms": ["respiration", "toux"] },
+    { "id": "ventre", "nom": "Ventre", "icone": "🤰", "symptoms": ["digestion", "detox"] },
+    { "id": "membres", "nom": "Membres", "icone": "💪", "symptoms": ["douleurs", "circulation"] },
+    { "id": "peau-zone", "nom": "Peau", "icone": "✨", "symptoms": ["peau"] },
+    { "id": "general", "nom": "Corps entier", "icone": "🧘", "symptoms": ["sommeil", "stress", "fatigue", "immunite"] }
+  ],
+  "routes": [
+    { "id": "orale", "nom": "Voie orale", "description": "À boire ou à manger" },
+    { "id": "cutanee", "nom": "Application cutanée", "description": "Sur la peau" },
+    { "id": "inhalation", "nom": "Inhalation", "description": "À respirer" },
+    { "id": "gargarisme", "nom": "Gargarisme", "description": "Rinçage bouche/gorge" },
+    { "id": "nasale", "nom": "Voie nasale", "description": "Par le nez" }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "total_assets": 55,
+  "breakdown": {
+    "colors": 1,
+    "icons": 16,
+    "textures": 8,
+    "illustrations": 10,
+    "components": 20,
+    "screens": 4,
+    "docs": 3
+  },
+  "app_name": "Savoirs de Grand-Mère"
+}

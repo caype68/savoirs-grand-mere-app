@@ -24,7 +24,10 @@ import {
 
 // Hooks backend hybrides
 import { useWellnessLog, useWellnessHistory } from '../hooks/useWellness';
+import { useAuth } from '../hooks/useAuth';
 import { formatDateKey, generateId } from '../services/supabase';
+import { useNavigation } from '@react-navigation/native';
+import { BottomTabNavigationProp } from '@react-navigation/bottom-tabs';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
@@ -118,6 +121,11 @@ const COMMON_SYMPTOMS = [
 ];
 
 export const WellnessScreen: React.FC = () => {
+  const navigation = useNavigation<BottomTabNavigationProp<any>>();
+
+  // Auth pour récupérer le userId réel
+  const { authState } = useAuth();
+
   // Hooks backend hybrides
   const { todayLog: existingLog, saveLog, isSaving, source, refresh: refreshLog } = useWellnessLog();
   const { history, refresh: refreshHistory } = useWellnessHistory(7);
@@ -132,6 +140,7 @@ export const WellnessScreen: React.FC = () => {
     noteLibre: '',
   });
   const [showHistory, setShowHistory] = useState(false);
+  const [saveStatus, setSaveStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null);
 
   // Charger les données existantes dans le formulaire
   useEffect(() => {
@@ -143,10 +152,10 @@ export const WellnessScreen: React.FC = () => {
   const handleSave = async () => {
     const now = new Date();
     const dateKey = formatDateKey(now);
-    
+
     const log: WellnessLog = {
       id: existingLog?.id || generateId(),
-      userId: existingLog?.userId || 'guest',
+      userId: existingLog?.userId || authState.userId || 'guest',
       date: now.toISOString(),
       dateKey,
       sommeil: formData.sommeil as WellnessLog['sommeil'],
@@ -161,16 +170,19 @@ export const WellnessScreen: React.FC = () => {
     };
 
     const result = await saveLog(log);
-    
+
     if (result.success) {
       refreshHistory();
-      if (result.recommendation) {
-        Alert.alert(
-          '🌿 Remède du jour',
-          `${result.recommendation.remedyName}\n\n${result.recommendation.reason}`,
-          [{ text: 'Super !', style: 'default' }]
-        );
-      }
+      const msg = result.recommendation
+        ? `✅ Enregistré ! Remède du jour : ${result.recommendation.remedyName}`
+        : '✅ Journal bien-être enregistré !';
+      setSaveStatus({ type: 'success', message: msg });
+      // Retour à l'accueil après 1,5 secondes
+      setTimeout(() => {
+        navigation.navigate('Accueil');
+      }, 1500);
+    } else {
+      setSaveStatus({ type: 'error', message: "❌ Erreur lors de l'enregistrement. Réessayez." });
     }
   };
 
@@ -354,6 +366,13 @@ export const WellnessScreen: React.FC = () => {
               />
             </View>
 
+            {/* Bannière de statut */}
+            {saveStatus && (
+              <View style={[styles.statusBanner, saveStatus.type === 'error' && styles.statusBannerError]}>
+                <Text style={styles.statusBannerText}>{saveStatus.message}</Text>
+              </View>
+            )}
+
             {/* Bouton sauvegarder */}
             <TouchableOpacity
               style={styles.saveButton}
@@ -522,6 +541,24 @@ const styles = StyleSheet.create({
     textAlignVertical: 'top',
     borderWidth: 1,
     borderColor: colors.border,
+  },
+  statusBanner: {
+    backgroundColor: colors.accentPrimaryMuted,
+    borderRadius: borderRadius.md,
+    padding: spacing.md,
+    marginTop: spacing.md,
+    borderWidth: 1,
+    borderColor: colors.accentPrimary,
+  },
+  statusBannerError: {
+    backgroundColor: '#3D1515',
+    borderColor: '#C0392B',
+  },
+  statusBannerText: {
+    color: colors.textPrimary,
+    fontSize: 14,
+    fontWeight: '600',
+    textAlign: 'center',
   },
   saveButton: {
     borderRadius: borderRadius.xl,

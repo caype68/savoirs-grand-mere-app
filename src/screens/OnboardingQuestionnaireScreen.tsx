@@ -194,33 +194,24 @@ export const OnboardingQuestionnaireScreen: React.FC<OnboardingQuestionnaireScre
   const progress = (currentStep + 1) / QUESTIONNAIRE_STEPS.length;
 
   const animateTransition = (direction: 'next' | 'prev', callback: () => void) => {
+    // Sur web, Animated modifie le DOM hors du cycle React → removeChild crash
+    // On change directement l'étape sans animation
+    if (Platform.OS === 'web') {
+      callback();
+      return;
+    }
+
     const toValue = direction === 'next' ? -SCREEN_WIDTH : SCREEN_WIDTH;
-    
+
     Animated.parallel([
-      Animated.timing(fadeAnim, {
-        toValue: 0,
-        duration: 150,
-        useNativeDriver: true,
-      }),
-      Animated.timing(slideAnim, {
-        toValue,
-        duration: 150,
-        useNativeDriver: true,
-      }),
+      Animated.timing(fadeAnim, { toValue: 0, duration: 150, useNativeDriver: true }),
+      Animated.timing(slideAnim, { toValue, duration: 150, useNativeDriver: true }),
     ]).start(() => {
       callback();
       slideAnim.setValue(direction === 'next' ? SCREEN_WIDTH : -SCREEN_WIDTH);
       Animated.parallel([
-        Animated.timing(fadeAnim, {
-          toValue: 1,
-          duration: 200,
-          useNativeDriver: true,
-        }),
-        Animated.timing(slideAnim, {
-          toValue: 0,
-          duration: 200,
-          useNativeDriver: true,
-        }),
+        Animated.timing(fadeAnim, { toValue: 1, duration: 200, useNativeDriver: true }),
+        Animated.timing(slideAnim, { toValue: 0, duration: 200, useNativeDriver: true }),
       ]).start();
     });
   };
@@ -373,11 +364,11 @@ export const OnboardingQuestionnaireScreen: React.FC<OnboardingQuestionnaireScre
           
           <View style={styles.progressContainer}>
             <View style={styles.progressBar}>
-              <Animated.View 
+              <View
                 style={[
                   styles.progressFill,
-                  { width: `${progress * 100}%` }
-                ]} 
+                  { width: `${progress * 100}%` as any },
+                ]}
               />
             </View>
             <Text style={styles.progressText}>
@@ -395,49 +386,80 @@ export const OnboardingQuestionnaireScreen: React.FC<OnboardingQuestionnaireScre
           style={styles.content}
           behavior={Platform.OS === 'ios' ? 'padding' : undefined}
         >
-          <Animated.View 
-            style={[
-              styles.stepContainer,
-              {
-                opacity: fadeAnim,
-                transform: [{ translateX: slideAnim }],
-              }
-            ]}
-          >
-            <Text style={styles.stepTitle}>{step.title}</Text>
-            <Text style={styles.stepSubtitle}>{step.subtitle}</Text>
+          {Platform.OS === 'web' ? (
+            // Sur web : View simple sans animation pour éviter les crashes DOM
+            <View style={styles.stepContainer}>
+              <Text style={styles.stepTitle}>{step.title}</Text>
+              <Text style={styles.stepSubtitle}>{step.subtitle}</Text>
 
-            {step.type === 'input' ? (
-              <View style={styles.inputContainer}>
-                <TextInput
-                  style={styles.textInput}
-                  value={inputValue}
-                  onChangeText={handleInputChange}
-                  placeholder={step.placeholder}
-                  placeholderTextColor={colors.textMuted}
-                  keyboardType={step.field === 'age' ? 'numeric' : 'default'}
-                  maxLength={step.field === 'age' ? 3 : 100}
-                />
-              </View>
-            ) : (
-              <ScrollView 
-                style={styles.optionsContainer}
-                showsVerticalScrollIndicator={false}
-                contentContainerStyle={styles.optionsContent}
-              >
-                {step.options?.map(renderOption)}
-              </ScrollView>
-            )}
-          </Animated.View>
+              {step.type === 'input' ? (
+                <View style={styles.inputContainer}>
+                  <TextInput
+                    style={styles.textInput}
+                    value={inputValue}
+                    onChangeText={handleInputChange}
+                    placeholder={step.placeholder}
+                    placeholderTextColor={colors.textMuted}
+                    keyboardType={step.field === 'age' ? 'numeric' : 'default'}
+                    maxLength={step.field === 'age' ? 3 : 100}
+                  />
+                </View>
+              ) : (
+                <ScrollView
+                  style={styles.optionsContainer}
+                  showsVerticalScrollIndicator={false}
+                  contentContainerStyle={styles.optionsContent}
+                >
+                  {step.options?.map(renderOption)}
+                </ScrollView>
+              )}
+            </View>
+          ) : (
+            // Sur native : Animated.View avec slide + fade
+            <Animated.View
+              style={[
+                styles.stepContainer,
+                { opacity: fadeAnim, transform: [{ translateX: slideAnim }] },
+              ]}
+            >
+              <Text style={styles.stepTitle}>{step.title}</Text>
+              <Text style={styles.stepSubtitle}>{step.subtitle}</Text>
+
+              {step.type === 'input' ? (
+                <View style={styles.inputContainer}>
+                  <TextInput
+                    style={styles.textInput}
+                    value={inputValue}
+                    onChangeText={handleInputChange}
+                    placeholder={step.placeholder}
+                    placeholderTextColor={colors.textMuted}
+                    keyboardType={step.field === 'age' ? 'numeric' : 'default'}
+                    maxLength={step.field === 'age' ? 3 : 100}
+                  />
+                </View>
+              ) : (
+                <ScrollView
+                  style={styles.optionsContainer}
+                  showsVerticalScrollIndicator={false}
+                  contentContainerStyle={styles.optionsContent}
+                >
+                  {step.options?.map(renderOption)}
+                </ScrollView>
+              )}
+            </Animated.View>
+          )}
         </KeyboardAvoidingView>
 
         {/* Footer avec bouton continuer */}
         <View style={styles.footer}>
-          {step.type === 'multiple' && (
+          {step.type === 'multiple' ? (
             <Text style={styles.selectionCount}>
-              {((profile[step.field] as string[]) || []).length} sélectionné(s)
-              {step.maxSelections && ` (max ${step.maxSelections})`}
+              {((profile[step.field] as string[]) || []).length}
+              {' '}sélectionné(s)
+              {step.maxSelections ? ` (max ${step.maxSelections})` : ''}
             </Text>
+          ) : (
+            <View style={styles.selectionCountPlaceholder} />
           )}
           
           <TouchableOpacity
@@ -617,6 +639,10 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: colors.textMuted,
     textAlign: 'center',
+    marginBottom: spacing.md,
+  },
+  selectionCountPlaceholder: {
+    height: 20,
     marginBottom: spacing.md,
   },
   continueButton: {

@@ -4,15 +4,26 @@
 // ============================================
 
 import { useState, useEffect, useCallback } from 'react';
-import { DailyRoutine, Remede } from '../types';
-import { 
-  getTodayRoutine, 
-  generateDailyRoutine, 
-  completeRoutineBlock,
+import { DailyRoutine, Remede, UserGoalType } from '../types';
+import {
+  getTodayRoutine,
+  generateDailyRoutine,
+  completeRoutine,
   getRoutineRemedies,
 } from '../services/dailyRoutine';
 import { getUserProfile } from '../services/storage';
 import { getTodayWellnessLogFromBackend } from '../services/supabase/wellnessApi';
+
+// ============================================
+// HELPER - charge morning + evening remedies
+// ============================================
+
+function loadRemediesForRoutine(routine: DailyRoutine): { morning: Remede[]; evening: Remede[] } {
+  return {
+    morning: getRoutineRemedies(routine, 'morning'),
+    evening: getRoutineRemedies(routine, 'evening'),
+  };
+}
 
 // ============================================
 // HOOK
@@ -35,13 +46,10 @@ export function useDailyRoutine() {
 
     try {
       const todayRoutine = await getTodayRoutine();
-      
+
       if (todayRoutine) {
         setRoutine(todayRoutine);
-        
-        // Charger les remèdes associés
-        const routineRemedies = await getRoutineRemedies(todayRoutine);
-        setRemedies(routineRemedies);
+        setRemedies(loadRemediesForRoutine(todayRoutine));
       } else {
         setRoutine(null);
         setRemedies({ morning: [], evening: [] });
@@ -62,8 +70,9 @@ export function useDailyRoutine() {
       // Récupérer le profil et le wellness log
       const profile = await getUserProfile();
       const wellnessResult = await getTodayWellnessLogFromBackend();
-      
-      const goals = profile?.objectifs || [];
+
+      // Convertir HealthGoal[] en UserGoalType[] (mapping souple)
+      const goals = (profile?.objectifs || []) as unknown as UserGoalType[];
       const wellnessLog = wellnessResult.data;
 
       // Générer la routine
@@ -71,8 +80,7 @@ export function useDailyRoutine() {
       setRoutine(newRoutine);
 
       // Charger les remèdes
-      const routineRemedies = await getRoutineRemedies(newRoutine);
-      setRemedies(routineRemedies);
+      setRemedies(loadRemediesForRoutine(newRoutine));
 
       return newRoutine;
     } catch (err) {
@@ -88,7 +96,8 @@ export function useDailyRoutine() {
     if (!routine) return;
 
     try {
-      const updatedRoutine = await completeRoutineBlock(routine.id, type);
+      // completeRoutine attend (dateKey, type)
+      const updatedRoutine = await completeRoutine(routine.dateKey, type);
       if (updatedRoutine) {
         setRoutine(updatedRoutine);
       }

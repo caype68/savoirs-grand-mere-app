@@ -135,7 +135,7 @@ export const FavorisScreen: React.FC<FavorisScreenProps> = ({ navigation }) => {
             </Text>
             <TouchableOpacity 
               style={styles.exploreButton}
-              onPress={() => navigation.navigate('Chercheur')}
+              onPress={() => navigation.navigate('Accueil')}
             >
               <Text style={styles.exploreButtonText}>Explorer les remèdes</Text>
               <Feather name="arrow-right" size={16} color={colors.accentPrimary} />

@@ -371,14 +371,28 @@ async function saveLocalUserProfile(profile: UserProfile): Promise<void> {
 // ============================================
 
 function convertSupabaseProfile(data: any): UserProfile {
+  // Conversion complète des colonnes Supabase (snake_case) vers UserProfile (camelCase)
   return {
     id: data.id,
-    displayName: data.display_name,
-    email: data.email,
-    goals: data.goals || [],
-    preferences: data.preferences || {},
-    createdAt: data.created_at,
-    updatedAt: data.updated_at,
+    nom: data.nom || data.display_name || undefined,
+    email: data.email || undefined,
+    age: data.age || undefined,
+    sexe: data.sexe || 'non_precise',
+    profileType: data.profile_type || 'adulte',
+    objectifs: data.objectifs || data.goals || [],
+    formatsPreferes: data.formats_preferes || [],
+    allergies: data.allergies || [],
+    restrictions: data.restrictions || [],
+    niveauExperience: data.niveau_experience || 'debutant',
+    notificationsEnabled: data.notifications_enabled ?? true,
+    notificationFrequency: data.notification_frequency || 'quotidien',
+    notificationHoraires: data.notification_horaires || { matin: '08:00', soir: '21:00' },
+    interesseParProduits: data.interesse_par_produits ?? true,
+    onboardingCompleted: data.onboarding_completed || false,
+    cycleTracking: data.cycle_tracking || undefined,
+    avatarUri: data.avatar_uri || undefined,
+    createdAt: data.created_at || new Date().toISOString(),
+    updatedAt: data.updated_at || new Date().toISOString(),
   };
 }
 

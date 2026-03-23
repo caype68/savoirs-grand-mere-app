@@ -196,7 +196,12 @@ export const AppNavigator: React.FC = () => {
         )}
       </Stack.Screen>
       <Stack.Screen name="Onboarding">
-        {() => <OnboardingQuestionnaireScreen onComplete={handleOnboardingComplete} />}
+        {({ navigation }) => (
+          <OnboardingQuestionnaireScreen onComplete={() => {
+            handleOnboardingComplete();
+            navigation.replace('MainTabs');
+          }} />
+        )}
       </Stack.Screen>
       <Stack.Screen name="MainTabs" component={TabNavigator} />
       <Stack.Screen 

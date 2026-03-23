@@ -23,3 +23,9 @@ export {
   AuthProvider,
   type AuthContextType,
 } from './useAuth';
+
+export { useDailyRoutine } from './useDailyRoutine';
+
+export { useFavoris } from './useFavoris';
+
+export { usePreferences } from './usePreferences';

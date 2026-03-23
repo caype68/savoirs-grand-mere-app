@@ -295,7 +295,12 @@ export const RemedeDetailScreen: React.FC<RemedeDetailScreenProps> = ({ navigati
         <SponsoredProductsSection remedeId={remede.id} />
 
         {/* Acheter les ingrédients - Amazon Affilié */}
-        <AffiliateProductsSection remedyId={remede.id} />
+        <AffiliateProductsSection
+          remedyId={remede.id}
+          remedy={remede}
+          useSmartMatching={true}
+          layout="vertical"
+        />
 
         {/* Disclaimer */}
         <View style={styles.disclaimer}>

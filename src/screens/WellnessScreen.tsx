@@ -24,6 +24,7 @@ import {
 
 // Hooks backend hybrides
 import { useWellnessLog, useWellnessHistory } from '../hooks/useWellness';
+import { useAuth } from '../hooks/useAuth';
 import { formatDateKey, generateId } from '../services/supabase';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
@@ -118,6 +119,9 @@ const COMMON_SYMPTOMS = [
 ];
 
 export const WellnessScreen: React.FC = () => {
+  // Auth pour récupérer le userId réel
+  const { authState } = useAuth();
+
   // Hooks backend hybrides
   const { todayLog: existingLog, saveLog, isSaving, source, refresh: refreshLog } = useWellnessLog();
   const { history, refresh: refreshHistory } = useWellnessHistory(7);
@@ -146,7 +150,7 @@ export const WellnessScreen: React.FC = () => {
     
     const log: WellnessLog = {
       id: existingLog?.id || generateId(),
-      userId: existingLog?.userId || 'guest',
+      userId: existingLog?.userId || authState.userId || 'guest',
       date: now.toISOString(),
       dateKey,
       sommeil: formData.sommeil as WellnessLog['sommeil'],

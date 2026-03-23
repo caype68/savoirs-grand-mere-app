@@ -157,7 +157,7 @@ export async function getRemedyById(id: string): Promise<{ data: Remede | null; 
 
       // Incrémenter le compteur de vues
       if (data) {
-        client.rpc('increment_remedy_view_count', { remedy_id: data.id }).catch(() => {});
+        Promise.resolve(client.rpc('increment_remedy_view_count', { remedy_id: data.id })).catch(() => {});
       }
 
       return data ? convertSupabaseToLocal(data) : null;

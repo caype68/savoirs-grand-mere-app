@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { 
-  View, 
-  StyleSheet, 
-  ScrollView, 
+import {
+  View,
+  StyleSheet,
+  ScrollView,
   ImageBackground,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -22,7 +22,8 @@ import {
   FeaturedRemediesSection,
   DailyRecommendationSection,
 } from '../components/home';
-import { AIQuestionFlow } from '../components';
+import { AIQuestionFlow, DailyRoutineCard, NoRoutineCard } from '../components';
+import { useDailyRoutine } from '../hooks/useDailyRoutine';
 
 type HomeScreenProps = {
   navigation: NativeStackNavigationProp<any>;
@@ -58,6 +59,15 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
   const [selectedSubType, setSelectedSubType] = useState<string | null>(null);
   const [showZoneModal, setShowZoneModal] = useState(false);
   const [pendingSearchTerm, setPendingSearchTerm] = useState('');
+
+  // Hook routine quotidienne
+  const {
+    routine,
+    remedies: routineRemedies,
+    isGenerating: isRoutineGenerating,
+    generateRoutine,
+    completeBlock,
+  } = useDailyRoutine();
 
   const handleSearch = (query: string) => {
     if (query.trim()) {
@@ -175,6 +185,24 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
               onFillWellnessLog={() => navigation.navigate('Wellness')}
             />
 
+            {/* Daily Routine (Matin / Soir) */}
+            <View style={styles.routineSection}>
+              {routine ? (
+                <DailyRoutineCard
+                  routine={routine}
+                  remedies={routineRemedies}
+                  onViewRemedy={handleRemedySelect}
+                  onCompleteRoutine={completeBlock}
+                  compact
+                />
+              ) : (
+                <NoRoutineCard
+                  onGenerate={generateRoutine}
+                  isLoading={isRoutineGenerating}
+                />
+              )}
+            </View>
+
             {/* Medical Disclaimer */}
             <MedicalDisclaimerBanner />
 
@@ -228,6 +256,10 @@ const styles = StyleSheet.create({
   },
   scrollContent: {
     paddingBottom: spacing.xl,
+  },
+  routineSection: {
+    paddingHorizontal: spacing.md,
+    marginBottom: spacing.lg,
   },
   bottomSpacer: {
     height: 100,

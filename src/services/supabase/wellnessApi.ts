@@ -408,7 +408,10 @@ function generateRecommendationLocally(log: WellnessLog): DailyRecommendation | 
   });
 
   if (matchingRemedies.length === 0) {
-    // Prendre un remède aléatoire
+    // Prendre un remède aléatoire (avec guard si remedes est vide)
+    if (remedes.length === 0) {
+      return null;
+    }
     const randomIndex = Math.floor(Math.random() * Math.min(remedes.length, 10));
     matchingRemedies.push(remedes[randomIndex]);
   }
@@ -416,6 +419,11 @@ function generateRecommendationLocally(log: WellnessLog): DailyRecommendation | 
   // Sélectionner un remède avec un peu de variation
   const selectedIndex = Math.floor(Math.random() * Math.min(matchingRemedies.length, 3));
   const selectedRemedy = matchingRemedies[selectedIndex];
+
+  // Guard final - ne devrait jamais arriver mais protège contre undefined
+  if (!selectedRemedy) {
+    return null;
+  }
 
   const recommendation: DailyRecommendation = {
     id: generateId(),
@@ -442,32 +450,32 @@ function generateRecommendationLocally(log: WellnessLog): DailyRecommendation | 
 
 function convertSupabaseWellnessLog(data: any): WellnessLog {
   return {
-    id: data.id,
-    userId: data.user_id,
-    date: data.date,
-    dateKey: data.date_key,
+    id: data.id || '',
+    userId: data.user_id || 'guest',
+    date: data.date || new Date().toISOString(),
+    dateKey: data.date_key || '',
     sommeil: {
-      qualite: data.sleep_quality,
-      heures: data.sleep_hours,
-      difficulteEndormissement: data.sleep_difficulty,
-      reveilsNocturnes: data.sleep_interruptions,
+      qualite: data.sleep_quality ?? 0,
+      heures: data.sleep_hours ?? undefined,
+      difficulteEndormissement: data.sleep_difficulty ?? false,
+      reveilsNocturnes: data.sleep_interruptions ?? false,
     },
-    stress: data.stress_level,
-    humeur: data.mood_level,
-    energie: data.energy_level,
-    hydratation: data.hydration,
-    digestion: data.digestion,
+    stress: data.stress_level ?? 0,
+    humeur: data.mood_level ?? 0,
+    energie: data.energy_level ?? 0,
+    hydratation: data.hydration ?? undefined,
+    digestion: data.digestion ?? undefined,
     symptomes: data.symptoms || [],
     cycleInfo: data.cycle_day ? {
       jourCycle: data.cycle_day,
-      regles: data.cycle_period,
-      douleurs: data.cycle_pain,
+      regles: data.cycle_period ?? false,
+      douleurs: data.cycle_pain ?? false,
     } : undefined,
-    noteLibre: data.notes,
+    noteLibre: data.notes ?? undefined,
     remedesUtilises: data.remedies_used || [],
-    isValidated: data.is_validated,
-    createdAt: data.created_at,
-    updatedAt: data.updated_at,
+    isValidated: data.is_validated ?? false,
+    createdAt: data.created_at || new Date().toISOString(),
+    updatedAt: data.updated_at || undefined,
   };
 }
 

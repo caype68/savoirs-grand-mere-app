@@ -20,6 +20,7 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { textures, getRemedyImage } from '../assets';
 import { SponsoredProductsSection } from '../components/SponsoredProductsSection';
 import { AffiliateProductsSection } from '../components/AffiliateProductsSection';
+import { cacheRemedy, isRemedyCached } from '../services/offlineCache';
 
 type RootStackParamList = {
   MainTabs: undefined;
@@ -37,6 +38,20 @@ export const RemedeDetailScreen: React.FC<RemedeDetailScreenProps> = ({ navigati
   
   const { isFavori, toggleFavori } = useFavoris();
   const [expandedSections, setExpandedSections] = useState<string[]>(['bienfaits']);
+  const [isCached, setIsCached] = useState(false);
+
+  // Cache le remède pour accès hors-ligne
+  React.useEffect(() => {
+    if (remede) {
+      cacheRemedy(remede);
+      setIsCached(true);
+    }
+  }, [remede]);
+
+  // Vérifier si déjà en cache
+  React.useEffect(() => {
+    isRemedyCached(remedeId).then(setIsCached);
+  }, [remedeId]);
 
   // Get illustration for this remedy
   const remedeImage = remede ? getRemedyImage(remede.nom, remede.route) : null;
@@ -190,6 +205,14 @@ export const RemedeDetailScreen: React.FC<RemedeDetailScreenProps> = ({ navigati
             )}
           </View>
           
+          {/* Offline badge */}
+          {isCached && (
+            <View style={styles.offlineBadge}>
+              <Feather name="download-cloud" size={11} color="#34D399" />
+              <Text style={styles.offlineBadgeText}>Disponible hors-ligne</Text>
+            </View>
+          )}
+
           {/* Route badge */}
           <View style={styles.routeBadge}>
             <Feather 
@@ -408,6 +431,22 @@ const styles = StyleSheet.create({
     backgroundColor: colors.accentPrimary,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  offlineBadge: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    backgroundColor: 'rgba(52, 211, 153, 0.1)',
+    paddingHorizontal: 8,
+    paddingVertical: 3,
+    borderRadius: 8,
+    alignSelf: 'flex-start',
+    marginTop: spacing.xs,
+  },
+  offlineBadgeText: {
+    fontSize: 10,
+    color: '#34D399',
+    fontWeight: '600',
   },
   routeBadge: {
     flexDirection: 'row',

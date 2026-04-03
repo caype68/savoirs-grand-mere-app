@@ -36,8 +36,12 @@
     },
     "extra": {
       "eas": {
-        "projectId": "savoirs-de-grand-mere"
+        "projectId": "63762c99-fd3c-4136-a4d0-f421d6360cf2"
       }
-    }
+    },
+    "plugins": [
+      "expo-sharing",
+      "expo-sqlite"
+    ]
   }
 }

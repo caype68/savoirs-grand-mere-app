@@ -78,31 +78,41 @@ const levenshteinDistance = (a: string, b: string): number => {
   return matrix[b.length][a.length];
 };
 
-const isFuzzyMatch = (query: string, target: string, threshold: number = 2): boolean => {
+const isFuzzyMatch = (query: string, target: string, threshold: number = 1): boolean => {
   const normalizedQuery = normalizeText(query);
   const normalizedTarget = normalizeText(target);
-  
-  // Direct inclusion check
+
+  // Direct inclusion — la cible contient le terme cherché
   if (normalizedTarget.includes(normalizedQuery)) {
     return true;
   }
-  
-  // Check if query is included in target
-  if (normalizedQuery.includes(normalizedTarget)) {
+
+  // Reverse inclusion — seulement si le mot cible est assez long (≥4 chars)
+  // Sinon des mots courts comme "the", "mal" matchent tout
+  if (normalizedTarget.length >= 4 && normalizedQuery.includes(normalizedTarget)) {
     return true;
   }
-  
-  // Check each word
+
+  // Vérifier chaque mot de la cible
   const words = normalizedTarget.split(/\s+/);
   for (const word of words) {
-    if (word.includes(normalizedQuery) || normalizedQuery.includes(word)) {
+    // Match exact d'un mot
+    if (word === normalizedQuery) {
       return true;
     }
-    if (levenshteinDistance(normalizedQuery, word) <= threshold) {
+    // Un mot de la cible contient le terme (ex: "anti-stress" contient "stress")
+    if (word.length >= 4 && word.includes(normalizedQuery)) {
       return true;
+    }
+    // Levenshtein seulement pour les mots de longueur similaire (±3 chars)
+    if (Math.abs(word.length - normalizedQuery.length) <= 3 &&
+        word.length >= 4 && normalizedQuery.length >= 4) {
+      if (levenshteinDistance(normalizedQuery, word) <= threshold) {
+        return true;
+      }
     }
   }
-  
+
   return false;
 };
 
@@ -172,23 +182,33 @@ export const searchRemedes = (
     }
     
     // Match on indications (with expanded synonyms)
-    for (const indication of remede.indications) {
+    // La 1ère indication = catégorie principale → score plus élevé
+    let indicationMatched = false;
+    for (let idx = 0; idx < remede.indications.length; idx++) {
+      const indication = remede.indications[idx];
+      const isPrimary = idx === 0; // 1ère indication = catégorie principale
       if (isFuzzyMatch(query, indication)) {
-        score += 3;
-        matchReasons.push(`usage: ${indication}`);
+        score += isPrimary ? 6 : 3; // Boost x2 si catégorie principale
+        matchReasons.push(isPrimary ? `catégorie: ${indication}` : `usage: ${indication}`);
+        indicationMatched = true;
         break;
       }
       // Check expanded terms (synonyms)
-      for (const term of expandedTerms) {
-        if (term !== normalizedQuery && isFuzzyMatch(term, indication)) {
-          score += 2;
-          matchReasons.push(`synonyme: ${term}`);
-          break;
+      if (!indicationMatched) {
+        for (const term of expandedTerms) {
+          if (term !== normalizedQuery && isFuzzyMatch(term, indication)) {
+            score += isPrimary ? 4 : 2;
+            matchReasons.push(`synonyme: ${term}`);
+            indicationMatched = true;
+            break;
+          }
         }
       }
+      if (indicationMatched) break;
     }
     
-    if (score > 0) {
+    // Score minimum de 3 pour filtrer les matchs trop faibles (synonymes seuls = 2)
+    if (score >= 3) {
       results.push({
         remede,
         score,
@@ -196,9 +216,9 @@ export const searchRemedes = (
       });
     }
   }
-  
-  // Sort by score descending
-  return results.sort((a, b) => b.score - a.score);
+
+  // Sort by score descending, limiter à 20 résultats max
+  return results.sort((a, b) => b.score - a.score).slice(0, 20);
 };
 
 export const sortResults = (

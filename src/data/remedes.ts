@@ -3,33 +3,33 @@ import { grimoireRemedes, grimoireLivre } from './grimoire_remedes';
 
 export const livres: Livre[] = [
   {
-    id: 'livre-a',
-    nom: 'Livre A',
-    auteur: 'Anonyme',
+    id: 'savoirs-gm-1',
+    nom: 'Savoirs de Grand-Mère - Tome 1',
+    auteur: 'Tradition populaire',
     annee: '1892',
     statutDroits: 'non_specifie',
     nombreRemedes: 3,
   },
   {
-    id: 'livre-b',
-    nom: 'Livre B',
+    id: 'savoirs-gm-2',
+    nom: 'Savoirs de Grand-Mère - Tome 2',
     auteur: 'Dr. Martin',
     annee: '1905',
     statutDroits: 'non_specifie',
     nombreRemedes: 3,
   },
   {
-    id: 'livre-c',
-    nom: 'Livre C',
+    id: 'savoirs-gm-3',
+    nom: 'Savoirs de Grand-Mère - Tome 3',
     auteur: 'Mme Dupont',
     annee: '1878',
     statutDroits: 'non_specifie',
     nombreRemedes: 2,
   },
   {
-    id: 'bible-remedes',
-    nom: 'Bible perdue des remèdes du médecin oublié',
-    auteur: 'Inconnu',
+    id: 'savoirs-gm-collection',
+    nom: 'Savoirs de Grand-Mère - Collection complète',
+    auteur: 'Tradition populaire',
     annee: '2020',
     statutDroits: 'non_specifie',
     nombreRemedes: 186,
@@ -160,7 +160,7 @@ const remedesBase: Remede[] = [
     contreIndications: ['Grossesse', 'Allaitement', 'Hypertension sévère'],
     precautions: ['Ne pas dépasser 3 tasses par jour'],
     source: {
-      livre: 'Livre A',
+      livre: 'Savoirs de Grand-Mère - Tome 1',
       page: 45,
       confianceOCR: 0.92,
       confianceParsing: 0.88,
@@ -215,7 +215,7 @@ const remedesBase: Remede[] = [
     indications: ['Gorge', 'Toux', 'Fatigue'],
     contreIndications: ['Diabète (consulter)', 'Enfants de moins de 1 an'],
     source: {
-      livre: 'Livre A',
+      livre: 'Savoirs de Grand-Mère - Tome 1',
       page: 78,
       confianceOCR: 0.85,
       confianceParsing: 0.81,
@@ -260,7 +260,7 @@ const remedesBase: Remede[] = [
     contreIndications: ['Peau lésée', 'Eczéma', 'Psoriasis'],
     precautions: ['Faire un test sur une petite zone avant'],
     source: {
-      livre: 'Livre B',
+      livre: 'Savoirs de Grand-Mère - Tome 2',
       page: 123,
       confianceOCR: 0.78,
       confianceParsing: 0.86,
@@ -308,7 +308,7 @@ const remedesBase: Remede[] = [
     indications: ['Sommeil', 'Anxiété', 'Digestion'],
     contreIndications: ['Allergie aux astéracées', 'Grossesse (premier trimestre)'],
     source: {
-      livre: 'Livre B',
+      livre: 'Savoirs de Grand-Mère - Tome 2',
       page: 56,
       confianceOCR: 0.91,
       confianceParsing: 0.89,
@@ -355,7 +355,7 @@ const remedesBase: Remede[] = [
     contreIndications: ['Asthme', 'Enfants de moins de 6 ans'],
     precautions: ['Ne pas approcher le visage trop près de l\'eau bouillante'],
     source: {
-      livre: 'Livre A',
+      livre: 'Savoirs de Grand-Mère - Tome 1',
       page: 112,
       confianceOCR: 0.88,
       confianceParsing: 0.85,
@@ -401,7 +401,7 @@ const remedesBase: Remede[] = [
     indications: ['Digestion', 'Ballonnements', 'Nausées'],
     contreIndications: ['Reflux gastro-œsophagien', 'Enfants de moins de 6 ans', 'Calculs biliaires'],
     source: {
-      livre: 'Livre C',
+      livre: 'Savoirs de Grand-Mère - Tome 3',
       page: 34,
       confianceOCR: 0.82,
       confianceParsing: 0.79,
@@ -449,7 +449,7 @@ const remedesBase: Remede[] = [
     contreIndications: ['Plaies ouvertes', 'Peau irritée'],
     precautions: ['Utiliser des ustensiles en bois ou plastique, pas de métal'],
     source: {
-      livre: 'Livre C',
+      livre: 'Savoirs de Grand-Mère - Tome 3',
       page: 89,
       confianceOCR: 0.75,
       confianceParsing: 0.80,
@@ -504,7 +504,7 @@ const remedesBase: Remede[] = [
     indications: ['Gorge', 'Toux', 'Respiration'],
     contreIndications: ['Enfants de moins de 1 an', 'Diabète', 'Grossesse'],
     source: {
-      livre: 'Livre B',
+      livre: 'Savoirs de Grand-Mère - Tome 2',
       page: 201,
       confianceOCR: 0.89,
       confianceParsing: 0.84,
@@ -513,7 +513,7 @@ const remedesBase: Remede[] = [
     },
     verifie: true,
   },
-  // Remèdes importés de la Bible perdue des remèdes
+  // Remèdes importés de la Savoirs de Grand-Mère
   {
     id: 'clous-girofle-digestion',
     nom: 'Mâcher des clous de girofle',
@@ -543,7 +543,7 @@ const remedesBase: Remede[] = [
     contreIndications: [],
     precautions: ['Ne pas consommer en excès'],
     source: {
-      livre: 'Bible perdue des remèdes du médecin oublié',
+      livre: 'Savoirs de Grand-Mère',
       page: 10,
       confianceOCR: 0.70,
       confianceParsing: 0.70,
@@ -597,7 +597,7 @@ const remedesBase: Remede[] = [
     contreIndications: ['Allergie au miel'],
     precautions: ['Consulter un médecin en cas d\'allergie'],
     source: {
-      livre: 'Bible perdue des remèdes du médecin oublié',
+      livre: 'Savoirs de Grand-Mère',
       page: 31,
       confianceOCR: 0.70,
       confianceParsing: 0.70,
@@ -635,7 +635,7 @@ const remedesBase: Remede[] = [
     contreIndications: ['Irritation cutanée'],
     precautions: ['Éviter en cas d\'irritation cutanée'],
     source: {
-      livre: 'Bible perdue des remèdes du médecin oublié',
+      livre: 'Savoirs de Grand-Mère',
       page: 31,
       confianceOCR: 0.70,
       confianceParsing: 0.70,

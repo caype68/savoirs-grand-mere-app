@@ -1,8 +1,8 @@
 import { Remede } from '../types';
-import remedesData from './remedes_importes.json';
+import remedesData from './dernier_livre_remedes.json';
 
-// Convertir les remèdes importés au format de l'application
-export const remedesImportes: Remede[] = remedesData.remedes.map((r: any) => ({
+// Convertir les remèdes du dernier livre au format de l'application
+export const dernierLivreRemedes: Remede[] = remedesData.remedes.map((r: any) => ({
   id: r.id,
   nom: r.nom,
   alias: [],
@@ -40,8 +40,8 @@ export const remedesImportes: Remede[] = remedesData.remedes.map((r: any) => ({
   verifie: false,
 }));
 
-export const livreImporte = {
-  id: 'savoirs-gm-collection',
+export const dernierLivreInfo = {
+  id: 'dernier-livre',
   nom: remedesData.livre.titre,
   auteur: remedesData.livre.auteur,
   annee: String(remedesData.livre.annee),

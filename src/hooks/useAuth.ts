@@ -10,6 +10,9 @@ import {
   signUp,
   signIn,
   signOut,
+  signInWithGoogle as signInWithGoogleApi,
+  resetPassword as resetPasswordApi,
+  updatePassword as updatePasswordApi,
   getCurrentUser,
   getUserProfileFromBackend,
   updateUserProfile,
@@ -46,8 +49,11 @@ export interface AuthContextType {
   // Actions Auth
   login: (data: SignInData) => Promise<{ success: boolean; error?: string }>;
   register: (data: SignUpData) => Promise<{ success: boolean; error?: string }>;
+  loginWithGoogle: () => Promise<{ success: boolean; error?: string }>;
   logout: () => Promise<void>;
-  
+  resetPassword: (email: string) => Promise<{ success: boolean; error?: string }>;
+  updatePassword: (newPassword: string) => Promise<{ success: boolean; error?: string }>;
+
   // Actions Profil
   updateProfile: (updates: Partial<UserProfile>) => Promise<{ success: boolean; error?: string }>;
   setGoals: (goals: HealthGoal[]) => Promise<{ success: boolean; error?: string }>;
@@ -90,8 +96,36 @@ export function useAuth(): AuthContextType {
       const currentAuth = await getCurrentUser();
       setAuthState(currentAuth);
 
-      // 2. Récupérer le profil
-      const userProfile = await getUserProfileFromBackend();
+      // 2. Récupérer le profil — ne JAMAIS écraser un profil existant avec un profil vierge
+      let userProfile = await getUserProfileFromBackend();
+      if (!userProfile) {
+        // Vérifier si on a déjà un profil en state (ne pas écraser)
+        if (profile && profile.id !== 'guest') {
+          console.log('[useAuth] Profil backend non trouvé mais profil local existant — conservé');
+          userProfile = profile;
+        } else {
+          // Vraiment aucun profil → créer un profil invité par défaut
+          console.log('[useAuth] Aucun profil trouvé, création du profil invité par défaut');
+          userProfile = {
+            id: currentAuth.userId || 'guest',
+            sexe: 'non_precise' as any,
+            profileType: 'adulte' as any,
+            objectifs: [],
+            formatsPreferes: [],
+            formatsPreferees: [],
+            allergies: [],
+            restrictions: [],
+            niveauExperience: 'debutant' as any,
+            notificationsEnabled: true,
+            notificationFrequency: 'quotidien' as any,
+            notificationHoraires: { matin: '08:00', soir: '21:00' },
+            interesseParProduits: true,
+            onboardingCompleted: true,
+            createdAt: new Date().toISOString(),
+            updatedAt: new Date().toISOString(),
+          } as any;
+        }
+      }
       setProfile(userProfile);
 
       // 3. Récupérer le streak
@@ -113,6 +147,26 @@ export function useAuth(): AuthContextType {
 
   useEffect(() => {
     loadUserData();
+  }, [loadUserData]);
+
+  // Écouter les changements d'auth (retour OAuth Google, etc.)
+  useEffect(() => {
+    const { getSupabaseClient } = require('../services/supabase/config');
+    const client = getSupabaseClient();
+    if (!client) return;
+
+    const { data: { subscription } } = client.auth.onAuthStateChange(
+      async (event: string, session: any) => {
+        console.log('[useAuth] Auth state changed:', event);
+        if (event === 'SIGNED_IN' && session?.user) {
+          await loadUserData();
+        }
+      }
+    );
+
+    return () => {
+      subscription?.unsubscribe();
+    };
   }, [loadUserData]);
 
   // ============================================
@@ -181,6 +235,43 @@ export function useAuth(): AuthContextType {
       console.error('[useAuth] Logout error:', err);
     } finally {
       setIsLoading(false);
+    }
+  }, []);
+
+  const loginWithGoogle = useCallback(async (): Promise<{ success: boolean; error?: string }> => {
+    setIsLoading(true);
+    setError(null);
+    try {
+      const result = await signInWithGoogleApi();
+      if (result.success) {
+        // Sur web, Supabase redirige automatiquement vers Google
+        // Au retour, onAuthStateChange détectera la session
+        return { success: true };
+      } else {
+        setError(result.error || 'Erreur Google Sign-In');
+        return { success: false, error: result.error };
+      }
+    } catch (err: any) {
+      setError(err.message);
+      return { success: false, error: err.message };
+    } finally {
+      setIsLoading(false);
+    }
+  }, []);
+
+  const resetPassword = useCallback(async (email: string): Promise<{ success: boolean; error?: string }> => {
+    try {
+      return await resetPasswordApi(email);
+    } catch (err: any) {
+      return { success: false, error: err.message };
+    }
+  }, []);
+
+  const updatePassword = useCallback(async (newPassword: string): Promise<{ success: boolean; error?: string }> => {
+    try {
+      return await updatePasswordApi(newPassword);
+    } catch (err: any) {
+      return { success: false, error: err.message };
     }
   }, []);
 
@@ -255,7 +346,10 @@ export function useAuth(): AuthContextType {
     source,
     login,
     register,
+    loginWithGoogle,
     logout,
+    resetPassword,
+    updatePassword,
     updateProfile: updateProfileAction,
     setGoals,
     recordActivity,

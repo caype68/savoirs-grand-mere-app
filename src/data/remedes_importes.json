@@ -1,6 +1,6 @@
-{
+﻿{
   "livre": {
-    "titre": "Bible perdue des remèdes du médecin oublié",
+    "titre": "Savoirs de Grand-Mère",
     "auteur": "Inconnu",
     "annee": 2020,
     "editeur": "Grimoire"
@@ -11,9 +11,9 @@
     {
       "id": "rem-calendula-1",
       "nom": "Calendula",
-      "description": "Utile pour les hémorragies et prévenir l'alvéole sèche après extraction d'une dent.",
+      "description": "Utile pour les hÃ©morragies et prÃ©venir l'alvÃ©ole sÃ¨che aprÃ¨s extraction d'une dent.",
       "indications": [
-        "hémorragie",
+        "hÃ©morragie",
         "douleur"
       ],
       "ingredients": [],
@@ -26,7 +26,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 96,
@@ -34,7 +34,7 @@
         "verifie": false
       },
       "tags": [
-        "hémorragie",
+        "hÃ©morragie",
         "douleur",
         "orale"
       ]
@@ -42,7 +42,7 @@
     {
       "id": "rem-hamamelis-2",
       "nom": "Hamamelis",
-      "description": "Utile pour arrêter les saignements post-opératoires.",
+      "description": "Utile pour arrÃªter les saignements post-opÃ©ratoires.",
       "indications": [
         "saignement"
       ],
@@ -50,13 +50,13 @@
       "preparation": [],
       "posologie": {
         "dose": "30C",
-        "frequence": "répétée toutes les quelques heures"
+        "frequence": "rÃ©pÃ©tÃ©e toutes les quelques heures"
       },
       "precautions": [],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 96,
@@ -71,7 +71,7 @@
     {
       "id": "rem-apis-3",
       "nom": "Apis",
-      "description": "Soulagement de l'enflure après blessure aux tissus mous.",
+      "description": "Soulagement de l'enflure aprÃ¨s blessure aux tissus mous.",
       "indications": [
         "enflure",
         "douleur"
@@ -86,7 +86,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 96,
@@ -102,10 +102,10 @@
     {
       "id": "rem-nux-vomica-4",
       "nom": "Nux Vomica",
-      "description": "Remède homéopathique pour se remettre de l'anesthésie.",
+      "description": "RemÃ¨de homÃ©opathique pour se remettre de l'anesthÃ©sie.",
       "indications": [
         "gueule de bois",
-        "anesthésie"
+        "anesthÃ©sie"
       ],
       "ingredients": [],
       "preparation": [],
@@ -117,7 +117,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 97,
@@ -126,14 +126,14 @@
       },
       "tags": [
         "gueule de bois",
-        "anesthésie",
+        "anesthÃ©sie",
         "orale"
       ]
     },
     {
       "id": "rem-phosphorus-5",
       "nom": "Phosphorus",
-      "description": "Indiqué en cas de vomissements prolongés après une anesthésie.",
+      "description": "IndiquÃ© en cas de vomissements prolongÃ©s aprÃ¨s une anesthÃ©sie.",
       "indications": [
         "vomissements"
       ],
@@ -144,7 +144,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 97,
@@ -159,7 +159,7 @@
     {
       "id": "rem-arsenicum-album-6",
       "nom": "Arsenicum Album",
-      "description": "Remède pour les vomissements immédiats après avoir bu.",
+      "description": "RemÃ¨de pour les vomissements immÃ©diats aprÃ¨s avoir bu.",
       "indications": [
         "vomissements"
       ],
@@ -170,7 +170,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 97,
@@ -185,7 +185,7 @@
     {
       "id": "rem-aconitum-napellus-7",
       "nom": "Aconitum Napellus",
-      "description": "Remède à prendre immédiatement après un événement traumatique.",
+      "description": "RemÃ¨de Ã  prendre immÃ©diatement aprÃ¨s un Ã©vÃ©nement traumatique.",
       "indications": [
         "choc",
         "stress"
@@ -200,7 +200,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 98,
@@ -216,7 +216,7 @@
     {
       "id": "rem-apis-mellifica-8",
       "nom": "Apis Mellifica",
-      "description": "Réduit les gonflements causés par un traumatisme ou des piqûres.",
+      "description": "RÃ©duit les gonflements causÃ©s par un traumatisme ou des piqÃ»res.",
       "indications": [
         "gonflement"
       ],
@@ -230,7 +230,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 98,
@@ -245,9 +245,9 @@
     {
       "id": "rem-ledum-palustre-9",
       "nom": "Ledum Palustre",
-      "description": "Remède pour piqûres, morsures ou plaies perforantes.",
+      "description": "RemÃ¨de pour piqÃ»res, morsures ou plaies perforantes.",
       "indications": [
-        "piqûre",
+        "piqÃ»re",
         "morsure"
       ],
       "ingredients": [],
@@ -260,7 +260,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 98,
@@ -268,7 +268,7 @@
         "verifie": false
       },
       "tags": [
-        "piqûre",
+        "piqÃ»re",
         "morsure",
         "orale"
       ]
@@ -276,9 +276,9 @@
     {
       "id": "rem-argentum-nitricum-10",
       "nom": "Argentum Nitricum",
-      "description": "Remède pour voyageurs nerveux.",
+      "description": "RemÃ¨de pour voyageurs nerveux.",
       "indications": [
-        "anxiété"
+        "anxiÃ©tÃ©"
       ],
       "ingredients": [],
       "preparation": [],
@@ -287,7 +287,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 98,
@@ -295,16 +295,16 @@
         "verifie": false
       },
       "tags": [
-        "anxiété",
+        "anxiÃ©tÃ©",
         "orale"
       ]
     },
     {
       "id": "rem-gelsemium-sempervire-11",
       "nom": "Gelsemium Sempervirens",
-      "description": "Remède pour voyageurs nerveux.",
+      "description": "RemÃ¨de pour voyageurs nerveux.",
       "indications": [
-        "anxiété"
+        "anxiÃ©tÃ©"
       ],
       "ingredients": [],
       "preparation": [],
@@ -313,7 +313,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 98,
@@ -321,14 +321,14 @@
         "verifie": false
       },
       "tags": [
-        "anxiété",
+        "anxiÃ©tÃ©",
         "orale"
       ]
     },
     {
       "id": "rem-arnica-montana-12",
       "nom": "Arnica Montana",
-      "description": "Remède contre les traumatismes.",
+      "description": "RemÃ¨de contre les traumatismes.",
       "indications": [
         "traumatisme",
         "douleur musculaire"
@@ -340,7 +340,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 98,
@@ -356,7 +356,7 @@
     {
       "id": "rem-arsenicum-album-13",
       "nom": "Arsenicum Album",
-      "description": "Remède contre les intoxications alimentaires.",
+      "description": "RemÃ¨de contre les intoxications alimentaires.",
       "indications": [
         "intoxication alimentaire"
       ],
@@ -367,7 +367,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 99,
@@ -382,24 +382,24 @@
     {
       "id": "rem-belladonna-14",
       "nom": "Belladonna",
-      "description": "Indispensable pour les fièvres soudaines dues à une infection ou insolation.",
+      "description": "Indispensable pour les fiÃ¨vres soudaines dues Ã  une infection ou insolation.",
       "indications": [
-        "fièvre",
+        "fiÃ¨vre",
         "insolation"
       ],
       "ingredients": [],
       "preparation": [],
       "posologie": {
-        "dose": "répéter toutes les 15 à 20 minutes",
+        "dose": "rÃ©pÃ©ter toutes les 15 Ã  20 minutes",
         "frequence": "selon besoin"
       },
       "precautions": [
-        "Déterminer la cause sous-jacente de la fièvre"
+        "DÃ©terminer la cause sous-jacente de la fiÃ¨vre"
       ],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 99,
@@ -407,7 +407,7 @@
         "verifie": false
       },
       "tags": [
-        "fièvre",
+        "fiÃ¨vre",
         "insolation",
         "orale"
       ]
@@ -415,7 +415,7 @@
     {
       "id": "rem-bryonia-15",
       "nom": "Bryonia",
-      "description": "Soulage la douleur après une blessure ou un effort excessif.",
+      "description": "Soulage la douleur aprÃ¨s une blessure ou un effort excessif.",
       "indications": [
         "douleur",
         "appendicite"
@@ -423,16 +423,16 @@
       "ingredients": [],
       "preparation": [],
       "posologie": {
-        "dose": "puissance 30C toutes les 20 à 30 minutes",
+        "dose": "puissance 30C toutes les 20 Ã  30 minutes",
         "frequence": "selon besoin"
       },
       "precautions": [
-        "Sous la direction d’un homéopathe"
+        "Sous la direction dâ€™un homÃ©opathe"
       ],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 99,
@@ -448,25 +448,25 @@
     {
       "id": "rem-calendula-16",
       "nom": "Calendula",
-      "description": "Arrête les saignements, guérit les brûlures et prévient les infections.",
+      "description": "ArrÃªte les saignements, guÃ©rit les brÃ»lures et prÃ©vient les infections.",
       "indications": [
         "saignement",
-        "brûlure",
+        "brÃ»lure",
         "infection"
       ],
       "ingredients": [],
       "preparation": [],
       "posologie": {
         "dose": "puissance 30C",
-        "frequence": "selon intensité des symptômes"
+        "frequence": "selon intensitÃ© des symptÃ´mes"
       },
       "precautions": [
-        "Symptômes graves nécessitent des doses fréquentes"
+        "SymptÃ´mes graves nÃ©cessitent des doses frÃ©quentes"
       ],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 99,
@@ -475,7 +475,7 @@
       },
       "tags": [
         "saignement",
-        "brûlure",
+        "brÃ»lure",
         "infection",
         "orale"
       ]
@@ -483,10 +483,10 @@
     {
       "id": "rem-carbo-vegetabilis-17",
       "nom": "Carbo Vegetabilis",
-      "description": "Remède pour les troubles respiratoires.",
+      "description": "RemÃ¨de pour les troubles respiratoires.",
       "indications": [
         "essoufflement",
-        "dyspnée"
+        "dyspnÃ©e"
       ],
       "ingredients": [],
       "preparation": [],
@@ -495,7 +495,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 100,
@@ -504,19 +504,19 @@
       },
       "tags": [
         "essoufflement",
-        "dyspnée",
+        "dyspnÃ©e",
         "orale"
       ]
     },
     {
       "id": "rem-cinchona-officinalis-18",
       "nom": "Cinchona Officinalis",
-      "description": "Traitement de la diarrhée.",
+      "description": "Traitement de la diarrhÃ©e.",
       "indications": [
-        "diarrhée",
+        "diarrhÃ©e",
         "ballonnements",
         "gaz",
-        "épuisement"
+        "Ã©puisement"
       ],
       "ingredients": [],
       "preparation": [],
@@ -525,7 +525,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 100,
@@ -533,7 +533,7 @@
         "verifie": false
       },
       "tags": [
-        "diarrhée",
+        "diarrhÃ©e",
         "ballonnements",
         "gaz",
         "orale"
@@ -542,9 +542,9 @@
     {
       "id": "rem-podophyllum-19",
       "nom": "Podophyllum",
-      "description": "Remède pour la diarrhée du voyageur.",
+      "description": "RemÃ¨de pour la diarrhÃ©e du voyageur.",
       "indications": [
-        "diarrhée"
+        "diarrhÃ©e"
       ],
       "ingredients": [],
       "preparation": [],
@@ -553,7 +553,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 100,
@@ -561,14 +561,14 @@
         "verifie": false
       },
       "tags": [
-        "diarrhée",
+        "diarrhÃ©e",
         "orale"
       ]
     },
     {
       "id": "rem-coccinella-20",
       "nom": "Coccinella",
-      "description": "Préparation homéopathique pour le mal de l'altitude.",
+      "description": "PrÃ©paration homÃ©opathique pour le mal de l'altitude.",
       "indications": [
         "mal de l'altitude"
       ],
@@ -579,7 +579,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 100,
@@ -594,10 +594,10 @@
     {
       "id": "rem-cocculus-21",
       "nom": "Cocculus",
-      "description": "Remède pour le mal de tête avec nausées et vomissements.",
+      "description": "RemÃ¨de pour le mal de tÃªte avec nausÃ©es et vomissements.",
       "indications": [
-        "mal de tête",
-        "nausées",
+        "mal de tÃªte",
+        "nausÃ©es",
         "vomissements",
         "fatigue"
       ],
@@ -608,7 +608,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 101,
@@ -616,8 +616,8 @@
         "verifie": false
       },
       "tags": [
-        "mal de tête",
-        "nausées",
+        "mal de tÃªte",
+        "nausÃ©es",
         "vomissements",
         "orale"
       ]
@@ -625,7 +625,7 @@
     {
       "id": "rem-tabacum-22",
       "nom": "Tabacum",
-      "description": "Remède pour ceux qui ont besoin d'air frais et se sentent mieux en sortant.",
+      "description": "RemÃ¨de pour ceux qui ont besoin d'air frais et se sentent mieux en sortant.",
       "indications": [
         "mal des transports"
       ],
@@ -636,7 +636,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 101,
@@ -651,7 +651,7 @@
     {
       "id": "rem-coffea-cruda-23",
       "nom": "Coffea Cruda",
-      "description": "Aide à combattre l'insomnie et apporte un sommeil réparateur.",
+      "description": "Aide Ã  combattre l'insomnie et apporte un sommeil rÃ©parateur.",
       "indications": [
         "insomnie"
       ],
@@ -662,7 +662,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 101,
@@ -677,10 +677,10 @@
     {
       "id": "rem-eupatorium-perfoliat-24",
       "nom": "Eupatorium Perfoliatum",
-      "description": "Soulage les douleurs osseuses et la fièvre élevée.",
+      "description": "Soulage les douleurs osseuses et la fiÃ¨vre Ã©levÃ©e.",
       "indications": [
         "douleur",
-        "fièvre"
+        "fiÃ¨vre"
       ],
       "ingredients": [],
       "preparation": [],
@@ -689,7 +689,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 101,
@@ -698,14 +698,14 @@
       },
       "tags": [
         "douleur",
-        "fièvre",
+        "fiÃ¨vre",
         "orale"
       ]
     },
     {
       "id": "rem-ferrum-phosphoricum-25",
       "nom": "Ferrum Phosphoricum",
-      "description": "Remède pour les états inflammatoires comme le rhume ou la grippe.",
+      "description": "RemÃ¨de pour les Ã©tats inflammatoires comme le rhume ou la grippe.",
       "indications": [
         "rhume",
         "grippe",
@@ -715,13 +715,13 @@
       "preparation": [],
       "posologie": {
         "dose": "puissance 30C",
-        "frequence": "toutes les 4 à 6 heures"
+        "frequence": "toutes les 4 Ã  6 heures"
       },
       "precautions": [],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 102,
@@ -738,7 +738,7 @@
     {
       "id": "rem-aconitum-napellus-26",
       "nom": "Aconitum Napellus",
-      "description": "Remède pour les symptômes soudains de rhume ou de grippe.",
+      "description": "RemÃ¨de pour les symptÃ´mes soudains de rhume ou de grippe.",
       "indications": [
         "rhume",
         "grippe"
@@ -747,13 +747,13 @@
       "preparation": [],
       "posologie": {
         "dose": "puissance 30C",
-        "frequence": "toutes les 4 à 6 heures"
+        "frequence": "toutes les 4 Ã  6 heures"
       },
       "precautions": [],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 102,
@@ -769,9 +769,9 @@
     {
       "id": "rem-gelsemium-sempervire-27",
       "nom": "Gelsemium Sempervirens",
-      "description": "Remède pour l'anxiété avant un voyage et contre la grippe.",
+      "description": "RemÃ¨de pour l'anxiÃ©tÃ© avant un voyage et contre la grippe.",
       "indications": [
-        "anxiété",
+        "anxiÃ©tÃ©",
         "grippe"
       ],
       "ingredients": [],
@@ -781,7 +781,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 102,
@@ -789,7 +789,7 @@
         "verifie": false
       },
       "tags": [
-        "anxiété",
+        "anxiÃ©tÃ©",
         "grippe",
         "orale"
       ]
@@ -797,7 +797,7 @@
     {
       "id": "rem-hamamelis-28",
       "nom": "Hamamelis",
-      "description": "Remède pour arrêter les saignements.",
+      "description": "RemÃ¨de pour arrÃªter les saignements.",
       "indications": [
         "saignement"
       ],
@@ -808,7 +808,7 @@
       "contreIndications": [],
       "route": "topique",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 102,
@@ -823,7 +823,7 @@
     {
       "id": "rem-calendula-29",
       "nom": "Calendula",
-      "description": "Remède pour les coupures et abrasions avec risque d'infection.",
+      "description": "RemÃ¨de pour les coupures et abrasions avec risque d'infection.",
       "indications": [
         "saignement",
         "infection"
@@ -838,7 +838,7 @@
       "contreIndications": [],
       "route": "topique",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 102,
@@ -854,7 +854,7 @@
     {
       "id": "rem-hypericum-30",
       "nom": "Hypericum",
-      "description": "Remède pour douleur due à une blessure dans une zone sensible.",
+      "description": "RemÃ¨de pour douleur due Ã  une blessure dans une zone sensible.",
       "indications": [
         "douleur",
         "engourdissement",
@@ -867,7 +867,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 103,
@@ -884,11 +884,11 @@
     {
       "id": "rem-nux-vomica-31",
       "nom": "Nux Vomica",
-      "description": "Remède pour la gueule de bois.",
+      "description": "RemÃ¨de pour la gueule de bois.",
       "indications": [
-        "mal de tête",
-        "nausées",
-        "brûlures d'estomac"
+        "mal de tÃªte",
+        "nausÃ©es",
+        "brÃ»lures d'estomac"
       ],
       "ingredients": [],
       "preparation": [],
@@ -900,7 +900,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 103,
@@ -908,18 +908,18 @@
         "verifie": false
       },
       "tags": [
-        "mal de tête",
-        "nausées",
-        "brûlures d'estomac",
+        "mal de tÃªte",
+        "nausÃ©es",
+        "brÃ»lures d'estomac",
         "orale"
       ]
     },
     {
       "id": "rem-ipecacuanha-32",
       "nom": "Ipecacuanha",
-      "description": "Remède pour soulager les nausées persistantes.",
+      "description": "RemÃ¨de pour soulager les nausÃ©es persistantes.",
       "indications": [
-        "nausées",
+        "nausÃ©es",
         "vomissements"
       ],
       "ingredients": [],
@@ -929,7 +929,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 103,
@@ -937,7 +937,7 @@
         "verifie": false
       },
       "tags": [
-        "nausées",
+        "nausÃ©es",
         "vomissements",
         "orale"
       ]
@@ -945,9 +945,9 @@
     {
       "id": "rem-ledum-palustre-33",
       "nom": "Ledum Palustre",
-      "description": "Remède pour les piqûres d'insectes.",
+      "description": "RemÃ¨de pour les piqÃ»res d'insectes.",
       "indications": [
-        "piqûres",
+        "piqÃ»res",
         "infection"
       ],
       "ingredients": [],
@@ -957,7 +957,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 103,
@@ -965,7 +965,7 @@
         "verifie": false
       },
       "tags": [
-        "piqûres",
+        "piqÃ»res",
         "infection",
         "orale"
       ]
@@ -973,9 +973,9 @@
     {
       "id": "rem-rhus-toxicodendron-34",
       "nom": "Rhus Toxicodendron",
-      "description": "Remède pour éruptions vésiculeuses.",
+      "description": "RemÃ¨de pour Ã©ruptions vÃ©siculeuses.",
       "indications": [
-        "herpès",
+        "herpÃ¨s",
         "zona",
         "arthrite"
       ],
@@ -986,7 +986,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 103,
@@ -994,7 +994,7 @@
         "verifie": false
       },
       "tags": [
-        "herpès",
+        "herpÃ¨s",
         "zona",
         "arthrite",
         "orale"
@@ -1003,10 +1003,10 @@
     {
       "id": "rem-urtica-urens-35",
       "nom": "Urtica Urens",
-      "description": "Remède pour démangeaisons intenses.",
+      "description": "RemÃ¨de pour dÃ©mangeaisons intenses.",
       "indications": [
-        "démangeaisons",
-        "éruptions cutanées"
+        "dÃ©mangeaisons",
+        "Ã©ruptions cutanÃ©es"
       ],
       "ingredients": [],
       "preparation": [],
@@ -1015,7 +1015,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 103,
@@ -1023,17 +1023,17 @@
         "verifie": false
       },
       "tags": [
-        "démangeaisons",
-        "éruptions cutanées",
+        "dÃ©mangeaisons",
+        "Ã©ruptions cutanÃ©es",
         "orale"
       ]
     },
     {
       "id": "rem-aconitum-napellus-36",
       "nom": "Aconitum napellus",
-      "description": "Utilisé pour traiter les symptômes de fièvre soudaine.",
+      "description": "UtilisÃ© pour traiter les symptÃ´mes de fiÃ¨vre soudaine.",
       "indications": [
-        "fièvre"
+        "fiÃ¨vre"
       ],
       "ingredients": [
         {
@@ -1051,16 +1051,16 @@
         }
       ],
       "posologie": {
-        "dose": "1 cuillère",
+        "dose": "1 cuillÃ¨re",
         "frequence": "3 fois/jour"
       },
       "precautions": [
-        "Éviter en cas de grossesse"
+        "Ã‰viter en cas de grossesse"
       ],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 104,
@@ -1068,16 +1068,16 @@
         "verifie": false
       },
       "tags": [
-        "fièvre",
+        "fiÃ¨vre",
         "orale"
       ]
     },
     {
       "id": "rem-apis-mellifica-37",
       "nom": "Apis mellifica",
-      "description": "Utilisé pour soulager les piqûres d'insectes.",
+      "description": "UtilisÃ© pour soulager les piqÃ»res d'insectes.",
       "indications": [
-        "piqûres"
+        "piqÃ»res"
       ],
       "ingredients": [
         {
@@ -1095,16 +1095,16 @@
         }
       ],
       "posologie": {
-        "dose": "1 cuillère",
+        "dose": "1 cuillÃ¨re",
         "frequence": "2 fois/jour"
       },
       "precautions": [
-        "Éviter en cas d'allergie aux abeilles"
+        "Ã‰viter en cas d'allergie aux abeilles"
       ],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 104,
@@ -1112,17 +1112,17 @@
         "verifie": false
       },
       "tags": [
-        "piqûres",
+        "piqÃ»res",
         "orale"
       ]
     },
     {
       "id": "rem-argentum-nitricum-38",
       "nom": "Argentum nitricum",
-      "description": "Utilisé pour l'anxiété et le stress.",
+      "description": "UtilisÃ© pour l'anxiÃ©tÃ© et le stress.",
       "indications": [
         "stress",
-        "anxiété"
+        "anxiÃ©tÃ©"
       ],
       "ingredients": [
         {
@@ -1135,21 +1135,21 @@
       "preparation": [
         {
           "etape": 1,
-          "instruction": "Mélanger avec de l'eau.",
+          "instruction": "MÃ©langer avec de l'eau.",
           "duree": "5 min"
         }
       ],
       "posologie": {
-        "dose": "1 cuillère",
+        "dose": "1 cuillÃ¨re",
         "frequence": "2 fois/jour"
       },
       "precautions": [
-        "Consulter un médecin si les symptômes persistent"
+        "Consulter un mÃ©decin si les symptÃ´mes persistent"
       ],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 104,
@@ -1158,14 +1158,14 @@
       },
       "tags": [
         "stress",
-        "anxiété",
+        "anxiÃ©tÃ©",
         "orale"
       ]
     },
     {
       "id": "rem-arnica-montana-39",
       "nom": "Arnica montana",
-      "description": "Utilisé pour les douleurs musculaires.",
+      "description": "UtilisÃ© pour les douleurs musculaires.",
       "indications": [
         "douleur"
       ],
@@ -1185,16 +1185,16 @@
         }
       ],
       "posologie": {
-        "dose": "Appliquer une petite quantité",
+        "dose": "Appliquer une petite quantitÃ©",
         "frequence": "2 fois/jour"
       },
       "precautions": [
-        "Ne pas appliquer sur une peau abîmée"
+        "Ne pas appliquer sur une peau abÃ®mÃ©e"
       ],
       "contreIndications": [],
       "route": "topique",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 104,
@@ -1209,7 +1209,7 @@
     {
       "id": "rem-arsenicum-album-40",
       "nom": "Arsenicum album",
-      "description": "Utilisé pour les troubles digestifs.",
+      "description": "UtilisÃ© pour les troubles digestifs.",
       "indications": [
         "digestion"
       ],
@@ -1229,16 +1229,16 @@
         }
       ],
       "posologie": {
-        "dose": "1 cuillère",
+        "dose": "1 cuillÃ¨re",
         "frequence": "3 fois/jour"
       },
       "precautions": [
-        "Consulter un médecin si les symptômes persistent"
+        "Consulter un mÃ©decin si les symptÃ´mes persistent"
       ],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 104,
@@ -1274,14 +1274,14 @@
         }
       ],
       "posologie": {
-        "dose": "1 cuillère",
+        "dose": "1 cuillÃ¨re",
         "frequence": "toutes les heures ou deux"
       },
       "precautions": [],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 105,
@@ -1297,7 +1297,7 @@
     {
       "id": "rem-ruta-graveolens-42",
       "nom": "Ruta Graveolens",
-      "description": "Remède contre la fatigue oculaire et la douleur sciatique.",
+      "description": "RemÃ¨de contre la fatigue oculaire et la douleur sciatique.",
       "indications": [
         "fatigue",
         "sciatique"
@@ -1319,7 +1319,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 105,
@@ -1335,10 +1335,10 @@
     {
       "id": "rem-arnica-43",
       "nom": "Arnica",
-      "description": "Soulage la douleur et prévient les lésions.",
+      "description": "Soulage la douleur et prÃ©vient les lÃ©sions.",
       "indications": [
         "douleur",
-        "lésions"
+        "lÃ©sions"
       ],
       "ingredients": [
         {
@@ -1357,7 +1357,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 105,
@@ -1366,14 +1366,14 @@
       },
       "tags": [
         "douleur",
-        "lésions",
+        "lÃ©sions",
         "orale"
       ]
     },
     {
       "id": "rem-ruta-44",
       "nom": "Ruta",
-      "description": "Utile pour les blessures du périoste et les douleurs sciatiques.",
+      "description": "Utile pour les blessures du pÃ©rioste et les douleurs sciatiques.",
       "indications": [
         "blessures",
         "douleur"
@@ -1385,7 +1385,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 106,
@@ -1401,7 +1401,7 @@
     {
       "id": "rem-causticum-45",
       "nom": "Causticum",
-      "description": "Remède pour la paralysie de Bell et les questions de justice.",
+      "description": "RemÃ¨de pour la paralysie de Bell et les questions de justice.",
       "indications": [
         "paralysie",
         "justice"
@@ -1413,7 +1413,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 106,
@@ -1429,7 +1429,7 @@
     {
       "id": "rem-arnica-46",
       "nom": "Arnica",
-      "description": "Guérit les dommages tissulaires causés par les chutes et les entorses.",
+      "description": "GuÃ©rit les dommages tissulaires causÃ©s par les chutes et les entorses.",
       "indications": [
         "traumatismes",
         "chutes",
@@ -1446,8 +1446,8 @@
       "preparation": [
         {
           "etape": 1,
-          "instruction": "Prendre après une chute pour prévenir les contusions.",
-          "duree": "immédiatement"
+          "instruction": "Prendre aprÃ¨s une chute pour prÃ©venir les contusions.",
+          "duree": "immÃ©diatement"
         }
       ],
       "posologie": {
@@ -1458,7 +1458,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 107,
@@ -1475,7 +1475,7 @@
     {
       "id": "rem-symphytum-officinale-47",
       "nom": "Symphytum Officinale",
-      "description": "Aide à guérir les os après une fracture.",
+      "description": "Aide Ã  guÃ©rir les os aprÃ¨s une fracture.",
       "indications": [
         "fractures"
       ],
@@ -1490,13 +1490,13 @@
       "preparation": [
         {
           "etape": 1,
-          "instruction": "Prendre après confirmation que l'os est bien aligné.",
-          "duree": "immédiatement"
+          "instruction": "Prendre aprÃ¨s confirmation que l'os est bien alignÃ©.",
+          "duree": "immÃ©diatement"
         }
       ],
       "posologie": {
         "dose": "selon besoin",
-        "frequence": "2 à 3 fois par jour"
+        "frequence": "2 Ã  3 fois par jour"
       },
       "precautions": [
         "Ne pas commencer avant confirmation radiographique"
@@ -1504,7 +1504,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 107,
@@ -1519,9 +1519,9 @@
     {
       "id": "rem-natrum-sulphuricum-48",
       "nom": "Natrum Sulphuricum",
-      "description": "Utilisé après une blessure à la tête.",
+      "description": "UtilisÃ© aprÃ¨s une blessure Ã  la tÃªte.",
       "indications": [
-        "traumatismes crâniens"
+        "traumatismes crÃ¢niens"
       ],
       "ingredients": [
         {
@@ -1534,8 +1534,8 @@
       "preparation": [
         {
           "etape": 1,
-          "instruction": "Prendre après une blessure à la tête.",
-          "duree": "immédiatement"
+          "instruction": "Prendre aprÃ¨s une blessure Ã  la tÃªte.",
+          "duree": "immÃ©diatement"
         }
       ],
       "posologie": {
@@ -1546,7 +1546,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 107,
@@ -1554,14 +1554,14 @@
         "verifie": false
       },
       "tags": [
-        "traumatismes crâniens",
+        "traumatismes crÃ¢niens",
         "orale"
       ]
     },
     {
       "id": "rem-calcarea-phosphoricu-49",
       "nom": "Calcarea Phosphoricum",
-      "description": "Stimule la guérison complète de l'os.",
+      "description": "Stimule la guÃ©rison complÃ¨te de l'os.",
       "indications": [
         "douleurs de croissance",
         "fractures"
@@ -1577,8 +1577,8 @@
       "preparation": [
         {
           "etape": 1,
-          "instruction": "Ajouter si la fracture ne guérit pas après Symphytum.",
-          "duree": "immédiatement"
+          "instruction": "Ajouter si la fracture ne guÃ©rit pas aprÃ¨s Symphytum.",
+          "duree": "immÃ©diatement"
         }
       ],
       "posologie": {
@@ -1589,7 +1589,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 107,
@@ -1605,7 +1605,7 @@
     {
       "id": "rem-arnica-50",
       "nom": "Arnica",
-      "description": "Remède pour les traumatismes graves.",
+      "description": "RemÃ¨de pour les traumatismes graves.",
       "indications": [
         "traumatismes"
       ],
@@ -1616,7 +1616,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 108,
@@ -1631,7 +1631,7 @@
     {
       "id": "rem-ledum-palustre-51",
       "nom": "Ledum Palustre",
-      "description": "Remède pour les blessures par perforation.",
+      "description": "RemÃ¨de pour les blessures par perforation.",
       "indications": [
         "blessures"
       ],
@@ -1642,7 +1642,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 108,
@@ -1657,9 +1657,9 @@
     {
       "id": "rem-calendula-ou-hamamel-52",
       "nom": "Calendula ou Hamamelis",
-      "description": "Remède pour les hémorragies.",
+      "description": "RemÃ¨de pour les hÃ©morragies.",
       "indications": [
-        "hémorragies"
+        "hÃ©morragies"
       ],
       "ingredients": [],
       "preparation": [],
@@ -1668,7 +1668,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 108,
@@ -1676,14 +1676,14 @@
         "verifie": false
       },
       "tags": [
-        "hémorragies",
+        "hÃ©morragies",
         "orale"
       ]
     },
     {
       "id": "rem-china-officinalis-53",
       "nom": "China Officinalis",
-      "description": "Nécessaire pour traiter la fatigue extrême après une perte de sang.",
+      "description": "NÃ©cessaire pour traiter la fatigue extrÃªme aprÃ¨s une perte de sang.",
       "indications": [
         "fatigue"
       ],
@@ -1694,7 +1694,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 108,
@@ -1709,7 +1709,7 @@
     {
       "id": "rem-rhus-toxicodendron-54",
       "nom": "Rhus Toxicodendron",
-      "description": "Remède pour les blessures des muscles et des tendons.",
+      "description": "RemÃ¨de pour les blessures des muscles et des tendons.",
       "indications": [
         "blessures",
         "raideur"
@@ -1721,7 +1721,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 108,
@@ -1737,7 +1737,7 @@
     {
       "id": "rem-ruta-graveolens-55",
       "nom": "Ruta Graveolens",
-      "description": "Remède pour les entorses.",
+      "description": "RemÃ¨de pour les entorses.",
       "indications": [
         "entorses"
       ],
@@ -1751,7 +1751,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 108,
@@ -1766,7 +1766,7 @@
     {
       "id": "rem-bryonia-56",
       "nom": "Bryonia",
-      "description": "Remède pour les douleurs articulaires.",
+      "description": "RemÃ¨de pour les douleurs articulaires.",
       "indications": [
         "douleur"
       ],
@@ -1777,7 +1777,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 108,
@@ -1804,7 +1804,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 109,
@@ -1820,10 +1820,10 @@
     {
       "id": "rem-silica-58",
       "nom": "Silica",
-      "description": "Utile pour déloger les corps étrangers.",
+      "description": "Utile pour dÃ©loger les corps Ã©trangers.",
       "indications": [
         "traumatisme",
-        "corps étranger"
+        "corps Ã©tranger"
       ],
       "ingredients": [],
       "preparation": [],
@@ -1835,7 +1835,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 109,
@@ -1844,14 +1844,14 @@
       },
       "tags": [
         "traumatisme",
-        "corps étranger",
+        "corps Ã©tranger",
         "orale"
       ]
     },
     {
       "id": "rem-silica-59",
       "nom": "Silica",
-      "description": "Remède pour l'extrusion d'un corps étranger",
+      "description": "RemÃ¨de pour l'extrusion d'un corps Ã©tranger",
       "indications": [],
       "ingredients": [],
       "preparation": [],
@@ -1862,7 +1862,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 110,
@@ -1876,7 +1876,7 @@
     {
       "id": "rem-arnica-montana-60",
       "nom": "Arnica Montana",
-      "description": "Remède contre les traumatismes",
+      "description": "RemÃ¨de contre les traumatismes",
       "indications": [
         "traumatisme"
       ],
@@ -1887,7 +1887,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 110,
@@ -1902,7 +1902,7 @@
     {
       "id": "rem-staphysagria-61",
       "nom": "Staphysagria",
-      "description": "Remède pour les douleurs post-opératoires et infections de la vessie.",
+      "description": "RemÃ¨de pour les douleurs post-opÃ©ratoires et infections de la vessie.",
       "indications": [
         "douleur",
         "infection"
@@ -1918,13 +1918,13 @@
       "preparation": [
         {
           "etape": 1,
-          "instruction": "Prendre sous la langue avant l'hôpital.",
-          "duree": "immédiat"
+          "instruction": "Prendre sous la langue avant l'hÃ´pital.",
+          "duree": "immÃ©diat"
         },
         {
           "etape": 2,
-          "instruction": "Prendre toutes les huit heures après l'opération.",
-          "duree": "jusqu'à guérison"
+          "instruction": "Prendre toutes les huit heures aprÃ¨s l'opÃ©ration.",
+          "duree": "jusqu'Ã  guÃ©rison"
         }
       ],
       "posologie": {
@@ -1937,7 +1937,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 111,
@@ -1953,9 +1953,9 @@
     {
       "id": "rem-calendula-62",
       "nom": "Calendula",
-      "description": "Remède pour les brûlures et infections des plaies.",
+      "description": "RemÃ¨de pour les brÃ»lures et infections des plaies.",
       "indications": [
-        "brûlure",
+        "brÃ»lure",
         "infection"
       ],
       "ingredients": [
@@ -1970,7 +1970,7 @@
         {
           "etape": 1,
           "instruction": "Appliquer sur la plaie.",
-          "duree": "immédiat"
+          "duree": "immÃ©diat"
         }
       ],
       "posologie": {
@@ -1983,7 +1983,7 @@
       "contreIndications": [],
       "route": "topique",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 111,
@@ -1991,7 +1991,7 @@
         "verifie": false
       },
       "tags": [
-        "brûlure",
+        "brÃ»lure",
         "infection",
         "topique"
       ]
@@ -1999,7 +1999,7 @@
     {
       "id": "rem-hypericum-63",
       "nom": "Hypericum",
-      "description": "Remède pour les douleurs nerveuses.",
+      "description": "RemÃ¨de pour les douleurs nerveuses.",
       "indications": [
         "douleur",
         "sciatique"
@@ -2021,7 +2021,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 112,
@@ -2037,7 +2037,7 @@
     {
       "id": "rem-arnica-montana-64",
       "nom": "Arnica Montana",
-      "description": "Remède pour les blessures.",
+      "description": "RemÃ¨de pour les blessures.",
       "indications": [
         "blessure"
       ],
@@ -2058,7 +2058,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 112,
@@ -2073,9 +2073,9 @@
     {
       "id": "rem-aconite-65",
       "nom": "Aconite",
-      "description": "Utilisé pour le syndrome prémenstruel.",
+      "description": "UtilisÃ© pour le syndrome prÃ©menstruel.",
       "indications": [
-        "syndrome prémenstruel"
+        "syndrome prÃ©menstruel"
       ],
       "ingredients": [],
       "preparation": [],
@@ -2084,7 +2084,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 113,
@@ -2092,7 +2092,7 @@
         "verifie": false
       },
       "tags": [
-        "syndrome prémenstruel",
+        "syndrome prÃ©menstruel",
         "orale"
       ]
     },
@@ -2102,10 +2102,10 @@
       "description": "Utile pour l'indigestion et le SPM.",
       "indications": [
         "indigestion",
-        "syndrome prémenstruel",
-        "nausée",
+        "syndrome prÃ©menstruel",
+        "nausÃ©e",
         "vomissements",
-        "diarrhée"
+        "diarrhÃ©e"
       ],
       "ingredients": [],
       "preparation": [],
@@ -2114,7 +2114,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 113,
@@ -2123,8 +2123,8 @@
       },
       "tags": [
         "indigestion",
-        "syndrome prémenstruel",
-        "nausée",
+        "syndrome prÃ©menstruel",
+        "nausÃ©e",
         "orale"
       ]
     },
@@ -2143,7 +2143,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 113,
@@ -2159,7 +2159,7 @@
     {
       "id": "rem-arnica-68",
       "nom": "Arnica",
-      "description": "Utilisé pour les blessures et les saignements.",
+      "description": "UtilisÃ© pour les blessures et les saignements.",
       "indications": [
         "blessures",
         "saignements"
@@ -2171,7 +2171,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 113,
@@ -2187,7 +2187,7 @@
     {
       "id": "rem-arsenicum-album-69",
       "nom": "Arsenicum Album",
-      "description": "Remède homéopathique à base d'arsenic pour les crampes sévères.",
+      "description": "RemÃ¨de homÃ©opathique Ã  base d'arsenic pour les crampes sÃ©vÃ¨res.",
       "indications": [
         "crampes",
         "intoxication alimentaire",
@@ -2200,7 +2200,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 114,
@@ -2217,7 +2217,7 @@
     {
       "id": "rem-belladonna-70",
       "nom": "Belladonna",
-      "description": "Remède pour les crampes menstruelles avec saignements abondants.",
+      "description": "RemÃ¨de pour les crampes menstruelles avec saignements abondants.",
       "indications": [
         "crampes menstruelles",
         "douleurs post-partum"
@@ -2229,7 +2229,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 114,
@@ -2245,10 +2245,10 @@
     {
       "id": "rem-calcarea-phosphorica-71",
       "nom": "Calcarea Phosphorica",
-      "description": "Remède pour les douleurs de croissance et maux de tête.",
+      "description": "RemÃ¨de pour les douleurs de croissance et maux de tÃªte.",
       "indications": [
         "douleurs de croissance",
-        "maux de tête",
+        "maux de tÃªte",
         "crampes menstruelles"
       ],
       "ingredients": [],
@@ -2258,7 +2258,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 114,
@@ -2267,7 +2267,7 @@
       },
       "tags": [
         "douleurs de croissance",
-        "maux de tête",
+        "maux de tÃªte",
         "crampes menstruelles",
         "orale"
       ]
@@ -2275,9 +2275,9 @@
     {
       "id": "rem-caulophyllum-72",
       "nom": "Caulophyllum",
-      "description": "Remède à base d'actée à grappes bleues pour les crampes sévères.",
+      "description": "RemÃ¨de Ã  base d'actÃ©e Ã  grappes bleues pour les crampes sÃ©vÃ¨res.",
       "indications": [
-        "crampes sévères",
+        "crampes sÃ©vÃ¨res",
         "accouchement"
       ],
       "ingredients": [],
@@ -2287,7 +2287,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 114,
@@ -2295,7 +2295,7 @@
         "verifie": false
       },
       "tags": [
-        "crampes sévères",
+        "crampes sÃ©vÃ¨res",
         "accouchement",
         "orale"
       ]
@@ -2303,10 +2303,10 @@
     {
       "id": "rem-causticum-73",
       "nom": "Causticum",
-      "description": "Utilisé pour les flux menstruels qui s'arrêtent la nuit et reprennent le matin.",
+      "description": "UtilisÃ© pour les flux menstruels qui s'arrÃªtent la nuit et reprennent le matin.",
       "indications": [
-        "syndrome prémenstruel",
-        "humeur dépressive",
+        "syndrome prÃ©menstruel",
+        "humeur dÃ©pressive",
         "sensation de faiblesse"
       ],
       "ingredients": [],
@@ -2316,7 +2316,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 115,
@@ -2324,8 +2324,8 @@
         "verifie": false
       },
       "tags": [
-        "syndrome prémenstruel",
-        "humeur dépressive",
+        "syndrome prÃ©menstruel",
+        "humeur dÃ©pressive",
         "sensation de faiblesse",
         "orale"
       ]
@@ -2333,22 +2333,22 @@
     {
       "id": "rem-chamomilla-74",
       "nom": "Chamomilla",
-      "description": "Soulage les douleurs menstruelles avec irritabilité ou colère extrême.",
+      "description": "Soulage les douleurs menstruelles avec irritabilitÃ© ou colÃ¨re extrÃªme.",
       "indications": [
         "douleurs menstruelles",
-        "irritabilité",
-        "colère"
+        "irritabilitÃ©",
+        "colÃ¨re"
       ],
       "ingredients": [],
       "preparation": [],
       "posologie": {},
       "precautions": [
-        "éviter la consommation de café"
+        "Ã©viter la consommation de cafÃ©"
       ],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 115,
@@ -2357,18 +2357,18 @@
       },
       "tags": [
         "douleurs menstruelles",
-        "irritabilité",
-        "colère",
+        "irritabilitÃ©",
+        "colÃ¨re",
         "orale"
       ]
     },
     {
       "id": "rem-china-officinalis-75",
       "nom": "China Officinalis",
-      "description": "Remède pour les femmes souffrant de saignements menstruels abondants.",
+      "description": "RemÃ¨de pour les femmes souffrant de saignements menstruels abondants.",
       "indications": [
         "saignements menstruels",
-        "épuisement"
+        "Ã©puisement"
       ],
       "ingredients": [],
       "preparation": [],
@@ -2380,7 +2380,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 116,
@@ -2389,14 +2389,14 @@
       },
       "tags": [
         "saignements menstruels",
-        "épuisement",
+        "Ã©puisement",
         "orale"
       ]
     },
     {
       "id": "rem-cimicifuga-racemosa-76",
       "nom": "Cimicifuga Racemosa",
-      "description": "Remède pour les douleurs menstruelles aggravées par le froid.",
+      "description": "RemÃ¨de pour les douleurs menstruelles aggravÃ©es par le froid.",
       "indications": [
         "douleurs menstruelles",
         "douleurs articulaires"
@@ -2411,7 +2411,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 116,
@@ -2427,10 +2427,10 @@
     {
       "id": "rem-cimicifuga-77",
       "nom": "Cimicifuga",
-      "description": "Utilisé pour améliorer l'humeur et soulager les douleurs arthritiques.",
+      "description": "UtilisÃ© pour amÃ©liorer l'humeur et soulager les douleurs arthritiques.",
       "indications": [
         "douleur",
-        "dépression"
+        "dÃ©pression"
       ],
       "ingredients": [],
       "preparation": [],
@@ -2442,7 +2442,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 117,
@@ -2451,14 +2451,14 @@
       },
       "tags": [
         "douleur",
-        "dépression",
+        "dÃ©pression",
         "orale"
       ]
     },
     {
       "id": "rem-cocculus-indicus-78",
       "nom": "Cocculus Indicus",
-      "description": "Remède pour les femmes se sentant faibles et fatiguées pendant les règles.",
+      "description": "RemÃ¨de pour les femmes se sentant faibles et fatiguÃ©es pendant les rÃ¨gles.",
       "indications": [
         "fatigue",
         "faiblesse"
@@ -2470,7 +2470,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 117,
@@ -2497,7 +2497,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 117,
@@ -2512,7 +2512,7 @@
     {
       "id": "rem-cuprum-metallicum-80",
       "nom": "Cuprum Metallicum",
-      "description": "Aide à soulager les crampes dans l'utérus et après l'accouchement.",
+      "description": "Aide Ã  soulager les crampes dans l'utÃ©rus et aprÃ¨s l'accouchement.",
       "indications": [
         "crampes"
       ],
@@ -2523,7 +2523,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 117,
@@ -2538,24 +2538,24 @@
     {
       "id": "rem-gelsemium-sempervire-81",
       "nom": "Gelsemium Sempervirens",
-      "description": "Utile pour la grippe et les dysménorrhées avec migraines et vomissements.",
+      "description": "Utile pour la grippe et les dysmÃ©norrhÃ©es avec migraines et vomissements.",
       "indications": [
         "grippe",
-        "dysménorrhée",
+        "dysmÃ©norrhÃ©e",
         "migraine",
         "vomissement"
       ],
       "ingredients": [],
       "preparation": [],
       "posologie": {
-        "dose": "Non spécifiée",
-        "frequence": "Non spécifiée"
+        "dose": "Non spÃ©cifiÃ©e",
+        "frequence": "Non spÃ©cifiÃ©e"
       },
       "precautions": [],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 118,
@@ -2564,7 +2564,7 @@
       },
       "tags": [
         "grippe",
-        "dysménorrhée",
+        "dysmÃ©norrhÃ©e",
         "migraine",
         "orale"
       ]
@@ -2572,21 +2572,21 @@
     {
       "id": "rem-dulcamara-82",
       "nom": "Dulcamara",
-      "description": "Aggravé par le froid, utilisé pour les problèmes menstruels.",
+      "description": "AggravÃ© par le froid, utilisÃ© pour les problÃ¨mes menstruels.",
       "indications": [
-        "problèmes menstruels"
+        "problÃ¨mes menstruels"
       ],
       "ingredients": [],
       "preparation": [],
       "posologie": {
-        "dose": "Non spécifiée",
-        "frequence": "Non spécifiée"
+        "dose": "Non spÃ©cifiÃ©e",
+        "frequence": "Non spÃ©cifiÃ©e"
       },
       "precautions": [],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 118,
@@ -2594,29 +2594,29 @@
         "verifie": false
       },
       "tags": [
-        "problèmes menstruels",
+        "problÃ¨mes menstruels",
         "orale"
       ]
     },
     {
       "id": "rem-hamamelis-virginiana-83",
       "nom": "Hamamelis Virginiana",
-      "description": "Aide pour les saignements post-opératoires et les règles abondantes.",
+      "description": "Aide pour les saignements post-opÃ©ratoires et les rÃ¨gles abondantes.",
       "indications": [
         "saignement",
-        "règles abondantes"
+        "rÃ¨gles abondantes"
       ],
       "ingredients": [],
       "preparation": [],
       "posologie": {
-        "dose": "Non spécifiée",
-        "frequence": "Non spécifiée"
+        "dose": "Non spÃ©cifiÃ©e",
+        "frequence": "Non spÃ©cifiÃ©e"
       },
       "precautions": [],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 118,
@@ -2625,14 +2625,14 @@
       },
       "tags": [
         "saignement",
-        "règles abondantes",
+        "rÃ¨gles abondantes",
         "orale"
       ]
     },
     {
       "id": "rem-phosphorus-84",
       "nom": "Phosphorus",
-      "description": "Remède pour les symptômes inhabituels liés aux saignements.",
+      "description": "RemÃ¨de pour les symptÃ´mes inhabituels liÃ©s aux saignements.",
       "indications": [
         "saignement"
       ],
@@ -2643,7 +2643,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 119,
@@ -2658,7 +2658,7 @@
     {
       "id": "rem-bryonia-85",
       "nom": "Bryonia",
-      "description": "Remède pour les plaintes aggravées par le mouvement, incluant les menstruations.",
+      "description": "RemÃ¨de pour les plaintes aggravÃ©es par le mouvement, incluant les menstruations.",
       "indications": [
         "menstruation",
         "saignement"
@@ -2670,7 +2670,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 119,
@@ -2686,11 +2686,11 @@
     {
       "id": "rem-pulsatilla-nigricans-86",
       "nom": "Pulsatilla Nigricans",
-      "description": "Utile pour les jeunes filles avec des règles tardives et sévères.",
+      "description": "Utile pour les jeunes filles avec des rÃ¨gles tardives et sÃ©vÃ¨res.",
       "indications": [
         "menstruation",
-        "nervosité",
-        "fièvre"
+        "nervositÃ©",
+        "fiÃ¨vre"
       ],
       "ingredients": [],
       "preparation": [],
@@ -2699,7 +2699,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 119,
@@ -2708,15 +2708,15 @@
       },
       "tags": [
         "menstruation",
-        "nervosité",
-        "fièvre",
+        "nervositÃ©",
+        "fiÃ¨vre",
         "orale"
       ]
     },
     {
       "id": "rem-sabina-87",
       "nom": "Sabina",
-      "description": "Convient aux femmes avec des règles abondantes et douleurs menstruelles.",
+      "description": "Convient aux femmes avec des rÃ¨gles abondantes et douleurs menstruelles.",
       "indications": [
         "menstruation",
         "douleur"
@@ -2728,7 +2728,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 119,
@@ -2744,10 +2744,10 @@
     {
       "id": "rem-sepia-succus-88",
       "nom": "Sepia Succus",
-      "description": "Remède important pour les femmes, utilisé pour divers symptômes.",
+      "description": "RemÃ¨de important pour les femmes, utilisÃ© pour divers symptÃ´mes.",
       "indications": [
-        "menstruations irrégulières",
-        "prolapsus utérin"
+        "menstruations irrÃ©guliÃ¨res",
+        "prolapsus utÃ©rin"
       ],
       "ingredients": [],
       "preparation": [],
@@ -2756,7 +2756,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 120,
@@ -2764,17 +2764,17 @@
         "verifie": false
       },
       "tags": [
-        "menstruations irrégulières",
-        "prolapsus utérin",
+        "menstruations irrÃ©guliÃ¨res",
+        "prolapsus utÃ©rin",
         "orale"
       ]
     },
     {
       "id": "rem-cimicifuga-89",
       "nom": "Cimicifuga",
-      "description": "Utilisé pour aider les femmes souffrant de prolapsus de l'utérus.",
+      "description": "UtilisÃ© pour aider les femmes souffrant de prolapsus de l'utÃ©rus.",
       "indications": [
-        "prolapsus utérin"
+        "prolapsus utÃ©rin"
       ],
       "ingredients": [],
       "preparation": [],
@@ -2783,7 +2783,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 120,
@@ -2791,14 +2791,14 @@
         "verifie": false
       },
       "tags": [
-        "prolapsus utérin",
+        "prolapsus utÃ©rin",
         "orale"
       ]
     },
     {
       "id": "rem-staphysagria-90",
       "nom": "Staphysagria",
-      "description": "Remède contre les infections des voies urinaires et les douleurs après rapports sexuels.",
+      "description": "RemÃ¨de contre les infections des voies urinaires et les douleurs aprÃ¨s rapports sexuels.",
       "indications": [
         "infection urinaire",
         "douleur"
@@ -2806,15 +2806,15 @@
       "ingredients": [
         {
           "nom": "graines de delphinium",
-          "quantite": "non spécifiée",
+          "quantite": "non spÃ©cifiÃ©e",
           "unite": "",
           "principal": true
         }
       ],
       "preparation": [],
       "posologie": {
-        "dose": "non spécifiée",
-        "frequence": "non spécifiée"
+        "dose": "non spÃ©cifiÃ©e",
+        "frequence": "non spÃ©cifiÃ©e"
       },
       "precautions": [
         "consulter un professionnel pour les verrues"
@@ -2822,7 +2822,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 121,
@@ -2838,23 +2838,23 @@
     {
       "id": "rem-sulphur-91",
       "nom": "Sulphur",
-      "description": "Remède pour les démangeaisons de la vulve et la transpiration excessive.",
+      "description": "RemÃ¨de pour les dÃ©mangeaisons de la vulve et la transpiration excessive.",
       "indications": [
-        "démangeaisons",
+        "dÃ©mangeaisons",
         "transpiration"
       ],
       "ingredients": [
         {
           "nom": "sulphur",
-          "quantite": "non spécifiée",
+          "quantite": "non spÃ©cifiÃ©e",
           "unite": "",
           "principal": true
         }
       ],
       "preparation": [],
       "posologie": {
-        "dose": "non spécifiée",
-        "frequence": "non spécifiée"
+        "dose": "non spÃ©cifiÃ©e",
+        "frequence": "non spÃ©cifiÃ©e"
       },
       "precautions": [
         "consulter un professionnel pour les verrues"
@@ -2862,7 +2862,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 121,
@@ -2870,7 +2870,7 @@
         "verifie": false
       },
       "tags": [
-        "démangeaisons",
+        "dÃ©mangeaisons",
         "transpiration",
         "orale"
       ]
@@ -2878,22 +2878,22 @@
     {
       "id": "rem-thuja-92",
       "nom": "Thuja",
-      "description": "Remède pour les verrues vénériennes causées par le VPH.",
+      "description": "RemÃ¨de pour les verrues vÃ©nÃ©riennes causÃ©es par le VPH.",
       "indications": [
         "verrues"
       ],
       "ingredients": [
         {
           "nom": "thuja",
-          "quantite": "non spécifiée",
+          "quantite": "non spÃ©cifiÃ©e",
           "unite": "",
           "principal": true
         }
       ],
       "preparation": [],
       "posologie": {
-        "dose": "non spécifiée",
-        "frequence": "non spécifiée"
+        "dose": "non spÃ©cifiÃ©e",
+        "frequence": "non spÃ©cifiÃ©e"
       },
       "precautions": [
         "consulter un professionnel pour les verrues"
@@ -2901,7 +2901,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 121,
@@ -2916,10 +2916,10 @@
     {
       "id": "rem-thuja-93",
       "nom": "Thuja",
-      "description": "Utilisé pour les réactions indésirables après une vaccination.",
+      "description": "UtilisÃ© pour les rÃ©actions indÃ©sirables aprÃ¨s une vaccination.",
       "indications": [
         "verrues",
-        "dépression",
+        "dÃ©pression",
         "isolement"
       ],
       "ingredients": [],
@@ -2932,7 +2932,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 122,
@@ -2941,7 +2941,7 @@
       },
       "tags": [
         "verrues",
-        "dépression",
+        "dÃ©pression",
         "isolement",
         "orale"
       ]
@@ -2949,7 +2949,7 @@
     {
       "id": "rem-phytolacca-decandra-94",
       "nom": "Phytolacca Decandra",
-      "description": "Utile pour les mères qui allaitent et qui développent une mastite.",
+      "description": "Utile pour les mÃ¨res qui allaitent et qui dÃ©veloppent une mastite.",
       "indications": [
         "mastite",
         "maux de gorge"
@@ -2964,7 +2964,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 122,
@@ -2980,7 +2980,7 @@
     {
       "id": "rem-magnesium-carbonicum-95",
       "nom": "Magnesium Carbonicum",
-      "description": "Remède constitutionnel pour les infections récurrentes des sinus.",
+      "description": "RemÃ¨de constitutionnel pour les infections rÃ©currentes des sinus.",
       "indications": [
         "infections des sinus"
       ],
@@ -2991,7 +2991,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 122,
@@ -3006,10 +3006,10 @@
     {
       "id": "rem-phytolacca-30c-96",
       "nom": "Phytolacca 30C",
-      "description": "Remède homéopathique utilisé pour la mastite.",
+      "description": "RemÃ¨de homÃ©opathique utilisÃ© pour la mastite.",
       "indications": [
         "mastite",
-        "fièvre",
+        "fiÃ¨vre",
         "douleur"
       ],
       "ingredients": [],
@@ -3022,7 +3022,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 123,
@@ -3031,7 +3031,7 @@
       },
       "tags": [
         "mastite",
-        "fièvre",
+        "fiÃ¨vre",
         "douleur",
         "orale"
       ]
@@ -3039,22 +3039,22 @@
     {
       "id": "rem-magnesium-carbonicum-97",
       "nom": "Magnesium Carbonicum",
-      "description": "Remède constitutionnel utilisé pour améliorer l'état général.",
+      "description": "RemÃ¨de constitutionnel utilisÃ© pour amÃ©liorer l'Ã©tat gÃ©nÃ©ral.",
       "indications": [
         "douleur",
-        "sensibilité"
+        "sensibilitÃ©"
       ],
       "ingredients": [],
       "preparation": [],
       "posologie": {
-        "dose": "augmentée",
+        "dose": "augmentÃ©e",
         "frequence": "au besoin"
       },
       "precautions": [],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 123,
@@ -3063,16 +3063,16 @@
       },
       "tags": [
         "douleur",
-        "sensibilité",
+        "sensibilitÃ©",
         "orale"
       ]
     },
     {
       "id": "rem-phytolacca-200c-98",
       "nom": "Phytolacca 200C",
-      "description": "Remède homéopathique pour réduire la fièvre et la douleur.",
+      "description": "RemÃ¨de homÃ©opathique pour rÃ©duire la fiÃ¨vre et la douleur.",
       "indications": [
-        "fièvre",
+        "fiÃ¨vre",
         "douleur",
         "rougeur"
       ],
@@ -3086,7 +3086,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 123,
@@ -3094,7 +3094,7 @@
         "verifie": false
       },
       "tags": [
-        "fièvre",
+        "fiÃ¨vre",
         "douleur",
         "rougeur",
         "orale"
@@ -3103,7 +3103,7 @@
     {
       "id": "rem-phytolacca-1m-99",
       "nom": "Phytolacca 1M",
-      "description": "Remède homéopathique pour les cas graves de mastite.",
+      "description": "RemÃ¨de homÃ©opathique pour les cas graves de mastite.",
       "indications": [
         "mastite",
         "cancer"
@@ -3118,7 +3118,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 123,
@@ -3134,9 +3134,9 @@
     {
       "id": "rem-magnesium-carbonicum-100",
       "nom": "Magnesium Carbonicum",
-      "description": "Remède constitutionnel pour divers problèmes aigus.",
+      "description": "RemÃ¨de constitutionnel pour divers problÃ¨mes aigus.",
       "indications": [
-        "problèmes aigus"
+        "problÃ¨mes aigus"
       ],
       "ingredients": [],
       "preparation": [],
@@ -3145,7 +3145,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 124,
@@ -3153,16 +3153,16 @@
         "verifie": false
       },
       "tags": [
-        "problèmes aigus",
+        "problÃ¨mes aigus",
         "orale"
       ]
     },
     {
       "id": "rem-kali-carb-101",
       "nom": "Kali Carb",
-      "description": "Remède homéopathique pour les nausées matinales.",
+      "description": "RemÃ¨de homÃ©opathique pour les nausÃ©es matinales.",
       "indications": [
-        "nausées",
+        "nausÃ©es",
         "vomissements"
       ],
       "ingredients": [],
@@ -3172,7 +3172,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 124,
@@ -3180,14 +3180,14 @@
         "verifie": false
       },
       "tags": [
-        "nausées",
+        "nausÃ©es",
         "vomissements",
         "orale"
       ]
     },
     {
       "id": "rem-ipeca-102",
-      "nom": "Ipéca",
+      "nom": "IpÃ©ca",
       "description": "Soulagement temporaire des vomissements de grossesse.",
       "indications": [
         "vomissements"
@@ -3199,7 +3199,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 124,
@@ -3214,7 +3214,7 @@
     {
       "id": "rem-soufre-103",
       "nom": "Soufre",
-      "description": "Remède pour les vomissements de grossesse.",
+      "description": "RemÃ¨de pour les vomissements de grossesse.",
       "indications": [
         "vomissements"
       ],
@@ -3225,7 +3225,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 124,
@@ -3239,8 +3239,8 @@
     },
     {
       "id": "rem-sepi-104",
-      "nom": "Sépi",
-      "description": "Remède pour les vomissements de grossesse.",
+      "nom": "SÃ©pi",
+      "description": "RemÃ¨de pour les vomissements de grossesse.",
       "indications": [
         "vomissements"
       ],
@@ -3251,7 +3251,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 124,
@@ -3266,7 +3266,7 @@
     {
       "id": "rem-arsenicum-album-105",
       "nom": "Arsenicum Album",
-      "description": "Remède contre les intoxications alimentaires et pour les femmes enceintes avec estomac sensible.",
+      "description": "RemÃ¨de contre les intoxications alimentaires et pour les femmes enceintes avec estomac sensible.",
       "indications": [
         "intoxications alimentaires",
         "estomac sensible"
@@ -3278,7 +3278,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 124,
@@ -3294,11 +3294,11 @@
     {
       "id": "rem-arsenicum-album-106",
       "nom": "Arsenicum Album",
-      "description": "Soulage les nausées et vomissements.",
+      "description": "Soulage les nausÃ©es et vomissements.",
       "indications": [
-        "nausée",
+        "nausÃ©e",
         "vomissement",
-        "anxiété"
+        "anxiÃ©tÃ©"
       ],
       "ingredients": [
         {
@@ -3312,7 +3312,7 @@
         {
           "etape": 1,
           "instruction": "Administrer sous la langue.",
-          "duree": "immédiat"
+          "duree": "immÃ©diat"
         }
       ],
       "posologie": {
@@ -3320,12 +3320,12 @@
         "frequence": "selon besoin"
       },
       "precautions": [
-        "Éviter l'eau très froide"
+        "Ã‰viter l'eau trÃ¨s froide"
       ],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 125,
@@ -3333,18 +3333,18 @@
         "verifie": false
       },
       "tags": [
-        "nausée",
+        "nausÃ©e",
         "vomissement",
-        "anxiété",
+        "anxiÃ©tÃ©",
         "orale"
       ]
     },
     {
       "id": "rem-cocculus-indicus-107",
       "nom": "Cocculus Indicus",
-      "description": "Aide à soulager les nausées matinales et le mal des transports.",
+      "description": "Aide Ã  soulager les nausÃ©es matinales et le mal des transports.",
       "indications": [
-        "nausée",
+        "nausÃ©e",
         "mal des transports"
       ],
       "ingredients": [
@@ -3359,7 +3359,7 @@
         {
           "etape": 1,
           "instruction": "Prendre avant le voyage.",
-          "duree": "immédiat"
+          "duree": "immÃ©diat"
         }
       ],
       "posologie": {
@@ -3370,7 +3370,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 125,
@@ -3378,7 +3378,7 @@
         "verifie": false
       },
       "tags": [
-        "nausée",
+        "nausÃ©e",
         "mal des transports",
         "orale"
       ]
@@ -3386,9 +3386,9 @@
     {
       "id": "rem-cuprum-metallicum-108",
       "nom": "Cuprum Metallicum",
-      "description": "Soulage les nausées matinales et les crampes.",
+      "description": "Soulage les nausÃ©es matinales et les crampes.",
       "indications": [
-        "nausée",
+        "nausÃ©e",
         "crampes",
         "hoquet"
       ],
@@ -3403,8 +3403,8 @@
       "preparation": [
         {
           "etape": 1,
-          "instruction": "Prendre au réveil.",
-          "duree": "immédiat"
+          "instruction": "Prendre au rÃ©veil.",
+          "duree": "immÃ©diat"
         }
       ],
       "posologie": {
@@ -3415,7 +3415,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 125,
@@ -3423,7 +3423,7 @@
         "verifie": false
       },
       "tags": [
-        "nausée",
+        "nausÃ©e",
         "crampes",
         "hoquet",
         "orale"
@@ -3432,10 +3432,10 @@
     {
       "id": "rem-ferrum-phosphoricum-109",
       "nom": "Ferrum Phosphoricum",
-      "description": "Remède contre le rhume et les douleurs d'estomac.",
+      "description": "RemÃ¨de contre le rhume et les douleurs d'estomac.",
       "indications": [
         "rhume",
-        "nausées",
+        "nausÃ©es",
         "douleurs d'estomac"
       ],
       "ingredients": [],
@@ -3445,7 +3445,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 126,
@@ -3454,7 +3454,7 @@
       },
       "tags": [
         "rhume",
-        "nausées",
+        "nausÃ©es",
         "douleurs d'estomac",
         "orale"
       ]
@@ -3462,9 +3462,9 @@
     {
       "id": "rem-ignatia-amara-110",
       "nom": "Ignatia Amara",
-      "description": "Utile pour les nausées matinales et le pica.",
+      "description": "Utile pour les nausÃ©es matinales et le pica.",
       "indications": [
-        "nausées",
+        "nausÃ©es",
         "pica"
       ],
       "ingredients": [],
@@ -3474,7 +3474,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 126,
@@ -3482,7 +3482,7 @@
         "verifie": false
       },
       "tags": [
-        "nausées",
+        "nausÃ©es",
         "pica",
         "orale"
       ]
@@ -3490,7 +3490,7 @@
     {
       "id": "rem-phosphorus-111",
       "nom": "Phosphorus",
-      "description": "Indiqué pour l'envie de glace chez les femmes enceintes.",
+      "description": "IndiquÃ© pour l'envie de glace chez les femmes enceintes.",
       "indications": [
         "pica"
       ],
@@ -3501,7 +3501,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 126,
@@ -3516,14 +3516,14 @@
     {
       "id": "rem-ipecacuanha-112",
       "nom": "Ipecacuanha",
-      "description": "Pour les nausées sévères et les vomissements.",
+      "description": "Pour les nausÃ©es sÃ©vÃ¨res et les vomissements.",
       "indications": [
-        "nausées",
+        "nausÃ©es",
         "vomissements"
       ],
       "ingredients": [
         {
-          "nom": "racine d'ipéca",
+          "nom": "racine d'ipÃ©ca",
           "quantite": "",
           "unite": "",
           "principal": true
@@ -3535,7 +3535,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 126,
@@ -3543,7 +3543,7 @@
         "verifie": false
       },
       "tags": [
-        "nausées",
+        "nausÃ©es",
         "vomissements",
         "orale"
       ]
@@ -3551,9 +3551,9 @@
     {
       "id": "rem-kali-carbonicum-113",
       "nom": "Kali Carbonicum",
-      "description": "Soulage les nausées matinales et douleurs dans le dos.",
+      "description": "Soulage les nausÃ©es matinales et douleurs dans le dos.",
       "indications": [
-        "nausées",
+        "nausÃ©es",
         "douleur",
         "faiblesse"
       ],
@@ -3564,7 +3564,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 127,
@@ -3572,7 +3572,7 @@
         "verifie": false
       },
       "tags": [
-        "nausées",
+        "nausÃ©es",
         "douleur",
         "faiblesse",
         "orale"
@@ -3581,11 +3581,11 @@
     {
       "id": "rem-natrum-muriaticum-114",
       "nom": "Natrum Muriaticum",
-      "description": "Pour les nausées et soif chez les femmes enceintes.",
+      "description": "Pour les nausÃ©es et soif chez les femmes enceintes.",
       "indications": [
-        "nausées",
+        "nausÃ©es",
         "soif",
-        "brûlures d'estomac"
+        "brÃ»lures d'estomac"
       ],
       "ingredients": [],
       "preparation": [],
@@ -3594,7 +3594,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 127,
@@ -3602,20 +3602,20 @@
         "verifie": false
       },
       "tags": [
-        "nausées",
+        "nausÃ©es",
         "soif",
-        "brûlures d'estomac",
+        "brÃ»lures d'estomac",
         "orale"
       ]
     },
     {
       "id": "rem-podophyllum-115",
       "nom": "Podophyllum",
-      "description": "Utile pour les nausées matinales et digestion faible.",
+      "description": "Utile pour les nausÃ©es matinales et digestion faible.",
       "indications": [
-        "nausées",
+        "nausÃ©es",
         "digestion",
-        "diarrhée"
+        "diarrhÃ©e"
       ],
       "ingredients": [],
       "preparation": [],
@@ -3624,7 +3624,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 127,
@@ -3632,18 +3632,18 @@
         "verifie": false
       },
       "tags": [
-        "nausées",
+        "nausÃ©es",
         "digestion",
-        "diarrhée",
+        "diarrhÃ©e",
         "orale"
       ]
     },
     {
       "id": "rem-sepia-succus-116",
       "nom": "Sepia Succus",
-      "description": "Soulage les nausées matinales chez les femmes.",
+      "description": "Soulage les nausÃ©es matinales chez les femmes.",
       "indications": [
-        "nausées",
+        "nausÃ©es",
         "vomissements"
       ],
       "ingredients": [],
@@ -3653,7 +3653,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 128,
@@ -3661,7 +3661,7 @@
         "verifie": false
       },
       "tags": [
-        "nausées",
+        "nausÃ©es",
         "vomissements",
         "orale"
       ]
@@ -3669,9 +3669,9 @@
     {
       "id": "rem-kali-carb-117",
       "nom": "Kali Carb",
-      "description": "Indiqué pour les nausées matinales.",
+      "description": "IndiquÃ© pour les nausÃ©es matinales.",
       "indications": [
-        "nausées"
+        "nausÃ©es"
       ],
       "ingredients": [],
       "preparation": [],
@@ -3680,7 +3680,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 128,
@@ -3688,17 +3688,17 @@
         "verifie": false
       },
       "tags": [
-        "nausées",
+        "nausÃ©es",
         "orale"
       ]
     },
     {
       "id": "rem-sulphur-118",
       "nom": "Sulphur",
-      "description": "Remède pour les nausées matinales au début de la grossesse.",
+      "description": "RemÃ¨de pour les nausÃ©es matinales au dÃ©but de la grossesse.",
       "indications": [
-        "nausées",
-        "bouffées de chaleur"
+        "nausÃ©es",
+        "bouffÃ©es de chaleur"
       ],
       "ingredients": [],
       "preparation": [],
@@ -3707,7 +3707,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 128,
@@ -3715,17 +3715,17 @@
         "verifie": false
       },
       "tags": [
-        "nausées",
-        "bouffées de chaleur",
+        "nausÃ©es",
+        "bouffÃ©es de chaleur",
         "orale"
       ]
     },
     {
       "id": "rem-sulphur-119",
       "nom": "Sulphur",
-      "description": "Remède pour les éruptions cutanées et la soif intense.",
+      "description": "RemÃ¨de pour les Ã©ruptions cutanÃ©es et la soif intense.",
       "indications": [
-        "éruptions cutanées",
+        "Ã©ruptions cutanÃ©es",
         "soif",
         "chaleur"
       ],
@@ -3736,7 +3736,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 129,
@@ -3744,7 +3744,7 @@
         "verifie": false
       },
       "tags": [
-        "éruptions cutanées",
+        "Ã©ruptions cutanÃ©es",
         "soif",
         "chaleur",
         "orale"
@@ -3753,9 +3753,9 @@
     {
       "id": "rem-tabacum-120",
       "nom": "Tabacum",
-      "description": "Remède contre les nausées matinales et le mal des transports.",
+      "description": "RemÃ¨de contre les nausÃ©es matinales et le mal des transports.",
       "indications": [
-        "nausées",
+        "nausÃ©es",
         "mal des transports"
       ],
       "ingredients": [],
@@ -3765,7 +3765,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 129,
@@ -3773,7 +3773,7 @@
         "verifie": false
       },
       "tags": [
-        "nausées",
+        "nausÃ©es",
         "mal des transports",
         "orale"
       ]
@@ -3781,9 +3781,9 @@
     {
       "id": "rem-cocculus-121",
       "nom": "Cocculus",
-      "description": "Remède pour les nausées et vomissements aggravés par le froid.",
+      "description": "RemÃ¨de pour les nausÃ©es et vomissements aggravÃ©s par le froid.",
       "indications": [
-        "nausées",
+        "nausÃ©es",
         "vomissements"
       ],
       "ingredients": [],
@@ -3793,7 +3793,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 129,
@@ -3801,7 +3801,7 @@
         "verifie": false
       },
       "tags": [
-        "nausées",
+        "nausÃ©es",
         "vomissements",
         "orale"
       ]
@@ -3809,9 +3809,9 @@
     {
       "id": "rem-tabacum-122",
       "nom": "Tabacum",
-      "description": "Remède homéopathique pour les nausées matinales et le mal des transports.",
+      "description": "RemÃ¨de homÃ©opathique pour les nausÃ©es matinales et le mal des transports.",
       "indications": [
-        "nausée",
+        "nausÃ©e",
         "mal des transports"
       ],
       "ingredients": [],
@@ -3824,7 +3824,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 130,
@@ -3832,7 +3832,7 @@
         "verifie": false
       },
       "tags": [
-        "nausée",
+        "nausÃ©e",
         "mal des transports",
         "orale"
       ]
@@ -3840,11 +3840,11 @@
     {
       "id": "rem-cocculus-indicus-123",
       "nom": "Cocculus Indicus",
-      "description": "Remède pour le mal des transports avec maux de tête, nausées et vomissements.",
+      "description": "RemÃ¨de pour le mal des transports avec maux de tÃªte, nausÃ©es et vomissements.",
       "indications": [
         "mal des transports",
-        "maux de tête",
-        "nausée",
+        "maux de tÃªte",
+        "nausÃ©e",
         "vomissement"
       ],
       "ingredients": [],
@@ -3854,7 +3854,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 130,
@@ -3863,18 +3863,18 @@
       },
       "tags": [
         "mal des transports",
-        "maux de tête",
-        "nausée",
+        "maux de tÃªte",
+        "nausÃ©e",
         "orale"
       ]
     },
     {
       "id": "rem-nux-vomica-124",
       "nom": "Nux Vomica",
-      "description": "Remède pour le mal des transports et la sensation de toxicité corporelle.",
+      "description": "RemÃ¨de pour le mal des transports et la sensation de toxicitÃ© corporelle.",
       "indications": [
         "mal des transports",
-        "toxicité corporelle"
+        "toxicitÃ© corporelle"
       ],
       "ingredients": [],
       "preparation": [],
@@ -3883,7 +3883,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 130,
@@ -3892,18 +3892,18 @@
       },
       "tags": [
         "mal des transports",
-        "toxicité corporelle",
+        "toxicitÃ© corporelle",
         "orale"
       ]
     },
     {
       "id": "rem-nux-vomica-125",
       "nom": "Nux Vomica",
-      "description": "Remède pour l'indigestion et les brûlures d'estomac.",
+      "description": "RemÃ¨de pour l'indigestion et les brÃ»lures d'estomac.",
       "indications": [
         "indigestion",
-        "brûlures d'estomac",
-        "éructations",
+        "brÃ»lures d'estomac",
+        "Ã©ructations",
         "mal des transports"
       ],
       "ingredients": [],
@@ -3913,7 +3913,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 131,
@@ -3922,17 +3922,17 @@
       },
       "tags": [
         "indigestion",
-        "brûlures d'estomac",
-        "éructations",
+        "brÃ»lures d'estomac",
+        "Ã©ructations",
         "orale"
       ]
     },
     {
       "id": "rem-petroleum-126",
       "nom": "Petroleum",
-      "description": "Utilisé pour les problèmes de peau et le mal des transports.",
+      "description": "UtilisÃ© pour les problÃ¨mes de peau et le mal des transports.",
       "indications": [
-        "problèmes de peau",
+        "problÃ¨mes de peau",
         "fissures dans les doigts",
         "mal des transports",
         "vertige"
@@ -3944,7 +3944,7 @@
       "contreIndications": [],
       "route": "topique",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 131,
@@ -3952,7 +3952,7 @@
         "verifie": false
       },
       "tags": [
-        "problèmes de peau",
+        "problÃ¨mes de peau",
         "fissures dans les doigts",
         "mal des transports",
         "topique"
@@ -3961,9 +3961,9 @@
     {
       "id": "rem-aconitum-napellus-127",
       "nom": "Aconitum Napellus",
-      "description": "Utilisé pour les émotions intenses lors des règles.",
+      "description": "UtilisÃ© pour les Ã©motions intenses lors des rÃ¨gles.",
       "indications": [
-        "anxiété",
+        "anxiÃ©tÃ©",
         "stress",
         "douleur"
       ],
@@ -3974,7 +3974,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 132,
@@ -3982,7 +3982,7 @@
         "verifie": false
       },
       "tags": [
-        "anxiété",
+        "anxiÃ©tÃ©",
         "stress",
         "douleur",
         "orale"
@@ -3991,7 +3991,7 @@
     {
       "id": "rem-hamamelis-128",
       "nom": "Hamamelis",
-      "description": "Utilisé pour arrêter les saignements et favoriser la cicatrisation.",
+      "description": "UtilisÃ© pour arrÃªter les saignements et favoriser la cicatrisation.",
       "indications": [
         "saignement",
         "cicatrisation"
@@ -4006,7 +4006,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 133,
@@ -4033,7 +4033,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 133,
@@ -4048,11 +4048,11 @@
     {
       "id": "rem-aesculus-130",
       "nom": "Aesculus",
-      "description": "Soulage la douleur et les saignements des hémorroïdes.",
+      "description": "Soulage la douleur et les saignements des hÃ©morroÃ¯des.",
       "indications": [
         "douleur",
         "saignement",
-        "hémorroïdes"
+        "hÃ©morroÃ¯des"
       ],
       "ingredients": [],
       "preparation": [],
@@ -4061,7 +4061,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 133,
@@ -4071,16 +4071,16 @@
       "tags": [
         "douleur",
         "saignement",
-        "hémorroïdes",
+        "hÃ©morroÃ¯des",
         "orale"
       ]
     },
     {
       "id": "rem-podophyllum-131",
       "nom": "Podophyllum",
-      "description": "Aide les femmes enceintes souffrant d'hémorroïdes.",
+      "description": "Aide les femmes enceintes souffrant d'hÃ©morroÃ¯des.",
       "indications": [
-        "hémorroïdes"
+        "hÃ©morroÃ¯des"
       ],
       "ingredients": [],
       "preparation": [],
@@ -4089,7 +4089,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 133,
@@ -4097,22 +4097,22 @@
         "verifie": false
       },
       "tags": [
-        "hémorroïdes",
+        "hÃ©morroÃ¯des",
         "orale"
       ]
     },
     {
       "id": "rem-ledum-palustre-132",
       "nom": "Ledum Palustre",
-      "description": "Préparé homéopathiquement à partir de romarin sauvage, utilisé pour les piqûres.",
+      "description": "PrÃ©parÃ© homÃ©opathiquement Ã  partir de romarin sauvage, utilisÃ© pour les piqÃ»res.",
       "indications": [
-        "piqûre",
+        "piqÃ»re",
         "douleur"
       ],
       "ingredients": [
         {
           "nom": "romarin sauvage",
-          "quantite": "non spécifiée",
+          "quantite": "non spÃ©cifiÃ©e",
           "unite": "",
           "principal": true
         }
@@ -4120,21 +4120,21 @@
       "preparation": [
         {
           "etape": 1,
-          "instruction": "Préparer homéopathiquement à partir de romarin sauvage.",
-          "duree": "non spécifiée"
+          "instruction": "PrÃ©parer homÃ©opathiquement Ã  partir de romarin sauvage.",
+          "duree": "non spÃ©cifiÃ©e"
         }
       ],
       "posologie": {
-        "dose": "non spécifiée",
+        "dose": "non spÃ©cifiÃ©e",
         "frequence": "au besoin"
       },
       "precautions": [
-        "Consulter un professionnel de santé si nécessaire"
+        "Consulter un professionnel de santÃ© si nÃ©cessaire"
       ],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 134,
@@ -4142,7 +4142,7 @@
         "verifie": false
       },
       "tags": [
-        "piqûre",
+        "piqÃ»re",
         "douleur",
         "orale"
       ]
@@ -4150,15 +4150,15 @@
     {
       "id": "rem-apis-mellifica-133",
       "nom": "Apis Mellifica",
-      "description": "Préparé à partir d'une abeille entière, utilisé pour l'enflure et la rougeur.",
+      "description": "PrÃ©parÃ© Ã  partir d'une abeille entiÃ¨re, utilisÃ© pour l'enflure et la rougeur.",
       "indications": [
         "enflure",
         "rougeur"
       ],
       "ingredients": [
         {
-          "nom": "abeille entière",
-          "quantite": "non spécifiée",
+          "nom": "abeille entiÃ¨re",
+          "quantite": "non spÃ©cifiÃ©e",
           "unite": "",
           "principal": true
         }
@@ -4166,21 +4166,21 @@
       "preparation": [
         {
           "etape": 1,
-          "instruction": "Préparer homéopathiquement à partir d'une abeille entière.",
-          "duree": "non spécifiée"
+          "instruction": "PrÃ©parer homÃ©opathiquement Ã  partir d'une abeille entiÃ¨re.",
+          "duree": "non spÃ©cifiÃ©e"
         }
       ],
       "posologie": {
-        "dose": "non spécifiée",
+        "dose": "non spÃ©cifiÃ©e",
         "frequence": "au besoin"
       },
       "precautions": [
-        "Consulter un homéopathe professionnel"
+        "Consulter un homÃ©opathe professionnel"
       ],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 134,
@@ -4196,10 +4196,10 @@
     {
       "id": "rem-aconitum-napellus-134",
       "nom": "Aconitum Napellus",
-      "description": "Utilisé pour l'insomnie après un choc ou une peur.",
+      "description": "UtilisÃ© pour l'insomnie aprÃ¨s un choc ou une peur.",
       "indications": [
         "insomnie",
-        "sommeil agité"
+        "sommeil agitÃ©"
       ],
       "ingredients": [],
       "preparation": [],
@@ -4208,7 +4208,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 136,
@@ -4217,18 +4217,18 @@
       },
       "tags": [
         "insomnie",
-        "sommeil agité",
+        "sommeil agitÃ©",
         "orale"
       ]
     },
     {
       "id": "rem-arsenicum-album-135",
       "nom": "Arsenicum Album",
-      "description": "Remède pour le sommeil agité, souvent utilisé par les personnes anxieuses.",
+      "description": "RemÃ¨de pour le sommeil agitÃ©, souvent utilisÃ© par les personnes anxieuses.",
       "indications": [
         "insomnie",
-        "sommeil agité",
-        "anxiété"
+        "sommeil agitÃ©",
+        "anxiÃ©tÃ©"
       ],
       "ingredients": [],
       "preparation": [],
@@ -4237,7 +4237,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 136,
@@ -4246,18 +4246,18 @@
       },
       "tags": [
         "insomnie",
-        "sommeil agité",
-        "anxiété",
+        "sommeil agitÃ©",
+        "anxiÃ©tÃ©",
         "orale"
       ]
     },
     {
       "id": "rem-belladonna-136",
       "nom": "Belladonna",
-      "description": "Utilisé pour le sommeil agité chez les enfants avec fièvre.",
+      "description": "UtilisÃ© pour le sommeil agitÃ© chez les enfants avec fiÃ¨vre.",
       "indications": [
-        "sommeil agité",
-        "fièvre"
+        "sommeil agitÃ©",
+        "fiÃ¨vre"
       ],
       "ingredients": [],
       "preparation": [],
@@ -4266,7 +4266,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 136,
@@ -4274,15 +4274,15 @@
         "verifie": false
       },
       "tags": [
-        "sommeil agité",
-        "fièvre",
+        "sommeil agitÃ©",
+        "fiÃ¨vre",
         "orale"
       ]
     },
     {
       "id": "rem-coffea-cruda-137",
       "nom": "Coffea Cruda",
-      "description": "Convient à ceux qui ne peuvent pas dormir après une journée de travail.",
+      "description": "Convient Ã  ceux qui ne peuvent pas dormir aprÃ¨s une journÃ©e de travail.",
       "indications": [
         "insomnie"
       ],
@@ -4293,7 +4293,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 136,
@@ -4308,7 +4308,7 @@
     {
       "id": "rem-coffea-138",
       "nom": "Coffea",
-      "description": "Aide à s'endormir et à se rendormir après un réveil nocturne.",
+      "description": "Aide Ã  s'endormir et Ã  se rendormir aprÃ¨s un rÃ©veil nocturne.",
       "indications": [
         "sommeil"
       ],
@@ -4319,7 +4319,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 137,
@@ -4334,9 +4334,9 @@
     {
       "id": "rem-gelsemium-sempervire-139",
       "nom": "Gelsemium Sempervirens",
-      "description": "Calme l'anxiété et utile en cas d'insomnie due à l'épuisement.",
+      "description": "Calme l'anxiÃ©tÃ© et utile en cas d'insomnie due Ã  l'Ã©puisement.",
       "indications": [
-        "anxiété",
+        "anxiÃ©tÃ©",
         "insomnie"
       ],
       "ingredients": [],
@@ -4346,7 +4346,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 137,
@@ -4354,7 +4354,7 @@
         "verifie": false
       },
       "tags": [
-        "anxiété",
+        "anxiÃ©tÃ©",
         "insomnie",
         "orale"
       ]
@@ -4362,7 +4362,7 @@
     {
       "id": "rem-zincum-metallicum-140",
       "nom": "Zincum Metallicum",
-      "description": "Pour le sommeil perturbé par des crampes ou le syndrome des jambes sans repos.",
+      "description": "Pour le sommeil perturbÃ© par des crampes ou le syndrome des jambes sans repos.",
       "indications": [
         "sommeil",
         "crampes"
@@ -4374,7 +4374,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 137,
@@ -4390,9 +4390,9 @@
     {
       "id": "rem-cocculus-indicus-141",
       "nom": "Cocculus Indicus",
-      "description": "Remède pour les maux liés à la veille nocturne et l'épuisement.",
+      "description": "RemÃ¨de pour les maux liÃ©s Ã  la veille nocturne et l'Ã©puisement.",
       "indications": [
-        "épuisement",
+        "Ã©puisement",
         "sommeil"
       ],
       "ingredients": [],
@@ -4402,7 +4402,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 137,
@@ -4410,7 +4410,7 @@
         "verifie": false
       },
       "tags": [
-        "épuisement",
+        "Ã©puisement",
         "sommeil",
         "orale"
       ]
@@ -4418,10 +4418,10 @@
     {
       "id": "rem-cocculus-142",
       "nom": "Cocculus",
-      "description": "Remède pour les personnes épuisées mentalement et physiquement.",
+      "description": "RemÃ¨de pour les personnes Ã©puisÃ©es mentalement et physiquement.",
       "indications": [
-        "épuisement",
-        "réflexion lente"
+        "Ã©puisement",
+        "rÃ©flexion lente"
       ],
       "ingredients": [],
       "preparation": [],
@@ -4433,7 +4433,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 138,
@@ -4441,15 +4441,15 @@
         "verifie": false
       },
       "tags": [
-        "épuisement",
-        "réflexion lente",
+        "Ã©puisement",
+        "rÃ©flexion lente",
         "orale"
       ]
     },
     {
       "id": "rem-china-officinalis-143",
       "nom": "China Officinalis",
-      "description": "Remède pour l'insomnie due à la perte de fluides vitaux.",
+      "description": "RemÃ¨de pour l'insomnie due Ã  la perte de fluides vitaux.",
       "indications": [
         "insomnie",
         "fatigue"
@@ -4461,7 +4461,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 138,
@@ -4477,10 +4477,10 @@
     {
       "id": "rem-lachesis-144",
       "nom": "Lachesis",
-      "description": "Remède pour l'insomnie et les symptômes aggravés après le sommeil.",
+      "description": "RemÃ¨de pour l'insomnie et les symptÃ´mes aggravÃ©s aprÃ¨s le sommeil.",
       "indications": [
         "insomnie",
-        "maux de tête",
+        "maux de tÃªte",
         "crampes menstruelles",
         "hypertension"
       ],
@@ -4491,7 +4491,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 138,
@@ -4500,7 +4500,7 @@
       },
       "tags": [
         "insomnie",
-        "maux de tête",
+        "maux de tÃªte",
         "crampes menstruelles",
         "orale"
       ]
@@ -4508,7 +4508,7 @@
     {
       "id": "rem-natrum-muriaticum-145",
       "nom": "Natrum Muriaticum",
-      "description": "Remède pour les personnes fatiguées et souffrant de chagrin.",
+      "description": "RemÃ¨de pour les personnes fatiguÃ©es et souffrant de chagrin.",
       "indications": [
         "fatigue",
         "chagrin",
@@ -4521,7 +4521,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 138,
@@ -4538,7 +4538,7 @@
     {
       "id": "rem-ignatia-amara-146",
       "nom": "Ignatia Amara",
-      "description": "Utile pour l'insomnie après un deuil.",
+      "description": "Utile pour l'insomnie aprÃ¨s un deuil.",
       "indications": [
         "insomnie",
         "stress"
@@ -4550,7 +4550,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 139,
@@ -4569,7 +4569,7 @@
       "description": "Option pour le chagrin chronique.",
       "indications": [
         "chagrin",
-        "maux de tête"
+        "maux de tÃªte"
       ],
       "ingredients": [],
       "preparation": [],
@@ -4578,7 +4578,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 139,
@@ -4587,17 +4587,17 @@
       },
       "tags": [
         "chagrin",
-        "maux de tête",
+        "maux de tÃªte",
         "orale"
       ]
     },
     {
       "id": "rem-silicea-148",
       "nom": "Silicea",
-      "description": "Utile pour le sommeil non réparateur.",
+      "description": "Utile pour le sommeil non rÃ©parateur.",
       "indications": [
         "sommeil",
-        "réveil fréquent"
+        "rÃ©veil frÃ©quent"
       ],
       "ingredients": [],
       "preparation": [],
@@ -4606,7 +4606,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 139,
@@ -4615,23 +4615,23 @@
       },
       "tags": [
         "sommeil",
-        "réveil fréquent",
+        "rÃ©veil frÃ©quent",
         "orale"
       ]
     },
     {
       "id": "rem-chamomilla-149",
       "nom": "Chamomilla",
-      "description": "Aide pour le sommeil perturbé chez les bébés.",
+      "description": "Aide pour le sommeil perturbÃ© chez les bÃ©bÃ©s.",
       "indications": [
         "insomnie",
         "douleur"
       ],
       "ingredients": [
         {
-          "nom": "pastille de remède",
+          "nom": "pastille de remÃ¨de",
           "quantite": "1",
-          "unite": "pièce",
+          "unite": "piÃ¨ce",
           "principal": true
         }
       ],
@@ -4643,14 +4643,14 @@
         }
       ],
       "posologie": {
-        "dose": "1 cuillère à café",
+        "dose": "1 cuillÃ¨re Ã  cafÃ©",
         "frequence": "avant le coucher"
       },
       "precautions": [],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 139,
@@ -4677,7 +4677,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 139,
@@ -4692,10 +4692,10 @@
     {
       "id": "rem-calcarea-151",
       "nom": "Calcarea",
-      "description": "Remède pour les personnes qui transpirent facilement, en particulier au niveau de la tête.",
+      "description": "RemÃ¨de pour les personnes qui transpirent facilement, en particulier au niveau de la tÃªte.",
       "indications": [
         "transpiration",
-        "ménopause"
+        "mÃ©nopause"
       ],
       "ingredients": [],
       "preparation": [],
@@ -4704,7 +4704,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 140,
@@ -4713,14 +4713,14 @@
       },
       "tags": [
         "transpiration",
-        "ménopause",
+        "mÃ©nopause",
         "orale"
       ]
     },
     {
       "id": "rem-nux-vomica-152",
       "nom": "Nux Vomica",
-      "description": "Remède pour les personnes qui mangent ou boivent trop ou abusent de drogues.",
+      "description": "RemÃ¨de pour les personnes qui mangent ou boivent trop ou abusent de drogues.",
       "indications": [
         "gueule de bois",
         "stress",
@@ -4733,7 +4733,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 140,
@@ -4750,11 +4750,11 @@
     {
       "id": "rem-kali-carbonicum-153",
       "nom": "Kali Carbonicum",
-      "description": "Remède pour l'insomnie due à la toux et aux maux de tête.",
+      "description": "RemÃ¨de pour l'insomnie due Ã  la toux et aux maux de tÃªte.",
       "indications": [
         "insomnie",
         "toux",
-        "maux de tête"
+        "maux de tÃªte"
       ],
       "ingredients": [],
       "preparation": [],
@@ -4763,7 +4763,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 140,
@@ -4773,14 +4773,14 @@
       "tags": [
         "insomnie",
         "toux",
-        "maux de tête",
+        "maux de tÃªte",
         "orale"
       ]
     },
     {
       "id": "rem-drosera-rotundifolia-154",
       "nom": "Drosera Rotundifolia",
-      "description": "Remède pour la toux qui s'aggrave en position couchée.",
+      "description": "RemÃ¨de pour la toux qui s'aggrave en position couchÃ©e.",
       "indications": [
         "toux",
         "rhumes"
@@ -4792,7 +4792,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 140,
@@ -4808,10 +4808,10 @@
     {
       "id": "rem-pulsatilla-155",
       "nom": "Pulsatilla",
-      "description": "Remède pour les personnes qui pleurent dans leur sommeil à cause de rêves tristes.",
+      "description": "RemÃ¨de pour les personnes qui pleurent dans leur sommeil Ã  cause de rÃªves tristes.",
       "indications": [
         "sommeil",
-        "rêves"
+        "rÃªves"
       ],
       "ingredients": [],
       "preparation": [],
@@ -4820,7 +4820,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 140,
@@ -4829,14 +4829,14 @@
       },
       "tags": [
         "sommeil",
-        "rêves",
+        "rÃªves",
         "orale"
       ]
     },
     {
       "id": "rem-rhus-toxicodendron-156",
       "nom": "Rhus Toxicodendron",
-      "description": "Remède pour les personnes qui se réveillent avec des raideurs articulaires.",
+      "description": "RemÃ¨de pour les personnes qui se rÃ©veillent avec des raideurs articulaires.",
       "indications": [
         "insomnie",
         "raideurs articulaires"
@@ -4848,7 +4848,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 140,
@@ -4864,7 +4864,7 @@
     {
       "id": "rem-cuprum-metallicum-157",
       "nom": "Cuprum Metallicum",
-      "description": "Remède homéopathique pour les crampes musculaires.",
+      "description": "RemÃ¨de homÃ©opathique pour les crampes musculaires.",
       "indications": [
         "crampes",
         "douleur"
@@ -4876,7 +4876,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 141,
@@ -4892,7 +4892,7 @@
     {
       "id": "rem-zincum-metallicum-158",
       "nom": "Zincum Metallicum",
-      "description": "Remède homéopathique pour les crampes musculaires.",
+      "description": "RemÃ¨de homÃ©opathique pour les crampes musculaires.",
       "indications": [
         "crampes",
         "douleur"
@@ -4904,7 +4904,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 141,
@@ -4920,11 +4920,11 @@
     {
       "id": "rem-belladonna-159",
       "nom": "Belladonna",
-      "description": "Remède pour les bouffées de chaleur soudaines",
+      "description": "RemÃ¨de pour les bouffÃ©es de chaleur soudaines",
       "indications": [
-        "bouffées de chaleur",
+        "bouffÃ©es de chaleur",
         "transpiration",
-        "irritabilité"
+        "irritabilitÃ©"
       ],
       "ingredients": [],
       "preparation": [],
@@ -4936,7 +4936,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 142,
@@ -4944,19 +4944,19 @@
         "verifie": false
       },
       "tags": [
-        "bouffées de chaleur",
+        "bouffÃ©es de chaleur",
         "transpiration",
-        "irritabilité",
+        "irritabilitÃ©",
         "orale"
       ]
     },
     {
       "id": "rem-belladonna-160",
       "nom": "Belladonna",
-      "description": "Utilisé pour les maladies de courte durée comme la fièvre due aux infections de l'oreille.",
+      "description": "UtilisÃ© pour les maladies de courte durÃ©e comme la fiÃ¨vre due aux infections de l'oreille.",
       "indications": [
-        "fièvre",
-        "irritabilité"
+        "fiÃ¨vre",
+        "irritabilitÃ©"
       ],
       "ingredients": [],
       "preparation": [],
@@ -4968,7 +4968,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 143,
@@ -4976,19 +4976,19 @@
         "verifie": false
       },
       "tags": [
-        "fièvre",
-        "irritabilité",
+        "fiÃ¨vre",
+        "irritabilitÃ©",
         "orale"
       ]
     },
     {
       "id": "rem-calcarea-carbonica-161",
       "nom": "Calcarea Carbonica",
-      "description": "Remède pour transpirer abondamment et anxiété.",
+      "description": "RemÃ¨de pour transpirer abondamment et anxiÃ©tÃ©.",
       "indications": [
         "transpiration",
-        "anxiété",
-        "épuisement"
+        "anxiÃ©tÃ©",
+        "Ã©puisement"
       ],
       "ingredients": [],
       "preparation": [],
@@ -4997,7 +4997,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 143,
@@ -5006,18 +5006,18 @@
       },
       "tags": [
         "transpiration",
-        "anxiété",
-        "épuisement",
+        "anxiÃ©tÃ©",
+        "Ã©puisement",
         "orale"
       ]
     },
     {
       "id": "rem-glonoinum-162",
       "nom": "Glonoinum",
-      "description": "Remède pour les maux de tête intenses et les bouffées de chaleur.",
+      "description": "RemÃ¨de pour les maux de tÃªte intenses et les bouffÃ©es de chaleur.",
       "indications": [
-        "mal de tête",
-        "bouffées de chaleur"
+        "mal de tÃªte",
+        "bouffÃ©es de chaleur"
       ],
       "ingredients": [],
       "preparation": [],
@@ -5026,7 +5026,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 143,
@@ -5034,18 +5034,18 @@
         "verifie": false
       },
       "tags": [
-        "mal de tête",
-        "bouffées de chaleur",
+        "mal de tÃªte",
+        "bouffÃ©es de chaleur",
         "orale"
       ]
     },
     {
       "id": "rem-lachesis-muta-163",
       "nom": "Lachesis Muta",
-      "description": "Recommandé pour les femmes en période de ménopause.",
+      "description": "RecommandÃ© pour les femmes en pÃ©riode de mÃ©nopause.",
       "indications": [
-        "ménopause",
-        "bouffées de chaleur",
+        "mÃ©nopause",
+        "bouffÃ©es de chaleur",
         "palpitations"
       ],
       "ingredients": [],
@@ -5055,7 +5055,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 143,
@@ -5063,8 +5063,8 @@
         "verifie": false
       },
       "tags": [
-        "ménopause",
-        "bouffées de chaleur",
+        "mÃ©nopause",
+        "bouffÃ©es de chaleur",
         "palpitations",
         "orale"
       ]
@@ -5072,9 +5072,9 @@
     {
       "id": "rem-lachesis-164",
       "nom": "Lachesis",
-      "description": "Remède pour les symptômes de la ménopause et la peur des serpents.",
+      "description": "RemÃ¨de pour les symptÃ´mes de la mÃ©nopause et la peur des serpents.",
       "indications": [
-        "ménopause",
+        "mÃ©nopause",
         "peur",
         "bourdonnements d'oreilles"
       ],
@@ -5089,7 +5089,7 @@
       "preparation": [
         {
           "etape": 1,
-          "instruction": "Préparer à partir du venin de serpent.",
+          "instruction": "PrÃ©parer Ã  partir du venin de serpent.",
           "duree": "variable"
         }
       ],
@@ -5098,12 +5098,12 @@
         "frequence": "selon prescription"
       },
       "precautions": [
-        "Éviter si allergie aux venins"
+        "Ã‰viter si allergie aux venins"
       ],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 144,
@@ -5111,7 +5111,7 @@
         "verifie": false
       },
       "tags": [
-        "ménopause",
+        "mÃ©nopause",
         "peur",
         "bourdonnements d'oreilles",
         "orale"
@@ -5120,10 +5120,10 @@
     {
       "id": "rem-ignatia-165",
       "nom": "Ignatia",
-      "description": "Remède pour les symptômes émotionnels liés à la ménopause.",
+      "description": "RemÃ¨de pour les symptÃ´mes Ã©motionnels liÃ©s Ã  la mÃ©nopause.",
       "indications": [
-        "émotion",
-        "ménopause",
+        "Ã©motion",
+        "mÃ©nopause",
         "deuil"
       ],
       "ingredients": [
@@ -5138,7 +5138,7 @@
         {
           "etape": 1,
           "instruction": "Administrer sous forme de granules.",
-          "duree": "immédiate"
+          "duree": "immÃ©diate"
         }
       ],
       "posologie": {
@@ -5146,12 +5146,12 @@
         "frequence": "tous les jours"
       },
       "precautions": [
-        "Consulter un médecin en cas de symptômes persistants"
+        "Consulter un mÃ©decin en cas de symptÃ´mes persistants"
       ],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 144,
@@ -5159,8 +5159,8 @@
         "verifie": false
       },
       "tags": [
-        "émotion",
-        "ménopause",
+        "Ã©motion",
+        "mÃ©nopause",
         "deuil",
         "orale"
       ]
@@ -5168,9 +5168,9 @@
     {
       "id": "rem-ignatia-166",
       "nom": "Ignatia",
-      "description": "Remède pour retrouver l'équilibre émotionnel.",
+      "description": "RemÃ¨de pour retrouver l'Ã©quilibre Ã©motionnel.",
       "indications": [
-        "émotion",
+        "Ã©motion",
         "deuil"
       ],
       "ingredients": [],
@@ -5180,7 +5180,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 145,
@@ -5188,7 +5188,7 @@
         "verifie": false
       },
       "tags": [
-        "émotion",
+        "Ã©motion",
         "deuil",
         "orale"
       ]
@@ -5196,10 +5196,10 @@
     {
       "id": "rem-sepia-succus-167",
       "nom": "Sepia Succus",
-      "description": "Remède pour les troubles hormonaux.",
+      "description": "RemÃ¨de pour les troubles hormonaux.",
       "indications": [
-        "ménopause",
-        "déséquilibre hormonal"
+        "mÃ©nopause",
+        "dÃ©sÃ©quilibre hormonal"
       ],
       "ingredients": [],
       "preparation": [],
@@ -5208,7 +5208,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 145,
@@ -5216,20 +5216,20 @@
         "verifie": false
       },
       "tags": [
-        "ménopause",
-        "déséquilibre hormonal",
+        "mÃ©nopause",
+        "dÃ©sÃ©quilibre hormonal",
         "orale"
       ]
     },
     {
       "id": "rem-sepia-168",
       "nom": "Sepia",
-      "description": "Remède homéopathique utilisé pour gérer divers symptômes.",
+      "description": "RemÃ¨de homÃ©opathique utilisÃ© pour gÃ©rer divers symptÃ´mes.",
       "indications": [
-        "ménopause",
-        "bouffées de chaleur",
+        "mÃ©nopause",
+        "bouffÃ©es de chaleur",
         "sueurs nocturnes",
-        "irritabilité",
+        "irritabilitÃ©",
         "sensation de lourdeur dans le bassin"
       ],
       "ingredients": [],
@@ -5239,13 +5239,13 @@
         "frequence": "selon besoin"
       },
       "precautions": [
-        "ajuster la puissance régulièrement",
-        "surveiller les symptômes"
+        "ajuster la puissance rÃ©guliÃ¨rement",
+        "surveiller les symptÃ´mes"
       ],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 149,
@@ -5253,8 +5253,8 @@
         "verifie": false
       },
       "tags": [
-        "ménopause",
-        "bouffées de chaleur",
+        "mÃ©nopause",
+        "bouffÃ©es de chaleur",
         "sueurs nocturnes",
         "orale"
       ]
@@ -5262,12 +5262,12 @@
     {
       "id": "rem-chelidonium-majus-169",
       "nom": "Chelidonium Majus",
-      "description": "Aide la force vitale lorsque le foie et la vésicule biliaire sont affectés.",
+      "description": "Aide la force vitale lorsque le foie et la vÃ©sicule biliaire sont affectÃ©s.",
       "indications": [
         "douleur abdominale",
         "colique biliaire",
-        "irritabilité",
-        "nausées",
+        "irritabilitÃ©",
+        "nausÃ©es",
         "vomissements"
       ],
       "ingredients": [],
@@ -5279,7 +5279,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 152,
@@ -5289,16 +5289,16 @@
       "tags": [
         "douleur abdominale",
         "colique biliaire",
-        "irritabilité",
+        "irritabilitÃ©",
         "orale"
       ]
     },
     {
       "id": "rem-nux-vomica-170",
       "nom": "Nux Vomica",
-      "description": "Utilisé pour les brûlures d'estomac et l'indigestion causées par une consommation excessive de café, d'alcool ou de nourriture épicée.",
+      "description": "UtilisÃ© pour les brÃ»lures d'estomac et l'indigestion causÃ©es par une consommation excessive de cafÃ©, d'alcool ou de nourriture Ã©picÃ©e.",
       "indications": [
-        "brûlures d'estomac",
+        "brÃ»lures d'estomac",
         "indigestion"
       ],
       "ingredients": [],
@@ -5308,7 +5308,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 153,
@@ -5316,7 +5316,7 @@
         "verifie": false
       },
       "tags": [
-        "brûlures d'estomac",
+        "brÃ»lures d'estomac",
         "indigestion",
         "orale"
       ]
@@ -5324,9 +5324,9 @@
     {
       "id": "rem-pulsatilla-nigricans-171",
       "nom": "Pulsatilla Nigricans",
-      "description": "Efficace pour les brûlures d'estomac causées par des aliments riches ou gras.",
+      "description": "Efficace pour les brÃ»lures d'estomac causÃ©es par des aliments riches ou gras.",
       "indications": [
-        "brûlures d'estomac"
+        "brÃ»lures d'estomac"
       ],
       "ingredients": [],
       "preparation": [],
@@ -5335,7 +5335,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 153,
@@ -5343,16 +5343,16 @@
         "verifie": false
       },
       "tags": [
-        "brûlures d'estomac",
+        "brÃ»lures d'estomac",
         "orale"
       ]
     },
     {
       "id": "rem-staphysagria-172",
       "nom": "Staphysagria",
-      "description": "Pour les brûlures d'estomac après une indignation.",
+      "description": "Pour les brÃ»lures d'estomac aprÃ¨s une indignation.",
       "indications": [
-        "brûlures d'estomac"
+        "brÃ»lures d'estomac"
       ],
       "ingredients": [],
       "preparation": [],
@@ -5361,7 +5361,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 153,
@@ -5369,16 +5369,16 @@
         "verifie": false
       },
       "tags": [
-        "brûlures d'estomac",
+        "brÃ»lures d'estomac",
         "orale"
       ]
     },
     {
       "id": "rem-zincum-metallicum-173",
       "nom": "Zincum Metallicum",
-      "description": "Utilisé pour les brûlures d'estomac ou l'indigestion après avoir mangé des aliments sucrés.",
+      "description": "UtilisÃ© pour les brÃ»lures d'estomac ou l'indigestion aprÃ¨s avoir mangÃ© des aliments sucrÃ©s.",
       "indications": [
-        "brûlures d'estomac",
+        "brÃ»lures d'estomac",
         "indigestion"
       ],
       "ingredients": [],
@@ -5388,7 +5388,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 153,
@@ -5396,7 +5396,7 @@
         "verifie": false
       },
       "tags": [
-        "brûlures d'estomac",
+        "brÃ»lures d'estomac",
         "indigestion",
         "orale"
       ]
@@ -5404,9 +5404,9 @@
     {
       "id": "rem-aesculus-hippocastan-174",
       "nom": "Aesculus Hippocastanum",
-      "description": "Remède pour les hémorroïdes externes gonflées et violettes.",
+      "description": "RemÃ¨de pour les hÃ©morroÃ¯des externes gonflÃ©es et violettes.",
       "indications": [
-        "hémorroïdes"
+        "hÃ©morroÃ¯des"
       ],
       "ingredients": [],
       "preparation": [],
@@ -5415,7 +5415,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 154,
@@ -5423,16 +5423,16 @@
         "verifie": false
       },
       "tags": [
-        "hémorroïdes",
+        "hÃ©morroÃ¯des",
         "orale"
       ]
     },
     {
       "id": "rem-hamamelis-virginiana-175",
       "nom": "Hamamelis Virginiana",
-      "description": "Utile pour les hémorroïdes qui saignent.",
+      "description": "Utile pour les hÃ©morroÃ¯des qui saignent.",
       "indications": [
-        "hémorroïdes",
+        "hÃ©morroÃ¯des",
         "saignement"
       ],
       "ingredients": [],
@@ -5442,7 +5442,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 154,
@@ -5450,7 +5450,7 @@
         "verifie": false
       },
       "tags": [
-        "hémorroïdes",
+        "hÃ©morroÃ¯des",
         "saignement",
         "orale"
       ]
@@ -5458,7 +5458,7 @@
     {
       "id": "rem-ferrum-phosphoricum-176",
       "nom": "Ferrum Phosphoricum",
-      "description": "Remède à prendre dès le début de toute forme d'inflammation.",
+      "description": "RemÃ¨de Ã  prendre dÃ¨s le dÃ©but de toute forme d'inflammation.",
       "indications": [
         "rhume",
         "grippe"
@@ -5470,12 +5470,12 @@
         "frequence": "selon besoin"
       },
       "precautions": [
-        "Continuer pendant toute la durée de la maladie"
+        "Continuer pendant toute la durÃ©e de la maladie"
       ],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 155,
@@ -5491,7 +5491,7 @@
     {
       "id": "rem-china-officinalis-177",
       "nom": "China Officinalis",
-      "description": "Remède pour faiblesse ou fatigue due à la perte de fluides vitaux.",
+      "description": "RemÃ¨de pour faiblesse ou fatigue due Ã  la perte de fluides vitaux.",
       "indications": [
         "fatigue"
       ],
@@ -5499,15 +5499,15 @@
       "preparation": [],
       "posologie": {
         "dose": "selon prescription",
-        "frequence": "jusqu'à disparition de la fatigue"
+        "frequence": "jusqu'Ã  disparition de la fatigue"
       },
       "precautions": [
-        "Aide à prévenir la débilité à long terme"
+        "Aide Ã  prÃ©venir la dÃ©bilitÃ© Ã  long terme"
       ],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 155,
@@ -5522,7 +5522,7 @@
     {
       "id": "rem-eupatorium-perfoliat-178",
       "nom": "Eupatorium Perfoliatum",
-      "description": "Remède pour douleurs osseuses sévères pendant la grippe.",
+      "description": "RemÃ¨de pour douleurs osseuses sÃ©vÃ¨res pendant la grippe.",
       "indications": [
         "douleur",
         "grippe"
@@ -5534,12 +5534,12 @@
         "frequence": "selon besoin"
       },
       "precautions": [
-        "Utilisé pour désintoxication de la maladie de Lyme"
+        "UtilisÃ© pour dÃ©sintoxication de la maladie de Lyme"
       ],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 155,
@@ -5555,24 +5555,24 @@
     {
       "id": "rem-arsenicum-album-179",
       "nom": "Arsenicum Album",
-      "description": "Remède pour intoxication alimentaire avec nausées, vomissements, diarrhée et crampes d'estomac.",
+      "description": "RemÃ¨de pour intoxication alimentaire avec nausÃ©es, vomissements, diarrhÃ©e et crampes d'estomac.",
       "indications": [
-        "nausées",
+        "nausÃ©es",
         "vomissements",
-        "diarrhée",
+        "diarrhÃ©e",
         "crampes"
       ],
       "ingredients": [],
       "preparation": [],
       "posologie": {
         "dose": "puissance 30C",
-        "frequence": "toutes les 15 à 30 minutes"
+        "frequence": "toutes les 15 Ã  30 minutes"
       },
       "precautions": [],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 156,
@@ -5580,16 +5580,16 @@
         "verifie": false
       },
       "tags": [
-        "nausées",
+        "nausÃ©es",
         "vomissements",
-        "diarrhée",
+        "diarrhÃ©e",
         "orale"
       ]
     },
     {
       "id": "rem-china-officinalis-180",
       "nom": "China Officinalis",
-      "description": "Remède pour intoxication alimentaire.",
+      "description": "RemÃ¨de pour intoxication alimentaire.",
       "indications": [
         "intoxication alimentaire"
       ],
@@ -5600,7 +5600,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 156,
@@ -5615,13 +5615,13 @@
     {
       "id": "rem-ipecacuanha-181",
       "nom": "Ipecacuanha",
-      "description": "Remède pour vomissements persistants.",
+      "description": "RemÃ¨de pour vomissements persistants.",
       "indications": [
         "vomissements"
       ],
       "ingredients": [
         {
-          "nom": "racine d'ipéca",
+          "nom": "racine d'ipÃ©ca",
           "quantite": "",
           "unite": "",
           "principal": true
@@ -5630,7 +5630,7 @@
       "preparation": [
         {
           "etape": 1,
-          "instruction": "Utiliser la teinture mère pour fabriquer du sirop d'ipéca.",
+          "instruction": "Utiliser la teinture mÃ¨re pour fabriquer du sirop d'ipÃ©ca.",
           "duree": ""
         }
       ],
@@ -5639,7 +5639,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 156,
@@ -5654,7 +5654,7 @@
     {
       "id": "rem-calcarea-phosphorica-182",
       "nom": "Calcarea Phosphorica",
-      "description": "Remède pour les douleurs de croissance chez les enfants.",
+      "description": "RemÃ¨de pour les douleurs de croissance chez les enfants.",
       "indications": [
         "douleur",
         "croissance"
@@ -5671,7 +5671,7 @@
         {
           "etape": 1,
           "instruction": "Donner la pastille 30C au coucher.",
-          "duree": "immédiate"
+          "duree": "immÃ©diate"
         }
       ],
       "posologie": {
@@ -5679,12 +5679,12 @@
         "frequence": "au coucher"
       },
       "precautions": [
-        "Consulter un médecin si les symptômes persistent."
+        "Consulter un mÃ©decin si les symptÃ´mes persistent."
       ],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 157,
@@ -5700,10 +5700,10 @@
     {
       "id": "rem-nux-vomica-183",
       "nom": "Nux Vomica",
-      "description": "Remède pour la gueule de bois et les brûlures d'estomac.",
+      "description": "RemÃ¨de pour la gueule de bois et les brÃ»lures d'estomac.",
       "indications": [
         "gueule de bois",
-        "brûlures d'estomac",
+        "brÃ»lures d'estomac",
         "reflux gastrique"
       ],
       "ingredients": [
@@ -5718,12 +5718,12 @@
         {
           "etape": 1,
           "instruction": "Prendre la puissance 30C avant d'aller au lit.",
-          "duree": "immédiate"
+          "duree": "immÃ©diate"
         },
         {
           "etape": 2,
-          "instruction": "Prendre encore une fois au réveil le matin.",
-          "duree": "immédiate"
+          "instruction": "Prendre encore une fois au rÃ©veil le matin.",
+          "duree": "immÃ©diate"
         }
       ],
       "posologie": {
@@ -5731,12 +5731,12 @@
         "frequence": "2 fois/jour"
       },
       "precautions": [
-        "Boire beaucoup d'eau pour éviter la déshydratation."
+        "Boire beaucoup d'eau pour Ã©viter la dÃ©shydratation."
       ],
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 157,
@@ -5745,7 +5745,7 @@
       },
       "tags": [
         "gueule de bois",
-        "brûlures d'estomac",
+        "brÃ»lures d'estomac",
         "reflux gastrique",
         "orale"
       ]
@@ -5753,10 +5753,10 @@
     {
       "id": "rem-aconitum-napellus-ac-184",
       "nom": "Aconitum Napellus (Aconite)",
-      "description": "Remède pour les maux de tête avec anxiété.",
+      "description": "RemÃ¨de pour les maux de tÃªte avec anxiÃ©tÃ©.",
       "indications": [
-        "maux de tête",
-        "anxiété"
+        "maux de tÃªte",
+        "anxiÃ©tÃ©"
       ],
       "ingredients": [],
       "preparation": [],
@@ -5765,7 +5765,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 159,
@@ -5773,18 +5773,18 @@
         "verifie": false
       },
       "tags": [
-        "maux de tête",
-        "anxiété",
+        "maux de tÃªte",
+        "anxiÃ©tÃ©",
         "orale"
       ]
     },
     {
       "id": "rem-belladonna-185",
       "nom": "Belladonna",
-      "description": "Remède pour les maux de tête avec sensibilité à la lumière.",
+      "description": "RemÃ¨de pour les maux de tÃªte avec sensibilitÃ© Ã  la lumiÃ¨re.",
       "indications": [
-        "maux de tête",
-        "sensibilité à la lumière"
+        "maux de tÃªte",
+        "sensibilitÃ© Ã  la lumiÃ¨re"
       ],
       "ingredients": [],
       "preparation": [],
@@ -5793,7 +5793,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 159,
@@ -5801,17 +5801,17 @@
         "verifie": false
       },
       "tags": [
-        "maux de tête",
-        "sensibilité à la lumière",
+        "maux de tÃªte",
+        "sensibilitÃ© Ã  la lumiÃ¨re",
         "orale"
       ]
     },
     {
       "id": "rem-glonoinum-186",
       "nom": "Glonoinum",
-      "description": "Remède pour les maux de tête avec sensation de nez disparu.",
+      "description": "RemÃ¨de pour les maux de tÃªte avec sensation de nez disparu.",
       "indications": [
-        "maux de tête"
+        "maux de tÃªte"
       ],
       "ingredients": [],
       "preparation": [],
@@ -5820,7 +5820,7 @@
       "contreIndications": [],
       "route": "orale",
       "source": {
-        "livre": "Bible perdue des remèdes du médecin oublié",
+        "livre": "Savoirs de Grand-Mère",
         "auteur": "Inconnu",
         "annee": 2020,
         "page": 159,
@@ -5828,7 +5828,7 @@
         "verifie": false
       },
       "tags": [
-        "maux de tête",
+        "maux de tÃªte",
         "orale"
       ]
     }

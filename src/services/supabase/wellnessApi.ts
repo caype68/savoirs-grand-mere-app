@@ -118,7 +118,7 @@ export async function getWellnessLogByDate(dateKey: string): Promise<{ data: Wel
       if (!client) throw new Error('No Supabase client');
 
       const { data: { user } } = await client.auth.getUser();
-      if (!user) return null;
+      if (!user) throw new Error('Not authenticated - use local storage');
 
       const { data, error } = await client
         .from('wellness_logs')
@@ -156,7 +156,7 @@ export async function getRecentWellnessLogs(days: number = 7): Promise<{ data: W
       if (!client) throw new Error('No Supabase client');
 
       const { data: { user } } = await client.auth.getUser();
-      if (!user) return [];
+      if (!user) throw new Error('Not authenticated - use local storage');
 
       const startDate = new Date();
       startDate.setDate(startDate.getDate() - days);

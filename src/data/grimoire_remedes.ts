@@ -3,7 +3,7 @@ import { Remede, Livre } from '../types';
 // Livre source
 export const grimoireLivre: Livre = {
   id: 'grimoire-remedes-naturels',
-  nom: 'Le Grimoire des Remèdes Naturels',
+  nom: 'Savoirs de Grand-Mère - Le Grimoire',
   auteur: 'Anonyme',
   annee: '2024',
   statutDroits: 'non_specifie',
@@ -2126,7 +2126,7 @@ export const grimoireRemedes: Remede[] = [
     verifie: true,
   },
   {
-    id: 'grimoire-tilleul-2',
+    id: 'grimoire-tilleul-3',
     nom: 'Infusion de Tilleul pour le Sommeil',
     alias: ['tisane tilleul', 'infusion sommeil'],
     indications: ['anxiété', 'insomnie', 'stress', 'sommeil'],
@@ -2331,7 +2331,7 @@ export const grimoireRemedes: Remede[] = [
     verifie: true,
   },
   {
-    id: 'grimoire-fenouil-2',
+    id: 'grimoire-fenouil-3',
     nom: 'Infusion de Fenouil pour le Transit',
     alias: ['tisane fenouil', 'infusion digestive'],
     indications: ['constipation', 'transit', 'digestion', 'ballonnements'],
@@ -2417,7 +2417,7 @@ export const grimoireRemedes: Remede[] = [
 
   // ===== INFUSIONS SOMMEIL =====
   {
-    id: 'grimoire-valeriane-1',
+    id: 'grimoire-valeriane-3',
     nom: 'Infusion de Valériane pour le Sommeil',
     alias: ['tisane valériane', 'infusion sédative'],
     indications: ['insomnie', 'anxiété', 'sommeil', 'relaxation'],
@@ -2439,7 +2439,7 @@ export const grimoireRemedes: Remede[] = [
     verifie: true,
   },
   {
-    id: 'grimoire-melisse-2',
+    id: 'grimoire-melisse-3',
     nom: 'Infusion de Mélisse Calmante',
     alias: ['tisane mélisse', 'infusion anti-stress'],
     indications: ['stress', 'anxiété', 'nervosité', 'calme'],

@@ -327,21 +327,26 @@ export const OnboardingQuestionnaireScreen: React.FC<OnboardingQuestionnaireScre
         <View style={styles.optionContent}>
           <Text style={styles.optionEmoji}>{option.emoji}</Text>
           <View style={styles.optionTextContainer}>
-            <Text style={[styles.optionLabel, selected && styles.optionLabelSelected]}>
+            <Text style={[styles.optionLabel, selected ? styles.optionLabelSelected : null]}>
               {option.label}
             </Text>
-            {option.description && (
+            {option.description ? (
               <Text style={styles.optionDescription}>{option.description}</Text>
+            ) : (
+              <View style={styles.descriptionPlaceholder} />
             )}
           </View>
         </View>
-        {isMultiple && (
-          <View style={[styles.checkbox, selected && styles.checkboxSelected]}>
-            {selected && <Feather name="check" size={14} color="#fff" />}
+        {isMultiple ? (
+          <View style={[styles.checkbox, selected ? styles.checkboxSelected : null]}>
+            {selected ? <Feather name="check" size={14} color="#fff" /> : null}
           </View>
-        )}
-        {!isMultiple && selected && (
-          <Feather name="check-circle" size={22} color={colors.accentPrimary} />
+        ) : (
+          selected ? (
+            <Feather name="check-circle" size={22} color={colors.accentPrimary} />
+          ) : (
+            <View style={styles.checkIconPlaceholder} />
+          )
         )}
       </TouchableOpacity>
     );
@@ -352,27 +357,25 @@ export const OnboardingQuestionnaireScreen: React.FC<OnboardingQuestionnaireScre
       <SafeAreaView style={styles.safeArea}>
         {/* Header avec progression */}
         <View style={styles.header}>
-          <TouchableOpacity 
-            style={styles.backButton} 
+          <TouchableOpacity
+            style={styles.backButton}
             onPress={handlePrev}
             disabled={currentStep === 0}
           >
-            {currentStep > 0 && (
+            {currentStep > 0 ? (
               <Feather name="arrow-left" size={24} color={colors.textPrimary} />
+            ) : (
+              <View style={styles.backButtonPlaceholder} />
             )}
           </TouchableOpacity>
-          
+
           <View style={styles.progressContainer}>
             <View style={styles.progressBar}>
-              <View
-                style={[
-                  styles.progressFill,
-                  { width: `${progress * 100}%` as any },
-                ]}
-              />
+              <View style={[styles.progressFill, { flex: progress }]} />
+              <View style={{ flex: 1 - progress }} />
             </View>
             <Text style={styles.progressText}>
-              {currentStep + 1} / {QUESTIONNAIRE_STEPS.length}
+              {`${currentStep + 1} / ${QUESTIONNAIRE_STEPS.length}`}
             </Text>
           </View>
           
@@ -454,9 +457,7 @@ export const OnboardingQuestionnaireScreen: React.FC<OnboardingQuestionnaireScre
         <View style={styles.footer}>
           {step.type === 'multiple' ? (
             <Text style={styles.selectionCount}>
-              {((profile[step.field] as string[]) || []).length}
-              {' '}sélectionné(s)
-              {step.maxSelections ? ` (max ${step.maxSelections})` : ''}
+              {`${((profile[step.field] as string[]) || []).length} sélectionné(s)${step.maxSelections ? ` (max ${step.maxSelections})` : ''}`}
             </Text>
           ) : (
             <View style={styles.selectionCountPlaceholder} />
@@ -508,6 +509,17 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  backButtonPlaceholder: {
+    width: 24,
+    height: 24,
+  },
+  descriptionPlaceholder: {
+    height: 0,
+  },
+  checkIconPlaceholder: {
+    width: 22,
+    height: 22,
+  },
   progressContainer: {
     flex: 1,
     alignItems: 'center',
@@ -519,9 +531,10 @@ const styles = StyleSheet.create({
     backgroundColor: colors.surfaceHighlight,
     borderRadius: 2,
     overflow: 'hidden',
+    flexDirection: 'row',  // nécessaire pour le flex proportionnel
   },
   progressFill: {
-    height: '100%',
+    height: 4,
     backgroundColor: colors.accentPrimary,
     borderRadius: 2,
   },

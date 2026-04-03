@@ -3,6 +3,7 @@
 // Authentification et gestion du profil utilisateur
 // ============================================
 
+import { Platform } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { getSupabaseClient } from './config';
 import { isUsingRemote } from './backendProvider';
@@ -67,10 +68,20 @@ export async function signUp(data: SignUpData): Promise<{ success: boolean; erro
     }
 
     if (authData.user) {
+      // Vérifier si l'email doit être confirmé
+      // identities vide = email déjà utilisé avec confirmation en attente
+      if (authData.user.identities && authData.user.identities.length === 0) {
+        return { success: false, error: 'Un compte existe déjà avec cet email. Essayez de vous connecter.' };
+      }
+
       // Créer le profil utilisateur
-      await createUserProfile(authData.user.id, data.displayName || data.email.split('@')[0]);
-      
-      // Sauvegarder l'état d'auth localement
+      try {
+        await createUserProfile(authData.user.id, data.displayName || data.email.split('@')[0]);
+      } catch (e) {
+        console.warn('[authApi] Erreur création profil (non bloquant):', e);
+      }
+
+      // Sauvegarder l'état d'auth localement — même si email non confirmé
       await saveAuthState({
         isAuthenticated: true,
         userId: authData.user.id,
@@ -119,6 +130,138 @@ export async function signIn(data: SignInData): Promise<{ success: boolean; erro
     }
 
     return { success: false, error: 'Erreur inconnue' };
+  } catch (err: any) {
+    return { success: false, error: err.message };
+  }
+}
+
+/**
+ * Connexion avec Google OAuth
+ */
+export async function signInWithGoogle(): Promise<{ success: boolean; error?: string; url?: string }> {
+  const client = getSupabaseClient();
+
+  if (!client) {
+    return { success: false, error: 'Backend non configuré' };
+  }
+
+  try {
+    const { data, error } = await client.auth.signInWithOAuth({
+      provider: 'google',
+      options: {
+        redirectTo: Platform.OS === 'web'
+          ? window.location.origin
+          : 'savoire.gm://auth/callback',
+        skipBrowserRedirect: false,
+      },
+    });
+
+    if (error) {
+      return { success: false, error: error.message };
+    }
+
+    if (data?.url) {
+      return { success: true, url: data.url };
+    }
+
+    return { success: true };
+  } catch (err: any) {
+    return { success: false, error: err.message };
+  }
+}
+
+/**
+ * Réinitialisation du mot de passe — envoie un email de reset
+ */
+export async function resetPassword(email: string): Promise<{ success: boolean; error?: string }> {
+  const client = getSupabaseClient();
+
+  if (!client) {
+    return { success: false, error: 'Backend non configuré. Vérifiez votre clé Supabase.' };
+  }
+
+  try {
+    const redirectUrl = Platform.OS === 'web'
+      ? window.location.origin + '?type=recovery'
+      : 'savoire.gm://auth/callback?type=recovery';
+
+    const { error } = await client.auth.resetPasswordForEmail(email, {
+      redirectTo: redirectUrl,
+    });
+
+    if (error) {
+      return { success: false, error: error.message };
+    }
+
+    return { success: true };
+  } catch (err: any) {
+    return { success: false, error: err.message };
+  }
+}
+
+/**
+ * Met à jour le mot de passe (après clic sur lien de reset)
+ * Vérifie d'abord que la session recovery est bien établie
+ */
+export async function updatePassword(newPassword: string): Promise<{ success: boolean; error?: string }> {
+  const client = getSupabaseClient();
+
+  if (!client) {
+    return { success: false, error: 'Backend non configuré.' };
+  }
+
+  try {
+    // 1. Vérifier si une session existe déjà
+    let { data: { session } } = await client.auth.getSession();
+
+    // 2. Si pas de session, essayer de récupérer depuis l'URL (web)
+    if (!session && Platform.OS === 'web') {
+      const hash = window.location.hash;
+      if (hash && hash.includes('access_token')) {
+        console.log('[authApi] Trying to recover session from URL hash...');
+        // Extraire les tokens du hash
+        const params = new URLSearchParams(hash.substring(1));
+        const accessToken = params.get('access_token');
+        const refreshToken = params.get('refresh_token');
+
+        if (accessToken && refreshToken) {
+          const { data, error: sessionError } = await client.auth.setSession({
+            access_token: accessToken,
+            refresh_token: refreshToken,
+          });
+
+          if (sessionError) {
+            console.warn('[authApi] setSession error:', sessionError.message);
+          } else {
+            session = data.session;
+            console.log('[authApi] Session recovered from URL hash');
+          }
+        }
+      }
+    }
+
+    // 3. Toujours pas de session ? Attendre un peu et réessayer
+    if (!session) {
+      console.log('[authApi] No session yet, waiting 2s for Supabase to process tokens...');
+      await new Promise(resolve => setTimeout(resolve, 2000));
+      const retry = await client.auth.getSession();
+      session = retry.data.session;
+    }
+
+    if (!session) {
+      return { success: false, error: 'Session expirée. Veuillez demander un nouveau lien de réinitialisation.' };
+    }
+
+    // 4. Mettre à jour le mot de passe
+    const { error } = await client.auth.updateUser({
+      password: newPassword,
+    });
+
+    if (error) {
+      return { success: false, error: error.message };
+    }
+
+    return { success: true };
   } catch (err: any) {
     return { success: false, error: err.message };
   }

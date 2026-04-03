@@ -1,15 +1,24 @@
 // ============================================
 // SECTION RECOMMANDATION DU JOUR
-// Affiche le remède recommandé basé sur le wellness log
+// Grand-mère intégrée dans le design UI
 // ============================================
 
-import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, ActivityIndicator } from 'react-native';
+import React, { useEffect, useRef } from 'react';
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  ActivityIndicator,
+  Image,
+  Animated,
+  Easing,
+} from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Feather } from '@expo/vector-icons';
 import { colors, spacing, borderRadius } from '../../theme/colors';
-import { DailyRecommendation } from '../../types';
 import { useDailyRecommendation } from '../../hooks/useWellness';
+import { logo } from '../../assets';
 
 // ============================================
 // PROPS
@@ -30,115 +39,210 @@ export const DailyRecommendationSection: React.FC<DailyRecommendationSectionProp
 }) => {
   const { recommendation, isLoading, source } = useDailyRecommendation();
 
-  // État de chargement
+  // Animations
+  const fadeIn = useRef(new Animated.Value(0)).current;
+  const slideUp = useRef(new Animated.Value(20)).current;
+  const logoScale = useRef(new Animated.Value(0.8)).current;
+  const logoPulse = useRef(new Animated.Value(1)).current;
+  const contentFade = useRef(new Animated.Value(0)).current;
+  const glowAnim = useRef(new Animated.Value(0)).current;
+
+  useEffect(() => {
+    if (recommendation || !isLoading) {
+      Animated.sequence([
+        // 1. Carte apparaît
+        Animated.parallel([
+          Animated.timing(fadeIn, {
+            toValue: 1,
+            duration: 500,
+            useNativeDriver: false,
+          }),
+          Animated.timing(slideUp, {
+            toValue: 0,
+            duration: 500,
+            easing: Easing.out(Easing.back(1.1)),
+            useNativeDriver: false,
+          }),
+        ]),
+        // 2. Logo pop
+        Animated.spring(logoScale, {
+          toValue: 1,
+          friction: 4,
+          tension: 80,
+          useNativeDriver: false,
+        }),
+        // 3. Contenu texte fade in
+        Animated.timing(contentFade, {
+          toValue: 1,
+          duration: 400,
+          useNativeDriver: false,
+        }),
+      ]).start();
+
+      // Glow pulse continu
+      Animated.loop(
+        Animated.sequence([
+          Animated.timing(glowAnim, {
+            toValue: 1,
+            duration: 2000,
+            easing: Easing.inOut(Easing.ease),
+            useNativeDriver: false,
+          }),
+          Animated.timing(glowAnim, {
+            toValue: 0,
+            duration: 2000,
+            easing: Easing.inOut(Easing.ease),
+            useNativeDriver: false,
+          }),
+        ])
+      ).start();
+    }
+  }, [recommendation, isLoading]);
+
+  // Breathing logo continu
+  useEffect(() => {
+    Animated.loop(
+      Animated.sequence([
+        Animated.timing(logoPulse, {
+          toValue: 1.06,
+          duration: 2500,
+          easing: Easing.inOut(Easing.ease),
+          useNativeDriver: false,
+        }),
+        Animated.timing(logoPulse, {
+          toValue: 1,
+          duration: 2500,
+          easing: Easing.inOut(Easing.ease),
+          useNativeDriver: false,
+        }),
+      ])
+    ).start();
+  }, []);
+
+  const glowOpacity = glowAnim.interpolate({
+    inputRange: [0, 1],
+    outputRange: [0.3, 0.7],
+  });
+
+  // ─── Chargement ───
   if (isLoading) {
     return (
       <View style={styles.container}>
-        <View style={styles.header}>
-          <Text style={styles.sectionTitle}>🌿 VOTRE REMÈDE DU JOUR</Text>
-        </View>
-        <View style={styles.loadingCard}>
-          <ActivityIndicator size="small" color={colors.accentPrimary} />
-          <Text style={styles.loadingText}>Chargement...</Text>
+        <View style={styles.card}>
+          <View style={styles.loadingInner}>
+            <Animated.View style={[styles.avatarWrap, { transform: [{ scale: logoPulse }] }]}>
+              <Image source={logo} style={styles.avatarImg} resizeMode="contain" />
+            </Animated.View>
+            <Text style={styles.loadingText}>Grand-mère cherche un remède...</Text>
+            <ActivityIndicator size="small" color={colors.accentPrimary} />
+          </View>
         </View>
       </View>
     );
   }
 
-  // Pas de recommandation - inviter à remplir le journal
+  // ─── Pas de recommandation ───
   if (!recommendation) {
     return (
       <View style={styles.container}>
-        <View style={styles.header}>
-          <Text style={styles.sectionTitle}>🌿 VOTRE REMÈDE DU JOUR</Text>
-        </View>
-        <TouchableOpacity 
-          style={styles.emptyCard}
+        <TouchableOpacity
+          style={styles.card}
           onPress={onFillWellnessLog}
-          activeOpacity={0.8}
+          activeOpacity={0.85}
         >
-          <LinearGradient
-            colors={[colors.surface, colors.surfaceHighlight]}
-            style={styles.emptyGradient}
-          >
-            <View style={styles.emptyIcon}>
-              <Feather name="edit-3" size={24} color={colors.accentPrimary} />
+          <View style={styles.emptyInner}>
+            <Animated.View style={[styles.avatarWrap, { transform: [{ scale: logoPulse }] }]}>
+              <Image source={logo} style={styles.avatarImg} resizeMode="contain" />
+              <View style={styles.avatarBadgeEmpty}>
+                <Feather name="message-circle" size={12} color="#fff" />
+              </View>
+            </Animated.View>
+            <View style={styles.emptyTextBlock}>
+              <Text style={styles.emptyTitle}>Comment allez-vous ?</Text>
+              <Text style={styles.emptySubtitle}>
+                Remplissez votre journal pour un conseil personnalisé
+              </Text>
             </View>
-            <Text style={styles.emptyTitle}>Remplissez votre journal</Text>
-            <Text style={styles.emptySubtitle}>
-              Pour recevoir une recommandation personnalisée
-            </Text>
-            <View style={styles.emptyButton}>
-              <Text style={styles.emptyButtonText}>Commencer</Text>
-              <Feather name="arrow-right" size={16} color={colors.accentPrimary} />
+            <View style={styles.emptyArrow}>
+              <Feather name="chevron-right" size={20} color={colors.textMuted} />
             </View>
-          </LinearGradient>
+          </View>
         </TouchableOpacity>
       </View>
     );
   }
 
-  // Afficher la recommandation
+  // ─── Recommandation ───
+  const catColor = getCategoryColor(recommendation.category);
+  const catColorDark = getCategoryColorDark(recommendation.category);
+
   return (
-    <View style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.sectionTitle}>🌿 VOTRE REMÈDE DU JOUR</Text>
-        {source === 'remote' && (
-          <View style={styles.sourceBadge}>
-            <Feather name="cloud" size={10} color={colors.accentSecondary} />
-          </View>
-        )}
-      </View>
-      
-      <TouchableOpacity 
+    <Animated.View style={[styles.container, { opacity: fadeIn, transform: [{ translateY: slideUp }] }]}>
+      <TouchableOpacity
         style={styles.card}
         onPress={() => onViewRemedy(recommendation.remedyId)}
         activeOpacity={0.9}
       >
-        <LinearGradient
-          colors={[getCategoryColor(recommendation.category), getCategoryColorDark(recommendation.category)]}
-          start={{ x: 0, y: 0 }}
-          end={{ x: 1, y: 1 }}
-          style={styles.cardGradient}
-        >
-          {/* Badge catégorie */}
-          <View style={styles.categoryBadge}>
-            <Text style={styles.categoryText}>
-              {getCategoryEmoji(recommendation.category)} {getCategoryLabel(recommendation.category)}
-            </Text>
+        {/* Glow derrière la carte */}
+        <Animated.View style={[styles.cardGlow, { backgroundColor: catColor, opacity: glowOpacity }]} />
+
+        <View style={styles.cardInner}>
+          {/* Row : avatar + texte */}
+          <View style={styles.topRow}>
+            <Animated.View style={[styles.avatarWrap, { transform: [{ scale: logoScale }] }]}>
+              <Image source={logo} style={styles.avatarImg} resizeMode="contain" />
+              <View style={[styles.avatarBadge, { backgroundColor: catColor }]}>
+                <Text style={styles.avatarBadgeEmoji}>{getCategoryEmoji(recommendation.category)}</Text>
+              </View>
+            </Animated.View>
+
+            <Animated.View style={[styles.textBlock, { opacity: contentFade }]}>
+              <View style={styles.nameRow}>
+                <Text style={styles.label}>Conseil de Grand-mère</Text>
+                {source === 'remote' ? (
+                  <Feather name="cloud" size={10} color={colors.textMuted} />
+                ) : (
+                  <View />
+                )}
+              </View>
+              <Text style={styles.remedyName} numberOfLines={1}>{recommendation.remedyName}</Text>
+            </Animated.View>
           </View>
 
-          {/* Nom du remède */}
-          <Text style={styles.remedyName}>{recommendation.remedyName}</Text>
+          {/* Bandeau catégorie + raison */}
+          <Animated.View style={[styles.reasonBlock, { opacity: contentFade }]}>
+            <LinearGradient
+              colors={[catColor + '25', catColorDark + '10']}
+              start={{ x: 0, y: 0 }}
+              end={{ x: 1, y: 0 }}
+              style={styles.reasonGradient}
+            >
+              <View style={[styles.catDot, { backgroundColor: catColor }]} />
+              <Text style={styles.reasonText} numberOfLines={2}>{recommendation.reason}</Text>
+            </LinearGradient>
+          </Animated.View>
 
-          {/* Raison */}
-          <Text style={styles.reason}>{recommendation.reason}</Text>
-
-          {/* Score de match */}
-          <View style={styles.matchRow}>
-            <View style={styles.matchScore}>
-              <Feather name="target" size={14} color="rgba(255,255,255,0.8)" />
-              <Text style={styles.matchText}>{recommendation.matchScore}% de pertinence</Text>
+          {/* Bottom : tags + bouton */}
+          <Animated.View style={[styles.bottomRow, { opacity: contentFade }]}>
+            <View style={styles.tagsWrap}>
+              {recommendation.matchedTags.length > 0 ? (
+                recommendation.matchedTags.slice(0, 3).map((tag, i) => (
+                  <View key={`tag-${i}`} style={[styles.tag, { borderColor: catColor + '40' }]}>
+                    <Text style={[styles.tagText, { color: catColor }]}>{tag}</Text>
+                  </View>
+                ))
+              ) : (
+                <View />
+              )}
             </View>
-            <View style={styles.viewButton}>
-              <Text style={styles.viewButtonText}>Voir le remède</Text>
-              <Feather name="chevron-right" size={16} color="#fff" />
+            <View style={[styles.viewBtn, { backgroundColor: catColor }]}>
+              <Text style={styles.viewBtnText}>Voir</Text>
+              <Feather name="arrow-right" size={13} color="#fff" />
             </View>
-          </View>
-
-          {/* Tags */}
-          {recommendation.matchedTags.length > 0 && (
-            <View style={styles.tagsRow}>
-              {recommendation.matchedTags.slice(0, 3).map((tag, index) => (
-                <View key={index} style={styles.tag}>
-                  <Text style={styles.tagText}>{tag}</Text>
-                </View>
-              ))}
-            </View>
-          )}
-        </LinearGradient>
+          </Animated.View>
+        </View>
       </TouchableOpacity>
-    </View>
+    </Animated.View>
   );
 };
 
@@ -146,72 +250,43 @@ export const DailyRecommendationSection: React.FC<DailyRecommendationSectionProp
 // HELPERS
 // ============================================
 
-function getCategoryColor(category: string): string {
-  const colors: Record<string, string> = {
-    sommeil: '#6B7FD7',
-    stress: '#D4A5D9',
-    energie: '#E8A87C',
-    humeur: '#F5B041',
-    digestion: '#A8D5BA',
-    respiration: '#7BC8E8',
-    immunite: '#82E0AA',
-    detente: '#BB8FCE',
-    concentration: '#5DADE2',
-    douleurs: '#F1948A',
-    bien_etre_general: '#85C1E9',
+function getCategoryColor(c: string): string {
+  const m: Record<string, string> = {
+    sommeil: '#6B7FD7', stress: '#C084FC', energie: '#F59E0B',
+    humeur: '#F5B041', digestion: '#34D399', respiration: '#38BDF8',
+    immunite: '#4ADE80', detente: '#A78BFA', concentration: '#38BDF8',
+    douleurs: '#FB7185', bien_etre_general: '#60A5FA',
   };
-  return colors[category] || '#85C1E9';
+  return m[c] || '#60A5FA';
 }
 
-function getCategoryColorDark(category: string): string {
-  const colors: Record<string, string> = {
-    sommeil: '#4A5BA8',
-    stress: '#A569BD',
-    energie: '#CA6F1E',
-    humeur: '#D68910',
-    digestion: '#52BE80',
-    respiration: '#3498DB',
-    immunite: '#27AE60',
-    detente: '#8E44AD',
-    concentration: '#2E86C1',
-    douleurs: '#E74C3C',
-    bien_etre_general: '#5499C7',
+function getCategoryColorDark(c: string): string {
+  const m: Record<string, string> = {
+    sommeil: '#4A5BA8', stress: '#9333EA', energie: '#D97706',
+    humeur: '#D68910', digestion: '#059669', respiration: '#0284C7',
+    immunite: '#16A34A', detente: '#7C3AED', concentration: '#0369A1',
+    douleurs: '#E11D48', bien_etre_general: '#2563EB',
   };
-  return colors[category] || '#5499C7';
+  return m[c] || '#2563EB';
 }
 
-function getCategoryEmoji(category: string): string {
-  const emojis: Record<string, string> = {
-    sommeil: '😴',
-    stress: '🧘',
-    energie: '⚡',
-    humeur: '😊',
-    digestion: '🍃',
-    respiration: '💨',
-    immunite: '🛡️',
-    detente: '🌸',
-    concentration: '🧠',
-    douleurs: '💆',
-    bien_etre_general: '🌿',
+function getCategoryEmoji(c: string): string {
+  const m: Record<string, string> = {
+    sommeil: '😴', stress: '🧘', energie: '⚡', humeur: '😊',
+    digestion: '🍃', respiration: '💨', immunite: '🛡️', detente: '🌸',
+    concentration: '🧠', douleurs: '💆', bien_etre_general: '🌿',
   };
-  return emojis[category] || '🌿';
+  return m[c] || '🌿';
 }
 
-function getCategoryLabel(category: string): string {
-  const labels: Record<string, string> = {
-    sommeil: 'Sommeil',
-    stress: 'Anti-stress',
-    energie: 'Énergie',
-    humeur: 'Humeur',
-    digestion: 'Digestion',
-    respiration: 'Respiration',
-    immunite: 'Immunité',
-    detente: 'Détente',
-    concentration: 'Concentration',
-    douleurs: 'Douleurs',
-    bien_etre_general: 'Bien-être',
+function getCategoryLabel(c: string): string {
+  const m: Record<string, string> = {
+    sommeil: 'Sommeil', stress: 'Anti-stress', energie: 'Énergie',
+    humeur: 'Humeur', digestion: 'Digestion', respiration: 'Respiration',
+    immunite: 'Immunité', detente: 'Détente', concentration: 'Concentration',
+    douleurs: 'Douleurs', bien_etre_general: 'Bien-être',
   };
-  return labels[category] || 'Bien-être';
+  return m[c] || 'Bien-être';
 }
 
 // ============================================
@@ -223,27 +298,164 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.md,
     marginBottom: spacing.lg,
   },
-  header: {
+
+  // Carte principale
+  card: {
+    backgroundColor: colors.surface,
+    borderRadius: borderRadius.xl,
+    overflow: 'hidden',
+    borderWidth: 1,
+    borderColor: colors.border,
+    position: 'relative',
+  },
+  cardGlow: {
+    position: 'absolute',
+    top: -1,
+    left: 0,
+    right: 0,
+    height: 3,
+    borderTopLeftRadius: borderRadius.xl,
+    borderTopRightRadius: borderRadius.xl,
+  },
+  cardInner: {
+    padding: spacing.md,
+  },
+
+  // Top row : avatar + nom
+  topRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.sm,
+    marginBottom: spacing.sm,
+  },
+  avatarWrap: {
+    width: 48,
+    height: 48,
+    borderRadius: 24,
+    backgroundColor: colors.surfaceHighlight,
+    overflow: 'hidden',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  avatarImg: {
+    width: 48,
+    height: 48,
+  },
+  avatarBadge: {
+    position: 'absolute',
+    bottom: -2,
+    right: -2,
+    width: 20,
+    height: 20,
+    borderRadius: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderWidth: 2,
+    borderColor: colors.surface,
+  },
+  avatarBadgeEmoji: {
+    fontSize: 10,
+  },
+  avatarBadgeEmpty: {
+    position: 'absolute',
+    bottom: -2,
+    right: -2,
+    width: 20,
+    height: 20,
+    borderRadius: 10,
+    backgroundColor: colors.accentPrimary,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderWidth: 2,
+    borderColor: colors.surface,
+  },
+
+  textBlock: {
+    flex: 1,
+  },
+  nameRow: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
+  },
+  label: {
+    fontSize: 11,
+    fontWeight: '600',
+    color: colors.textMuted,
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
+  },
+  remedyName: {
+    fontSize: 17,
+    fontWeight: '700',
+    color: colors.textPrimary,
+    marginTop: 2,
+  },
+
+  // Raison
+  reasonBlock: {
     marginBottom: spacing.sm,
   },
-  sectionTitle: {
+  reasonGradient: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    borderRadius: borderRadius.md,
+    padding: spacing.sm,
+    gap: spacing.sm,
+  },
+  catDot: {
+    width: 6,
+    height: 6,
+    borderRadius: 3,
+    marginTop: 5,
+  },
+  reasonText: {
+    flex: 1,
+    fontSize: 13,
+    color: colors.textSecondary,
+    lineHeight: 18,
+  },
+
+  // Bottom row
+  bottomRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  tagsWrap: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 6,
+    flex: 1,
+  },
+  tag: {
+    borderWidth: 1,
+    paddingHorizontal: 8,
+    paddingVertical: 3,
+    borderRadius: 12,
+  },
+  tagText: {
+    fontSize: 11,
+    fontWeight: '500',
+  },
+  viewBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    paddingHorizontal: spacing.sm,
+    paddingVertical: 6,
+    borderRadius: borderRadius.md,
+    marginLeft: spacing.sm,
+  },
+  viewBtnText: {
     fontSize: 12,
     fontWeight: '700',
-    color: colors.textMuted,
-    letterSpacing: 1,
+    color: '#fff',
   },
-  sourceBadge: {
-    padding: 4,
-    backgroundColor: colors.accentSecondary + '20',
-    borderRadius: 8,
-  },
-  loadingCard: {
-    backgroundColor: colors.surface,
-    borderRadius: borderRadius.lg,
-    padding: spacing.xl,
+
+  // Loading
+  loadingInner: {
+    padding: spacing.lg,
     alignItems: 'center',
     justifyContent: 'center',
     gap: spacing.sm,
@@ -251,127 +463,32 @@ const styles = StyleSheet.create({
   loadingText: {
     color: colors.textMuted,
     fontSize: 13,
+    fontStyle: 'italic',
   },
-  emptyCard: {
-    borderRadius: borderRadius.lg,
-    overflow: 'hidden',
-  },
-  emptyGradient: {
-    padding: spacing.lg,
+
+  // Empty state
+  emptyInner: {
+    flexDirection: 'row',
     alignItems: 'center',
+    padding: spacing.md,
+    gap: spacing.sm,
   },
-  emptyIcon: {
-    width: 48,
-    height: 48,
-    borderRadius: 24,
-    backgroundColor: colors.accentPrimary + '20',
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginBottom: spacing.sm,
+  emptyTextBlock: {
+    flex: 1,
   },
   emptyTitle: {
-    fontSize: 16,
-    fontWeight: '600',
+    fontSize: 14,
+    fontWeight: '700',
     color: colors.textPrimary,
-    marginBottom: 4,
+    marginBottom: 2,
   },
   emptySubtitle: {
-    fontSize: 13,
-    color: colors.textSecondary,
-    textAlign: 'center',
-    marginBottom: spacing.md,
-  },
-  emptyButton: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 6,
-  },
-  emptyButtonText: {
-    fontSize: 14,
-    fontWeight: '600',
-    color: colors.accentPrimary,
-  },
-  card: {
-    borderRadius: borderRadius.lg,
-    overflow: 'hidden',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.15,
-    shadowRadius: 12,
-    elevation: 6,
-  },
-  cardGradient: {
-    padding: spacing.lg,
-  },
-  categoryBadge: {
-    alignSelf: 'flex-start',
-    backgroundColor: 'rgba(255,255,255,0.2)',
-    paddingHorizontal: spacing.sm,
-    paddingVertical: 4,
-    borderRadius: borderRadius.sm,
-    marginBottom: spacing.sm,
-  },
-  categoryText: {
     fontSize: 12,
-    fontWeight: '600',
-    color: '#fff',
+    color: colors.textMuted,
+    lineHeight: 16,
   },
-  remedyName: {
-    fontSize: 20,
-    fontWeight: '700',
-    color: '#fff',
-    marginBottom: 6,
-  },
-  reason: {
-    fontSize: 14,
-    color: 'rgba(255,255,255,0.9)',
-    marginBottom: spacing.md,
-    lineHeight: 20,
-  },
-  matchRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    marginBottom: spacing.sm,
-  },
-  matchScore: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 6,
-  },
-  matchText: {
-    fontSize: 12,
-    color: 'rgba(255,255,255,0.8)',
-  },
-  viewButton: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 4,
-    backgroundColor: 'rgba(255,255,255,0.2)',
-    paddingHorizontal: spacing.sm,
-    paddingVertical: 6,
-    borderRadius: borderRadius.sm,
-  },
-  viewButtonText: {
-    fontSize: 12,
-    fontWeight: '600',
-    color: '#fff',
-  },
-  tagsRow: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 6,
-    marginTop: spacing.xs,
-  },
-  tag: {
-    backgroundColor: 'rgba(255,255,255,0.15)',
-    paddingHorizontal: 8,
-    paddingVertical: 3,
-    borderRadius: 10,
-  },
-  tagText: {
-    fontSize: 11,
-    color: 'rgba(255,255,255,0.9)',
+  emptyArrow: {
+    padding: spacing.xs,
   },
 });
 

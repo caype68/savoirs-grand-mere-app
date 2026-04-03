@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
-import { 
-  View, 
-  Text, 
-  StyleSheet, 
-  ScrollView, 
-  TouchableOpacity, 
+import React, { useState, useEffect, useRef } from 'react';
+import {
+  View,
+  Text,
+  StyleSheet,
+  ScrollView,
+  TouchableOpacity,
   Image,
-  ImageBackground,
+  Animated,
   Dimensions,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Feather } from '@expo/vector-icons';
-import { colors, spacing, borderRadius, typography, shadows } from '../theme/colors';
-import { plantes, remedes } from '../data/remedes';
+import { LinearGradient } from 'expo-linear-gradient';
+import { colors, spacing, borderRadius, typography } from '../theme/colors';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import { illustrations, textures, getIllustration } from '../assets';
+import { logo, plantPhotos } from '../assets';
 
 const { width } = Dimensions.get('window');
 const CARD_WIDTH = (width - spacing.lg * 3) / 2;
@@ -25,105 +25,188 @@ type ExploreScreenProps = {
 
 // Catégories avec icônes
 const categories = [
-  { id: 'sommeil', label: 'Sommeil', icon: 'moon' },
-  { id: 'stress', label: 'Stress', icon: 'cloud' },
-  { id: 'digestion', label: 'Digestion', icon: 'coffee' },
-  { id: 'immunite', label: 'Immunité', icon: 'shield' },
-  { id: 'douleurs', label: 'Douleurs', icon: 'activity' },
-  { id: 'peau', label: 'Peau', icon: 'droplet' },
-  { id: 'rhume', label: 'Rhume', icon: 'thermometer' },
-  { id: 'energie', label: 'Énergie', icon: 'zap' },
+  { id: 'sommeil', label: 'Sommeil', icon: 'moon', color: '#818CF8' },
+  { id: 'stress', label: 'Stress', icon: 'cloud', color: '#F472B6' },
+  { id: 'digestion', label: 'Digestion', icon: 'coffee', color: '#34D399' },
+  { id: 'immunite', label: 'Immunité', icon: 'shield', color: '#FBBF24' },
+  { id: 'douleurs', label: 'Douleurs', icon: 'activity', color: '#F87171' },
+  { id: 'peau', label: 'Peau', icon: 'droplet', color: '#60A5FA' },
+  { id: 'rhume', label: 'Rhume', icon: 'thermometer', color: '#FB923C' },
+  { id: 'energie', label: 'Énergie', icon: 'zap', color: '#A78BFA' },
 ];
 
-// Plantes populaires avec illustrations locales
+// Plantes populaires avec images locales
 const popularPlants = [
-  { id: 'camomille', name: 'Camomille', usage: 'Sommeil • Stress', image: illustrations.camomille },
-  { id: 'gingembre', name: 'Gingembre', usage: 'Digestion • Nausées', image: illustrations.gingembre },
-  { id: 'menthe', name: 'Menthe', usage: 'Digestion • Fraîcheur', image: illustrations.menthe },
-  { id: 'curcuma', name: 'Curcuma', usage: 'Anti-inflammatoire', image: illustrations.curcuma },
-  { id: 'eucalyptus', name: 'Eucalyptus', usage: 'Respiration • Rhume', image: illustrations.eucalyptus },
-  { id: 'tilleul', name: 'Tilleul', usage: 'Sommeil • Calme', image: illustrations.tilleul },
+  { id: 'camomille', name: 'Camomille', usage: 'Sommeil • Stress', emoji: '🌼',
+    image: plantPhotos.camomille },
+  { id: 'gingembre', name: 'Gingembre', usage: 'Digestion • Nausées', emoji: '🫚',
+    image: plantPhotos.gingembre },
+  { id: 'menthe', name: 'Menthe', usage: 'Digestion • Fraîcheur', emoji: '🌿',
+    image: plantPhotos.camomille },
+  { id: 'curcuma', name: 'Curcuma', usage: 'Anti-inflammatoire', emoji: '🌾',
+    image: plantPhotos.gingembre },
+  { id: 'eucalyptus', name: 'Eucalyptus', usage: 'Respiration • Rhume', emoji: '🍃',
+    image: plantPhotos.eucalyptus },
+  { id: 'tilleul', name: 'Tilleul', usage: 'Sommeil • Calme', emoji: '🍵',
+    image: plantPhotos.tilleul },
 ];
 
 export const ExploreScreen: React.FC<ExploreScreenProps> = ({ navigation }) => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
+  // Animations
+  const fadeAnim = useRef(new Animated.Value(0)).current;
+  const slideAnim = useRef(new Animated.Value(30)).current;
+  const logoScale = useRef(new Animated.Value(0.8)).current;
+  const logoBounce = useRef(new Animated.Value(0)).current;
+
+  useEffect(() => {
+    // Entrée avec fondu + slide
+    Animated.parallel([
+      Animated.timing(fadeAnim, { toValue: 1, duration: 600, useNativeDriver: false }),
+      Animated.timing(slideAnim, { toValue: 0, duration: 600, useNativeDriver: false }),
+      Animated.spring(logoScale, { toValue: 1, friction: 4, tension: 80, useNativeDriver: false }),
+    ]).start();
+
+    // Bounce continu du logo
+    const bounce = Animated.loop(
+      Animated.sequence([
+        Animated.timing(logoBounce, { toValue: -6, duration: 1500, useNativeDriver: false }),
+        Animated.timing(logoBounce, { toValue: 0, duration: 1500, useNativeDriver: false }),
+      ])
+    );
+    bounce.start();
+    return () => bounce.stop();
+  }, []);
+
   const handleCategoryPress = (categoryId: string) => {
     setSelectedCategory(selectedCategory === categoryId ? null : categoryId);
+    // Naviguer vers les résultats de cette catégorie
+    navigation.navigate('Results', { searchQuery: categoryId, searchType: 'symptom' });
   };
 
   const handlePlantPress = (plantId: string) => {
     navigation.navigate('IngredientDetail', { ingredientId: plantId });
   };
 
+  const handleGuidePress = () => {
+    navigation.navigate('BeginnerGuide');
+  };
+
   return (
     <View style={styles.container}>
-      <ImageBackground
-        source={textures.grainDark}
-        style={styles.backgroundTexture}
-        imageStyle={{ opacity: 0.4 }}
-      >
-        <SafeAreaView style={styles.safeArea} edges={['top']}>
-          {/* Header */}
-          <View style={styles.header}>
-            <Text style={styles.headerLabel}>Explorer</Text>
+      <SafeAreaView style={styles.safeArea} edges={['top']}>
+        {/* Header animé avec logo */}
+        <Animated.View style={[styles.header, { opacity: fadeAnim }]}>
+          <View style={styles.headerLeft}>
+            <Text style={styles.headerTitle}>Explorer</Text>
+            <Text style={styles.headerSubtitle}>Découvrez les remèdes naturels</Text>
           </View>
+          <Animated.View style={{
+            transform: [
+              { scale: logoScale },
+              { translateY: logoBounce }
+            ]
+          }}>
+            <Image source={logo} style={styles.headerLogo} />
+          </Animated.View>
+        </Animated.View>
 
-          <ScrollView 
-            style={styles.scrollView}
-            contentContainerStyle={styles.scrollContent}
-            showsVerticalScrollIndicator={false}
-          >
-            {/* Featured Card */}
-            <View style={styles.featuredCard}>
-              <ImageBackground
-                source={textures.parchment}
-                style={styles.featuredBackground}
-                imageStyle={styles.featuredBackgroundImage}
+        <ScrollView
+          style={styles.scrollView}
+          contentContainerStyle={styles.scrollContent}
+          showsVerticalScrollIndicator={false}
+        >
+          {/* Carte Guide du débutant — mise en avant */}
+          <Animated.View style={{
+            opacity: fadeAnim,
+            transform: [{ translateY: slideAnim }]
+          }}>
+            <TouchableOpacity
+              style={styles.guideCard}
+              onPress={handleGuidePress}
+              activeOpacity={0.85}
+            >
+              <LinearGradient
+                colors={['#92400E', '#B45309', '#D97706']}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 1 }}
+                style={styles.guideGradient}
               >
-                <View style={styles.featuredContent}>
-                  <Text style={styles.featuredTitle}>Découvrez nos remèdes naturels</Text>
-                  <Text style={styles.featuredSubtitle}>
-                    Plus de 50 recettes traditionnelles vérifiées
-                  </Text>
+                <View style={styles.guideLeft}>
+                  <Animated.View style={{
+                    transform: [
+                      { scale: logoScale },
+                      { translateY: logoBounce }
+                    ]
+                  }}>
+                    <Image source={logo} style={styles.guideLogo} />
+                  </Animated.View>
                 </View>
-              </ImageBackground>
-            </View>
-
-            {/* Categories Section */}
-            <Text style={styles.sectionTitle}>CATÉGORIES</Text>
-            <View style={styles.categoriesGrid}>
-              {categories.map((cat) => (
-                <TouchableOpacity
-                  key={cat.id}
-                  style={[
-                    styles.categoryCard,
-                    selectedCategory === cat.id && styles.categoryCardActive,
-                  ]}
-                  onPress={() => handleCategoryPress(cat.id)}
-                  activeOpacity={0.8}
-                >
-                  <Feather 
-                    name={cat.icon as any} 
-                    size={20} 
-                    color={selectedCategory === cat.id ? colors.accentPrimary : colors.textSecondary} 
-                  />
-                  <Text style={[
-                    styles.categoryLabel,
-                    selectedCategory === cat.id && styles.categoryLabelActive,
-                  ]}>
-                    {cat.label}
+                <View style={styles.guideRight}>
+                  <View style={styles.guideBadge}>
+                    <Feather name="book-open" size={12} color="#FDE68A" />
+                    <Text style={styles.guideBadgeText}>GUIDE DÉBUTANT</Text>
+                  </View>
+                  <Text style={styles.guideTitle}>Apprenez à vous soigner naturellement</Text>
+                  <Text style={styles.guideSubtitle}>
+                    Les bases des plantes médicinales expliquées par Grand-Mère
                   </Text>
-                </TouchableOpacity>
-              ))}
-            </View>
+                  <View style={styles.guideButton}>
+                    <Text style={styles.guideButtonText}>Commencer</Text>
+                    <Feather name="arrow-right" size={14} color="#92400E" />
+                  </View>
+                </View>
+              </LinearGradient>
+            </TouchableOpacity>
+          </Animated.View>
 
-            {/* Plants Section */}
-            <Text style={styles.sectionTitle}>PLANTES POPULAIRES</Text>
-            <View style={styles.plantsGrid}>
-              {popularPlants.map((plant) => (
+          {/* Catégories */}
+          <Text style={styles.sectionTitle}>CATÉGORIES</Text>
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={styles.categoriesScroll}
+          >
+            {categories.map((cat) => (
+              <TouchableOpacity
+                key={cat.id}
+                style={[
+                  styles.categoryChip,
+                  selectedCategory === cat.id && { borderColor: cat.color, backgroundColor: `${cat.color}15` },
+                ]}
+                onPress={() => handleCategoryPress(cat.id)}
+                activeOpacity={0.8}
+              >
+                <View style={[styles.categoryIcon, { backgroundColor: `${cat.color}20` }]}>
+                  <Feather
+                    name={cat.icon as any}
+                    size={16}
+                    color={cat.color}
+                  />
+                </View>
+                <Text style={[
+                  styles.categoryLabel,
+                  selectedCategory === cat.id && { color: cat.color, fontWeight: '600' },
+                ]}>
+                  {cat.label}
+                </Text>
+              </TouchableOpacity>
+            ))}
+          </ScrollView>
+
+          {/* Plantes Populaires */}
+          <Text style={styles.sectionTitle}>PLANTES POPULAIRES</Text>
+          <View style={styles.plantsGrid}>
+            {popularPlants.map((plant, index) => (
+              <Animated.View
+                key={plant.id}
+                style={{
+                  opacity: fadeAnim,
+                  width: CARD_WIDTH,
+                }}
+              >
                 <TouchableOpacity
-                  key={plant.id}
                   style={styles.plantCard}
                   onPress={() => handlePlantPress(plant.id)}
                   activeOpacity={0.85}
@@ -133,40 +216,39 @@ export const ExploreScreen: React.FC<ExploreScreenProps> = ({ navigation }) => {
                     style={styles.plantImage}
                     resizeMode="cover"
                   />
-                  <View style={styles.plantInfo}>
+                  {/* Overlay gradient */}
+                  <LinearGradient
+                    colors={['transparent', 'rgba(0,0,0,0.7)']}
+                    style={styles.plantOverlay}
+                  >
+                    <Text style={styles.plantEmoji}>{plant.emoji}</Text>
                     <Text style={styles.plantName}>{plant.name}</Text>
                     <Text style={styles.plantUsage}>{plant.usage}</Text>
-                  </View>
+                  </LinearGradient>
                 </TouchableOpacity>
-              ))}
-            </View>
+              </Animated.View>
+            ))}
+          </View>
 
-            {/* Guide Card */}
-            <TouchableOpacity style={styles.guideCard} activeOpacity={0.9}>
-              <ImageBackground
-                source={textures.amberWarm}
-                style={styles.guideBackground}
-                imageStyle={styles.guideBackgroundImage}
-              >
-                <View style={styles.guideContent}>
-                  <Image
-                    source={illustrations.guide}
-                    style={styles.guideImage}
-                    resizeMode="cover"
-                  />
-                  <View style={styles.guideText}>
-                    <Text style={styles.guideTitle}>Guide du débutant</Text>
-                    <Text style={styles.guideSubtitle}>
-                      Apprenez les bases des remèdes naturels
-                    </Text>
-                  </View>
-                  <Feather name="chevron-right" size={24} color={colors.textPrimary} />
-                </View>
-              </ImageBackground>
-            </TouchableOpacity>
-          </ScrollView>
-        </SafeAreaView>
-      </ImageBackground>
+          {/* Stats rapides */}
+          <View style={styles.statsRow}>
+            <View style={styles.statCard}>
+              <Text style={styles.statNumber}>50+</Text>
+              <Text style={styles.statLabel}>Remèdes</Text>
+            </View>
+            <View style={styles.statCard}>
+              <Text style={styles.statNumber}>20+</Text>
+              <Text style={styles.statLabel}>Plantes</Text>
+            </View>
+            <View style={styles.statCard}>
+              <Text style={styles.statNumber}>100%</Text>
+              <Text style={styles.statLabel}>Naturel</Text>
+            </View>
+          </View>
+
+          <View style={{ height: 100 }} />
+        </ScrollView>
+      </SafeAreaView>
     </View>
   );
 };
@@ -176,20 +258,33 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: colors.background,
   },
-  backgroundTexture: {
-    flex: 1,
-  },
   safeArea: {
     flex: 1,
   },
   header: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
     paddingHorizontal: spacing.lg,
-    paddingVertical: spacing.lg,
+    paddingVertical: spacing.md,
   },
-  headerLabel: {
-    ...typography.h1,
-    color: colors.textPrimary,
+  headerLeft: {
+    flex: 1,
+  },
+  headerTitle: {
     fontSize: 28,
+    fontWeight: '700',
+    color: colors.textPrimary,
+  },
+  headerSubtitle: {
+    fontSize: 14,
+    color: colors.textMuted,
+    marginTop: 2,
+  },
+  headerLogo: {
+    width: 48,
+    height: 48,
+    borderRadius: 24,
   },
   scrollView: {
     flex: 1,
@@ -197,71 +292,119 @@ const styles = StyleSheet.create({
   scrollContent: {
     paddingBottom: 100,
   },
-  featuredCard: {
+
+  // Guide Card — premium design
+  guideCard: {
     marginHorizontal: spacing.lg,
     marginBottom: spacing.xl,
-    borderRadius: borderRadius.xl,
+    borderRadius: 20,
     overflow: 'hidden',
-    borderWidth: 1,
-    borderColor: colors.border,
+    elevation: 8,
   },
-  featuredBackground: {
-    padding: spacing.xl,
+  guideGradient: {
+    flexDirection: 'row',
+    padding: spacing.lg,
+    minHeight: 160,
   },
-  featuredBackgroundImage: {
-    borderRadius: borderRadius.xl,
-    opacity: 0.15,
+  guideLeft: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: spacing.md,
   },
-  featuredContent: {
-    alignItems: 'flex-start',
+  guideLogo: {
+    width: 80,
+    height: 80,
+    borderRadius: 40,
+    borderWidth: 3,
+    borderColor: 'rgba(253, 230, 138, 0.5)',
   },
-  featuredTitle: {
-    ...typography.h2,
-    color: colors.textPrimary,
-    marginBottom: spacing.xs,
+  guideRight: {
+    flex: 1,
+    justifyContent: 'center',
   },
-  featuredSubtitle: {
-    ...typography.body,
-    color: colors.textSecondary,
+  guideBadge: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    marginBottom: 8,
   },
+  guideBadgeText: {
+    fontSize: 10,
+    fontWeight: '700',
+    color: '#FDE68A',
+    letterSpacing: 1.5,
+  },
+  guideTitle: {
+    fontSize: 17,
+    fontWeight: '700',
+    color: '#FFFBEB',
+    lineHeight: 22,
+    marginBottom: 6,
+  },
+  guideSubtitle: {
+    fontSize: 12,
+    color: 'rgba(255,251,235,0.7)',
+    lineHeight: 16,
+    marginBottom: 12,
+  },
+  guideButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    alignSelf: 'flex-start',
+    backgroundColor: '#FDE68A',
+    paddingVertical: 6,
+    paddingHorizontal: 14,
+    borderRadius: 20,
+    gap: 6,
+  },
+  guideButtonText: {
+    fontSize: 13,
+    fontWeight: '700',
+    color: '#92400E',
+  },
+
+  // Section
   sectionTitle: {
-    ...typography.caption,
+    fontSize: 11,
+    fontWeight: '700',
     color: colors.textMuted,
     letterSpacing: 1.5,
     marginHorizontal: spacing.lg,
     marginBottom: spacing.md,
-    marginTop: spacing.md,
+    marginTop: spacing.sm,
   },
-  categoriesGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+
+  // Categories — horizontal scroll
+  categoriesScroll: {
     paddingHorizontal: spacing.lg,
-    gap: spacing.sm,
-    marginBottom: spacing.lg,
+    gap: 10,
+    marginBottom: spacing.xl,
   },
-  categoryCard: {
+  categoryChip: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: spacing.md,
-    paddingVertical: spacing.sm + 2,
-    borderRadius: borderRadius.lg,
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    borderRadius: 16,
     backgroundColor: colors.surfaceCard,
     borderWidth: 1,
     borderColor: colors.border,
-    gap: spacing.xs,
+    gap: 8,
   },
-  categoryCardActive: {
-    borderColor: colors.accentPrimary,
-    backgroundColor: colors.accentPrimaryMuted,
+  categoryIcon: {
+    width: 30,
+    height: 30,
+    borderRadius: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   categoryLabel: {
-    ...typography.bodySmall,
+    fontSize: 14,
     color: colors.textSecondary,
+    fontWeight: '500',
   },
-  categoryLabelActive: {
-    color: colors.accentPrimary,
-    fontWeight: '600',
-  },
+
+  // Plants Grid
   plantsGrid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
@@ -270,66 +413,64 @@ const styles = StyleSheet.create({
     marginBottom: spacing.xl,
   },
   plantCard: {
-    width: CARD_WIDTH,
-    borderRadius: borderRadius.lg,
+    width: '100%',
+    height: 160,
+    borderRadius: 16,
     overflow: 'hidden',
-    borderWidth: 1,
-    borderColor: colors.border,
     backgroundColor: colors.surfaceCard,
   },
   plantImage: {
     width: '100%',
-    height: 120,
+    height: '100%',
     backgroundColor: colors.surface,
   },
-  plantInfo: {
-    padding: spacing.md,
-    backgroundColor: colors.surfaceCard,
+  plantOverlay: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    padding: 12,
+    paddingTop: 40,
+  },
+  plantEmoji: {
+    fontSize: 20,
+    marginBottom: 4,
   },
   plantName: {
-    ...typography.bodyMedium,
-    color: colors.textPrimary,
-    fontWeight: '600',
+    fontSize: 16,
+    fontWeight: '700',
+    color: '#fff',
   },
   plantUsage: {
-    ...typography.caption,
-    color: colors.textMuted,
+    fontSize: 11,
+    color: 'rgba(255,255,255,0.7)',
     marginTop: 2,
   },
-  guideCard: {
-    marginHorizontal: spacing.lg,
-    borderRadius: borderRadius.lg,
-    overflow: 'hidden',
-  },
-  guideBackground: {
-    padding: spacing.lg,
-  },
-  guideBackgroundImage: {
-    borderRadius: borderRadius.lg,
-    opacity: 0.9,
-  },
-  guideContent: {
+
+  // Stats
+  statsRow: {
     flexDirection: 'row',
-    alignItems: 'center',
+    paddingHorizontal: spacing.lg,
     gap: spacing.md,
+    marginBottom: spacing.xl,
   },
-  guideImage: {
-    width: 60,
-    height: 60,
-    borderRadius: borderRadius.md,
-  },
-  guideText: {
+  statCard: {
     flex: 1,
+    alignItems: 'center',
+    paddingVertical: spacing.lg,
+    backgroundColor: colors.surfaceCard,
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: colors.border,
   },
-  guideTitle: {
-    ...typography.bodyMedium,
-    color: colors.textPrimary,
-    fontWeight: '600',
+  statNumber: {
+    fontSize: 22,
+    fontWeight: '700',
+    color: colors.accentPrimary,
   },
-  guideSubtitle: {
-    ...typography.caption,
-    color: colors.textPrimary,
-    opacity: 0.8,
-    marginTop: 2,
+  statLabel: {
+    fontSize: 12,
+    color: colors.textMuted,
+    marginTop: 4,
   },
 });

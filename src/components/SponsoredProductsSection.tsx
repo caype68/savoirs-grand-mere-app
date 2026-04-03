@@ -45,9 +45,9 @@ export const SponsoredProductsSection: React.FC<SponsoredProductsSectionProps> =
     </View>
   );
 
-  const renderProduct = (product: SponsoredProduct) => (
+  const renderProduct = (product: SponsoredProduct, idx: number) => (
     <TouchableOpacity
-      key={product.id}
+      key={`${product.id}-${idx}`}
       style={[styles.productCard, compact && styles.productCardCompact]}
       onPress={() => handlePress(product)}
       activeOpacity={0.8}

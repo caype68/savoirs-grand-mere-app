@@ -9,8 +9,42 @@ import { AffiliateProduct } from '../types';
 // CONFIGURATION
 // ============================================
 
-const UNSPLASH_BASE_URL = 'https://source.unsplash.com';
+// Pexels CDN — images fiables et gratuites
+const PEXELS_BASE_URL = 'https://images.pexels.com/photos';
 const DEFAULT_IMAGE_SIZE = '600x600';
+
+// Mapping catégorie → photo Pexels ID vérifiée
+const PEXELS_CATEGORY_PHOTOS: Record<string, string> = {
+  'plante':           '1340116/pexels-photo-1340116.jpeg',
+  'miel':             '1638280/pexels-photo-1638280.jpeg',
+  'ingredient':       '4197444/pexels-photo-4197444.jpeg',
+  'huile_essentielle':'4041392/pexels-photo-4041392.jpeg',
+  'huile_vegetale':   '4041392/pexels-photo-4041392.jpeg',
+  'accessoire':       '230477/pexels-photo-230477.jpeg',
+  'ustensile':        '4197444/pexels-photo-4197444.jpeg',
+  'contenant':        '4197444/pexels-photo-4197444.jpeg',
+  'diffuseur':        '4041392/pexels-photo-4041392.jpeg',
+  'pack':             '4041392/pexels-photo-4041392.jpeg',
+  'coffret':          '4041392/pexels-photo-4041392.jpeg',
+  'livre':            '256431/pexels-photo-256431.jpeg',
+  'default':          '4197444/pexels-photo-4197444.jpeg',
+};
+
+// Mapping ingrédient → photo Pexels ID vérifiée
+const PEXELS_INGREDIENT_PHOTOS: Record<string, string> = {
+  'thym':       '1340116/pexels-photo-1340116.jpeg',
+  'camomille':  '1340116/pexels-photo-1340116.jpeg',
+  'menthe':     '1340116/pexels-photo-1340116.jpeg',
+  'lavande':    '931177/pexels-photo-931177.jpeg',
+  'eucalyptus': '1340116/pexels-photo-1340116.jpeg',
+  'miel':       '1638280/pexels-photo-1638280.jpeg',
+  'citron':     '1414110/pexels-photo-1414110.jpeg',
+  'argile':     '4197444/pexels-photo-4197444.jpeg',
+  'vinaigre':   '4197444/pexels-photo-4197444.jpeg',
+  'sel':        '4197444/pexels-photo-4197444.jpeg',
+  'bicarbonate':'4197444/pexels-photo-4197444.jpeg',
+  'millepertuis':'931177/pexels-photo-931177.jpeg',
+};
 
 // ============================================
 // MAPPING INTELLIGENT FRANÇAIS → ANGLAIS
@@ -261,14 +295,18 @@ export function generateProductImage(
   const combinedText = searchTexts.join(' ');
   const query = generateUnsplashQuery(combinedText);
   
-  // Si aucune requête valide, utiliser le fallback par catégorie
-  if (!query || query.length < 3) {
-    const categoryKey = product.category?.toString() || 'default';
-    const fallbackQuery = CATEGORY_FALLBACK_MAP[categoryKey] || CATEGORY_FALLBACK_MAP['default'];
-    return `${UNSPLASH_BASE_URL}/${size}/?${encodeURIComponent(fallbackQuery)}`;
+  // Utiliser Pexels avec mapping intelligent
+  const ingredientKey = (product.ingredientName || product.oilName || '').toLowerCase().trim();
+
+  // Priorité 1: correspondance par ingrédient
+  if (ingredientKey && PEXELS_INGREDIENT_PHOTOS[ingredientKey]) {
+    return `${PEXELS_BASE_URL}/${PEXELS_INGREDIENT_PHOTOS[ingredientKey]}?auto=compress&cs=tinysrgb&w=600`;
   }
-  
-  return `${UNSPLASH_BASE_URL}/${size}/?${query}`;
+
+  // Priorité 2: correspondance par catégorie
+  const categoryKey = product.category?.toString() || 'default';
+  const photoId = PEXELS_CATEGORY_PHOTOS[categoryKey] || PEXELS_CATEGORY_PHOTOS['default'];
+  return `${PEXELS_BASE_URL}/${photoId}?auto=compress&cs=tinysrgb&w=600`;
 }
 
 /**
@@ -279,12 +317,8 @@ export function generateConsistentProductImage(
   product: Partial<AffiliateProduct> & { ingredientName?: string; oilName?: string },
   size: string = DEFAULT_IMAGE_SIZE
 ): string {
-  const baseUrl = generateProductImage(product, size);
-  
-  // Ajouter un seed basé sur l'ID du produit pour consistance
-  const seed = product.id ? `&sig=${hashCode(product.id)}` : '';
-  
-  return baseUrl + seed;
+  // Retourner directement l'URL Pexels (pas de seed nécessaire, images fixes)
+  return generateProductImage(product, size);
 }
 
 /**
@@ -308,14 +342,19 @@ function hashCode(str: string): number {
  * Images de fallback par catégorie (hébergées localement ou CDN fiable)
  */
 export const FALLBACK_IMAGES: Record<string, string> = {
-  'huile_essentielle': 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=600&h=600&fit=crop',
-  'huile_vegetale': 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=600&h=600&fit=crop',
-  'ingredient': 'https://images.unsplash.com/photo-1515023115689-589c33041d3c?w=600&h=600&fit=crop',
-  'diffuseur': 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=600&h=600&fit=crop',
-  'accessoire': 'https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&h=600&fit=crop',
-  'livre': 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=600&h=600&fit=crop',
-  'coffret': 'https://images.unsplash.com/photo-1607006344380-b6775a0824a7?w=600&h=600&fit=crop',
-  'default': 'https://images.unsplash.com/photo-1515023115689-589c33041d3c?w=600&h=600&fit=crop',
+  'huile_essentielle': 'https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?auto=compress&cs=tinysrgb&w=600',
+  'huile_vegetale': 'https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?auto=compress&cs=tinysrgb&w=600',
+  'ingredient': 'https://images.pexels.com/photos/4197444/pexels-photo-4197444.jpeg?auto=compress&cs=tinysrgb&w=600',
+  'plante': 'https://images.pexels.com/photos/1340116/pexels-photo-1340116.jpeg?auto=compress&cs=tinysrgb&w=600',
+  'miel': 'https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg?auto=compress&cs=tinysrgb&w=600',
+  'diffuseur': 'https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?auto=compress&cs=tinysrgb&w=600',
+  'accessoire': 'https://images.pexels.com/photos/230477/pexels-photo-230477.jpeg?auto=compress&cs=tinysrgb&w=600',
+  'ustensile': 'https://images.pexels.com/photos/4197444/pexels-photo-4197444.jpeg?auto=compress&cs=tinysrgb&w=600',
+  'contenant': 'https://images.pexels.com/photos/4197444/pexels-photo-4197444.jpeg?auto=compress&cs=tinysrgb&w=600',
+  'livre': 'https://images.pexels.com/photos/256431/pexels-photo-256431.jpeg?auto=compress&cs=tinysrgb&w=600',
+  'coffret': 'https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?auto=compress&cs=tinysrgb&w=600',
+  'pack': 'https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?auto=compress&cs=tinysrgb&w=600',
+  'default': 'https://images.pexels.com/photos/4197444/pexels-photo-4197444.jpeg?auto=compress&cs=tinysrgb&w=600',
 };
 
 /**

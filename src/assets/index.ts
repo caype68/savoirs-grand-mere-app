@@ -90,6 +90,14 @@ export const textures = {
   vignetteHerbal: require('../../assets/textures/vignette_herbal.png'),
 };
 
+// Photos plantes Explorer
+export const plantPhotos = {
+  camomille: require('./plants/camomille.jpg'),
+  eucalyptus: require('./plants/eucalyptus.jpg'),
+  gingembre: require('./plants/gingembre.jpg'),
+  tilleul: require('./plants/tilleul.jpg'),
+};
+
 // Mapping des illustrations par nom de plante/remède
 export const getIllustration = (name: string) => {
   // Toujours retourner l'image de la grand-mère

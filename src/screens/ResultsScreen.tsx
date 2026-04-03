@@ -281,24 +281,16 @@ export const ResultsScreen: React.FC<ResultsScreenProps> = ({ navigation, route 
             onBack={() => navigation.goBack()}
           />
 
-          {/* Compare Bar - En haut */}
-          {results.length > 1 && (
-            <View style={styles.compareBar}>
-              <View style={styles.compareBarLeft}>
-                <Feather name="cpu" size={16} color={colors.accentPrimary} />
-                <Text style={styles.compareBarText}>
-                  {results.length} remède{results.length > 1 ? 's' : ''} trouvé{results.length > 1 ? 's' : ''}
-                </Text>
-              </View>
-              <TouchableOpacity 
-                style={styles.compareButton} 
-                onPress={handleCompare}
-                activeOpacity={0.8}
-              >
-                <Feather name="columns" size={16} color="#fff" />
-                <Text style={styles.compareButtonText}>Comparer</Text>
-              </TouchableOpacity>
+          {/* Results count */}
+          {results.length > 0 ? (
+            <View style={styles.resultsBar}>
+              <Feather name="search" size={14} color={colors.textMuted} />
+              <Text style={styles.resultsBarText}>
+                {`${results.length} remède${results.length > 1 ? 's' : ''} trouvé${results.length > 1 ? 's' : ''}`}
+              </Text>
             </View>
+          ) : (
+            <View />
           )}
 
           {/* Filter Bar */}
@@ -361,6 +353,35 @@ export const ResultsScreen: React.FC<ResultsScreenProps> = ({ navigation, route 
 
             <View style={styles.bottomSpacer} />
           </ScrollView>
+
+          {/* Floating Compare Bar */}
+          {results.length >= 2 ? (
+            <View style={styles.floatingCompare}>
+              <LinearGradient
+                colors={['transparent', 'rgba(10,10,15,0.95)', 'rgba(10,10,15,1)']}
+                style={styles.floatingGradient}
+              >
+                <TouchableOpacity
+                  style={styles.floatingCompareBtn}
+                  onPress={handleCompare}
+                  activeOpacity={0.85}
+                >
+                  <View style={styles.floatingCompareIcon}>
+                    <Feather name="columns" size={18} color="#fff" />
+                  </View>
+                  <View style={styles.floatingCompareText}>
+                    <Text style={styles.floatingCompareBtnTitle}>Comparer les remèdes</Text>
+                    <Text style={styles.floatingCompareBtnSub}>
+                      {`Voir les ${Math.min(results.length, 3)} meilleurs côte à côte`}
+                    </Text>
+                  </View>
+                  <Feather name="chevron-right" size={20} color="rgba(255,255,255,0.6)" />
+                </TouchableOpacity>
+              </LinearGradient>
+            </View>
+          ) : (
+            <View />
+          )}
         </SafeAreaView>
       </ImageBackground>
     </View>
@@ -630,39 +651,63 @@ const styles = StyleSheet.create({
     color: colors.accentPrimary,
     fontWeight: '500',
   },
-  compareBar: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    paddingHorizontal: spacing.lg,
-    paddingVertical: spacing.md,
-    backgroundColor: colors.surface,
-    borderBottomWidth: 1,
-    borderBottomColor: colors.border,
-  },
-  compareBarLeft: {
+  resultsBar: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: spacing.sm,
-  },
-  compareBarText: {
-    fontSize: 14,
-    color: colors.textPrimary,
-    fontWeight: '500',
-  },
-  compareButton: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.xs,
-    backgroundColor: colors.accentPrimary,
     paddingHorizontal: spacing.lg,
     paddingVertical: spacing.sm,
-    borderRadius: borderRadius.lg,
   },
-  compareButtonText: {
-    fontSize: 14,
+  resultsBarText: {
+    fontSize: 13,
+    color: colors.textMuted,
+    fontWeight: '500',
+  },
+  floatingCompare: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+  },
+  floatingGradient: {
+    paddingHorizontal: spacing.md,
+    paddingTop: spacing.xl,
+    paddingBottom: spacing.lg,
+  },
+  floatingCompareBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: colors.accentPrimary,
+    borderRadius: borderRadius.xl,
+    paddingVertical: spacing.md,
+    paddingHorizontal: spacing.lg,
+    gap: spacing.sm,
+    shadowColor: colors.accentPrimary,
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.4,
+    shadowRadius: 12,
+    elevation: 8,
+  },
+  floatingCompareIcon: {
+    width: 36,
+    height: 36,
+    borderRadius: 18,
+    backgroundColor: 'rgba(255,255,255,0.2)',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  floatingCompareText: {
+    flex: 1,
+  },
+  floatingCompareBtnTitle: {
+    fontSize: 15,
+    fontWeight: '700',
     color: '#fff',
-    fontWeight: '600',
+  },
+  floatingCompareBtnSub: {
+    fontSize: 11,
+    color: 'rgba(255,255,255,0.7)',
+    marginTop: 1,
   },
   bottomSpacer: {
     height: 100,

@@ -32,6 +32,24 @@ import {
 } from '../types';
 import { useNavigation, CommonActions } from '@react-navigation/native';
 import { useAuth } from '../hooks/useAuth';
+
+// Cross-platform alert (Alert.alert ne fonctionne pas sur web)
+const crossAlert = (title: string, message: string, buttons?: Array<{ text: string; style?: string; onPress?: () => void }>) => {
+  if (Platform.OS === 'web') {
+    const hasCancel = buttons?.some(b => b.style === 'cancel');
+    const actionBtn = buttons?.find(b => b.style !== 'cancel' && b.onPress);
+    if (hasCancel && actionBtn) {
+      const confirmed = window.confirm(`${title}\n\n${message}`);
+      if (confirmed && actionBtn.onPress) actionBtn.onPress();
+    } else {
+      window.alert(`${title}\n\n${message}`);
+      const defaultBtn = buttons?.find(b => b.onPress);
+      if (defaultBtn?.onPress) defaultBtn.onPress();
+    }
+  } else {
+    Alert.alert(title, message, buttons as any);
+  }
+};
 import { StreakDisplay, BadgeCard } from '../components/StreakBadge';
 import { clearAllData } from '../services/storage';
 import {
@@ -159,6 +177,10 @@ export const ProfileScreen: React.FC = () => {
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const [showRedoModal, setShowRedoModal] = useState(false);
   const [showEditNameModal, setShowEditNameModal] = useState(false);
+  const [showNotifModal, setShowNotifModal] = useState(false);
+  const [selectedNotifFreq, setSelectedNotifFreq] = useState<string>(
+    profile?.notificationFrequency || 'quotidien'
+  );
 
   // ——— Formulaire auth ———
   const [authEmail, setAuthEmail] = useState('');
@@ -262,7 +284,7 @@ export const ProfileScreen: React.FC = () => {
         if (result.success) {
           setShowAuthModal(false);
           resetAuthForm();
-          Alert.alert(
+          crossAlert(
             '🌿 Bienvenue !',
             'Votre compte a été créé. Vos données locales vont être synchronisées.',
             [{ text: 'Super !', style: 'default' }]
@@ -280,7 +302,7 @@ export const ProfileScreen: React.FC = () => {
   };
 
   const handleLogout = () => {
-    Alert.alert(
+    crossAlert(
       'Déconnexion',
       'Vos données locales sont conservées. Vous pourrez vous reconnecter à tout moment.',
       [
@@ -290,6 +312,13 @@ export const ProfileScreen: React.FC = () => {
           style: 'destructive',
           onPress: async () => {
             await logout();
+            // Rediriger vers l'écran Auth
+            navigation.dispatch(
+              CommonActions.reset({
+                index: 0,
+                routes: [{ name: 'Auth' }],
+              })
+            );
           },
         },
       ]
@@ -303,17 +332,32 @@ export const ProfileScreen: React.FC = () => {
   const handlePickImage = async () => {
     const perm = await ImagePicker.requestMediaLibraryPermissionsAsync();
     if (!perm.granted) {
-      Alert.alert('Permission requise', "Veuillez autoriser l'accès à votre galerie.");
+      crossAlert('Permission requise', "Veuillez autoriser l'accès à votre galerie.");
       return;
     }
     const result = await ImagePicker.launchImageLibraryAsync({
-      mediaTypes: ImagePicker.MediaTypeOptions.Images,
+      mediaTypes: [ImagePicker.MediaType?.Images || 'images'] as any,
       allowsEditing: true,
       aspect: [1, 1],
       quality: 0.8,
     });
     if (!result.canceled && result.assets[0]) {
-      await updateProfile({ avatarUri: result.assets[0].uri });
+      let uri = result.assets[0].uri;
+      // Sur web, les blob: URIs sont temporaires — convertir en base64 pour persister
+      if (Platform.OS === 'web' && uri.startsWith('blob:')) {
+        try {
+          const response = await fetch(uri);
+          const blob = await response.blob();
+          const reader = new FileReader();
+          uri = await new Promise<string>((resolve) => {
+            reader.onloadend = () => resolve(reader.result as string);
+            reader.readAsDataURL(blob);
+          });
+        } catch (e) {
+          console.warn('Erreur conversion avatar:', e);
+        }
+      }
+      await updateProfile({ avatarUri: uri });
     }
   };
 
@@ -323,7 +367,7 @@ export const ProfileScreen: React.FC = () => {
     if (result.success) {
       setShowEditNameModal(false);
     } else {
-      Alert.alert('Erreur', result.error || 'Impossible de sauvegarder');
+      crossAlert('Erreur', result.error || 'Impossible de sauvegarder');
     }
   };
 
@@ -729,7 +773,7 @@ export const ProfileScreen: React.FC = () => {
               <Text style={styles.sectionTitle}>Mes objectifs</Text>
             </View>
             <View style={styles.tagsContainer}>
-              {profile.objectifs.length > 0 ? (
+              {(profile.objectifs?.length || 0) > 0 ? (
                 profile.objectifs.map((goal) => (
                   <View key={goal} style={styles.tag}>
                     <Text style={styles.tagText}>{GOAL_LABELS[goal]}</Text>
@@ -748,8 +792,8 @@ export const ProfileScreen: React.FC = () => {
               <Text style={styles.sectionTitle}>Formats préférés</Text>
             </View>
             <View style={styles.tagsContainer}>
-              {profile.formatsPreferes.length > 0 ? (
-                profile.formatsPreferes.map((format) => (
+              {(profile.formatsPreferes?.length || 0) > 0 ? (
+                (profile.formatsPreferes || []).map((format) => (
                   <View key={format} style={styles.tagSecondary}>
                     <Text style={styles.tagTextSecondary}>{FORMAT_LABELS[format]}</Text>
                   </View>
@@ -761,7 +805,7 @@ export const ProfileScreen: React.FC = () => {
           </View>
 
           {/* ——— ALLERGIES ——— */}
-          {profile.allergies.length > 0 && (
+          {(profile.allergies?.length || 0) > 0 && (
             <View style={styles.section}>
               <View style={styles.sectionHeader}>
                 <Feather name="alert-triangle" size={18} color={colors.warning} />
@@ -777,25 +821,46 @@ export const ProfileScreen: React.FC = () => {
             </View>
           )}
 
-          {/* ——— NOTIFICATIONS ——— */}
-          <View style={styles.section}>
+          {/* ——— NOTIFICATIONS (cliquable) ——— */}
+          <TouchableOpacity
+            style={styles.section}
+            onPress={() => {
+              setSelectedNotifFreq(profile.notificationFrequency || 'quotidien');
+              setShowNotifModal(true);
+            }}
+            activeOpacity={0.7}
+          >
             <View style={styles.sectionHeader}>
               <Feather name="bell" size={18} color={colors.accentPrimary} />
               <Text style={styles.sectionTitle}>Notifications</Text>
+              <View style={styles.editBadge}>
+                <Feather name="edit-2" size={12} color={colors.accentPrimary} />
+              </View>
             </View>
             <View style={styles.infoRow}>
               <Text style={styles.infoLabel}>Fréquence</Text>
-              <Text style={styles.infoValue}>
-                {profile.notificationFrequency === 'jamais'
-                  ? 'Désactivées'
-                  : profile.notificationFrequency === 'quotidien'
-                  ? 'Quotidien'
-                  : profile.notificationFrequency === 'hebdomadaire'
-                  ? 'Hebdomadaire'
-                  : '2–3 fois / semaine'}
-              </Text>
+              <View style={styles.notifValueRow}>
+                <Text style={styles.infoValue}>
+                  {profile.notificationFrequency === 'jamais'
+                    ? '🔕 Désactivées'
+                    : profile.notificationFrequency === 'quotidien'
+                    ? '🔔 Quotidien'
+                    : profile.notificationFrequency === 'hebdomadaire'
+                    ? '🔔 Hebdomadaire'
+                    : '🔔 2–3 fois / semaine'}
+                </Text>
+                <Feather name="chevron-right" size={16} color={colors.textMuted} />
+              </View>
             </View>
-          </View>
+            {profile.notificationHoraires && (
+              <View style={[styles.infoRow, { marginTop: spacing.sm }]}>
+                <Text style={styles.infoLabel}>Horaires</Text>
+                <Text style={styles.infoValue}>
+                  🌅 {profile.notificationHoraires.matin || '08:00'} · 🌙 {profile.notificationHoraires.soir || '21:00'}
+                </Text>
+              </View>
+            )}
+          </TouchableOpacity>
 
           {/* ——— ACTIONS ——— */}
           <View style={styles.actionsSection}>
@@ -808,13 +873,11 @@ export const ProfileScreen: React.FC = () => {
               <Feather name="chevron-right" size={20} color={colors.textMuted} />
             </TouchableOpacity>
 
-            {!isGuest && (
-              <TouchableOpacity style={styles.actionButton} onPress={handleLogout}>
-                <Feather name="log-out" size={20} color={colors.textSecondary} />
-                <Text style={styles.actionButtonText}>Se déconnecter</Text>
-                <Feather name="chevron-right" size={20} color={colors.textMuted} />
-              </TouchableOpacity>
-            )}
+            <TouchableOpacity style={styles.actionButton} onPress={handleLogout}>
+              <Feather name="log-out" size={20} color={colors.textSecondary} />
+              <Text style={styles.actionButtonText}>Se déconnecter</Text>
+              <Feather name="chevron-right" size={20} color={colors.textMuted} />
+            </TouchableOpacity>
 
             <TouchableOpacity
               style={[styles.actionButton, styles.actionButtonDanger]}
@@ -965,6 +1028,88 @@ export const ProfileScreen: React.FC = () => {
               <TouchableOpacity
                 style={styles.modalButtonPrimary}
                 onPress={handleSaveName}
+              >
+                <Text style={styles.modalButtonPrimaryText}>Enregistrer</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        </View>
+      </Modal>
+
+      {/* ================================================ */}
+      {/* MODAL NOTIFICATIONS                              */}
+      {/* ================================================ */}
+      <Modal
+        visible={showNotifModal}
+        transparent
+        animationType="slide"
+        onRequestClose={() => setShowNotifModal(false)}
+      >
+        <View style={styles.notifModalOverlay}>
+          <View style={styles.notifModalContent}>
+            <View style={styles.notifModalHandle} />
+
+            <View style={styles.notifModalHeader}>
+              <View style={styles.notifModalIconCircle}>
+                <Feather name="bell" size={28} color={colors.accentPrimary} />
+              </View>
+              <Text style={styles.notifModalTitle}>Notifications</Text>
+              <Text style={styles.notifModalSubtitle}>
+                Choisis la fréquence de tes rappels bien-être
+              </Text>
+            </View>
+
+            {/* Options */}
+            {[
+              { key: 'quotidien', label: 'Quotidien', desc: 'Un rappel chaque jour', icon: '🔔', emoji: '☀️' },
+              { key: '2-3_fois', label: '2–3 fois / semaine', desc: 'Mardi, jeudi et samedi', icon: '🔔', emoji: '📅' },
+              { key: 'hebdomadaire', label: 'Hebdomadaire', desc: 'Un rappel par semaine', icon: '🔔', emoji: '📆' },
+              { key: 'jamais', label: 'Désactivées', desc: 'Pas de notifications', icon: '🔕', emoji: '🔇' },
+            ].map((option) => (
+              <TouchableOpacity
+                key={option.key}
+                style={[
+                  styles.notifOption,
+                  selectedNotifFreq === option.key && styles.notifOptionSelected,
+                ]}
+                onPress={() => setSelectedNotifFreq(option.key)}
+                activeOpacity={0.7}
+              >
+                <Text style={styles.notifOptionEmoji}>{option.emoji}</Text>
+                <View style={styles.notifOptionInfo}>
+                  <Text style={[
+                    styles.notifOptionLabel,
+                    selectedNotifFreq === option.key && styles.notifOptionLabelSelected,
+                  ]}>
+                    {option.label}
+                  </Text>
+                  <Text style={styles.notifOptionDesc}>{option.desc}</Text>
+                </View>
+                <View style={[
+                  styles.notifRadio,
+                  selectedNotifFreq === option.key && styles.notifRadioSelected,
+                ]}>
+                  {selectedNotifFreq === option.key && (
+                    <Feather name="check" size={14} color="#fff" />
+                  )}
+                </View>
+              </TouchableOpacity>
+            ))}
+
+            {/* Boutons */}
+            <View style={styles.notifModalButtons}>
+              <TouchableOpacity
+                style={styles.modalButtonCancel}
+                onPress={() => setShowNotifModal(false)}
+              >
+                <Text style={styles.modalButtonCancelText}>Annuler</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={styles.modalButtonPrimary}
+                onPress={async () => {
+                  await updateProfile({ notificationFrequency: selectedNotifFreq as any });
+                  setShowNotifModal(false);
+                }}
               >
                 <Text style={styles.modalButtonPrimaryText}>Enregistrer</Text>
               </TouchableOpacity>
@@ -1608,6 +1753,120 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: '600',
     color: '#fff',
+  },
+
+  // ——— Edit badge (notification section) ———
+  editBadge: {
+    width: 28,
+    height: 28,
+    borderRadius: 14,
+    backgroundColor: colors.accentPrimaryMuted,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  notifValueRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.xs,
+  },
+
+  // ——— Notification Modal ———
+  notifModalOverlay: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    backgroundColor: 'rgba(0,0,0,0.6)',
+  },
+  notifModalContent: {
+    backgroundColor: colors.surfaceElevated,
+    borderTopLeftRadius: 28,
+    borderTopRightRadius: 28,
+    padding: spacing.xl,
+    paddingBottom: Platform.OS === 'ios' ? 40 : spacing.xl,
+  },
+  notifModalHandle: {
+    width: 40,
+    height: 4,
+    borderRadius: 2,
+    backgroundColor: colors.border,
+    alignSelf: 'center',
+    marginBottom: spacing.lg,
+  },
+  notifModalHeader: {
+    alignItems: 'center',
+    marginBottom: spacing.lg,
+  },
+  notifModalIconCircle: {
+    width: 60,
+    height: 60,
+    borderRadius: 30,
+    backgroundColor: colors.accentPrimaryMuted,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: spacing.md,
+  },
+  notifModalTitle: {
+    fontSize: 22,
+    fontWeight: '700',
+    color: colors.textPrimary,
+    marginBottom: spacing.xs,
+  },
+  notifModalSubtitle: {
+    fontSize: 14,
+    color: colors.textMuted,
+    textAlign: 'center',
+  },
+  notifOption: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: colors.surface,
+    borderRadius: borderRadius.lg,
+    padding: spacing.md,
+    marginBottom: spacing.sm,
+    borderWidth: 2,
+    borderColor: 'transparent',
+  },
+  notifOptionSelected: {
+    borderColor: colors.accentPrimary,
+    backgroundColor: colors.accentPrimaryMuted,
+  },
+  notifOptionEmoji: {
+    fontSize: 24,
+    marginRight: spacing.md,
+  },
+  notifOptionInfo: {
+    flex: 1,
+  },
+  notifOptionLabel: {
+    fontSize: 15,
+    fontWeight: '600',
+    color: colors.textPrimary,
+  },
+  notifOptionLabelSelected: {
+    color: colors.accentPrimary,
+  },
+  notifOptionDesc: {
+    fontSize: 12,
+    color: colors.textMuted,
+    marginTop: 2,
+  },
+  notifRadio: {
+    width: 24,
+    height: 24,
+    borderRadius: 12,
+    borderWidth: 2,
+    borderColor: colors.border,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginLeft: spacing.sm,
+  },
+  notifRadioSelected: {
+    backgroundColor: colors.accentPrimary,
+    borderColor: colors.accentPrimary,
+  },
+  notifModalButtons: {
+    flexDirection: 'row',
+    gap: spacing.md,
+    marginTop: spacing.lg,
   },
 });
 

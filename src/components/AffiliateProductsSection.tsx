@@ -57,8 +57,18 @@ export const AffiliateProductsSection: React.FC<AffiliateProductsSectionProps> =
     return null;
   }
 
+  // Dédupliquer les produits par ID
+  const uniqueProducts = useMemo(() => {
+    const seen = new Set<string>();
+    return products.filter(p => {
+      if (seen.has(p.id)) return false;
+      seen.add(p.id);
+      return true;
+    });
+  }, [products]);
+
   // Limiter le nombre de produits si spécifié
-  const displayProducts = maxProducts ? products.slice(0, maxProducts) : products;
+  const displayProducts = maxProducts ? uniqueProducts.slice(0, maxProducts) : uniqueProducts;
 
   // Séparer les produits par catégorie
   const mainProducts = displayProducts.filter(p => p.isEssential);
@@ -91,9 +101,9 @@ export const AffiliateProductsSection: React.FC<AffiliateProductsSectionProps> =
             <Feather name="check-circle" size={14} color={colors.accentPrimary} />
             <Text style={styles.subSectionTitle}>Ingrédients principaux</Text>
           </View>
-          {mainProducts.map((product: AffiliateProduct) => (
+          {mainProducts.map((product: AffiliateProduct, idx: number) => (
             <AffiliateProductCard
-              key={product.id}
+              key={`main-${product.id}-${idx}`}
               product={product}
               remedyId={remedyId}
             />
@@ -108,9 +118,9 @@ export const AffiliateProductsSection: React.FC<AffiliateProductsSectionProps> =
             <Feather name="layers" size={14} color={colors.textSecondary} />
             <Text style={styles.subSectionTitle}>Compléments recommandés</Text>
           </View>
-          {supportProducts.map((product: AffiliateProduct) => (
+          {supportProducts.map((product: AffiliateProduct, idx: number) => (
             <AffiliateProductCard
-              key={product.id}
+              key={`support-${product.id}-${idx}`}
               product={product}
               remedyId={remedyId}
             />
@@ -125,9 +135,9 @@ export const AffiliateProductsSection: React.FC<AffiliateProductsSectionProps> =
             <Feather name="tool" size={14} color={colors.textMuted} />
             <Text style={styles.subSectionTitle}>Accessoires utiles</Text>
           </View>
-          {accessoryProducts.map((product: AffiliateProduct) => (
+          {accessoryProducts.map((product: AffiliateProduct, idx: number) => (
             <AffiliateProductCard
-              key={product.id}
+              key={`acc-${product.id}-${idx}`}
               product={product}
               remedyId={remedyId}
             />

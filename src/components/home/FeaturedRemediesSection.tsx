@@ -1,174 +1,217 @@
-import React, { useRef } from 'react';
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Animated, Image } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
+// ============================================
+// SECTION REMÈDES POPULAIRES
+// Même DA que le conseil de grand-mère (carte dark unifiée)
+// ============================================
+
+import React from 'react';
+import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import { colors, spacing, borderRadius } from '../../theme/colors';
-import { getRemedyImage } from '../../assets';
+import { getRemedyImage, logo } from '../../assets';
 
 interface FeaturedRemedy {
   id: string;
   title: string;
   subtitle: string;
   route: 'orale' | 'cutanee' | 'inhalation';
-  badge?: string;
+  emoji: string;
+  color: string;
 }
 
 const featuredRemedies: FeaturedRemedy[] = [
-  { id: 'infusion-thym', title: 'Infusion de thym', subtitle: 'Gorge irritée', route: 'orale', badge: 'Populaire' },
-  { id: 'argile-cataplasme', title: 'Cataplasme d\'argile', subtitle: 'Douleurs articulaires', route: 'cutanee' },
-  { id: 'lavande-inhalation', title: 'Inhalation lavande', subtitle: 'Respiration & détente', route: 'inhalation' },
+  { id: 'infusion-thym', title: 'Infusion de thym', subtitle: 'Gorge irritée', route: 'orale', emoji: '🍵', color: '#38BDF8' },
+  { id: 'argile-cataplasme', title: 'Cataplasme d\'argile', subtitle: 'Douleurs articulaires', route: 'cutanee', emoji: '🧴', color: '#F97316' },
+  { id: 'lavande-inhalation', title: 'Inhalation lavande', subtitle: 'Respiration & détente', route: 'inhalation', emoji: '💨', color: '#A78BFA' },
 ];
 
 interface FeaturedRemediesSectionProps {
   onSelectRemedy: (remedyId: string) => void;
 }
 
-const FeaturedRemedyCard: React.FC<{
-  remedy: FeaturedRemedy;
-  onPress: () => void;
-}> = ({ remedy, onPress }) => {
-  const scaleAnim = useRef(new Animated.Value(1)).current;
-
-  const handlePressIn = () => {
-    Animated.spring(scaleAnim, { toValue: 0.97, useNativeDriver: true }).start();
-  };
-
-  const handlePressOut = () => {
-    Animated.spring(scaleAnim, { toValue: 1, useNativeDriver: true }).start();
-  };
-
-  const image = getRemedyImage(remedy.title, remedy.route);
-
-  return (
-    <TouchableOpacity
-      activeOpacity={0.9}
-      onPress={onPress}
-      onPressIn={handlePressIn}
-      onPressOut={handlePressOut}
-    >
-      <Animated.View style={[styles.card, { transform: [{ scale: scaleAnim }] }]}>
-        <View style={styles.imageContainer}>
-          <Image source={image} style={styles.cardImage} />
-        </View>
-        <View style={styles.cardContent}>
-          <View style={styles.cardHeader}>
-            <Text style={styles.cardTitle} numberOfLines={1}>{remedy.title}</Text>
-            {remedy.badge && (
-              <View style={styles.badge}>
-                <Text style={styles.badgeText}>{remedy.badge}</Text>
-              </View>
-            )}
-          </View>
-          <Text style={styles.cardSubtitle}>{remedy.subtitle}</Text>
-          <View style={styles.routeBadge}>
-            <Feather 
-              name={remedy.route === 'orale' ? 'coffee' : remedy.route === 'cutanee' ? 'droplet' : 'wind'} 
-              size={10} 
-              color={colors.accentPrimary} 
-            />
-            <Text style={styles.routeText}>{remedy.route}</Text>
-          </View>
-        </View>
-        <Feather name="chevron-right" size={18} color={colors.textMuted} style={styles.arrow} />
-      </Animated.View>
-    </TouchableOpacity>
-  );
-};
-
 export const FeaturedRemediesSection: React.FC<FeaturedRemediesSectionProps> = ({
   onSelectRemedy,
 }) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.sectionTitle}>REMÈDES POPULAIRES</Text>
-      {featuredRemedies.map((remedy) => (
-        <FeaturedRemedyCard
-          key={remedy.id}
-          remedy={remedy}
-          onPress={() => onSelectRemedy(remedy.id)}
-        />
-      ))}
+      <View style={styles.card}>
+        {/* Header avec avatar */}
+        <View style={styles.headerRow}>
+          <View style={styles.avatarWrap}>
+            <Image source={logo} style={styles.avatarImg} resizeMode="contain" />
+            <View style={styles.avatarBadge}>
+              <Text style={styles.avatarBadgeEmoji}>⭐</Text>
+            </View>
+          </View>
+          <View style={styles.headerText}>
+            <Text style={styles.headerLabel}>LES INDISPENSABLES</Text>
+            <Text style={styles.headerTitle}>Remèdes populaires</Text>
+          </View>
+        </View>
+
+        {/* Liste des remèdes */}
+        <View style={styles.remediesList}>
+          {featuredRemedies.map((remedy, index) => {
+            const image = getRemedyImage(remedy.title, remedy.route);
+            const isLast = index === featuredRemedies.length - 1;
+            return (
+              <TouchableOpacity
+                key={remedy.id}
+                style={[styles.remedyItem, !isLast ? styles.remedyItemBorder : null]}
+                onPress={() => onSelectRemedy(remedy.id)}
+                activeOpacity={0.8}
+              >
+                <View style={[styles.remedyDot, { backgroundColor: remedy.color }]} />
+                <View style={styles.remedyImgWrap}>
+                  <Image source={image} style={styles.remedyImg} />
+                </View>
+                <View style={styles.remedyContent}>
+                  <Text style={styles.remedyTitle} numberOfLines={1}>{remedy.title}</Text>
+                  <View style={styles.remedyMeta}>
+                    <Text style={styles.remedySubtitle}>{remedy.subtitle}</Text>
+                    <View style={[styles.routeTag, { borderColor: remedy.color + '40' }]}>
+                      <Text style={[styles.routeTagText, { color: remedy.color }]}>{remedy.route}</Text>
+                    </View>
+                  </View>
+                </View>
+                <Feather name="chevron-right" size={16} color={colors.textMuted} />
+              </TouchableOpacity>
+            );
+          })}
+        </View>
+      </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: spacing.xl,
     paddingHorizontal: spacing.md,
-  },
-  sectionTitle: {
-    fontSize: 12,
-    fontWeight: '600',
-    color: colors.textMuted,
-    letterSpacing: 1,
-    marginBottom: spacing.md,
+    marginBottom: spacing.lg,
   },
   card: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: colors.surfaceCard,
-    borderRadius: borderRadius.lg,
-    padding: spacing.sm,
-    marginBottom: spacing.sm,
+    backgroundColor: colors.surface,
+    borderRadius: borderRadius.xl,
+    overflow: 'hidden',
     borderWidth: 1,
     borderColor: colors.border,
+    padding: spacing.md,
   },
-  imageContainer: {
-    width: 56,
-    height: 56,
+
+  // Header
+  headerRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.sm,
+    marginBottom: spacing.md,
+    paddingBottom: spacing.sm,
+    borderBottomWidth: 1,
+    borderBottomColor: colors.border,
+  },
+  avatarWrap: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: colors.surfaceHighlight,
+    overflow: 'hidden',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  avatarImg: {
+    width: 40,
+    height: 40,
+  },
+  avatarBadge: {
+    position: 'absolute',
+    bottom: -2,
+    right: -2,
+    width: 18,
+    height: 18,
+    borderRadius: 9,
+    backgroundColor: '#F59E0B',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderWidth: 2,
+    borderColor: colors.surface,
+  },
+  avatarBadgeEmoji: {
+    fontSize: 8,
+  },
+  headerText: {
+    flex: 1,
+  },
+  headerLabel: {
+    fontSize: 10,
+    fontWeight: '600',
+    color: colors.textMuted,
+    letterSpacing: 0.5,
+    textTransform: 'uppercase',
+  },
+  headerTitle: {
+    fontSize: 15,
+    fontWeight: '700',
+    color: colors.textPrimary,
+    marginTop: 1,
+  },
+
+  // Remedies list
+  remediesList: {
+    gap: 0,
+  },
+  remedyItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: spacing.sm,
+    gap: spacing.sm,
+  },
+  remedyItemBorder: {
+    borderBottomWidth: 1,
+    borderBottomColor: colors.border,
+  },
+  remedyDot: {
+    width: 4,
+    height: 36,
+    borderRadius: 2,
+  },
+  remedyImgWrap: {
+    width: 42,
+    height: 42,
     borderRadius: borderRadius.md,
     overflow: 'hidden',
-    backgroundColor: colors.surface,
+    backgroundColor: colors.surfaceHighlight,
   },
-  cardImage: {
-    width: '100%',
-    height: '100%',
+  remedyImg: {
+    width: 42,
+    height: 42,
   },
-  cardContent: {
+  remedyContent: {
     flex: 1,
-    marginLeft: spacing.md,
   },
-  cardHeader: {
+  remedyTitle: {
+    fontSize: 14,
+    fontWeight: '600',
+    color: colors.textPrimary,
+    marginBottom: 3,
+  },
+  remedyMeta: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: spacing.sm,
   },
-  cardTitle: {
-    fontSize: 14,
-    fontWeight: '600',
-    color: colors.textPrimary,
-    flex: 1,
-  },
-  badge: {
-    backgroundColor: colors.accentSecondaryMuted,
-    paddingHorizontal: spacing.xs,
-    paddingVertical: 2,
-    borderRadius: borderRadius.sm,
-  },
-  badgeText: {
-    fontSize: 9,
-    fontWeight: '600',
-    color: colors.accentSecondary,
-    textTransform: 'uppercase',
-  },
-  cardSubtitle: {
+  remedySubtitle: {
     fontSize: 12,
     color: colors.textMuted,
-    marginTop: 2,
   },
-  routeBadge: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginTop: spacing.xs,
-    gap: 4,
+  routeTag: {
+    borderWidth: 1,
+    paddingHorizontal: 6,
+    paddingVertical: 1,
+    borderRadius: 8,
   },
-  routeText: {
+  routeTagText: {
     fontSize: 10,
-    color: colors.accentPrimary,
+    fontWeight: '500',
     textTransform: 'capitalize',
   },
-  arrow: {
-    marginLeft: spacing.sm,
-  },
 });
+
+export default FeaturedRemediesSection;

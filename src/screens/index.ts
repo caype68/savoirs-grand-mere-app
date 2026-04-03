@@ -13,3 +13,8 @@ export { ProfileScreen } from './ProfileScreen';
 export { SearchScreen } from './SearchScreen';
 export { EssentialOilsScreen } from './EssentialOilsScreen';
 export { EssentialOilDetailScreen } from './EssentialOilDetailScreen';
+export { BeginnerGuideScreen } from './BeginnerGuideScreen';
+export { PrivacyPolicyScreen } from './PrivacyPolicyScreen';
+export { TermsOfUseScreen } from './TermsOfUseScreen';
+export { AuthScreen } from './AuthScreen';
+export { PremiumScreen } from './PremiumScreen';

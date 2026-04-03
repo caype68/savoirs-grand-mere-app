@@ -911,8 +911,338 @@
         </div>
     </div>
 
+    <!-- ========================================
+         POPUP TÉLÉCHARGEMENT INTELLIGENT
+         Détecte l'appareil et affiche le bon message
+    ======================================== -->
+    <div class="download-popup" id="downloadPopup">
+        <div class="popup-overlay" id="popupOverlay"></div>
+        <div class="popup-card">
+            <button class="popup-close" id="popupClose">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18"></path>
+                    <path d="M6 6l12 12"></path>
+                </svg>
+            </button>
+
+            <div class="popup-icon" id="popupIcon"></div>
+            <h3 class="popup-title" id="popupTitle"></h3>
+            <p class="popup-message" id="popupMessage"></p>
+
+            <!-- Android -->
+            <div class="popup-content popup-android" id="popupAndroid" style="display:none;">
+                <a href="https://expo.dev/accounts/craype68/projects/savoirs-de-grand-mere/builds/1b795772-8e0b-4e58-b968-c0851aa49641"
+                   class="popup-btn popup-btn-primary" target="_blank" rel="noopener">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.523 2.376l1.513-2.618a.318.318 0 00-.557-.307l-1.53 2.65A9.017 9.017 0 0012.003 1.1a9.017 9.017 0 00-4.946 1.001L5.527-.547a.318.318 0 00-.557.307l1.513 2.617C3.89 4.244 2 7.165 2 10.6h20c0-3.435-1.89-6.356-4.477-8.224zM7 8a1 1 0 110-2 1 1 0 010 2zm10 0a1 1 0 110-2 1 1 0 010 2zM2 12v8a2 2 0 002 2h16a2 2 0 002-2v-8H2z"/>
+                    </svg>
+                    Télécharger l'APK Android
+                </a>
+                <p class="popup-hint">Fichier APK - Installation directe sur votre téléphone</p>
+            </div>
+
+            <!-- iOS -->
+            <div class="popup-content popup-ios" id="popupIos" style="display:none;">
+                <div class="popup-btn popup-btn-disabled">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                    </svg>
+                    Bientôt disponible sur iOS
+                </div>
+                <p class="popup-hint">L'application iOS est en cours de développement. Inscrivez-vous pour être notifié !</p>
+                <form class="popup-email-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Inscrit !'; this.querySelector('button').disabled=true;">
+                    <input type="email" placeholder="Votre email" class="popup-email-input" required>
+                    <button type="submit" class="popup-btn popup-btn-secondary">Me notifier</button>
+                </form>
+            </div>
+
+            <!-- PC / Desktop -->
+            <div class="popup-content popup-desktop" id="popupDesktop" style="display:none;">
+                <p class="popup-desktop-info">Savoirs de Grand-Mère est une application mobile. Scannez le QR code ou envoyez-vous le lien :</p>
+                <div class="popup-qr">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://expo.dev/accounts/craype68/projects/savoirs-de-grand-mere/builds/1b795772-8e0b-4e58-b968-c0851aa49641&bgcolor=1a1f2e&color=9bb89b" alt="QR Code téléchargement" class="popup-qr-img">
+                </div>
+                <p class="popup-hint">Scannez avec votre téléphone Android</p>
+                <div class="popup-desktop-actions">
+                    <button class="popup-btn popup-btn-primary" onclick="navigator.clipboard.writeText('https://expo.dev/accounts/craype68/projects/savoirs-de-grand-mere/builds/1b795772-8e0b-4e58-b968-c0851aa49641'); this.textContent='Lien copié !'; setTimeout(()=>this.textContent='Copier le lien de téléchargement', 2000);">
+                        Copier le lien de téléchargement
+                    </button>
+                </div>
+                <p class="popup-ios-note">⚠️ Version iOS pas encore disponible — bientôt !</p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+    /* ========================================
+       POPUP TÉLÉCHARGEMENT
+    ======================================== */
+    .download-popup {
+        display: none;
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        z-index: 10000;
+        align-items: center;
+        justify-content: center;
+    }
+    .download-popup.active {
+        display: flex;
+        animation: popupFadeIn 0.3s ease;
+    }
+    @keyframes popupFadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    .popup-overlay {
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0, 0, 0, 0.75);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+    }
+    .popup-card {
+        position: relative;
+        background: linear-gradient(145deg, #1e2538, #252d40);
+        border: 1px solid rgba(124, 154, 124, 0.25);
+        border-radius: 24px;
+        padding: 40px 32px;
+        max-width: 420px;
+        width: 90%;
+        text-align: center;
+        box-shadow: 0 25px 60px rgba(0,0,0,0.5), 0 0 40px rgba(124, 154, 124, 0.1);
+        animation: popupSlideUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    @keyframes popupSlideUp {
+        from { transform: translateY(30px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+    .popup-close {
+        position: absolute;
+        top: 16px; right: 16px;
+        background: rgba(255,255,255,0.08);
+        border: none;
+        border-radius: 50%;
+        width: 36px; height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: #8a8fa0;
+        transition: all 0.2s;
+    }
+    .popup-close:hover {
+        background: rgba(255,255,255,0.15);
+        color: #fff;
+    }
+    .popup-icon {
+        font-size: 48px;
+        margin-bottom: 16px;
+        line-height: 1;
+    }
+    .popup-title {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.5rem;
+        color: #f5f5f0;
+        margin-bottom: 8px;
+    }
+    .popup-message {
+        color: #b8bcc8;
+        font-size: 0.95rem;
+        margin-bottom: 24px;
+        line-height: 1.5;
+    }
+    .popup-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 14px 28px;
+        border-radius: 14px;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s;
+        width: 100%;
+    }
+    .popup-btn-primary {
+        background: linear-gradient(135deg, #5a7a5a, #7c9a7c);
+        color: #fff;
+        box-shadow: 0 4px 15px rgba(124, 154, 124, 0.3);
+    }
+    .popup-btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(124, 154, 124, 0.4);
+    }
+    .popup-btn-secondary {
+        background: rgba(124, 154, 124, 0.15);
+        color: #9bb89b;
+        border: 1px solid rgba(124, 154, 124, 0.3);
+        padding: 10px 20px;
+        width: auto;
+    }
+    .popup-btn-secondary:hover {
+        background: rgba(124, 154, 124, 0.25);
+    }
+    .popup-btn-disabled {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 14px 28px;
+        border-radius: 14px;
+        font-size: 1rem;
+        font-weight: 600;
+        width: 100%;
+        background: rgba(255,255,255,0.06);
+        color: #7a8194;
+        border: 1px dashed rgba(255,255,255,0.15);
+        cursor: default;
+    }
+    .popup-hint {
+        color: #7a8194;
+        font-size: 0.8rem;
+        margin-top: 12px;
+    }
+    .popup-qr {
+        margin: 20px auto;
+    }
+    .popup-qr-img {
+        width: 180px;
+        height: 180px;
+        border-radius: 16px;
+        border: 2px solid rgba(124, 154, 124, 0.2);
+    }
+    .popup-desktop-info {
+        color: #b8bcc8;
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+        line-height: 1.5;
+    }
+    .popup-desktop-actions {
+        margin-top: 16px;
+    }
+    .popup-ios-note {
+        color: #7a8194;
+        font-size: 0.8rem;
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .popup-email-form {
+        display: flex;
+        gap: 8px;
+        margin-top: 16px;
+    }
+    .popup-email-input {
+        flex: 1;
+        padding: 10px 14px;
+        border-radius: 10px;
+        border: 1px solid rgba(255,255,255,0.1);
+        background: rgba(255,255,255,0.06);
+        color: #f5f5f0;
+        font-size: 0.9rem;
+        outline: none;
+    }
+    .popup-email-input:focus {
+        border-color: rgba(124, 154, 124, 0.4);
+    }
+    .popup-email-input::placeholder {
+        color: #7a8194;
+    }
+    @media (max-width: 480px) {
+        .popup-card {
+            padding: 28px 20px;
+            margin: 16px;
+        }
+        .popup-email-form {
+            flex-direction: column;
+        }
+    }
+    </style>
+
     <!-- Scripts -->
     <script src="script.js"></script>
     <script src="search.js"></script>
+
+    <!-- Script détection d'appareil + popup -->
+    <script>
+    (function() {
+        const ua = navigator.userAgent || navigator.vendor || window.opera;
+        let device = 'desktop';
+
+        if (/android/i.test(ua)) {
+            device = 'android';
+        } else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+            device = 'ios';
+        } else if (/Macintosh.*Mobile/.test(ua) || /Mac OS.*Safari/.test(ua) && 'ontouchend' in document) {
+            device = 'ios';
+        }
+
+        const popup = document.getElementById('downloadPopup');
+        const popupIcon = document.getElementById('popupIcon');
+        const popupTitle = document.getElementById('popupTitle');
+        const popupMessage = document.getElementById('popupMessage');
+        const popupAndroid = document.getElementById('popupAndroid');
+        const popupIos = document.getElementById('popupIos');
+        const popupDesktop = document.getElementById('popupDesktop');
+
+        function showPopup() {
+            if (device === 'android') {
+                popupIcon.textContent = '🤖';
+                popupTitle.textContent = 'Télécharger pour Android';
+                popupMessage.textContent = 'Installez Savoirs de Grand-Mère directement sur votre téléphone.';
+                popupAndroid.style.display = 'block';
+            } else if (device === 'ios') {
+                popupIcon.textContent = '🍎';
+                popupTitle.textContent = 'Version iOS';
+                popupMessage.textContent = 'L\'application iOS arrive bientôt ! Soyez parmi les premiers à l\'essayer.';
+                popupIos.style.display = 'block';
+            } else {
+                popupIcon.textContent = '💻';
+                popupTitle.textContent = 'Application mobile';
+                popupMessage.textContent = 'Savoirs de Grand-Mère est disponible sur Android. Envoyez le lien sur votre téléphone !';
+                popupDesktop.style.display = 'block';
+            }
+
+            popup.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function hidePopup() {
+            popup.classList.remove('active');
+            document.body.style.overflow = '';
+            sessionStorage.setItem('popup_dismissed', '1');
+        }
+
+        // Fermer le popup
+        document.getElementById('popupClose').addEventListener('click', hidePopup);
+        document.getElementById('popupOverlay').addEventListener('click', hidePopup);
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') hidePopup();
+        });
+
+        // Afficher le popup après 2 secondes (une seule fois par session)
+        if (!sessionStorage.getItem('popup_dismissed')) {
+            setTimeout(showPopup, 2000);
+        }
+
+        // Permettre d'ouvrir le popup via les boutons de téléchargement sur desktop
+        document.querySelectorAll('a[href*="expo.dev/accounts/craype68"]').forEach(function(link) {
+            if (device === 'desktop' || device === 'ios') {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    sessionStorage.removeItem('popup_dismissed');
+                    // Reset visibility
+                    popupAndroid.style.display = 'none';
+                    popupIos.style.display = 'none';
+                    popupDesktop.style.display = 'none';
+                    showPopup();
+                });
+            }
+        });
+    })();
+    </script>
 </body>
 </html>

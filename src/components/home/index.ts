@@ -7,5 +7,6 @@ export { RemedyTypeGrid } from './RemedyTypeGrid';
 export { MedicalDisclaimerBanner } from './MedicalDisclaimerBanner';
 export { PopularMethodsSection } from './PopularMethodsSection';
 export { FeaturedRemediesSection } from './FeaturedRemediesSection';
+export { WeeklyTroublesSection } from './WeeklyTroublesSection';
 export { ZoneSelectionModal } from './ZoneSelectionModal';
 export { DailyRecommendationSection } from './DailyRecommendationSection';

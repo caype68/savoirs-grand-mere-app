@@ -103,7 +103,7 @@ const RoutineBlockCard: React.FC<RoutineBlockCardProps> = ({
         ))}
 
         {/* Tips */}
-        {block.tips.length > 0 && (
+        {(block.tips?.length || 0) > 0 && (
           <View style={styles.tipsContainer}>
             <Text style={styles.tipsTitle}>💡 Conseils</Text>
             {block.tips.map((tip, index) => (
@@ -154,9 +154,11 @@ export const DailyRoutineCard: React.FC<DailyRoutineCardProps> = ({
 
   if (compact) {
     // Version compacte pour la home
-    const activeBlock = isMorningTime ? routine.morningRoutine : routine.eveningRoutine;
-    const activeRemedies = isMorningTime ? remedies.morning : remedies.evening;
-    
+    const activeBlock = isMorningTime ? routine?.morningRoutine : routine?.eveningRoutine;
+    const activeRemedies = (isMorningTime ? remedies?.morning : remedies?.evening) || [];
+
+    if (!activeBlock) return null;
+
     return (
       <View style={styles.compactContainer}>
         <View style={styles.compactHeader}>
@@ -168,13 +170,15 @@ export const DailyRoutineCard: React.FC<DailyRoutineCardProps> = ({
               {isMorningTime ? 'Routine Matin' : 'Routine Soir'}
             </Text>
             <Text style={styles.compactSubtitle}>
-              {activeRemedies.length} remède{activeRemedies.length > 1 ? 's' : ''} • {activeBlock.duration}
+              {`${activeRemedies.length} remède${activeRemedies.length > 1 ? 's' : ''} • ${activeBlock.duration || ''}`}
             </Text>
           </View>
-          {activeBlock.isCompleted && (
+          {activeBlock.isCompleted ? (
             <View style={styles.compactCompletedBadge}>
               <Feather name="check" size={14} color={colors.accentPrimary} />
             </View>
+          ) : (
+            <View />
           )}
         </View>
 
@@ -230,11 +234,11 @@ export const DailyRoutineCard: React.FC<DailyRoutineCardProps> = ({
         <View style={styles.completionIndicator}>
           <View style={[
             styles.completionDot,
-            routine.morningRoutine.isCompleted && styles.completionDotActive
+            routine?.morningRoutine?.isCompleted && styles.completionDotActive
           ]} />
           <View style={[
             styles.completionDot,
-            routine.eveningRoutine.isCompleted && styles.completionDotActive
+            routine?.eveningRoutine?.isCompleted && styles.completionDotActive
           ]} />
         </View>
       </View>
@@ -242,7 +246,7 @@ export const DailyRoutineCard: React.FC<DailyRoutineCardProps> = ({
       {/* Routine Matin */}
       <RoutineBlockCard
         block={routine.morningRoutine}
-        remedies={remedies.morning}
+        remedies={remedies?.morning || []}
         onViewRemedy={onViewRemedy}
         onComplete={() => onCompleteRoutine('morning')}
       />
@@ -250,7 +254,7 @@ export const DailyRoutineCard: React.FC<DailyRoutineCardProps> = ({
       {/* Routine Soir */}
       <RoutineBlockCard
         block={routine.eveningRoutine}
-        remedies={remedies.evening}
+        remedies={remedies?.evening || []}
         onViewRemedy={onViewRemedy}
         onComplete={() => onCompleteRoutine('evening')}
       />

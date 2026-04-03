@@ -21,8 +21,9 @@ import {
   PopularMethodsSection,
   FeaturedRemediesSection,
   DailyRecommendationSection,
+  WeeklyTroublesSection,
 } from '../components/home';
-import { AIQuestionFlow, DailyRoutineCard, NoRoutineCard } from '../components';
+import { AIQuestionFlow, DailyRoutineCard, NoRoutineCard, AdBanner } from '../components';
 import { useDailyRoutine } from '../hooks/useDailyRoutine';
 
 type HomeScreenProps = {
@@ -180,12 +181,20 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
             {renderSearchModeContent()}
 
             {/* Daily Recommendation */}
+            <View style={styles.sectionSpacer} />
             <DailyRecommendationSection
               onViewRemedy={handleRemedySelect}
               onFillWellnessLog={() => navigation.navigate('Wellness')}
             />
 
+            {/* Weekly Troubles - mêmes DA que conseil grand-mère */}
+            <View style={styles.sectionSpacer} />
+            <WeeklyTroublesSection
+              onSearchTrouble={(searchTerm) => navigation.navigate('Results', { searchTerm, mode: 'symptom' })}
+            />
+
             {/* Daily Routine (Matin / Soir) */}
+            <View style={styles.sectionSpacer} />
             <View style={styles.routineSection}>
               {routine ? (
                 <DailyRoutineCard
@@ -204,13 +213,22 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
             </View>
 
             {/* Medical Disclaimer */}
+            <View style={styles.sectionSpacer} />
             <MedicalDisclaimerBanner />
 
             {/* Popular Methods */}
+            <View style={styles.sectionSpacer} />
             <PopularMethodsSection onSelectMethod={handleMethodSelect} />
 
             {/* Featured Remedies */}
+            <View style={styles.sectionSpacer} />
             <FeaturedRemediesSection onSelectRemedy={handleRemedySelect} />
+
+            {/* Publicité / Promo Premium */}
+            <AdBanner
+              placement="home"
+              onUpgradePress={() => navigation.navigate('Premium')}
+            />
 
             {/* Bottom spacing */}
             <View style={styles.bottomSpacer} />
@@ -256,6 +274,9 @@ const styles = StyleSheet.create({
   },
   scrollContent: {
     paddingBottom: spacing.xl,
+  },
+  sectionSpacer: {
+    height: spacing.lg,
   },
   routineSection: {
     paddingHorizontal: spacing.md,

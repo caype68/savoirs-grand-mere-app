@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Politique de confidentialité - Savoirs de Grand-Mère">
+    <meta name="theme-color" content="#1a1f2e">
+    <title>Politique de confidentialité | Savoirs de Grand-Mère</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0F1115;
+            color: #B7BEC9;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #78A686;
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+        .back-link:hover { text-decoration: underline; }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #F2F4F7;
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+        .last-updated {
+            color: #7E8795;
+            font-size: 13px;
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #F2F4F7;
+            font-size: 20px;
+            margin-top: 36px;
+            margin-bottom: 12px;
+        }
+        p { margin-bottom: 16px; }
+        strong { color: #F2F4F7; }
+        ul {
+            margin-bottom: 16px;
+            padding-left: 24px;
+        }
+        li { margin-bottom: 6px; }
+        a { color: #78A686; }
+        .footer {
+            margin-top: 60px;
+            padding-top: 24px;
+            border-top: 1px solid #262D38;
+            text-align: center;
+            color: #7E8795;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">&larr; Retour au site</a>
+        <h1>Politique de confidentialité</h1>
+        <p class="last-updated">Dernière mise à jour : 24 mars 2025</p>
+
+        <h2>1. Introduction</h2>
+        <p>L'application « Savoirs de Grand-Mère » (ci-après « l'Application ») est éditée dans le but de proposer un répertoire de remèdes traditionnels issus de livres anciens numérisés. La présente politique de confidentialité décrit les données que nous collectons, comment nous les utilisons et les droits dont vous disposez.</p>
+
+        <h2>2. Données collectées</h2>
+        <p><strong>Données de profil :</strong> prénom (optionnel), objectifs de santé, allergies, type de profil, préférences de format de remèdes, niveau d'expérience.</p>
+        <p><strong>Données de compte :</strong> adresse email et mot de passe (si vous créez un compte — stockés de manière chiffrée via Supabase Auth).</p>
+        <p><strong>Données d'utilisation :</strong> favoris, journal de bien-être, historique de consultation des remèdes, série d'activité (streak).</p>
+        <p><strong>Données techniques :</strong> aucun cookie tiers n'est utilisé. Aucun identifiant publicitaire n'est collecté.</p>
+
+        <h2>3. Stockage des données</h2>
+        <p>Par défaut, vos données sont stockées localement sur votre appareil (AsyncStorage / SQLite). Si vous créez un compte, vos données sont synchronisées sur nos serveurs via Supabase (hébergé par AWS dans l'Union Européenne). Les mots de passe sont hashés et ne sont jamais stockés en clair.</p>
+
+        <h2>4. Utilisation des données</h2>
+        <p>Vos données sont utilisées exclusivement pour :</p>
+        <ul>
+            <li>Personnaliser vos recommandations de remèdes</li>
+            <li>Sauvegarder vos favoris et votre progression</li>
+            <li>Synchroniser vos données entre vos appareils (si connecté)</li>
+        </ul>
+        <p>Nous ne vendons, ne partageons et ne transmettons jamais vos données personnelles à des tiers à des fins commerciales.</p>
+
+        <h2>5. Liens affiliés Amazon</h2>
+        <p>L'Application peut afficher des liens affiliés vers Amazon. Si vous cliquez sur un lien et effectuez un achat, nous recevons une commission. Aucune donnée personnelle n'est partagée avec Amazon via ces liens.</p>
+
+        <h2>6. Droits de l'utilisateur</h2>
+        <p>Conformément au RGPD et aux réglementations applicables, vous pouvez :</p>
+        <ul>
+            <li>Accéder à vos données depuis l'écran Profil</li>
+            <li>Modifier vos données à tout moment</li>
+            <li>Supprimer votre compte et toutes vos données</li>
+            <li>Exporter vos données</li>
+        </ul>
+
+        <h2>7. Sécurité</h2>
+        <p>Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles appropriées pour protéger vos données : chiffrement en transit (HTTPS/TLS), authentification sécurisée (Supabase Auth avec JWT), accès restreint aux bases de données.</p>
+
+        <h2>8. Mineurs</h2>
+        <p>L'Application n'est pas destinée aux enfants de moins de 16 ans. Nous ne collectons pas sciemment de données auprès de mineurs.</p>
+
+        <h2>9. Modifications</h2>
+        <p>Nous nous réservons le droit de modifier cette politique de confidentialité. Toute modification sera notifiée via une mise à jour de l'Application.</p>
+
+        <h2>10. Contact</h2>
+        <p>Pour toute question relative à vos données personnelles, contactez-nous à : <a href="mailto:contact@savoirsdegrandmere.fr">contact@savoirsdegrandmere.fr</a></p>
+
+        <div class="footer">
+            &copy; 2025 Savoirs de Grand-Mère — Tous droits réservés
+        </div>
+    </div>
+</body>
+</html>
